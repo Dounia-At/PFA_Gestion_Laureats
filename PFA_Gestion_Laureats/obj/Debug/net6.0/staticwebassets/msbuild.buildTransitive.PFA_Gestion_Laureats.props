@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\PFA_Gestion_Laureats.props" />
+</Project>

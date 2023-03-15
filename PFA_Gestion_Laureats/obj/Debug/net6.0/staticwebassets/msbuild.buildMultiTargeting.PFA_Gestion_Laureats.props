@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\PFA_Gestion_Laureats.props" />
+</Project>
