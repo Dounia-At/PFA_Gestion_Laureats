@@ -1,5 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Migrations;
+using Microsoft.Extensions.Hosting;
 using PFA_Gestion_Laureats.Models;
+using PFA_Gestion_Laureats.Services;
+using System.Reflection.Metadata;
 
 namespace PFA_Gestion_Laureats.Models
 {
@@ -18,8 +22,37 @@ namespace PFA_Gestion_Laureats.Models
         public MyContext(DbContextOptions<MyContext> opt) : base(opt) { }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Utilisateur>().UseTpcMappingStrategy();
-            modelBuilder.Entity<Etudiant>().UseTpcMappingStrategy();
+            modelBuilder.Entity<Utilisateur>()
+            .HasIndex(u => u.Login)
+            .IsUnique();
+
+            modelBuilder.Entity<Etudiant>()
+              .HasDiscriminator<string>("EtudiantRole")
+              .HasValue<Laureat>("Laureat");
+
+            modelBuilder.Entity<Utilisateur>()
+              .HasDiscriminator<string>("UtilisateurRole")
+              .HasValue<AgentDirection>("Agent")
+              .HasValue<Etudiant>("Etudiant");
+
+           
+            modelBuilder.Entity<Message>()
+                .HasOne(m => m.UtilisateurReceiver)
+                .WithMany(a => a.BoitesReception)
+                .HasForeignKey(a => a.ReceiverId)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            modelBuilder.Entity<Message>()
+                .HasOne(m => m.UtilisateurSender)
+                .WithMany(a => a.messagesEnvoyees)
+                .HasForeignKey(a => a.SenderId)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            modelBuilder.Entity<Postulation>()
+               .HasOne(p => p.Etudiant)
+               .WithMany(e => e.postulations)
+               .HasForeignKey(p => p.EtudiantId)
+               .OnDelete(DeleteBehavior.Restrict);
 
         }
     }

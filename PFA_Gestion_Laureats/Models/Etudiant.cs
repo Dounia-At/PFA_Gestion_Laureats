@@ -1,4 +1,6 @@
-﻿namespace PFA_Gestion_Laureats.Models
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace PFA_Gestion_Laureats.Models
 {
     public class Etudiant:Utilisateur
     {
