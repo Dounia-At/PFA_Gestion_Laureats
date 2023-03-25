@@ -11,8 +11,10 @@
     <meta charset="utf-8" />
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
-
-    @RenderSection("title", false)
+<title>
+        @RenderSection("title", false) | E.H.E.I.O - Ecole des Hautes Etudes d'Ingénierie Oujda
+</title>
+   
 
     <meta name="description" content="" />
 
@@ -81,55 +83,103 @@
                     <li class="menu-header small text-uppercase">
                         <span class="menu-header-text">Bienvenue</span>
                     </li>
-
-                    <!-- Home -->
-                    <li class="menu-item active open">
+                    <li class="menu-item active open mt-3">
                         <a href="" class="menu-link ">
                             <i class="menu-icon tf-icons ti ti-smart-home"></i>
                             <div data-i18n="Home">Accueil</div>
                         </a>
                     </li>
+                    @if (Convert.ToString(Context.Response.HttpContext.Session.GetString("Role")) == "Etudiant" || (Convert.ToString(Context.Response.HttpContext.Session.GetString("Role")) == "Laureat"))
+                    {
+                        <li class="menu-item mt-3">
+                            <a href="" class="menu-link">
+                                <i class="menu-icon tf-icons ti ti-messages"></i>
+                                <div data-i18n="Chat">Chat</div>
+                                <div class="badge bg-label-primary rounded-pill ms-auto">3</div>
+                            </a>
+                        </li>
 
-                    <li class="menu-item">
-                        <a href="" class="menu-link ">
-                            <i class="menu-icon tf-icons ti ti-users"></i>
-                            <div data-i18n="Users">Utilisateurs</div>
-                        </a>
+                        <li class="menu-item mt-3">
+                            <a href="" class="menu-link">
+                                <i class="menu-icon tf-icons ti ti-checkbox"></i>
+                                <div data-i18n="Form Validation">Mes Stages</div>
+                            </a>
+                        </li>
 
-                    </li>
+                        <li class="menu-item mt-3">
+                            <a href="" class="menu-link ">
+                                <i class=" menu-icon tf-icons ti ti-layout-grid ti-xs me-1"></i>
+                                <div data-i18n="Mes Projets">Mes Projets</div>
+                            </a>
 
-                    <li class="menu-item">
-                        <a href="" class="menu-link">
-                            <i class="menu-icon tf-icons ti ti-messages"></i>
-                            <div data-i18n="Chat">Chat</div>
-                            <div class="badge bg-label-primary rounded-pill ms-auto">3</div>
-                        </a>
-                    </li>
+                        </li>
+                        <li class="menu-item mt-3">
+                            <a href="" class="menu-link ">
+                                <i class="menu-icon tf-icons ti ti-color-swatch"></i>
+                                <div data-i18n="Mes Certificats">Mes Certificats</div>
+                            </a>
 
-                    <li class="menu-item">
+                        </li>
+                        <li class="menu-item mt-3">
+                            <a href="" class="menu-link ">
+                                <i class="menu-icon tf-icons ti ti-briefcase "></i>
+                                <div data-i18n="Mes Expériences professionnelles"> Mes Expériences professionnelles</div>
+                            </a>
+
+                        </li>
+                       
+                        
+                        
+                    }
+                    @if (Convert.ToString(Context.Response.HttpContext.Session.GetString("Role")) == "Agent")
+                    {
+                        <li class="menu-item mt-3">
+                            <a href="" class="menu-link ">
+                                <i class="menu-icon tf-icons ti ti-users"></i>
+                                <div data-i18n="Users">Utilisateurs</div>
+                            </a>
+
+                        </li>
+                        <li class="menu-item mt-3">
+                            <a href="" class="menu-link ">
+                                <i class="menu-icon tf-icons ti ti-chart-pie"></i>
+                                <div data-i18n="Statistics">Statistics</div>
+                            </a>
+
+                        </li>
+                        <li class="menu-item mt-3">
+                            <a href="" class="menu-link ">
+                                <i class="menu-icon tf-icons ti-xs ti ti-file-description me-1"></i>
+                                <div data-i18n="Statistics">Tests</div>
+                            </a>
+
+                        </li>
+                       
+                       
+
+                    }
+                    @if (Convert.ToString(Context.Response.HttpContext.Session.GetString("Role")) == "Agent" || (Convert.ToString(Context.Response.HttpContext.Session.GetString("Role")) == "Laureat"))
+                    {
+                        <li class="menu-item mt-3">
+                            <a href="" class="menu-link ">
+                                <i class="menu-icon tf-icons ti ti-file "></i>
+                                <div data-i18n="Mes Expériences professionnelles"> Annonces</div>
+                            </a>
+
+                        </li>
+                        
+                    }
+                    <li class="menu-item mt-3">
                         <a href="" class="menu-link ">
                             <i class="menu-icon tf-icons ti ti-settings"></i>
                             <div data-i18n="Settings">Settings</div>
                         </a>
 
                     </li>
+              </ul>
 
-                    <li class="menu-item">
-                        <a href="" class="menu-link">
-                            <i class="menu-icon tf-icons ti ti-checkbox"></i>
-                            <div data-i18n="Form Validation">Form Validation</div>
-                        </a>
-                    </li>
-
-                    <li class="menu-item">
-                        <a href="" class="menu-link ">
-                            <i class="menu-icon tf-icons ti ti-chart-pie"></i>
-                            <div data-i18n="Statistics">Statistics</div>
-                        </a>
-
-                    </li>
-
-                </ul>
+                    <!-- Home -->
+                   
             </aside>
             <!-- / Menu -->
             <!-- Layout container -->
@@ -245,7 +295,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="flex-grow-1">
-                                                    <span class="fw-semibold d-block">John Doe</span>
+                                                    <span class="fw-semibold d-block"></span>
                                                     <small class="text-muted">Admin</small>
                                                 </div>
                                             </div>
@@ -271,9 +321,10 @@
                                         <div class="dropdown-divider"></div>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="" target="_blank">
+                                        <a class="dropdown-item" href="User/logout">
                                             <i class="ti ti-logout me-2 ti-sm"></i>
                                             <span class="align-middle">Log Out</span>
+                                            
                                         </a>
                                     </li>
                                 </ul>
