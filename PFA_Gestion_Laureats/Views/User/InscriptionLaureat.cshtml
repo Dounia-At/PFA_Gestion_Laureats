@@ -1,0 +1,144 @@
+﻿@{
+    Layout = "_LayoutInscription";
+}
+
+
+@model PFA_Gestion_Laureats.ViewModels.UserViewModel
+
+<div class="container-xl">
+    <!-- Left Text -->
+    
+    <div class="authentication-wrapper authentication-basic container-p-y">
+        <div class="authentication-inner py-4">
+        <div class="authentication-inner row">
+                <ul class="nav nav-pills flex-column flex-md-row mb-4">
+                    <li class="nav-item">
+                        <a class="nav-link " asp-controller="User" asp-action="InscriptionEtudiant">Etudiant</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="javascript:void(0);">Laureat</a>
+                    </li>
+                </ul>
+                <div class="d-none d-lg-flex col-lg-4 align-items-center justify-content-center p-5 auth-cover-bg-color position-relative ">
+
+
+
+                    <B>Entrer Votre Information Personel </B>
+                </div>
+        </div>
+            @if (ViewBag.msgValidation != null)
+            {
+                <div class="alert alert-warning alert-dismissible fade show">
+                    <strong>Attention!</strong> @ViewBag.msgValidation
+                </div>
+            }
+            <form method="post" enctype="multipart/form-data">
+            <div class="row g-3">
+                <div class="col-sm-6">
+                    <label class="form-label">Nom</label>
+                    <input type="text"
+                           asp-for="Nom"
+                           class="form-control"
+                           placeholder="Saisir votre nom" required/>
+                </div>
+
+                <div class="col-sm-6">
+                    <label class="form-label">Prenom</label>
+                    <input type="text"
+                           asp-for="Prenom"
+                           class="form-control"
+                               placeholder="Saisir votre prenom" required />
+                </div>
+                <div class="col-sm-6">
+                    <label class="form-label">Titre_Profil</label>
+                    <input type="text"
+                           asp-for="Titre_Profil"
+                           class="form-control "
+                               placeholder="Titre_Profil" required />
+                </div>
+
+                <div class="col-sm-6">
+                    <label class="form-label">Email</label>
+                    <input type="email"
+                           asp-for="Email"
+                           class="form-control"
+                               placeholder="XXXX@email.com" required />
+                </div>
+
+                <div class="col-sm-6">
+                    <label class="form-label">Date d'inscription</label>
+                    <input type="date"
+                           asp-for="date_Inscription"
+                               class="form-control" required />
+                </div>
+
+                <div class="col-sm-6">
+                    <label class="form-label">Date de fin d'etude</label>
+                    <input type="date"
+                           asp-for="Date_Fin_Etude"
+                               class="form-control" required />
+                </div>
+
+                <div class="col-sm-6">
+                    <label class="form-label"> Specialite</label>
+                    <input type="text"
+                           asp-for="specialite"
+                           class="form-control"
+                               placeholder="Saisir Votre specialte" required />
+                </div>
+                <div class="col-sm-6">
+                    <label class="form-label">Tel</label>
+
+                    <input type="tel"
+                           asp-for="Tel"
+                               class="form-control" required />
+                </div>
+
+                <div class="col-md-6">
+                    <label class="form-label">Adresse</label>
+                    <input type="text"
+                           asp-for="Adresse"
+                               class="form-control" required />
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label">Identifiant</label>
+                    <input type="text"
+                           asp-for="Login"
+                           class="form-control"
+                               placeholder="Saisir votre Indetifiant" required />
+                </div>
+                    <div class="col-md-6 form-password-toggle">
+                        <label class="form-label " for="newPassword">Mot de Passe</label>
+                        <div class="input-group input-group-merge">
+                            <input class="form-control" required
+                                   asp-for="Password"
+                                   type="password"
+                                   placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;" />
+                            <span class="input-group-text cursor-pointer"><i class="ti ti-eye-off"></i></span>
+                        </div>
+                </div>
+                <div class="col-sm-6 form-password-toggle">
+                        <label class="form-label" for="confirmPassword">Confirmer le mot de passe</label>
+                        <div class="input-group input-group-merge">
+                            <input class="form-control" required
+                                   asp-for="ConfirmationPassword"
+                                   type="password"
+                                   placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;" />
+                            <span class="input-group-text cursor-pointer"><i class="ti ti-eye-off"></i></span>
+                        </div>
+                </div>
+
+                
+                <div>
+                    <button type="submit" class="btn btn-primary me-2">S'inscrire</button>
+                </div>
+
+
+
+
+            </div>
+        </form>
+
+
+    </div>
+    </div>

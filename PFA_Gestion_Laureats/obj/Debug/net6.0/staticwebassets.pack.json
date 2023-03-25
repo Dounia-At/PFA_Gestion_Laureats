@@ -5,16 +5,24 @@
       "PackagePath": "staticwebassets\\PFA_Gestion_Laureats.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\3a1c2eca-115a-4a22-afbd-b250fe4487961.png",
+      "PackagePath": "staticwebassets\\3a1c2eca-115a-4a22-afbd-b250fe4487961.png"
+    },
+    {
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\7f8dfe69-eff1-4f95-8708-a3da779a19d51.png",
+      "PackagePath": "staticwebassets\\7f8dfe69-eff1-4f95-8708-a3da779a19d51.png"
+    },
+    {
       "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\css\\demo.css",
       "PackagePath": "staticwebassets\\assets\\css\\demo.css"
     },
     {
-      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\img\\avatars\\1.png",
-      "PackagePath": "staticwebassets\\assets\\img\\avatars\\1.png"
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\img\\avatars\\953436dc-872d-4dea-b227-886c0868b943cat2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\avatars\\953436dc-872d-4dea-b227-886c0868b943cat2.jpg"
     },
     {
-      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\img\\avatars\\2.png",
-      "PackagePath": "staticwebassets\\assets\\img\\avatars\\2.png"
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\img\\avatars\\profil.png",
+      "PackagePath": "staticwebassets\\assets\\img\\avatars\\profil.png"
     },
     {
       "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\img\\icons\\brands\\bootstrap-logo.png",
@@ -211,10 +219,6 @@
     {
       "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\pages\\cards-advance.css",
       "PackagePath": "staticwebassets\\assets\\vendor\\css\\pages\\cards-advance.css"
-    },
-    {
-      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\pages\\page-account-settings.css",
-      "PackagePath": "staticwebassets\\assets\\vendor\\css\\pages\\page-account-settings.css"
     },
     {
       "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\pages\\page-auth.css",
@@ -433,6 +437,18 @@
       "PackagePath": "staticwebassets\\assets\\vendor\\libs\\perfect-scrollbar\\perfect-scrollbar.js.LICENSE.txt"
     },
     {
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\libs\\select2\\select2.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\libs\\select2\\select2.css"
+    },
+    {
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\libs\\select2\\select2.js",
+      "PackagePath": "staticwebassets\\assets\\vendor\\libs\\select2\\select2.js"
+    },
+    {
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\libs\\select2\\select2.js.LICENSE.txt",
+      "PackagePath": "staticwebassets\\assets\\vendor\\libs\\select2\\select2.js.LICENSE.txt"
+    },
+    {
       "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\libs\\typeahead-js\\typeahead.css",
       "PackagePath": "staticwebassets\\assets\\vendor\\libs\\typeahead-js\\typeahead.css"
     },
@@ -443,6 +459,10 @@
     {
       "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\libs\\typeahead-js\\typeahead.js.LICENSE.txt",
       "PackagePath": "staticwebassets\\assets\\vendor\\libs\\typeahead-js\\typeahead.js.LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\bd00e2f7-8272-4f66-aa12-b7aed85a72b81.png",
+      "PackagePath": "staticwebassets\\bd00e2f7-8272-4f66-aa12-b7aed85a72b81.png"
     },
     {
       "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\css\\site.css",

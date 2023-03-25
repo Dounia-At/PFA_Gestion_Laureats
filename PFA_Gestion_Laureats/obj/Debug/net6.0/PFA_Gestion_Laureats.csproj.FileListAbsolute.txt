@@ -85,3 +85,4 @@ C:\Users\atoin\Documents\GitHub\PFA_Gestion_Laureats\PFA_Gestion_Laureats\obj\De
 C:\Users\atoin\Documents\GitHub\PFA_Gestion_Laureats\PFA_Gestion_Laureats\obj\Debug\net6.0\PFA_Gestion_Laureats.pdb
 C:\Users\atoin\Documents\GitHub\PFA_Gestion_Laureats\PFA_Gestion_Laureats\obj\Debug\net6.0\PFA_Gestion_Laureats.genruntimeconfig.cache
 C:\Users\atoin\Documents\GitHub\PFA_Gestion_Laureats\PFA_Gestion_Laureats\obj\Debug\net6.0\ref\PFA_Gestion_Laureats.dll
+C:\Users\atoin\Documents\GitHub\PFA_Gestion_Laureats\PFA_Gestion_Laureats\obj\Debug\net6.0\scopedcss\Views\Shared\_LayoutInscription.cshtml.rz.scp.css

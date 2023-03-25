@@ -1,0 +1,81 @@
+﻿
+@model PFA_Gestion_Laureats.ViewModels.UserViewModel
+
+
+<h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Modification du Profil /</span> Securite</h4>
+
+<div class="row">
+    <div class="col-md-12">
+        <ul class="nav nav-pills flex-column flex-md-row mb-4">
+            <li class="nav-item">
+                <a class="nav-link" asp-controller="User" asp-action="UpdateCompte" ><i class="ti-xs ti ti-users me-1"></i> Account</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="javascript:void(0);"><i class="ti-xs ti ti-lock me-1"></i> Security</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" asp-controller="User" asp-action="UpdatePicture" ><i class="ti-xs ti ti-image me-1"></i> Profil</a>
+            </li>
+        </ul>
+        <!-- Change Password -->
+        <div class="card mb-4">
+            <h5 class="card-header">@Model.Login</h5>
+            <div class="card-body">
+                @if(ViewBag.msgValidation != null)
+                {                    
+                    <div class="alert alert-warning alert-dismissible fade show">
+                        <strong>Attention!</strong> @ViewBag.msgValidation
+                        </div>
+                }
+
+
+                <form  method="POST" >
+                    <div class="row">
+                        <div class="mb-3 col-md-6 form-password-toggle">
+                            <label class="form-label" for="currentPassword">Mot de passe Actuel</label>
+                            <div class="input-group input-group-merge">
+                                <input asp-for="CurrentPassword" required
+                                       class="form-control"
+                                       type="password"
+                                       placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;" />
+                                <span class="input-group-text cursor-pointer"><i class="ti ti-eye-off"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="mb-3 col-md-6 form-password-toggle">
+                            <label class="form-label" for="newPassword">Nouveau mot de passe</label>
+                            <div class="input-group input-group-merge">
+                                <input class="form-control"
+                                       asp-for="Password" required
+                                       type="password"
+                                       placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;" />
+                                <span class="input-group-text cursor-pointer"><i class="ti ti-eye-off"></i></span>
+                            </div>
+                        </div>
+
+                        <div class="mb-3 col-md-6 form-password-toggle">
+                            <label class="form-label" for="confirmPassword">Confirmer le mot de passe</label>
+                            <div class="input-group input-group-merge">
+                                <input asp-for="ConfirmationPassword"
+                                       class="form-control" required
+                                       type="password"
+                                       placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;" />
+                                <span class="input-group-text cursor-pointer"><i class="ti ti-eye-off"></i></span>
+                            </div>
+                        </div>
+                       
+                        <div>
+                            <button type="submit" class="btn btn-primary me-2">Modifier</button>
+                            <button type="button" asp-controller="User" asp-action="Index"  class="btn btn-label-secondary">Cancel</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!--/ Change Password -->
+       
+       
+       
+    </div>
+</div>

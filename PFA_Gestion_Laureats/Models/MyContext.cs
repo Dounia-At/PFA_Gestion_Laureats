@@ -10,6 +10,8 @@ namespace PFA_Gestion_Laureats.Models
     public class MyContext:DbContext
     {
         public DbSet<Etudiant> Etudiants { get; set; }
+        public DbSet<Laureat> Laureats { get; set; }
+        public DbSet<AgentDirection> Agents { get; set; }
         public DbSet<Utilisateur> Utilisateurs { get; set; }
         public DbSet<Stage> Stages { get; set; }
         public DbSet<Projet> Projets { get; set; }
@@ -26,14 +28,11 @@ namespace PFA_Gestion_Laureats.Models
             .HasIndex(u => u.Login)
             .IsUnique();
 
-            modelBuilder.Entity<Etudiant>()
-              .HasDiscriminator<string>("EtudiantRole")
-              .HasValue<Laureat>("Laureat");
-
             modelBuilder.Entity<Utilisateur>()
               .HasDiscriminator<string>("UtilisateurRole")
               .HasValue<AgentDirection>("Agent")
-              .HasValue<Etudiant>("Etudiant");
+              .HasValue<Etudiant>("Etudiant")
+              .HasValue<Laureat>("Laureat");
 
            
             modelBuilder.Entity<Message>()
