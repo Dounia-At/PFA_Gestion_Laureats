@@ -1,20 +1,16 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\PFA_Gestion_Laureats.bundle.scp.css",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\PFA_Gestion_Laureats.bundle.scp.css",
       "PackagePath": "staticwebassets\\PFA_Gestion_Laureats.bundle.scp.css"
-    },
-    {
-      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\3a1c2eca-115a-4a22-afbd-b250fe4487961.png",
-      "PackagePath": "staticwebassets\\3a1c2eca-115a-4a22-afbd-b250fe4487961.png"
-    },
-    {
-      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\7f8dfe69-eff1-4f95-8708-a3da779a19d51.png",
-      "PackagePath": "staticwebassets\\7f8dfe69-eff1-4f95-8708-a3da779a19d51.png"
     },
     {
       "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\css\\demo.css",
       "PackagePath": "staticwebassets\\assets\\css\\demo.css"
+    },
+    {
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\img\\avatars\\0d442e2b-d4ca-4003-8e3b-3c41d93bc5f1BIMO.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\avatars\\0d442e2b-d4ca-4003-8e3b-3c41d93bc5f1BIMO.jpg"
     },
     {
       "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\img\\avatars\\953436dc-872d-4dea-b227-886c0868b943cat2.jpg",
@@ -25,199 +21,199 @@
       "PackagePath": "staticwebassets\\assets\\img\\avatars\\profil.png"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\img\\icons\\brands\\bootstrap-logo.png",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\img\\icons\\brands\\bootstrap-logo.png",
       "PackagePath": "staticwebassets\\assets\\img\\icons\\brands\\bootstrap-logo.png"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\img\\icons\\brands\\chrome.png",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\img\\icons\\brands\\chrome.png",
       "PackagePath": "staticwebassets\\assets\\img\\icons\\brands\\chrome.png"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\img\\icons\\brands\\edge.png",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\img\\icons\\brands\\edge.png",
       "PackagePath": "staticwebassets\\assets\\img\\icons\\brands\\edge.png"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\img\\icons\\brands\\facebook.png",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\img\\icons\\brands\\facebook.png",
       "PackagePath": "staticwebassets\\assets\\img\\icons\\brands\\facebook.png"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\img\\icons\\brands\\figma-logo.png",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\img\\icons\\brands\\figma-logo.png",
       "PackagePath": "staticwebassets\\assets\\img\\icons\\brands\\figma-logo.png"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\img\\icons\\brands\\firefox.png",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\img\\icons\\brands\\firefox.png",
       "PackagePath": "staticwebassets\\assets\\img\\icons\\brands\\firefox.png"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\img\\icons\\brands\\github.png",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\img\\icons\\brands\\github.png",
       "PackagePath": "staticwebassets\\assets\\img\\icons\\brands\\github.png"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\img\\icons\\brands\\google.png",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\img\\icons\\brands\\google.png",
       "PackagePath": "staticwebassets\\assets\\img\\icons\\brands\\google.png"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\img\\icons\\brands\\instagram.png",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\img\\icons\\brands\\instagram.png",
       "PackagePath": "staticwebassets\\assets\\img\\icons\\brands\\instagram.png"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\img\\icons\\brands\\laravel-logo.png",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\img\\icons\\brands\\laravel-logo.png",
       "PackagePath": "staticwebassets\\assets\\img\\icons\\brands\\laravel-logo.png"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\img\\icons\\brands\\mailchimp.png",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\img\\icons\\brands\\mailchimp.png",
       "PackagePath": "staticwebassets\\assets\\img\\icons\\brands\\mailchimp.png"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\img\\icons\\brands\\opera.png",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\img\\icons\\brands\\opera.png",
       "PackagePath": "staticwebassets\\assets\\img\\icons\\brands\\opera.png"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\img\\icons\\brands\\react-logo.png",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\img\\icons\\brands\\react-logo.png",
       "PackagePath": "staticwebassets\\assets\\img\\icons\\brands\\react-logo.png"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\img\\icons\\brands\\safari.png",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\img\\icons\\brands\\safari.png",
       "PackagePath": "staticwebassets\\assets\\img\\icons\\brands\\safari.png"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\img\\icons\\brands\\slack.png",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\img\\icons\\brands\\slack.png",
       "PackagePath": "staticwebassets\\assets\\img\\icons\\brands\\slack.png"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\img\\icons\\brands\\twitter.png",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\img\\icons\\brands\\twitter.png",
       "PackagePath": "staticwebassets\\assets\\img\\icons\\brands\\twitter.png"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\img\\icons\\brands\\vue-logo.png",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\img\\icons\\brands\\vue-logo.png",
       "PackagePath": "staticwebassets\\assets\\img\\icons\\brands\\vue-logo.png"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\img\\logo\\eheio.png",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\img\\logo\\2e9e7e11-4afd-4d93-b97e-d7cedd848ca2SQLI Oujda.png",
+      "PackagePath": "staticwebassets\\assets\\img\\logo\\2e9e7e11-4afd-4d93-b97e-d7cedd848ca2SQLI Oujda.png"
+    },
+    {
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\img\\logo\\eheio.png",
       "PackagePath": "staticwebassets\\assets\\img\\logo\\eheio.png"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\img\\pages\\header.png",
-      "PackagePath": "staticwebassets\\assets\\img\\pages\\header.png"
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\img\\logo\\entrepriseLogo.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\logo\\entrepriseLogo.jpg"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\img\\pages\\profile-banner.png",
-      "PackagePath": "staticwebassets\\assets\\img\\pages\\profile-banner.png"
-    },
-    {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\js\\config.js",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\js\\config.js",
       "PackagePath": "staticwebassets\\assets\\js\\config.js"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\js\\main.js",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\js\\main.js",
       "PackagePath": "staticwebassets\\assets\\js\\main.js"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\json\\ajax.php",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\json\\ajax.php",
       "PackagePath": "staticwebassets\\assets\\json\\ajax.php"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\json\\earning-reports-charts.json",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\json\\earning-reports-charts.json",
       "PackagePath": "staticwebassets\\assets\\json\\earning-reports-charts.json"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\json\\invoice-list.json",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\json\\invoice-list.json",
       "PackagePath": "staticwebassets\\assets\\json\\invoice-list.json"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\json\\jstree-data.json",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\json\\jstree-data.json",
       "PackagePath": "staticwebassets\\assets\\json\\jstree-data.json"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\json\\kanban.json",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\json\\kanban.json",
       "PackagePath": "staticwebassets\\assets\\json\\kanban.json"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\json\\locales\\de.json",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\json\\locales\\de.json",
       "PackagePath": "staticwebassets\\assets\\json\\locales\\de.json"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\json\\locales\\en.json",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\json\\locales\\en.json",
       "PackagePath": "staticwebassets\\assets\\json\\locales\\en.json"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\json\\locales\\fr.json",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\json\\locales\\fr.json",
       "PackagePath": "staticwebassets\\assets\\json\\locales\\fr.json"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\json\\locales\\pt.json",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\json\\locales\\pt.json",
       "PackagePath": "staticwebassets\\assets\\json\\locales\\pt.json"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\json\\permissions-list.json",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\json\\permissions-list.json",
       "PackagePath": "staticwebassets\\assets\\json\\permissions-list.json"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\json\\projects-list.json",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\json\\projects-list.json",
       "PackagePath": "staticwebassets\\assets\\json\\projects-list.json"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\json\\search-horizontal.json",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\json\\search-horizontal.json",
       "PackagePath": "staticwebassets\\assets\\json\\search-horizontal.json"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\json\\search-vertical.json",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\json\\search-vertical.json",
       "PackagePath": "staticwebassets\\assets\\json\\search-vertical.json"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\json\\table-datatable.json",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\json\\table-datatable.json",
       "PackagePath": "staticwebassets\\assets\\json\\table-datatable.json"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\json\\table-ecommerce.json",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\json\\table-ecommerce.json",
       "PackagePath": "staticwebassets\\assets\\json\\table-ecommerce.json"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\json\\typeahead-data-2.json",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\json\\typeahead-data-2.json",
       "PackagePath": "staticwebassets\\assets\\json\\typeahead-data-2.json"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\json\\typeahead.json",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\json\\typeahead.json",
       "PackagePath": "staticwebassets\\assets\\json\\typeahead.json"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\json\\user-list.json",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\json\\user-list.json",
       "PackagePath": "staticwebassets\\assets\\json\\user-list.json"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\json\\user-profile.json",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\json\\user-profile.json",
       "PackagePath": "staticwebassets\\assets\\json\\user-profile.json"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\core-dark.css",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\core-dark.css",
       "PackagePath": "staticwebassets\\assets\\vendor\\css\\core-dark.css"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\core.css",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\core.css",
       "PackagePath": "staticwebassets\\assets\\vendor\\css\\core.css"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\pages\\advanced-wizard.css",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\pages\\advanced-wizard.css",
       "PackagePath": "staticwebassets\\assets\\vendor\\css\\pages\\advanced-wizard.css"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\pages\\app-calendar.css",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\pages\\app-calendar.css",
       "PackagePath": "staticwebassets\\assets\\vendor\\css\\pages\\app-calendar.css"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\pages\\app-chat.css",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\pages\\app-chat.css",
       "PackagePath": "staticwebassets\\assets\\vendor\\css\\pages\\app-chat.css"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\pages\\app-email.css",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\pages\\app-email.css",
       "PackagePath": "staticwebassets\\assets\\vendor\\css\\pages\\app-email.css"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\pages\\app-kanban.css",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\pages\\app-kanban.css",
       "PackagePath": "staticwebassets\\assets\\vendor\\css\\pages\\app-kanban.css"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\pages\\cards-advance.css",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\pages\\cards-advance.css",
       "PackagePath": "staticwebassets\\assets\\vendor\\css\\pages\\cards-advance.css"
     },
     {
@@ -225,215 +221,215 @@
       "PackagePath": "staticwebassets\\assets\\vendor\\css\\pages\\page-auth.css"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\pages\\page-faq.css",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\pages\\page-faq.css",
       "PackagePath": "staticwebassets\\assets\\vendor\\css\\pages\\page-faq.css"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\pages\\page-help-center.css",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\pages\\page-help-center.css",
       "PackagePath": "staticwebassets\\assets\\vendor\\css\\pages\\page-help-center.css"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\pages\\page-icons.css",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\pages\\page-icons.css",
       "PackagePath": "staticwebassets\\assets\\vendor\\css\\pages\\page-icons.css"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\pages\\page-misc.css",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\pages\\page-misc.css",
       "PackagePath": "staticwebassets\\assets\\vendor\\css\\pages\\page-misc.css"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\pages\\page-pricing.css",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\pages\\page-pricing.css",
       "PackagePath": "staticwebassets\\assets\\vendor\\css\\pages\\page-pricing.css"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\pages\\page-profile.css",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\pages\\page-profile.css",
       "PackagePath": "staticwebassets\\assets\\vendor\\css\\pages\\page-profile.css"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\pages\\page-user-view.css",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\pages\\page-user-view.css",
       "PackagePath": "staticwebassets\\assets\\vendor\\css\\pages\\page-user-view.css"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\pages\\ui-carousel.css",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\pages\\ui-carousel.css",
       "PackagePath": "staticwebassets\\assets\\vendor\\css\\pages\\ui-carousel.css"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\pages\\wizard-ex-checkout.css",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\pages\\wizard-ex-checkout.css",
       "PackagePath": "staticwebassets\\assets\\vendor\\css\\pages\\wizard-ex-checkout.css"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\rtl\\core-dark.css",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\rtl\\core-dark.css",
       "PackagePath": "staticwebassets\\assets\\vendor\\css\\rtl\\core-dark.css"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\rtl\\core.css",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\rtl\\core.css",
       "PackagePath": "staticwebassets\\assets\\vendor\\css\\rtl\\core.css"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\rtl\\theme-default-dark.css",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\rtl\\theme-default-dark.css",
       "PackagePath": "staticwebassets\\assets\\vendor\\css\\rtl\\theme-default-dark.css"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\rtl\\theme-default.css",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\rtl\\theme-default.css",
       "PackagePath": "staticwebassets\\assets\\vendor\\css\\rtl\\theme-default.css"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\rtl\\theme-semi-dark-dark.css",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\rtl\\theme-semi-dark-dark.css",
       "PackagePath": "staticwebassets\\assets\\vendor\\css\\rtl\\theme-semi-dark-dark.css"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\rtl\\theme-semi-dark.css",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\rtl\\theme-semi-dark.css",
       "PackagePath": "staticwebassets\\assets\\vendor\\css\\rtl\\theme-semi-dark.css"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\theme-default-dark.css",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\theme-default-dark.css",
       "PackagePath": "staticwebassets\\assets\\vendor\\css\\theme-default-dark.css"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\theme-default.css",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\theme-default.css",
       "PackagePath": "staticwebassets\\assets\\vendor\\css\\theme-default.css"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\theme-semi-dark-dark.css",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\theme-semi-dark-dark.css",
       "PackagePath": "staticwebassets\\assets\\vendor\\css\\theme-semi-dark-dark.css"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\theme-semi-dark.css",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\theme-semi-dark.css",
       "PackagePath": "staticwebassets\\assets\\vendor\\css\\theme-semi-dark.css"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\fonts\\flag-icons.css",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\fonts\\flag-icons.css",
       "PackagePath": "staticwebassets\\assets\\vendor\\fonts\\flag-icons.css"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\fonts\\fontawesome.css",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\fonts\\fontawesome.css",
       "PackagePath": "staticwebassets\\assets\\vendor\\fonts\\fontawesome.css"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\fonts\\fontawesome\\fa-brands-400.ttf",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\fonts\\fontawesome\\fa-brands-400.ttf",
       "PackagePath": "staticwebassets\\assets\\vendor\\fonts\\fontawesome\\fa-brands-400.ttf"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\fonts\\fontawesome\\fa-brands-400.woff2",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\fonts\\fontawesome\\fa-brands-400.woff2",
       "PackagePath": "staticwebassets\\assets\\vendor\\fonts\\fontawesome\\fa-brands-400.woff2"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\fonts\\fontawesome\\fa-regular-400.ttf",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\fonts\\fontawesome\\fa-regular-400.ttf",
       "PackagePath": "staticwebassets\\assets\\vendor\\fonts\\fontawesome\\fa-regular-400.ttf"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\fonts\\fontawesome\\fa-regular-400.woff2",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\fonts\\fontawesome\\fa-regular-400.woff2",
       "PackagePath": "staticwebassets\\assets\\vendor\\fonts\\fontawesome\\fa-regular-400.woff2"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\fonts\\fontawesome\\fa-solid-900.ttf",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\fonts\\fontawesome\\fa-solid-900.ttf",
       "PackagePath": "staticwebassets\\assets\\vendor\\fonts\\fontawesome\\fa-solid-900.ttf"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\fonts\\fontawesome\\fa-solid-900.woff2",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\fonts\\fontawesome\\fa-solid-900.woff2",
       "PackagePath": "staticwebassets\\assets\\vendor\\fonts\\fontawesome\\fa-solid-900.woff2"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\fonts\\fontawesome\\fa-v4compatibility.ttf",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\fonts\\fontawesome\\fa-v4compatibility.ttf",
       "PackagePath": "staticwebassets\\assets\\vendor\\fonts\\fontawesome\\fa-v4compatibility.ttf"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\fonts\\fontawesome\\fa-v4compatibility.woff2",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\fonts\\fontawesome\\fa-v4compatibility.woff2",
       "PackagePath": "staticwebassets\\assets\\vendor\\fonts\\fontawesome\\fa-v4compatibility.woff2"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\fonts\\tabler-icons.css",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\fonts\\tabler-icons.css",
       "PackagePath": "staticwebassets\\assets\\vendor\\fonts\\tabler-icons.css"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\fonts\\tabler\\tabler-icons.eot",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\fonts\\tabler\\tabler-icons.eot",
       "PackagePath": "staticwebassets\\assets\\vendor\\fonts\\tabler\\tabler-icons.eot"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\fonts\\tabler\\tabler-icons.svg",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\fonts\\tabler\\tabler-icons.svg",
       "PackagePath": "staticwebassets\\assets\\vendor\\fonts\\tabler\\tabler-icons.svg"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\fonts\\tabler\\tabler-icons.ttf",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\fonts\\tabler\\tabler-icons.ttf",
       "PackagePath": "staticwebassets\\assets\\vendor\\fonts\\tabler\\tabler-icons.ttf"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\fonts\\tabler\\tabler-icons.woff",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\fonts\\tabler\\tabler-icons.woff",
       "PackagePath": "staticwebassets\\assets\\vendor\\fonts\\tabler\\tabler-icons.woff"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\fonts\\tabler\\tabler-icons.woff2",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\fonts\\tabler\\tabler-icons.woff2",
       "PackagePath": "staticwebassets\\assets\\vendor\\fonts\\tabler\\tabler-icons.woff2"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\js\\bootstrap.js",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\assets\\vendor\\js\\bootstrap.js"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\js\\bootstrap.js.LICENSE.txt",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\js\\bootstrap.js.LICENSE.txt",
       "PackagePath": "staticwebassets\\assets\\vendor\\js\\bootstrap.js.LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\js\\dropdown-hover.js",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\js\\dropdown-hover.js",
       "PackagePath": "staticwebassets\\assets\\vendor\\js\\dropdown-hover.js"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\js\\helpers.js",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\js\\helpers.js",
       "PackagePath": "staticwebassets\\assets\\vendor\\js\\helpers.js"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\js\\mega-dropdown.js",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\js\\mega-dropdown.js",
       "PackagePath": "staticwebassets\\assets\\vendor\\js\\mega-dropdown.js"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\js\\menu.js",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\js\\menu.js",
       "PackagePath": "staticwebassets\\assets\\vendor\\js\\menu.js"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\js\\template-customizer.js",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\js\\template-customizer.js",
       "PackagePath": "staticwebassets\\assets\\vendor\\js\\template-customizer.js"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\libs\\animate-css\\animate.css",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\libs\\animate-css\\animate.css",
       "PackagePath": "staticwebassets\\assets\\vendor\\libs\\animate-css\\animate.css"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\libs\\animate-on-scroll\\animate-on-scroll.css",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\libs\\animate-on-scroll\\animate-on-scroll.css",
       "PackagePath": "staticwebassets\\assets\\vendor\\libs\\animate-on-scroll\\animate-on-scroll.css"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\libs\\animate-on-scroll\\animate-on-scroll.js",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\libs\\animate-on-scroll\\animate-on-scroll.js",
       "PackagePath": "staticwebassets\\assets\\vendor\\libs\\animate-on-scroll\\animate-on-scroll.js"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\libs\\jquery\\jquery.js",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\libs\\jquery\\jquery.js",
       "PackagePath": "staticwebassets\\assets\\vendor\\libs\\jquery\\jquery.js"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\libs\\jquery\\jquery.js.LICENSE.txt",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\libs\\jquery\\jquery.js.LICENSE.txt",
       "PackagePath": "staticwebassets\\assets\\vendor\\libs\\jquery\\jquery.js.LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\libs\\node-waves\\node-waves.css",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\libs\\node-waves\\node-waves.css",
       "PackagePath": "staticwebassets\\assets\\vendor\\libs\\node-waves\\node-waves.css"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\libs\\node-waves\\node-waves.js",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\libs\\node-waves\\node-waves.js",
       "PackagePath": "staticwebassets\\assets\\vendor\\libs\\node-waves\\node-waves.js"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\libs\\node-waves\\node-waves.js.LICENSE.txt",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\libs\\node-waves\\node-waves.js.LICENSE.txt",
       "PackagePath": "staticwebassets\\assets\\vendor\\libs\\node-waves\\node-waves.js.LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\libs\\perfect-scrollbar\\perfect-scrollbar.css",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\libs\\perfect-scrollbar\\perfect-scrollbar.css",
       "PackagePath": "staticwebassets\\assets\\vendor\\libs\\perfect-scrollbar\\perfect-scrollbar.css"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\libs\\perfect-scrollbar\\perfect-scrollbar.js",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\libs\\perfect-scrollbar\\perfect-scrollbar.js",
       "PackagePath": "staticwebassets\\assets\\vendor\\libs\\perfect-scrollbar\\perfect-scrollbar.js"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\libs\\perfect-scrollbar\\perfect-scrollbar.js.LICENSE.txt",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\libs\\perfect-scrollbar\\perfect-scrollbar.js.LICENSE.txt",
       "PackagePath": "staticwebassets\\assets\\vendor\\libs\\perfect-scrollbar\\perfect-scrollbar.js.LICENSE.txt"
     },
     {
@@ -453,255 +449,251 @@
       "PackagePath": "staticwebassets\\assets\\vendor\\libs\\typeahead-js\\typeahead.css"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\libs\\typeahead-js\\typeahead.js",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\libs\\typeahead-js\\typeahead.js",
       "PackagePath": "staticwebassets\\assets\\vendor\\libs\\typeahead-js\\typeahead.js"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\libs\\typeahead-js\\typeahead.js.LICENSE.txt",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\libs\\typeahead-js\\typeahead.js.LICENSE.txt",
       "PackagePath": "staticwebassets\\assets\\vendor\\libs\\typeahead-js\\typeahead.js.LICENSE.txt"
-    },
-    {
-      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\bd00e2f7-8272-4f66-aa12-b7aed85a72b81.png",
-      "PackagePath": "staticwebassets\\bd00e2f7-8272-4f66-aa12-b7aed85a72b81.png"
     },
     {
       "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\favicon.ico",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\js\\site.js",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {

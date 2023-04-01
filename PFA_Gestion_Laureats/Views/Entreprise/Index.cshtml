@@ -1,0 +1,55 @@
+﻿@model List<Entreprise>
+
+@if(ViewBag.role == "Agent")
+{
+    <div class="container mt-5 d-flex flex-row-reverse">
+        <a class="btn btn-primary" asp-controller="Entreprise" asp-action="Add">+ Nouvelle Entreprise</a>
+        <br />
+        <br />
+    </div>
+    
+}
+
+@foreach(Entreprise entreprise in Model)
+{
+    <div class="row mb-5">
+        <div class="col-md">
+            <div class="card mb-3">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img class="card-img card-img-left" src="../../assets/img/logo/@entreprise.Logo" alt="Card image" />
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">@entreprise.Nom</h5>
+                            <p class="card-text">
+                                @entreprise.Description
+                                <br/> <br/> 
+                                @if (entreprise.Convention)
+                                {
+                                    <b>Conventionné</b>
+                                }
+
+                                <hr class="my-0" /> <br/>
+                                @entreprise.Pays @entreprise.Ville
+                                <br />
+                                @entreprise.Adresse
+                            </p>
+                            @if(ViewBag.role == "Agent")
+                            {
+                                <a asp-controller="Entreprise" asp-action="Delete" asp-route-id="@entreprise.Id" class="btn btn-label-danger btn-icon waves-effect ">
+                                    <i class="ti ti-trash ti-sm"></i>
+                                </a>
+
+                                <a asp-controller="Entreprise" asp-action="Update" asp-route-id="@entreprise.Id" class="btn btn-label-success btn-icon waves-effect ">
+                                    <i class="ti ti-edit ti-sm"></i>
+                                </a>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+}

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "sNIVT36MFsS9QSF4nVvEre5Qkv6jm1HSt8aB/8Puhnw=",
+  "Hash": "rcRkgNTTiFxiJeDoqaBkyiezi9fHJB/eKjdGVKmh+3E=",
   "Source": "PFA_Gestion_Laureats",
   "BasePath": "_content/PFA_Gestion_Laureats",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "PFA_Gestion_Laureats\\wwwroot",
       "Source": "PFA_Gestion_Laureats",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\obj\\Debug\\net6.0\\scopedcss\\bundle\\PFA_Gestion_Laureats.styles.css",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\obj\\Debug\\net6.0\\scopedcss\\bundle\\PFA_Gestion_Laureats.styles.css",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "PFA_Gestion_Laureats.styles.css",
       "AssetKind": "All",
@@ -31,13 +31,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\obj\\Debug\\net6.0\\scopedcss\\bundle\\PFA_Gestion_Laureats.styles.css"
+      "OriginalItemSpec": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\obj\\Debug\\net6.0\\scopedcss\\bundle\\PFA_Gestion_Laureats.styles.css"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\PFA_Gestion_Laureats.bundle.scp.css",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\PFA_Gestion_Laureats.bundle.scp.css",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "PFA_Gestion_Laureats.bundle.scp.css",
       "AssetKind": "All",
@@ -48,47 +48,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\PFA_Gestion_Laureats.bundle.scp.css"
-    },
-    {
-      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\3a1c2eca-115a-4a22-afbd-b250fe4487961.png",
-      "SourceId": "PFA_Gestion_Laureats",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
-      "BasePath": "_content/PFA_Gestion_Laureats",
-      "RelativePath": "3a1c2eca-115a-4a22-afbd-b250fe4487961.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\3a1c2eca-115a-4a22-afbd-b250fe4487961.png"
-    },
-    {
-      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\7f8dfe69-eff1-4f95-8708-a3da779a19d51.png",
-      "SourceId": "PFA_Gestion_Laureats",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
-      "BasePath": "_content/PFA_Gestion_Laureats",
-      "RelativePath": "7f8dfe69-eff1-4f95-8708-a3da779a19d51.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\7f8dfe69-eff1-4f95-8708-a3da779a19d51.png"
+      "OriginalItemSpec": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\PFA_Gestion_Laureats.bundle.scp.css"
     },
     {
       "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\css\\demo.css",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/css/demo.css",
       "AssetKind": "All",
@@ -102,10 +68,27 @@
       "OriginalItemSpec": "wwwroot\\assets\\css\\demo.css"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\img\\avatars\\1.png",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\img\\avatars\\0d442e2b-d4ca-4003-8e3b-3c41d93bc5f1BIMO.jpg",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "BasePath": "_content/PFA_Gestion_Laureats",
+      "RelativePath": "assets/img/avatars/0d442e2b-d4ca-4003-8e3b-3c41d93bc5f1BIMO.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\avatars\\0d442e2b-d4ca-4003-8e3b-3c41d93bc5f1BIMO.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\img\\avatars\\953436dc-872d-4dea-b227-886c0868b943cat2.jpg",
+      "SourceId": "PFA_Gestion_Laureats",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/img/avatars/953436dc-872d-4dea-b227-886c0868b943cat2.jpg",
       "AssetKind": "All",
@@ -119,10 +102,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\avatars\\953436dc-872d-4dea-b227-886c0868b943cat2.jpg"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\img\\avatars\\2.png",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\img\\avatars\\profil.png",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/img/avatars/profil.png",
       "AssetKind": "All",
@@ -136,10 +119,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\avatars\\profil.png"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\img\\icons\\brands\\bootstrap-logo.png",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\img\\icons\\brands\\bootstrap-logo.png",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/img/icons/brands/bootstrap-logo.png",
       "AssetKind": "All",
@@ -153,10 +136,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\icons\\brands\\bootstrap-logo.png"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\img\\icons\\brands\\chrome.png",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\img\\icons\\brands\\chrome.png",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/img/icons/brands/chrome.png",
       "AssetKind": "All",
@@ -170,10 +153,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\icons\\brands\\chrome.png"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\img\\icons\\brands\\edge.png",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\img\\icons\\brands\\edge.png",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/img/icons/brands/edge.png",
       "AssetKind": "All",
@@ -187,10 +170,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\icons\\brands\\edge.png"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\img\\icons\\brands\\facebook.png",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\img\\icons\\brands\\facebook.png",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/img/icons/brands/facebook.png",
       "AssetKind": "All",
@@ -204,10 +187,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\icons\\brands\\facebook.png"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\img\\icons\\brands\\figma-logo.png",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\img\\icons\\brands\\figma-logo.png",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/img/icons/brands/figma-logo.png",
       "AssetKind": "All",
@@ -221,10 +204,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\icons\\brands\\figma-logo.png"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\img\\icons\\brands\\firefox.png",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\img\\icons\\brands\\firefox.png",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/img/icons/brands/firefox.png",
       "AssetKind": "All",
@@ -238,10 +221,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\icons\\brands\\firefox.png"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\img\\icons\\brands\\github.png",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\img\\icons\\brands\\github.png",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/img/icons/brands/github.png",
       "AssetKind": "All",
@@ -255,10 +238,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\icons\\brands\\github.png"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\img\\icons\\brands\\google.png",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\img\\icons\\brands\\google.png",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/img/icons/brands/google.png",
       "AssetKind": "All",
@@ -272,10 +255,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\icons\\brands\\google.png"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\img\\icons\\brands\\instagram.png",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\img\\icons\\brands\\instagram.png",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/img/icons/brands/instagram.png",
       "AssetKind": "All",
@@ -289,10 +272,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\icons\\brands\\instagram.png"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\img\\icons\\brands\\laravel-logo.png",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\img\\icons\\brands\\laravel-logo.png",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/img/icons/brands/laravel-logo.png",
       "AssetKind": "All",
@@ -306,10 +289,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\icons\\brands\\laravel-logo.png"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\img\\icons\\brands\\mailchimp.png",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\img\\icons\\brands\\mailchimp.png",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/img/icons/brands/mailchimp.png",
       "AssetKind": "All",
@@ -323,10 +306,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\icons\\brands\\mailchimp.png"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\img\\icons\\brands\\opera.png",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\img\\icons\\brands\\opera.png",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/img/icons/brands/opera.png",
       "AssetKind": "All",
@@ -340,10 +323,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\icons\\brands\\opera.png"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\img\\icons\\brands\\react-logo.png",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\img\\icons\\brands\\react-logo.png",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/img/icons/brands/react-logo.png",
       "AssetKind": "All",
@@ -357,10 +340,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\icons\\brands\\react-logo.png"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\img\\icons\\brands\\safari.png",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\img\\icons\\brands\\safari.png",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/img/icons/brands/safari.png",
       "AssetKind": "All",
@@ -374,10 +357,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\icons\\brands\\safari.png"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\img\\icons\\brands\\slack.png",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\img\\icons\\brands\\slack.png",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/img/icons/brands/slack.png",
       "AssetKind": "All",
@@ -391,10 +374,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\icons\\brands\\slack.png"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\img\\icons\\brands\\twitter.png",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\img\\icons\\brands\\twitter.png",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/img/icons/brands/twitter.png",
       "AssetKind": "All",
@@ -408,10 +391,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\icons\\brands\\twitter.png"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\img\\icons\\brands\\vue-logo.png",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\img\\icons\\brands\\vue-logo.png",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/img/icons/brands/vue-logo.png",
       "AssetKind": "All",
@@ -425,10 +408,27 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\icons\\brands\\vue-logo.png"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\img\\logo\\eheio.png",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\img\\logo\\2e9e7e11-4afd-4d93-b97e-d7cedd848ca2SQLI Oujda.png",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "BasePath": "_content/PFA_Gestion_Laureats",
+      "RelativePath": "assets/img/logo/2e9e7e11-4afd-4d93-b97e-d7cedd848ca2SQLI Oujda.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\logo\\2e9e7e11-4afd-4d93-b97e-d7cedd848ca2SQLI Oujda.png"
+    },
+    {
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\img\\logo\\eheio.png",
+      "SourceId": "PFA_Gestion_Laureats",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/img/logo/eheio.png",
       "AssetKind": "All",
@@ -442,12 +442,12 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\logo\\eheio.png"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\img\\pages\\header.png",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\img\\logo\\entrepriseLogo.jpg",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
-      "RelativePath": "assets/img/pages/header.png",
+      "RelativePath": "assets/img/logo/entrepriseLogo.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -456,30 +456,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\assets\\img\\pages\\header.png"
+      "OriginalItemSpec": "wwwroot\\assets\\img\\logo\\entrepriseLogo.jpg"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\img\\pages\\profile-banner.png",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\js\\config.js",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
-      "BasePath": "_content/PFA_Gestion_Laureats",
-      "RelativePath": "assets/img/pages/profile-banner.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\assets\\img\\pages\\profile-banner.png"
-    },
-    {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\js\\config.js",
-      "SourceId": "PFA_Gestion_Laureats",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/js/config.js",
       "AssetKind": "All",
@@ -493,10 +476,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\js\\config.js"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\js\\main.js",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\js\\main.js",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/js/main.js",
       "AssetKind": "All",
@@ -510,10 +493,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\js\\main.js"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\json\\ajax.php",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\json\\ajax.php",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/json/ajax.php",
       "AssetKind": "All",
@@ -527,10 +510,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\json\\ajax.php"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\json\\earning-reports-charts.json",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\json\\earning-reports-charts.json",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/json/earning-reports-charts.json",
       "AssetKind": "All",
@@ -544,10 +527,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\json\\earning-reports-charts.json"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\json\\invoice-list.json",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\json\\invoice-list.json",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/json/invoice-list.json",
       "AssetKind": "All",
@@ -561,10 +544,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\json\\invoice-list.json"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\json\\jstree-data.json",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\json\\jstree-data.json",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/json/jstree-data.json",
       "AssetKind": "All",
@@ -578,10 +561,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\json\\jstree-data.json"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\json\\kanban.json",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\json\\kanban.json",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/json/kanban.json",
       "AssetKind": "All",
@@ -595,10 +578,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\json\\kanban.json"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\json\\locales\\de.json",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\json\\locales\\de.json",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/json/locales/de.json",
       "AssetKind": "All",
@@ -612,10 +595,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\json\\locales\\de.json"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\json\\locales\\en.json",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\json\\locales\\en.json",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/json/locales/en.json",
       "AssetKind": "All",
@@ -629,10 +612,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\json\\locales\\en.json"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\json\\locales\\fr.json",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\json\\locales\\fr.json",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/json/locales/fr.json",
       "AssetKind": "All",
@@ -646,10 +629,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\json\\locales\\fr.json"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\json\\locales\\pt.json",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\json\\locales\\pt.json",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/json/locales/pt.json",
       "AssetKind": "All",
@@ -663,10 +646,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\json\\locales\\pt.json"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\json\\permissions-list.json",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\json\\permissions-list.json",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/json/permissions-list.json",
       "AssetKind": "All",
@@ -680,10 +663,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\json\\permissions-list.json"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\json\\projects-list.json",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\json\\projects-list.json",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/json/projects-list.json",
       "AssetKind": "All",
@@ -697,10 +680,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\json\\projects-list.json"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\json\\search-horizontal.json",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\json\\search-horizontal.json",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/json/search-horizontal.json",
       "AssetKind": "All",
@@ -714,10 +697,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\json\\search-horizontal.json"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\json\\search-vertical.json",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\json\\search-vertical.json",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/json/search-vertical.json",
       "AssetKind": "All",
@@ -731,10 +714,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\json\\search-vertical.json"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\json\\table-datatable.json",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\json\\table-datatable.json",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/json/table-datatable.json",
       "AssetKind": "All",
@@ -748,10 +731,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\json\\table-datatable.json"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\json\\table-ecommerce.json",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\json\\table-ecommerce.json",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/json/table-ecommerce.json",
       "AssetKind": "All",
@@ -765,10 +748,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\json\\table-ecommerce.json"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\json\\typeahead.json",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\json\\typeahead.json",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/json/typeahead.json",
       "AssetKind": "All",
@@ -782,10 +765,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\json\\typeahead.json"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\json\\typeahead-data-2.json",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\json\\typeahead-data-2.json",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/json/typeahead-data-2.json",
       "AssetKind": "All",
@@ -799,10 +782,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\json\\typeahead-data-2.json"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\json\\user-list.json",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\json\\user-list.json",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/json/user-list.json",
       "AssetKind": "All",
@@ -816,10 +799,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\json\\user-list.json"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\json\\user-profile.json",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\json\\user-profile.json",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/json/user-profile.json",
       "AssetKind": "All",
@@ -833,10 +816,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\json\\user-profile.json"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\core.css",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\core.css",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/vendor/css/core.css",
       "AssetKind": "All",
@@ -850,10 +833,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\css\\core.css"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\core-dark.css",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\core-dark.css",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/vendor/css/core-dark.css",
       "AssetKind": "All",
@@ -867,10 +850,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\css\\core-dark.css"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\pages\\advanced-wizard.css",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\pages\\advanced-wizard.css",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/vendor/css/pages/advanced-wizard.css",
       "AssetKind": "All",
@@ -884,10 +867,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\css\\pages\\advanced-wizard.css"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\pages\\app-calendar.css",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\pages\\app-calendar.css",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/vendor/css/pages/app-calendar.css",
       "AssetKind": "All",
@@ -901,10 +884,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\css\\pages\\app-calendar.css"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\pages\\app-chat.css",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\pages\\app-chat.css",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/vendor/css/pages/app-chat.css",
       "AssetKind": "All",
@@ -918,10 +901,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\css\\pages\\app-chat.css"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\pages\\app-email.css",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\pages\\app-email.css",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/vendor/css/pages/app-email.css",
       "AssetKind": "All",
@@ -935,10 +918,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\css\\pages\\app-email.css"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\pages\\app-kanban.css",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\pages\\app-kanban.css",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/vendor/css/pages/app-kanban.css",
       "AssetKind": "All",
@@ -952,10 +935,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\css\\pages\\app-kanban.css"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\pages\\cards-advance.css",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\pages\\cards-advance.css",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/vendor/css/pages/cards-advance.css",
       "AssetKind": "All",
@@ -969,27 +952,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\css\\pages\\cards-advance.css"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\pages\\page-account-settings.css",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\pages\\page-auth.css",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
-      "BasePath": "_content/PFA_Gestion_Laureats",
-      "RelativePath": "assets/vendor/css/pages/page-account-settings.css",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\assets\\vendor\\css\\pages\\page-account-settings.css"
-    },
-    {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\pages\\page-auth.css",
-      "SourceId": "PFA_Gestion_Laureats",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/vendor/css/pages/page-auth.css",
       "AssetKind": "All",
@@ -1003,10 +969,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\css\\pages\\page-auth.css"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\pages\\page-faq.css",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\pages\\page-faq.css",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/vendor/css/pages/page-faq.css",
       "AssetKind": "All",
@@ -1020,10 +986,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\css\\pages\\page-faq.css"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\pages\\page-help-center.css",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\pages\\page-help-center.css",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/vendor/css/pages/page-help-center.css",
       "AssetKind": "All",
@@ -1037,10 +1003,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\css\\pages\\page-help-center.css"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\pages\\page-icons.css",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\pages\\page-icons.css",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/vendor/css/pages/page-icons.css",
       "AssetKind": "All",
@@ -1054,10 +1020,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\css\\pages\\page-icons.css"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\pages\\page-misc.css",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\pages\\page-misc.css",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/vendor/css/pages/page-misc.css",
       "AssetKind": "All",
@@ -1071,10 +1037,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\css\\pages\\page-misc.css"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\pages\\page-pricing.css",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\pages\\page-pricing.css",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/vendor/css/pages/page-pricing.css",
       "AssetKind": "All",
@@ -1088,10 +1054,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\css\\pages\\page-pricing.css"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\pages\\page-profile.css",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\pages\\page-profile.css",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/vendor/css/pages/page-profile.css",
       "AssetKind": "All",
@@ -1105,10 +1071,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\css\\pages\\page-profile.css"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\pages\\page-user-view.css",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\pages\\page-user-view.css",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/vendor/css/pages/page-user-view.css",
       "AssetKind": "All",
@@ -1122,10 +1088,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\css\\pages\\page-user-view.css"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\pages\\ui-carousel.css",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\pages\\ui-carousel.css",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/vendor/css/pages/ui-carousel.css",
       "AssetKind": "All",
@@ -1139,10 +1105,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\css\\pages\\ui-carousel.css"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\pages\\wizard-ex-checkout.css",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\pages\\wizard-ex-checkout.css",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/vendor/css/pages/wizard-ex-checkout.css",
       "AssetKind": "All",
@@ -1156,10 +1122,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\css\\pages\\wizard-ex-checkout.css"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\rtl\\core.css",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\rtl\\core.css",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/vendor/css/rtl/core.css",
       "AssetKind": "All",
@@ -1173,10 +1139,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\css\\rtl\\core.css"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\rtl\\core-dark.css",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\rtl\\core-dark.css",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/vendor/css/rtl/core-dark.css",
       "AssetKind": "All",
@@ -1190,10 +1156,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\css\\rtl\\core-dark.css"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\rtl\\theme-default.css",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\rtl\\theme-default.css",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/vendor/css/rtl/theme-default.css",
       "AssetKind": "All",
@@ -1207,10 +1173,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\css\\rtl\\theme-default.css"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\rtl\\theme-default-dark.css",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\rtl\\theme-default-dark.css",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/vendor/css/rtl/theme-default-dark.css",
       "AssetKind": "All",
@@ -1224,10 +1190,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\css\\rtl\\theme-default-dark.css"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\rtl\\theme-semi-dark.css",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\rtl\\theme-semi-dark.css",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/vendor/css/rtl/theme-semi-dark.css",
       "AssetKind": "All",
@@ -1241,10 +1207,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\css\\rtl\\theme-semi-dark.css"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\rtl\\theme-semi-dark-dark.css",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\rtl\\theme-semi-dark-dark.css",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/vendor/css/rtl/theme-semi-dark-dark.css",
       "AssetKind": "All",
@@ -1258,10 +1224,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\css\\rtl\\theme-semi-dark-dark.css"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\theme-default.css",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\theme-default.css",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/vendor/css/theme-default.css",
       "AssetKind": "All",
@@ -1275,10 +1241,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\css\\theme-default.css"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\theme-default-dark.css",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\theme-default-dark.css",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/vendor/css/theme-default-dark.css",
       "AssetKind": "All",
@@ -1292,10 +1258,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\css\\theme-default-dark.css"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\theme-semi-dark.css",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\theme-semi-dark.css",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/vendor/css/theme-semi-dark.css",
       "AssetKind": "All",
@@ -1309,10 +1275,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\css\\theme-semi-dark.css"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\theme-semi-dark-dark.css",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\theme-semi-dark-dark.css",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/vendor/css/theme-semi-dark-dark.css",
       "AssetKind": "All",
@@ -1326,10 +1292,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\css\\theme-semi-dark-dark.css"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\fonts\\flag-icons.css",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\fonts\\flag-icons.css",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/vendor/fonts/flag-icons.css",
       "AssetKind": "All",
@@ -1343,10 +1309,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\fonts\\flag-icons.css"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\fonts\\fontawesome.css",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\fonts\\fontawesome.css",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/vendor/fonts/fontawesome.css",
       "AssetKind": "All",
@@ -1360,10 +1326,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\fonts\\fontawesome.css"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\fonts\\fontawesome\\fa-brands-400.ttf",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\fonts\\fontawesome\\fa-brands-400.ttf",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/vendor/fonts/fontawesome/fa-brands-400.ttf",
       "AssetKind": "All",
@@ -1377,10 +1343,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\fonts\\fontawesome\\fa-brands-400.ttf"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\fonts\\fontawesome\\fa-brands-400.woff2",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\fonts\\fontawesome\\fa-brands-400.woff2",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/vendor/fonts/fontawesome/fa-brands-400.woff2",
       "AssetKind": "All",
@@ -1394,10 +1360,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\fonts\\fontawesome\\fa-brands-400.woff2"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\fonts\\fontawesome\\fa-regular-400.ttf",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\fonts\\fontawesome\\fa-regular-400.ttf",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/vendor/fonts/fontawesome/fa-regular-400.ttf",
       "AssetKind": "All",
@@ -1411,10 +1377,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\fonts\\fontawesome\\fa-regular-400.ttf"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\fonts\\fontawesome\\fa-regular-400.woff2",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\fonts\\fontawesome\\fa-regular-400.woff2",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/vendor/fonts/fontawesome/fa-regular-400.woff2",
       "AssetKind": "All",
@@ -1428,10 +1394,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\fonts\\fontawesome\\fa-regular-400.woff2"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\fonts\\fontawesome\\fa-solid-900.ttf",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\fonts\\fontawesome\\fa-solid-900.ttf",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/vendor/fonts/fontawesome/fa-solid-900.ttf",
       "AssetKind": "All",
@@ -1445,10 +1411,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\fonts\\fontawesome\\fa-solid-900.ttf"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\fonts\\fontawesome\\fa-solid-900.woff2",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\fonts\\fontawesome\\fa-solid-900.woff2",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/vendor/fonts/fontawesome/fa-solid-900.woff2",
       "AssetKind": "All",
@@ -1462,10 +1428,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\fonts\\fontawesome\\fa-solid-900.woff2"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\fonts\\fontawesome\\fa-v4compatibility.ttf",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\fonts\\fontawesome\\fa-v4compatibility.ttf",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/vendor/fonts/fontawesome/fa-v4compatibility.ttf",
       "AssetKind": "All",
@@ -1479,10 +1445,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\fonts\\fontawesome\\fa-v4compatibility.ttf"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\fonts\\fontawesome\\fa-v4compatibility.woff2",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\fonts\\fontawesome\\fa-v4compatibility.woff2",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/vendor/fonts/fontawesome/fa-v4compatibility.woff2",
       "AssetKind": "All",
@@ -1496,10 +1462,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\fonts\\fontawesome\\fa-v4compatibility.woff2"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\fonts\\tabler\\tabler-icons.eot",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\fonts\\tabler\\tabler-icons.eot",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/vendor/fonts/tabler/tabler-icons.eot",
       "AssetKind": "All",
@@ -1513,10 +1479,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\fonts\\tabler\\tabler-icons.eot"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\fonts\\tabler\\tabler-icons.svg",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\fonts\\tabler\\tabler-icons.svg",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/vendor/fonts/tabler/tabler-icons.svg",
       "AssetKind": "All",
@@ -1530,10 +1496,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\fonts\\tabler\\tabler-icons.svg"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\fonts\\tabler\\tabler-icons.ttf",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\fonts\\tabler\\tabler-icons.ttf",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/vendor/fonts/tabler/tabler-icons.ttf",
       "AssetKind": "All",
@@ -1547,10 +1513,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\fonts\\tabler\\tabler-icons.ttf"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\fonts\\tabler\\tabler-icons.woff",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\fonts\\tabler\\tabler-icons.woff",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/vendor/fonts/tabler/tabler-icons.woff",
       "AssetKind": "All",
@@ -1564,10 +1530,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\fonts\\tabler\\tabler-icons.woff"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\fonts\\tabler\\tabler-icons.woff2",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\fonts\\tabler\\tabler-icons.woff2",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/vendor/fonts/tabler/tabler-icons.woff2",
       "AssetKind": "All",
@@ -1581,10 +1547,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\fonts\\tabler\\tabler-icons.woff2"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\fonts\\tabler-icons.css",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\fonts\\tabler-icons.css",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/vendor/fonts/tabler-icons.css",
       "AssetKind": "All",
@@ -1598,10 +1564,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\fonts\\tabler-icons.css"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\js\\bootstrap.js",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\js\\bootstrap.js",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/vendor/js/bootstrap.js",
       "AssetKind": "All",
@@ -1615,10 +1581,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\js\\bootstrap.js"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\js\\bootstrap.js.LICENSE.txt",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\js\\bootstrap.js.LICENSE.txt",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/vendor/js/bootstrap.js.LICENSE.txt",
       "AssetKind": "All",
@@ -1632,10 +1598,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\js\\bootstrap.js.LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\js\\dropdown-hover.js",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\js\\dropdown-hover.js",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/vendor/js/dropdown-hover.js",
       "AssetKind": "All",
@@ -1649,10 +1615,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\js\\dropdown-hover.js"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\js\\helpers.js",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\js\\helpers.js",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/vendor/js/helpers.js",
       "AssetKind": "All",
@@ -1666,10 +1632,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\js\\helpers.js"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\js\\mega-dropdown.js",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\js\\mega-dropdown.js",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/vendor/js/mega-dropdown.js",
       "AssetKind": "All",
@@ -1683,10 +1649,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\js\\mega-dropdown.js"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\js\\menu.js",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\js\\menu.js",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/vendor/js/menu.js",
       "AssetKind": "All",
@@ -1700,10 +1666,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\js\\menu.js"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\js\\template-customizer.js",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\js\\template-customizer.js",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/vendor/js/template-customizer.js",
       "AssetKind": "All",
@@ -1717,10 +1683,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\js\\template-customizer.js"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\libs\\animate-css\\animate.css",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\libs\\animate-css\\animate.css",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/vendor/libs/animate-css/animate.css",
       "AssetKind": "All",
@@ -1734,10 +1700,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\libs\\animate-css\\animate.css"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\libs\\animate-on-scroll\\animate-on-scroll.css",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\libs\\animate-on-scroll\\animate-on-scroll.css",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/vendor/libs/animate-on-scroll/animate-on-scroll.css",
       "AssetKind": "All",
@@ -1751,10 +1717,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\libs\\animate-on-scroll\\animate-on-scroll.css"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\libs\\animate-on-scroll\\animate-on-scroll.js",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\libs\\animate-on-scroll\\animate-on-scroll.js",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/vendor/libs/animate-on-scroll/animate-on-scroll.js",
       "AssetKind": "All",
@@ -1768,10 +1734,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\libs\\animate-on-scroll\\animate-on-scroll.js"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\libs\\jquery\\jquery.js",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\libs\\jquery\\jquery.js",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/vendor/libs/jquery/jquery.js",
       "AssetKind": "All",
@@ -1785,10 +1751,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\libs\\jquery\\jquery.js"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\libs\\jquery\\jquery.js.LICENSE.txt",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\libs\\jquery\\jquery.js.LICENSE.txt",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/vendor/libs/jquery/jquery.js.LICENSE.txt",
       "AssetKind": "All",
@@ -1802,10 +1768,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\libs\\jquery\\jquery.js.LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\libs\\node-waves\\node-waves.css",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\libs\\node-waves\\node-waves.css",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/vendor/libs/node-waves/node-waves.css",
       "AssetKind": "All",
@@ -1819,10 +1785,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\libs\\node-waves\\node-waves.css"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\libs\\node-waves\\node-waves.js",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\libs\\node-waves\\node-waves.js",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/vendor/libs/node-waves/node-waves.js",
       "AssetKind": "All",
@@ -1836,10 +1802,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\libs\\node-waves\\node-waves.js"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\libs\\node-waves\\node-waves.js.LICENSE.txt",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\libs\\node-waves\\node-waves.js.LICENSE.txt",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/vendor/libs/node-waves/node-waves.js.LICENSE.txt",
       "AssetKind": "All",
@@ -1853,10 +1819,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\libs\\node-waves\\node-waves.js.LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\libs\\perfect-scrollbar\\perfect-scrollbar.css",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\libs\\perfect-scrollbar\\perfect-scrollbar.css",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css",
       "AssetKind": "All",
@@ -1870,10 +1836,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\libs\\perfect-scrollbar\\perfect-scrollbar.css"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\libs\\perfect-scrollbar\\perfect-scrollbar.js",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\libs\\perfect-scrollbar\\perfect-scrollbar.js",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js",
       "AssetKind": "All",
@@ -1887,10 +1853,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\libs\\perfect-scrollbar\\perfect-scrollbar.js"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\libs\\perfect-scrollbar\\perfect-scrollbar.js.LICENSE.txt",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\libs\\perfect-scrollbar\\perfect-scrollbar.js.LICENSE.txt",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js.LICENSE.txt",
       "AssetKind": "All",
@@ -1958,7 +1924,7 @@
       "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\libs\\typeahead-js\\typeahead.css",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/vendor/libs/typeahead-js/typeahead.css",
       "AssetKind": "All",
@@ -1972,10 +1938,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\libs\\typeahead-js\\typeahead.css"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\libs\\typeahead-js\\typeahead.js",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\libs\\typeahead-js\\typeahead.js",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/vendor/libs/typeahead-js/typeahead.js",
       "AssetKind": "All",
@@ -1989,10 +1955,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\libs\\typeahead-js\\typeahead.js"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\libs\\typeahead-js\\typeahead.js.LICENSE.txt",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\libs\\typeahead-js\\typeahead.js.LICENSE.txt",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/vendor/libs/typeahead-js/typeahead.js.LICENSE.txt",
       "AssetKind": "All",
@@ -2006,27 +1972,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\libs\\typeahead-js\\typeahead.js.LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\bd00e2f7-8272-4f66-aa12-b7aed85a72b81.png",
-      "SourceId": "PFA_Gestion_Laureats",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
-      "BasePath": "_content/PFA_Gestion_Laureats",
-      "RelativePath": "bd00e2f7-8272-4f66-aa12-b7aed85a72b81.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\bd00e2f7-8272-4f66-aa12-b7aed85a72b81.png"
-    },
-    {
       "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\css\\site.css",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -2040,10 +1989,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\favicon.ico",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\favicon.ico",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -2057,10 +2006,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\js\\site.js",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\js\\site.js",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -2074,10 +2023,10 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -2091,10 +2040,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -2108,10 +2057,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -2125,10 +2074,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -2142,10 +2091,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -2159,10 +2108,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -2176,10 +2125,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -2193,10 +2142,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -2210,10 +2159,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -2227,10 +2176,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -2244,10 +2193,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -2261,10 +2210,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -2278,10 +2227,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -2295,10 +2244,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -2312,10 +2261,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -2329,10 +2278,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -2346,10 +2295,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -2363,10 +2312,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -2380,10 +2329,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -2397,10 +2346,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -2414,10 +2363,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -2431,10 +2380,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -2448,10 +2397,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -2465,10 +2414,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -2482,10 +2431,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -2499,10 +2448,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -2516,10 +2465,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -2533,10 +2482,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -2550,10 +2499,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -2567,10 +2516,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -2584,10 +2533,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -2601,10 +2550,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -2618,10 +2567,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -2635,10 +2584,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -2652,10 +2601,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -2669,10 +2618,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -2686,10 +2635,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -2703,10 +2652,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -2720,10 +2669,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -2737,10 +2686,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -2754,10 +2703,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -2771,10 +2720,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -2788,10 +2737,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -2805,10 +2754,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -2822,10 +2771,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -2839,10 +2788,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -2856,10 +2805,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -2873,10 +2822,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -2890,10 +2839,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
@@ -2907,10 +2856,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -2924,10 +2873,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -2941,10 +2890,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -2958,10 +2907,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -2975,10 +2924,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -2992,10 +2941,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -3009,10 +2958,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -3026,10 +2975,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",

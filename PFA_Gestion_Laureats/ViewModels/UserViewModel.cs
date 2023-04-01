@@ -12,18 +12,21 @@ namespace PFA_Gestion_Laureats.ViewModels
         public string? Tel { get; set; }
         [DataType(DataType.EmailAddress)]
         public string? Email { get; set; }
+        [Display(Name = "Titre")]
         public string? Titre_Profil { get; set; }
         public string? Adresse { get; set; }
         public string? Login { get; set; }
 
-        
+        [Display(Name = "Mot de passe")]
         [DataType(DataType.Password)]
         public string? Password { get; set; }
         
         [DataType(DataType.Password)]
+        [Display(Name = "Confirmer le mot de passe")]
         public string? ConfirmationPassword { get; set; }
 
         [DataType(DataType.Password)]
+        [Display(Name = "Mot de passe actuel")]
         public string? CurrentPassword { get; set; }
         public string? URL_Photo_Profil { get; set; }
 
@@ -31,11 +34,16 @@ namespace PFA_Gestion_Laureats.ViewModels
        public IFormFile? Photo { get; set; }
 
         [DataType(DataType.Date)]
+        [Display(Name = "Date d'inscription")]
+        [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = true)]
         public DateTime? date_Inscription { get; set; }
 
+        [Display(Name = "Specialité")]
         public string? specialite { get; set; }
 
         [DataType(DataType.Date)]
+        [Display(Name = "Date de fin d'étude")]
+        [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = true)]
         public DateTime? Date_Fin_Etude { get; set; }
 
         public UserViewModel()
@@ -44,7 +52,7 @@ namespace PFA_Gestion_Laureats.ViewModels
         }
         public UserViewModel(int Id, string nom, string prenom, string? Tel,
                             string Email, string Titre_Profil, string Adresse,
-                            string password, string login, string path )
+                            string password, string login, string path)
         {
             this.Id = Id;
             this.Nom = nom;
@@ -59,9 +67,9 @@ namespace PFA_Gestion_Laureats.ViewModels
             this.URL_Photo_Profil = path;
         }
         public UserViewModel(int Id, string nom, string prenom, string? Tel,
-                             string Email, string Titre_Profil, string Adresse,
-                             string password, string login, string path,
-                             string specialite, DateTime dateInscription)
+                           string Email, string Titre_Profil, string Adresse,
+                           string password, string login, string path,
+                           string specialite, DateTime dateInscription)
         {
             this.Id = Id;
             this.Nom = nom;

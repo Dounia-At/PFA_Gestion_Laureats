@@ -1,0 +1,131 @@
+﻿
+@model PFA_Gestion_Laureats.ViewModels.UserViewModel
+
+<div class="container-xl">
+
+    <div class="authentication-wrapper authentication-basic container-p-y">
+        <div class="authentication-inner py-4">
+            <div class="authentication-inner row">
+                <ul class="nav nav-pills flex-column flex-md-row mb-4">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="javascript:void(0);"> Agent</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " asp-controller="User" asp-action="Ajouter_Laureat"> Etudiant</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-controller="User" asp-action="Ajouter_Laureat"> Laureat</a>
+                    </li>
+                </ul>
+                <div class="d-none d-lg-flex col-lg-4 align-items-center justify-content-center p-5 auth-cover-bg-color position-relative ">
+
+
+                    <B>Entrer Votre Information Personel </B>
+                </div>
+            </div>
+            @if (ViewBag.msgValidation != null)
+            {
+                <div class="alert alert-warning alert-dismissible fade show">
+                    <strong>Attention!</strong> @ViewBag.msgValidation
+                </div>
+            }
+            <form method="post" enctype="multipart/form-data">
+                <div class="row g-3">
+                    <div class="col-sm-6">
+                        <label asp-for="Nom" class="form-label"></label>
+                        <input required
+                               type="text"
+                               asp-for="Nom"
+                               class="form-control"
+                               placeholder="Saisir votre nom" />
+                        <span asp-validation-for="Nom"></span>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <label asp-for="Prenom" class="form-label"></label>
+                        <input type="text" required
+                               asp-for="Prenom"
+                               class="form-control"
+                               placeholder="Saisir votre prenom" />
+                        <span asp-validation-for="Prenom"></span>
+                    </div>
+                    <div class="col-sm-6">
+                        <label asp-for="Titre_Profil" class="form-label"></label>
+                        <input type="text"
+                               asp-for="Titre_Profil"
+                               class="form-control " required
+                               placeholder="Titre_Profil" />
+                        <span asp-validation-for="Titre_Profil"></span>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <label asp-for="Email" class="form-label"></label>
+                        <input type="email" required
+                               asp-for="Email"
+                               class="form-control"
+                               placeholder="XXXX@email.com" />
+                        <span asp-validation-for="Email"></span>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <label asp-for="Tel" class="form-label"></label>
+
+                        <input type="tel" required
+                               asp-for="Tel"
+                               class="form-control" />
+                        <span asp-validation-for="Tel"></span>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label asp-for="Adresse" class="form-label"></label>
+                        <input type="text"
+                               asp-for="Adresse" required
+                               class="form-control" />
+                        <span asp-validation-for="Adresse"></span>
+                    </div>
+                    <div class="col-md-6">
+                        <label asp-for="Login" class="form-label"></label>
+                        <input type="text" required
+                               asp-for="Login"
+                               class="form-control"
+                               placeholder="Saisir votre Indetifiant" />
+                        <span asp-validation-for="Login"></span>
+                    </div>
+                    <div class="col-md-6 form-password-toggle">
+                        <label class="form-label " for="newPassword">Mot de Passe</label>
+                        <div class="input-group input-group-merge">
+                            <input class="form-control"
+                                   asp-for="Password" required
+                                   type="password"
+                                   placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;" />
+                            <span class="input-group-text cursor-pointer"><i class="ti ti-eye-off"></i></span>
+                        </div>
+                        <span asp-validation-for="Password"></span>
+                    </div>
+                    <div class="col-sm-6 form-password-toggle">
+                        <label class="form-label" for="confirmPassword">Confirmer le mot de passe</label>
+                        <div class="input-group input-group-merge">
+                            <input class="form-control"
+                                   asp-for="ConfirmationPassword" required
+                                   type="password"
+                                   placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;" />
+                            <span class="input-group-text cursor-pointer"><i class="ti ti-eye-off"></i></span>
+                        </div>
+                        <span asp-validation-for="ConfirmationPassword"></span>
+                    </div>
+
+
+                    <div>
+                        <button type="submit" class="btn btn-primary me-2">S'inscrire</button>
+                    </div>
+
+
+
+
+                </div>
+            </form>
+
+
+        </div>
+    </div>
+    </div>

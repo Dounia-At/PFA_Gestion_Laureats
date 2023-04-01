@@ -1,0 +1,94 @@
+﻿@model PFA_Gestion_Laureats.ViewModels.EntrepriseViewModel
+
+
+<div class="row">
+    <div class="col-md-12">
+       
+        <div class="card mb-4">
+            <h5 class="card-header">Ajouter Une Entreprise</h5>
+            
+            <form method="POST" enctype="multipart/form-data">
+
+                <div class="card-body">
+
+                    <div class="row">
+
+                        <div class="mb-3 col-md-6">
+                            <input type="file"
+                                   class="form-control"
+                                   asp-for="Photo" required />
+                        </div>
+                        <hr class="my-0" /> <br />
+                        <div class= "mb-3 col-md-6" >
+
+                        <label asp-for= "Nom" class= "form-label" ></label >
+
+                        <input required
+                        asp-for="Nom"
+                        class= "form-control"/>
+                        <span asp-validation-for= "Nom" ></span >
+
+                        </div >
+
+                        <div class="mb-3 col-sm-6 form-check">
+
+                            <label asp-for="Convention" class="form-check-label"></label>
+                            <input class="form-check-input" asp-for="Convention" type="checkbox"  />
+
+                            <span asp-validation-for="Convention"></span>
+                        </div>
+
+                        <div class="mb-3 col-sm-6">
+
+                        <label asp-for= "Pays" class= "form-label" ></label >
+
+                        <input  required
+                        asp-for="Pays"
+                        class= "form-control" />
+                        <span asp-validation-for= "Pays" ></span >
+                        </div >
+
+                        <div class="mb-3 col-sm-6">
+
+                        <label asp-for= "Ville" class= "form-label" ></label >
+
+                        <input type = "text"
+                        asp-for= "Ville"
+                        class= "form-control " required />
+
+                        <span asp-validation-for="Ville"></span>
+                    </div>
+                        <div class="mb-3 col-sm-6">
+
+
+                    <label asp-for= "Adresse" class= "form-label" ></label >
+                    <input type = "text"
+                    asp-for= "Adresse"
+                    class= "form-control " required/>
+
+
+                    <span asp-validation-for="Adresse"></span>
+                </div>
+
+                    <div class="mb-3 col-sm-6">
+                <label asp-for= "Description" class= "form-label" ></label >
+                <textarea
+                asp-for= "Description"
+                class= "form-control " required ></textarea>
+                        <span asp-validation-for="Description"></span>
+                 </div>
+                 </div>
+
+                    <div class="mt-2">
+                        <button type="submit" class="btn btn-primary me-2">Ajouter</button>
+                        <button type="button" asp-controller="Entreprise" asp-action="Index" class="btn btn-label-secondary">Cancel</button>
+                    </div>
+
+                </div>
+            </form>
+           
+        </div>
+
+    </div>
+</div>
+
