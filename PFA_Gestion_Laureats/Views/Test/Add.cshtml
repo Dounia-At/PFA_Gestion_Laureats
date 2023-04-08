@@ -1,0 +1,62 @@
+﻿@model PFA_Gestion_Laureats.ViewModels.TestViewModel
+
+
+<div class="row">
+    <div class="col-md-12">
+
+        <div class="card mb-4">
+            <h5 class="card-header">Ajouter Un Test</h5>
+
+            <form method="POST" >
+
+                <div class="card-body">
+
+                    <div class="row">
+                        <div class="form-group">
+                            <label asp-for="EntrepriseId" class="form-label"></label>
+                            <select asp-for="EntrepriseId" asp-items="ViewBag.entreprises" class="form-control">
+                            </select>
+
+                            <span asp-validation-for="EntrepriseId"></span>
+
+                        </div>
+                        <br />
+                        <div class="col-sm-6">
+                            <label asp-for="Date_Test" class="form-label"></label>
+                            <input required 
+                                   type="date"
+                                   asp-for="Date_Test"
+                                   class="form-control" />
+                            <span asp-validation-for="Date_Test"></span>
+                        </div>
+                        
+                        <div class="col-sm-6">
+                            <label asp-for="Heure_Test" class="form-label"></label>
+                            <input required
+                                   type="time"
+                                   asp-for="Heure_Test"
+                                   class="form-control" />
+                            <span asp-validation-for="Heure_Test"></span>
+                        </div>
+                        <br />
+                        <div class="form-group">
+                            <label asp-for="Description" class="form-label"></label>
+                            <textarea asp-for="Description"
+                                      class="form-control " required></textarea>
+                            <span asp-validation-for="Description"></span>
+                        </div>
+                        
+                    </div>
+
+                    <div class="mt-2">
+                        <button type="submit" class="btn btn-primary me-2">Ajouter</button>
+                        <a class="btn btn-secondary" asp-controller="Test" asp-action="Index">Cancel</a>
+                    </div>
+
+                </div>
+            </form>
+
+        </div>
+
+    </div>
+</div>

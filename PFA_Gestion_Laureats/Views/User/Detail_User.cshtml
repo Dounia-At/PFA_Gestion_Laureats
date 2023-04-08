@@ -54,21 +54,21 @@
                         {
                             <li class="d-flex align-items-center mb-3">
                                 <i class="ti ti-file-description"></i><span class="fw-bold mx-2">Specialité:</span>
-                                <span>@Model.specialite</span>
+                                <span >@Model.specialite</span>
                             </li>
                         }
                         @if (Model.date_Inscription != null)
                         {
                             <li class="d-flex align-items-center mb-3">
                                 <i class="ti ti-calendar"></i><span class="fw-bold mx-2">Date d'inscription:</span>
-                                <span >@Model.date_Inscription</span>
+                                <span asp-format="{0:dd/MM/yyyy}">@String.Format("{0:d}",@Model.date_Inscription)</span>
                             </li>
                         }
                         @if (Model.Date_Fin_Etude != null)
                         {
                             <li class="d-flex align-items-center mb-3">
                                 <i class="ti ti-calendar"></i><span class="fw-bold mx-2">Date de fin d'étude:</span>
-                                <span >@Model.Date_Fin_Etude</span>
+                                <span asp-format="{0:dd/MM/yyyy}">@String.Format("{0:d}",@Model.Date_Fin_Etude)</span>
                             </li>
                         }
                     </ul>

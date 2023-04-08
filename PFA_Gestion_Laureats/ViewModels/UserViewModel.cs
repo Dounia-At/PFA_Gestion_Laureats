@@ -1,4 +1,5 @@
-﻿using PFA_Gestion_Laureats.Validation;
+﻿using Microsoft.EntityFrameworkCore;
+using PFA_Gestion_Laureats.Validation;
 using System.ComponentModel.DataAnnotations;
 
 namespace PFA_Gestion_Laureats.ViewModels
@@ -11,10 +12,13 @@ namespace PFA_Gestion_Laureats.ViewModels
         [DataType(DataType.PhoneNumber)]
         public string? Tel { get; set; }
         [DataType(DataType.EmailAddress)]
+
         public string? Email { get; set; }
         [Display(Name = "Titre")]
         public string? Titre_Profil { get; set; }
         public string? Adresse { get; set; }
+
+
         public string? Login { get; set; }
 
         [Display(Name = "Mot de passe")]
@@ -35,7 +39,6 @@ namespace PFA_Gestion_Laureats.ViewModels
 
         [DataType(DataType.Date)]
         [Display(Name = "Date d'inscription")]
-        [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = true)]
         public DateTime? date_Inscription { get; set; }
 
         [Display(Name = "Specialité")]
@@ -43,7 +46,6 @@ namespace PFA_Gestion_Laureats.ViewModels
 
         [DataType(DataType.Date)]
         [Display(Name = "Date de fin d'étude")]
-        [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = true)]
         public DateTime? Date_Fin_Etude { get; set; }
 
         public UserViewModel()

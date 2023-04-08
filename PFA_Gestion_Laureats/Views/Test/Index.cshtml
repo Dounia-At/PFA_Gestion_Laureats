@@ -1,0 +1,66 @@
+﻿@model List<Test>
+
+@if (ViewBag.role == "Agent")
+{
+    <div class="container mt-5 d-flex flex-row-reverse">
+        <a class="btn btn-primary" asp-controller="Test" asp-action="Add">+ Nouveau Test</a>
+        <br />
+        <br />
+    </div>
+
+}
+<!-- Tests Cards -->
+<div class="row g-4">
+    @foreach(Test test in Model)
+    {
+        <div class="col-xl-4 col-lg-6 col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <div class="d-flex align-items-center mb-3">
+                        <a href="javascript:;" class="d-flex align-items-center">
+                            <div class="avatar me-2">
+                                <img src="../../assets/img/logo/@test.entreprise.Logo"
+                                     alt="Logo"
+                                     class="rounded-circle" />
+                            </div>
+                            <div class="me-2 text-body h5 mb-0">@test.entreprise.Nom</div>
+                        </a>
+                        
+                    </div>
+                    <div class="mb-3">
+                        <ul class="">
+                            <li asp-format="{0:dd/MM/yyyy}">Le @String.Format("{0:d}", test.Date_Test)</li>
+                            <li asp-format="{0:HH:mm}">A @String.Format("{0:HH:mm}", @test.Heure_Test)</li>
+                        </ul>
+                        <hr class="my-0" /> <br/>
+                        <p>
+                            @test.Description
+                        </p>
+                    </div>
+                    @if (ViewBag.role == "Agent")
+                    {
+                        <div class="d-flex align-items-center pt-1">
+                            <div class="d-flex align-items-center">
+                                <a asp-controller="User" asp-action="Detail" asp-route-id="@test.agentDirection.Login">
+                                    <span class="text-muted fw-light">@test.agentDirection.Nom @test.agentDirection.Prenom</span>
+                                </a>
+                            </div>
+                            <div class="ms-auto">
+                                <a asp-controller="Test" asp-action="Delete" asp-route-id="@test.Id" class="btn btn-label-danger btn-icon waves-effect ">
+                                    <i class="ti ti-trash ti-sm"></i>
+                                </a>
+
+                                <a asp-controller="Test" asp-action="Update" asp-route-id="@test.Id" class="btn btn-label-success btn-icon waves-effect ">
+                                    <i class="ti ti-edit ti-sm"></i>
+                                </a>
+                            </div>
+                        </div>
+                    }
+                    
+                </div>
+            </div>
+        </div>
+    }
+
+</div>
+<!--/ Tests Cards -->

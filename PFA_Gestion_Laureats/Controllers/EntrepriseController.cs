@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using PFA_Gestion_Laureats.Models;
 using PFA_Gestion_Laureats.Validation;
 using PFA_Gestion_Laureats.ViewModels;
@@ -20,7 +21,7 @@ namespace PFA_Gestion_Laureats.Controllers
             {
                 ViewBag.role = "Agent";
             }
-            List<Entreprise> Entreprises = db.Entreprises.ToList();
+            List<Entreprise> Entreprises = db.Entreprises.AsNoTracking().ToList();
             return View(Entreprises);
         }
         public IActionResult Add()

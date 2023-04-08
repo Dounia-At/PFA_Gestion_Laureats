@@ -1,5 +1,6 @@
 
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using PFA_Gestion_Laureats.Models;
 using PFA_Gestion_Laureats.Validation;
 using PFA_Gestion_Laureats.ViewModels;
@@ -21,7 +22,7 @@ namespace PFA_Gestion_Laureats.Controllers
         [Authentification]
         public IActionResult Detail_User(string login)
         {
-            Utilisateur utilisateur = db.Utilisateurs.Where(u => u.Login == login).SingleOrDefault();
+            Utilisateur utilisateur = db.Utilisateurs.Where(u => u.Login == login).AsNoTracking().SingleOrDefault();
             if(utilisateur != null)
             {
                 UserViewModel user = new UserViewModel(utilisateur.Id, utilisateur.Nom,
@@ -32,7 +33,7 @@ namespace PFA_Gestion_Laureats.Controllers
 
                 if (utilisateur.GetType().Name == "AgentDirection")
                 {
-                    AgentDirection agent = db.Agents.Where(u => u.Login == login).SingleOrDefault();
+                    AgentDirection agent = db.Agents.Where(u => u.Login == login).AsNoTracking().SingleOrDefault();
                     user = new UserViewModel(agent.Id, agent.Nom,
                                                         agent.Prenom, agent.Tel,
                                                         agent.Email, agent.Titre_Profil,
@@ -41,7 +42,7 @@ namespace PFA_Gestion_Laureats.Controllers
                 }
                 else if (utilisateur.GetType().Name == "Etudiant")
                 {
-                    Etudiant etudiant = db.Etudiants.Where(u => u.Login == login).SingleOrDefault();
+                    Etudiant etudiant = db.Etudiants.Where(u => u.Login == login).AsNoTracking().SingleOrDefault();
                     user = new UserViewModel(etudiant.Id, etudiant.Nom,
                                                         etudiant.Prenom, etudiant.Tel,
                                                         etudiant.Email, etudiant.Titre_Profil,
@@ -50,7 +51,7 @@ namespace PFA_Gestion_Laureats.Controllers
                 }
                 else if (utilisateur.GetType().Name == "Laureat")
                 {
-                    Laureat laureat = db.Laureats.Where(u => u.Login == login).SingleOrDefault();
+                    Laureat laureat = db.Laureats.Where(u => u.Login == login).AsNoTracking().SingleOrDefault();
                     user = new UserViewModel(laureat.Id, laureat.Nom,
                                                         laureat.Prenom, laureat.Tel,
                                                         laureat.Email, laureat.Titre_Profil,
