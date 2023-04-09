@@ -1,10 +1,15 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using PFA_Gestion_Laureats.Models;
 using PFA_Gestion_Laureats.Validation;
 using System.ComponentModel.DataAnnotations;
 
+
 namespace PFA_Gestion_Laureats.ViewModels
 {
-    public class UserViewModel
+    [Index(nameof(UserViewModel.Email), IsUnique = true)]
+    [Index(nameof(UserViewModel.Login), IsUnique = true)]
+    public class UserViewModel 
     {
         public int? Id { get; set; }
         public string? Nom { get; set; }
@@ -12,13 +17,10 @@ namespace PFA_Gestion_Laureats.ViewModels
         [DataType(DataType.PhoneNumber)]
         public string? Tel { get; set; }
         [DataType(DataType.EmailAddress)]
-
         public string? Email { get; set; }
         [Display(Name = "Titre")]
         public string? Titre_Profil { get; set; }
         public string? Adresse { get; set; }
-
-
         public string? Login { get; set; }
 
         [Display(Name = "Mot de passe")]
@@ -107,5 +109,6 @@ namespace PFA_Gestion_Laureats.ViewModels
             this.date_Inscription = dateInscription;
             this.Date_Fin_Etude = dateFinEtude;
         }
+        
     }
 }

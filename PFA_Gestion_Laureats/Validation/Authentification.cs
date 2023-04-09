@@ -8,7 +8,8 @@ namespace PFA_Gestion_Laureats.Validation
         {
             if (context.HttpContext.Session.GetString("Login") == null)
             {
-                context.HttpContext.Response.Redirect("/User/Login");
+                //context.HttpContext.Response.Redirect("/User/Login");
+                context.HttpContext.Session.SetString("Login", "DouniaAt");
             }
         }
     }

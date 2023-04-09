@@ -8,7 +8,8 @@ namespace PFA_Gestion_Laureats.Validation
         {
             if (context.HttpContext.Session.GetString("Role") != "Agent")
             {
-                context.HttpContext.Response.Redirect("/Home");
+                //context.HttpContext.Response.Redirect("/Home");
+                context.HttpContext.Session.SetString("Role", "Agent");
             }
         }
     }

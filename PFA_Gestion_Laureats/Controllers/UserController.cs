@@ -1,5 +1,5 @@
 
-﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using PFA_Gestion_Laureats.Models;
 using PFA_Gestion_Laureats.Validation;
@@ -18,12 +18,14 @@ namespace PFA_Gestion_Laureats.Controllers
         {
             return View();
         }
+
+
         [Route("/User/Detail/{login}")]
         [Authentification]
         public IActionResult Detail_User(string login)
         {
             Utilisateur utilisateur = db.Utilisateurs.Where(u => u.Login == login).AsNoTracking().SingleOrDefault();
-            if(utilisateur != null)
+            if (utilisateur != null)
             {
                 UserViewModel user = new UserViewModel(utilisateur.Id, utilisateur.Nom,
                                                         utilisateur.Prenom, utilisateur.Tel,
@@ -77,32 +79,50 @@ namespace PFA_Gestion_Laureats.Controllers
         {
             if (ModelState.IsValid)
             {
-                if (user.Nom != null && user.Prenom != null && user.Email != null
-                    && user.Tel != null && user.Titre_Profil != null && user.Adresse != null
-                    && user.Login != null && user.Password != null)
+                if (!db.Utilisateurs.Any(u => u.Login == user.Login))
                 {
-                    AgentDirection agent = new AgentDirection();
-                    agent.Nom = user.Nom;
-                    agent.Prenom = user.Prenom;
-                    agent.Tel = user.Tel;
-                    agent.Email = user.Email;
-                    agent.Titre_Profil = user.Titre_Profil;
-                    agent.Adresse = user.Adresse;
-                    agent.Login = user.Login;
-                    agent.Password = user.Password;
-                    agent.Photo_Profil = "profil.png";
-                    db.Agents.Add(agent);
-                    db.SaveChanges();
+                    if (!db.Utilisateurs.Any(u => u.Email == user.Email))
+                    {
+                        if (user.Nom != null && user.Prenom != null && user.Email != null
+                              && user.Tel != null && user.Titre_Profil != null && user.Adresse != null
+                              && user.Login != null && user.Password != null)
+                        {
+                            AgentDirection agent = new AgentDirection();
+                            agent.Nom = user.Nom;
+                            agent.Prenom = user.Prenom;
+                            agent.Tel = user.Tel;
+                            agent.Email = user.Email;
+                            agent.Titre_Profil = user.Titre_Profil;
+                            agent.Adresse = user.Adresse;
+                            agent.Login = user.Login;
+                            agent.Password = user.Password;
+                            agent.Photo_Profil = "profil.png";
+                            db.Agents.Add(agent);
+                            db.SaveChanges();
+
+                        }
+                        else
+                        {
+                            ViewBag.msgValidation = "Les champs sont obligatoire!!";
+                            return View(user);
+                        }
+                    }
+                    else
+                    {
+                        ViewBag.msgValidation = "Email deja existant!!";
+                        return View(user);
+                    }
+
                 }
                 else
                 {
-                    ViewBag.msgValidation = "Les champs sont obligatoire!!";
+                    ViewBag.msgValidation = "Login deja existant!!";
                     return View(user);
                 }
 
                 return RedirectToAction("Index", "Home");
             }
-             return View(user);
+            return View(user);
         }
 
 
@@ -119,36 +139,53 @@ namespace PFA_Gestion_Laureats.Controllers
         {
             if (ModelState.IsValid)
             {
-                if (user.Nom != null && user.Prenom != null && user.Email != null
+                if (!db.Utilisateurs.Any(u => u.Login == user.Login))
+                {
+                    if (!db.Utilisateurs.Any(u => u.Email == user.Email))
+                    {
+                        if (user.Nom != null && user.Prenom != null && user.Email != null
                     && user.Tel != null && user.Titre_Profil != null && user.Adresse != null
                     && user.date_Inscription != null && user.Login != null && user.Password != null
                     && user.specialite != null)
-                {
-                    Etudiant etudiant = new Etudiant();
-                    etudiant.Nom = user.Nom;
-                    etudiant.Prenom = user.Prenom;
-                    etudiant.Tel = user.Tel;
-                    etudiant.Email = user.Email;
-                    etudiant.Titre_Profil = user.Titre_Profil;
-                    etudiant.Adresse = user.Adresse;
-                    etudiant.Login = user.Login;
-                    etudiant.Password = user.Password;
-                    etudiant.date_Inscriptionion = (DateTime)user.date_Inscription;
-                    etudiant.specialite = user.specialite;
-                    etudiant.Photo_Profil = "profil.png";
+                        {
+                            Etudiant etudiant = new Etudiant();
+                            etudiant.Nom = user.Nom;
+                            etudiant.Prenom = user.Prenom;
+                            etudiant.Tel = user.Tel;
+                            etudiant.Email = user.Email;
+                            etudiant.Titre_Profil = user.Titre_Profil;
+                            etudiant.Adresse = user.Adresse;
+                            etudiant.Login = user.Login;
+                            etudiant.Password = user.Password;
+                            etudiant.date_Inscriptionion = (DateTime)user.date_Inscription;
+                            etudiant.specialite = user.specialite;
+                            etudiant.Photo_Profil = "profil.png";
 
-                    db.Etudiants.Add(etudiant);
-                    db.SaveChanges();
+                            db.Etudiants.Add(etudiant);
+                            db.SaveChanges();
+                        }
+                        else
+                        {
+                            ViewBag.msgValidation = "Les champs sont obligatoire!!";
+                            return View(user);
+                        }
+                    }
+                    else
+                    {
+                        ViewBag.msgValidation = "Email deja existant!!";
+                        return View(user);
+                    }
+
                 }
                 else
                 {
-                    ViewBag.msgValidation = "Les champs sont obligatoire!!";
+                    ViewBag.msgValidation = "Login deja existant!!";
                     return View(user);
                 }
 
                 return RedirectToAction("Index", "Home");
             }
-            return View(user);            
+            return View(user);
         }
 
         [IsAdmin]
@@ -164,34 +201,50 @@ namespace PFA_Gestion_Laureats.Controllers
         {
             if (ModelState.IsValid)
             {
-                if (user.Nom != null && user.Prenom != null && user.Email != null
-                    && user.Tel != null && user.Titre_Profil != null && user.Adresse != null
-                    && user.date_Inscription != null && user.Login != null && user.Password != null
-                    && user.specialite != null && user.Date_Fin_Etude != null)
+                if (!db.Utilisateurs.Any(u => u.Login == user.Login))
                 {
-                    Laureat laureat = new Laureat();
-                    laureat.Nom = user.Nom;
-                    laureat.Prenom = user.Prenom;
-                    laureat.Tel = user.Tel;
-                    laureat.Email = user.Email;
-                    laureat.Titre_Profil = user.Titre_Profil;
-                    laureat.Adresse = user.Adresse;
-                    laureat.Login = user.Login;
-                    laureat.Password = user.Password;
-                    laureat.date_Inscriptionion = (DateTime)user.date_Inscription;
-                    laureat.specialite = user.specialite;
-                    laureat.Date_Fin_Etude = (DateTime)user.Date_Fin_Etude;
-                    laureat.Photo_Profil = "profil.png";
+                    if (!db.Utilisateurs.Any(u => u.Email == user.Email))
+                    {
+                        if (user.Nom != null && user.Prenom != null && user.Email != null
+            && user.Tel != null && user.Titre_Profil != null && user.Adresse != null
+            && user.date_Inscription != null && user.Login != null && user.Password != null
+            && user.specialite != null && user.Date_Fin_Etude != null)
+                        {
+                            Laureat laureat = new Laureat();
+                            laureat.Nom = user.Nom;
+                            laureat.Prenom = user.Prenom;
+                            laureat.Tel = user.Tel;
+                            laureat.Email = user.Email;
+                            laureat.Titre_Profil = user.Titre_Profil;
+                            laureat.Adresse = user.Adresse;
+                            laureat.Login = user.Login;
+                            laureat.Password = user.Password;
+                            laureat.date_Inscriptionion = (DateTime)user.date_Inscription;
+                            laureat.specialite = user.specialite;
+                            laureat.Date_Fin_Etude = (DateTime)user.Date_Fin_Etude;
+                            laureat.Photo_Profil = "profil.png";
 
-                    db.Laureats.Add(laureat);
-                    db.SaveChanges();
+                            db.Laureats.Add(laureat);
+                            db.SaveChanges();
+                        }
+                        else
+                        {
+                            ViewBag.msgValidation = "Les champs sont obligatoires!!";
+                            return View(user);
+                        }
+                    }
+                    else
+                    {
+                        ViewBag.msgValidation = "Email deja existant!!";
+                        return View(user);
+                    }
+
                 }
                 else
                 {
-                    ViewBag.msgValidation = "Les champs sont obligatoires!!";
+                    ViewBag.msgValidation = "Login deja existant!!";
                     return View(user);
                 }
-
                 return RedirectToAction("Index", "Home");
             }
             return View(user);
@@ -251,82 +304,90 @@ namespace PFA_Gestion_Laureats.Controllers
         public IActionResult Update_User(string login, UserViewModel user)
         {
             if (ModelState.IsValid)
-                {
+            {
                 Utilisateur utilisateur = db.Utilisateurs.Where(u => u.Login == login).SingleOrDefault();
                 if (utilisateur != null)
                 {
-
-                    if (utilisateur.GetType().Name == "AgentDirection")
+                    if (!db.Utilisateurs.Any(u => u.Email == user.Email))
                     {
-                        AgentDirection agent = db.Agents.Where(u => u.Login == login).SingleOrDefault();
+                        if (utilisateur.GetType().Name == "AgentDirection")
+                        {
+                            AgentDirection agent = db.Agents.Where(u => u.Login == login).SingleOrDefault();
 
-                        agent.Nom = user.Nom;
-                        agent.Prenom = user.Prenom;
-                        agent.Tel = user.Tel;
-                        agent.Email = user.Email;
-                        agent.Titre_Profil = user.Titre_Profil;
-                        agent.Adresse = user.Adresse;
-                        agent.Login = user.Login;
+                            agent.Nom = user.Nom;
+                            agent.Prenom = user.Prenom;
+                            agent.Tel = user.Tel;
+                            agent.Email = user.Email;
+                            agent.Titre_Profil = user.Titre_Profil;
+                            agent.Adresse = user.Adresse;
+                            agent.Login = user.Login;
 
-                        db.Agents.Update(agent);
+                            db.Agents.Update(agent);
 
+                        }
+                        else if (utilisateur.GetType().Name == "Etudiant")
+                        {
+                            Etudiant etudiant = db.Etudiants.Where(u => u.Login == login).SingleOrDefault();
+
+                            etudiant.Nom = user.Nom;
+                            etudiant.Prenom = user.Prenom;
+                            etudiant.Tel = user.Tel;
+                            etudiant.Email = user.Email;
+                            etudiant.Titre_Profil = user.Titre_Profil;
+                            etudiant.Adresse = user.Adresse;
+                            etudiant.Login = user.Login;
+                            etudiant.date_Inscriptionion = (DateTime)user.date_Inscription;
+                            etudiant.specialite = user.specialite;
+
+                            db.Etudiants.Update(etudiant);
+                        }
+                        else if (utilisateur.GetType().Name == "Laureat")
+                        {
+                            Laureat laureat = db.Laureats.Where(u => u.Login == login).SingleOrDefault();
+
+                            laureat.Nom = user.Nom;
+                            laureat.Prenom = user.Prenom;
+                            laureat.Tel = user.Tel;
+                            laureat.Email = user.Email;
+                            laureat.Titre_Profil = user.Titre_Profil;
+                            laureat.Adresse = user.Adresse;
+                            laureat.Login = user.Login;
+                            laureat.Password = user.Password;
+                            laureat.date_Inscriptionion = (DateTime)user.date_Inscription;
+                            laureat.specialite = user.specialite;
+                            laureat.Date_Fin_Etude = (DateTime)user.Date_Fin_Etude;
+
+                            db.Laureats.Update(laureat);
+                        }
+                        db.SaveChanges();
                     }
-                    else if (utilisateur.GetType().Name == "Etudiant")
+                    else
                     {
-                        Etudiant etudiant = db.Etudiants.Where(u => u.Login == login).SingleOrDefault();
-
-                        etudiant.Nom = user.Nom;
-                        etudiant.Prenom = user.Prenom;
-                        etudiant.Tel = user.Tel;
-                        etudiant.Email = user.Email;
-                        etudiant.Titre_Profil = user.Titre_Profil;
-                        etudiant.Adresse = user.Adresse;
-                        etudiant.Login = user.Login;
-                        etudiant.date_Inscriptionion = (DateTime)user.date_Inscription;
-                        etudiant.specialite = user.specialite;
-
-                        db.Etudiants.Update(etudiant);
+                        ViewBag.msgValidation = "Email deja existant!!";
+                        return View(user);
                     }
-                    else if (utilisateur.GetType().Name == "Laureat")
-                    {
-                        Laureat laureat = db.Laureats.Where(u => u.Login == login).SingleOrDefault();
-
-                        laureat.Nom = user.Nom;
-                        laureat.Prenom = user.Prenom;
-                        laureat.Tel = user.Tel;
-                        laureat.Email = user.Email;
-                        laureat.Titre_Profil = user.Titre_Profil;
-                        laureat.Adresse = user.Adresse;
-                        laureat.Login = user.Login;
-                        laureat.Password = user.Password;
-                        laureat.date_Inscriptionion = (DateTime)user.date_Inscription;
-                        laureat.specialite = user.specialite;
-                        laureat.Date_Fin_Etude = (DateTime)user.Date_Fin_Etude;
-
-                        db.Laureats.Update(laureat);
-                    }
-                    db.SaveChanges();
-                }                                 
-                    return RedirectToAction("Index", "Home");
+                    return View(user);
                 }
-                return View(user);
+                return RedirectToAction("Index", "Home");
+            }
+            return View(user);
         }
 
 
-       
+
 
         [IsAdmin]
         [Authentification]
         [Route("/User/Delete/{login}")]
         public IActionResult Delete_User(string login)
         {
-             Utilisateur utilisateur = db.Utilisateurs.Where(u => u.Login == login).SingleOrDefault();
+            Utilisateur utilisateur = db.Utilisateurs.Where(u => u.Login == login).SingleOrDefault();
             db.Utilisateurs.Remove(utilisateur);
-                db.SaveChanges();
-                       
+            db.SaveChanges();
+
             return RedirectToAction("Index", "Home");
         }
-        
+
 
         public IActionResult Inscription_Etudiant()
         {
@@ -334,36 +395,52 @@ namespace PFA_Gestion_Laureats.Controllers
         }
         [HttpPost]
         public IActionResult Inscription_Etudiant(UserViewModel user)
-        {            
+        {
             if (ModelState.IsValid)
             {
-                if(user.Nom != null && user.Prenom != null && user.Email != null
-                    && user.Tel != null && user.Titre_Profil != null && user.Adresse != null
-                    && user.date_Inscription !=null && user.Login != null && user.Password != null
-                    && user.specialite != null)
+                if (!db.Utilisateurs.Any(u => u.Login == user.Login))
                 {
-                    Etudiant etudiant = new Etudiant();
-                    etudiant.Nom = user.Nom;
-                    etudiant.Prenom = user.Prenom;
-                    etudiant.Tel = user.Tel;
-                    etudiant.Email = user.Email;
-                    etudiant.Titre_Profil = user.Titre_Profil;
-                    etudiant.Adresse = user.Adresse;
-                    etudiant.Login = user.Login;
-                    etudiant.Password = user.Password;
-                    etudiant.date_Inscriptionion = (DateTime)user.date_Inscription;
-                    etudiant.specialite = user.specialite;
-                    etudiant.Photo_Profil = "profil.png";
+                    if (!db.Utilisateurs.Any(u => u.Email == user.Email))
+                    {
+                        if (user.Nom != null && user.Prenom != null && user.Email != null
+                    && user.Tel != null && user.Titre_Profil != null && user.Adresse != null
+                    && user.date_Inscription != null && user.Login != null && user.Password != null
+                    && user.specialite != null)
+                        {
+                            Etudiant etudiant = new Etudiant();
+                            etudiant.Nom = user.Nom;
+                            etudiant.Prenom = user.Prenom;
+                            etudiant.Tel = user.Tel;
+                            etudiant.Email = user.Email;
+                            etudiant.Titre_Profil = user.Titre_Profil;
+                            etudiant.Adresse = user.Adresse;
+                            etudiant.Login = user.Login;
+                            etudiant.Password = user.Password;
+                            etudiant.date_Inscriptionion = (DateTime)user.date_Inscription;
+                            etudiant.specialite = user.specialite;
+                            etudiant.Photo_Profil = "profil.png";
 
-                    db.Etudiants.Add(etudiant);
-                    db.SaveChanges();
+                            db.Etudiants.Add(etudiant);
+                            db.SaveChanges();
+                        }
+                        else
+                        {
+                            ViewBag.msgValidation = "Les champs sont obligatoire!!";
+                            return View(user);
+                        }
+                    }
+                    else
+                    {
+                        ViewBag.msgValidation = "Email deja existant!!";
+                        return View(user);
+                    }
+
                 }
                 else
                 {
-                    ViewBag.msgValidation = "Les champs sont obligatoire!!";
+                    ViewBag.msgValidation = "Login deja existant!!";
                     return View(user);
-                }                        
-
+                }
                 return RedirectToAction("Login");
             }
             return View(user);
@@ -375,34 +452,51 @@ namespace PFA_Gestion_Laureats.Controllers
         }
         [HttpPost]
         public IActionResult Inscription_Laureat(UserViewModel user)
-        {            
+        {
             if (ModelState.IsValid)
             {
-                if (user.Nom != null && user.Prenom != null && user.Email != null
+                if (!db.Utilisateurs.Any(u => u.Login == user.Login))
+                {
+                    if (!db.Utilisateurs.Any(u => u.Email == user.Email))
+                    {
+                        if (user.Nom != null && user.Prenom != null && user.Email != null
                     && user.Tel != null && user.Titre_Profil != null && user.Adresse != null
                     && user.date_Inscription != null && user.Login != null && user.Password != null
                     && user.specialite != null && user.Date_Fin_Etude != null)
-                {
-                    Laureat laureat = new Laureat();
-                laureat.Nom = user.Nom;
-                laureat.Prenom = user.Prenom;
-                laureat.Tel = user.Tel;
-                laureat.Email = user.Email;
-                laureat.Titre_Profil = user.Titre_Profil;
-                laureat.Adresse = user.Adresse;
-                laureat.Login = user.Login;
-                laureat.Password = user.Password;
-                laureat.date_Inscriptionion = (DateTime)user.date_Inscription;
-                laureat.specialite = user.specialite;
-                laureat.Date_Fin_Etude = (DateTime)user.Date_Fin_Etude;
-                laureat.Photo_Profil = "profil.png";
+                        {
+                            Laureat laureat = new Laureat();
+                            laureat.Nom = user.Nom;
+                            laureat.Prenom = user.Prenom;
+                            laureat.Tel = user.Tel;
+                            laureat.Email = user.Email;
+                            laureat.Titre_Profil = user.Titre_Profil;
+                            laureat.Adresse = user.Adresse;
+                            laureat.Login = user.Login;
+                            laureat.Password = user.Password;
+                            laureat.date_Inscriptionion = (DateTime)user.date_Inscription;
+                            laureat.specialite = user.specialite;
+                            laureat.Date_Fin_Etude = (DateTime)user.Date_Fin_Etude;
+                            laureat.Photo_Profil = "profil.png";
 
-                db.Laureats.Add(laureat);
-                db.SaveChanges();
+                            db.Laureats.Add(laureat);
+                            db.SaveChanges();
+                        }
+                        else
+                        {
+                            ViewBag.msgValidation = "Les champs sont obligatoire!!";
+                            return View(user);
+                        }
+                    }
+                    else
+                    {
+                        ViewBag.msgValidation = "Email deja existant!!";
+                        return View(user);
+                    }
+
                 }
                 else
                 {
-                    ViewBag.msgValidation = "Les champs sont obligatoire!!";
+                    ViewBag.msgValidation = "Login deja existant!!";
                     return View(user);
                 }
 
@@ -416,11 +510,11 @@ namespace PFA_Gestion_Laureats.Controllers
         {
             String login = HttpContext.Session.GetString("Login");
             Utilisateur utilisateur = db.Utilisateurs.Where(u => u.Login == login).Single();
-                
-            UserViewModel user = new UserViewModel(utilisateur.Id, utilisateur.Nom, 
+
+            UserViewModel user = new UserViewModel(utilisateur.Id, utilisateur.Nom,
                                                     utilisateur.Prenom, utilisateur.Tel,
                                                     utilisateur.Email, utilisateur.Titre_Profil,
-                                                    utilisateur.Adresse, utilisateur.Password, 
+                                                    utilisateur.Adresse, utilisateur.Password,
                                                     utilisateur.Login, utilisateur.Photo_Profil);
 
             return View(user);
@@ -431,9 +525,11 @@ namespace PFA_Gestion_Laureats.Controllers
         {
             if (ModelState.IsValid)
             {
-                String login = HttpContext.Session.GetString("Login");
-                Utilisateur utilisateur = db.Utilisateurs.Where(u => u.Login == login).Single();
-                   
+                if (!db.Utilisateurs.Any(u => u.Email == user.Email))
+                {
+                    String login = HttpContext.Session.GetString("Login");
+                    Utilisateur utilisateur = db.Utilisateurs.Where(u => u.Login == login).Single();
+
                     utilisateur.Tel = user.Tel;
                     utilisateur.Email = user.Email;
                     utilisateur.Adresse = user.Adresse;
@@ -441,11 +537,16 @@ namespace PFA_Gestion_Laureats.Controllers
 
                     db.Utilisateurs.Update(utilisateur);
                     db.SaveChanges();
-                                                        
+                }
+                else
+                {
+                    ViewBag.msgValidation = "Email deja existant!!";
+                    return View(user);
+                }
                 return RedirectToAction("Index", "Home");
             }
-            return View(user);            
-            
+            return View(user);
+
         }
 
         [Authentification]
@@ -458,15 +559,15 @@ namespace PFA_Gestion_Laureats.Controllers
                                                         utilisateur.Email, utilisateur.Titre_Profil,
                                                         utilisateur.Adresse, utilisateur.Password,
                                                         utilisateur.Login, utilisateur.Photo_Profil);
-            return View(user);               
+            return View(user);
         }
         [Authentification]
         [HttpPost]
         public IActionResult Update_Securite(UserViewModel user)
-        {            
-            if (ModelState.IsValid )
+        {
+            if (ModelState.IsValid)
             {
-                if(user.Password == user.ConfirmationPassword)
+                if (user.Password == user.ConfirmationPassword)
                 {
                     String login = HttpContext.Session.GetString("Login");
                     Utilisateur utilisateur = db.Utilisateurs.Where(u => u.Login == login).Single();
@@ -488,9 +589,9 @@ namespace PFA_Gestion_Laureats.Controllers
                 {
                     ViewBag.msgValidation = "Le Mot de passe et la confirmation sont different";
                     return View(user);
-                }                      
-                         
-            }     
+                }
+
+            }
             return View(user);
 
         }
@@ -500,9 +601,9 @@ namespace PFA_Gestion_Laureats.Controllers
         {
 
             String login = HttpContext.Session.GetString("Login");
-            
+
             Utilisateur utilisateur = db.Utilisateurs.Where(u => u.Login == login).Single();
-            if(utilisateur.Photo_Profil == null)
+            if (utilisateur.Photo_Profil == null)
             {
                 utilisateur.Photo_Profil = "profil.png";
             }
@@ -523,7 +624,7 @@ namespace PFA_Gestion_Laureats.Controllers
                 user.URL_Photo_Profil = "profil.png";
             }
             String login = HttpContext.Session.GetString("Login");
-           
+
             if (ModelState.IsValid)
             {
                 Utilisateur utilisateur = db.Utilisateurs.Where(u => u.Login == login).Single();
@@ -536,7 +637,7 @@ namespace PFA_Gestion_Laureats.Controllers
                     user.Photo.CopyTo(stream);
                     utilisateur.Photo_Profil = NewName;
                 }
-                
+
 
                 db.Utilisateurs.Update(utilisateur);
                 db.SaveChanges();
@@ -554,9 +655,9 @@ namespace PFA_Gestion_Laureats.Controllers
         [HttpPost]
         public IActionResult Login(UserLoginViewModel mv)
         {
-            if(ModelState.IsValid)
+            if (ModelState.IsValid)
             {
-                Utilisateur utilisateur=db.Utilisateurs.Where(us=>us.Login==mv.Login &&us.Password==mv.Password ).FirstOrDefault();
+                Utilisateur utilisateur = db.Utilisateurs.Where(us => us.Login == mv.Login && us.Password == mv.Password).FirstOrDefault();
                 if (utilisateur != null)
                 {
                     if (utilisateur.Isvalide == false)
@@ -567,8 +668,8 @@ namespace PFA_Gestion_Laureats.Controllers
                     {
                         HttpContext.Session.SetString("Login", utilisateur.Login);
                         HttpContext.Session.SetString("Role", utilisateur.GetType().Name);
-                       
-                        
+
+
                         if (utilisateur.GetType().Name == "AgentDirection")
                         {
                             HttpContext.Session.SetString("Role", "Agent");
@@ -577,17 +678,17 @@ namespace PFA_Gestion_Laureats.Controllers
                         {
                             HttpContext.Session.SetString("Role", utilisateur.GetType().Name);
                         }
-                       
+
                         return RedirectToAction("Index", "Home");
 
-                    }                                      
+                    }
                 }
                 else
                 {
                     ViewBag.msgErreur = "Login ou Mot de passe incorrect";
                 }
             }
-           
+
             return View();
         }
         public IActionResult logout()
