@@ -1,1 +1,52 @@
-﻿
+﻿@model List<Utilisateur>
+
+@{
+    ViewData["Title"] = "Liste de Validation";
+}
+
+
+
+<table class="table-primary  w-100 my-5 ">
+    <thead>
+        <tr>
+            <th>
+                Nom
+            </th>
+            <th>
+                Prenom
+            </th>
+            <th>
+                Telephone 
+            </th>
+            <th>
+                Email    
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @item.Nom
+            </td>
+            <td>
+                @item.Prenom
+            </td>
+            <td>
+                @item.Tel
+            </td>
+            <td >
+                @item.Email
+            </td>
+            
+            <td>
+                <a asp-action="Valider" asp-route-id="@item.Login" class="btn btn-primary">Valider</a>
+                <a asp-action="Update_User" asp-route-id="@item.Login" class="btn btn-warning">Modifier</a>
+                <a asp-action="Delete_User" asp-route-id="@item.Login" class="btn btn-danger mx-5" onclick="return(confirm('Etes-vous sûr de vouloir rejeter ?'));">Rejeter</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+

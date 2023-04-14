@@ -21,6 +21,16 @@ namespace PFA_Gestion_Laureats.Controllers
             List<Utilisateur> utilisateurs = db.Utilisateurs.Where(u => u.Isvalide == false).AsNoTracking().ToList();
             return View(utilisateurs);
         }
+        [Route("/User/Valider/{login}")]
+        [Authentification]
+        public IActionResult Valider(string login)
+        {
+            Utilisateur utilisateur = db.Utilisateurs.Where(u => u.Login == login).SingleOrDefault();
+            utilisateur.Isvalide = true;
+            db.Utilisateurs.Update(utilisateur);
+            db.SaveChanges();
+            return View();
+        }
         [Authentification]
         public async Task< List<Utilisateur> > ImportExcel(IFormFile file)
         {
