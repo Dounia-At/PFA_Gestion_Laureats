@@ -53,7 +53,7 @@ namespace PFA_Gestion_Laureats.Controllers
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            ViewBag.entreprises = new SelectList(db.Entreprises.ToList(), "Id", "Nom");
+            ViewBag.entreprises = new SelectList(db.Entreprises.ToList(), "Id", "Nom", testView.EntrepriseId*);
 
             return View(testView);
         }
@@ -62,7 +62,7 @@ namespace PFA_Gestion_Laureats.Controllers
             Test test = db.Tests.Find(id);
             TestViewModel testView = new TestViewModel(test.Id, test.Date_Test, test.Heure_Test, 
                                                         test.Description, test.EntrepriseId );
-            ViewBag.entreprises = new SelectList(db.Entreprises.ToList(), "Id", "Nom");
+            ViewBag.entreprises = new SelectList(db.Entreprises.ToList(), "Id", "Nom", testView.EntrepriseId);
 
             return View(testView);
         }
@@ -85,7 +85,7 @@ namespace PFA_Gestion_Laureats.Controllers
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            ViewBag.entreprises = new SelectList(db.Entreprises.ToList(), "Id", "Nom");
+            ViewBag.entreprises = new SelectList(db.Entreprises.ToList(), "Id", "Nom", testView.EntrepriseId);
 
             return View(testView);
         }

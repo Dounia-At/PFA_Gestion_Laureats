@@ -10,13 +10,12 @@
             <form method="POST" enctype="multipart/form-data">
 
                 <div class="card-body">
-
                     <div class="row">
 
                         <div class="mb-3 col-md-6">
                             <input type="file"
                                    class="form-control"
-                                   asp-for="Photo"  />
+                                   asp-for="Photo" required />
                         </div>
                         <hr class="my-0" /> <br />
                         <div class="mb-3 col-md-6">
@@ -31,9 +30,9 @@
                         </div>
 
                         <div class="mb-3 col-sm-6 form-check">
-                            
-                            <label asp-for="Convention" class="form-check-label"></label>
-                            <input class="form-check-input" asp-for="Convention" type="checkbox"  />
+
+                            <label asp-for="Convention" class="form-check-label"></label> <br />
+                            <input class="form-check-input" asp-for="Convention" type="checkbox" />
 
                             <span asp-validation-for="Convention"></span>
                         </div>
@@ -58,7 +57,7 @@
 
                             <span asp-validation-for="Ville"></span>
                         </div>
-                        <div class="mb-3 col-sm-6">
+                        <div class="mb-3">
 
 
                             <label asp-for="Adresse" class="form-label"></label>
@@ -70,14 +69,16 @@
                             <span asp-validation-for="Adresse"></span>
                         </div>
 
-                        <div class="mb-3 col-sm-6">
+                        <div class="mb-3 ">
                             <label asp-for="Description" class="form-label"></label>
-                            <textarea asp-for="Description"
+                            <textarea rows="3"
+                                      asp-for="Description"
                                       class="form-control " required></textarea>
                             <span asp-validation-for="Description"></span>
                         </div>
                     </div>
 
+                   
                     <div class="mt-2">
                         <button type="submit" class="btn btn-primary me-2">Modifier</button>                        
                         <a class="btn btn-secondary" asp-controller="Entreprise" asp-action="Index">Cancel</a>

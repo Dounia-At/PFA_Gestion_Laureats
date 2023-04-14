@@ -1,6 +1,7 @@
 
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using OfficeOpenXml;
 using PFA_Gestion_Laureats.Models;
 using PFA_Gestion_Laureats.Validation;
 using PFA_Gestion_Laureats.ViewModels;
@@ -14,9 +15,34 @@ namespace PFA_Gestion_Laureats.Controllers
         {
             this.db = db;
         }
-        public IActionResult Index()
+        [Authentification]
+        public IActionResult Validation()
+        {            
+            List<Utilisateur> utilisateurs = db.Utilisateurs.Where(u => u.Isvalide == false).AsNoTracking().ToList();
+            return View(utilisateurs);
+        }
+        [Authentification]
+        public async Task< List<Utilisateur> > ImportExcel(IFormFile file)
         {
-            return View();
+            var list = new List<Utilisateur>();
+            using(var stream = new MemoryStream())
+            {
+                await file.CopyToAsync(stream);
+                using (var package = new ExcelPackage())
+                {
+                    ExcelWorksheet worksheet = package.Workbook.Worksheets[0];
+                    var rowcount = worksheet.Dimension.Rows;
+                    for(int row = 2; row <+ rowcount; row++)
+                    {
+                        list.Add(new Utilisateur
+                        {
+                            Nom = worksheet.Cells[row, 1].Value.ToString().Trim(),
+                            // ....
+                        });
+                    }
+                }
+            }
+            return list;
         }
 
 
