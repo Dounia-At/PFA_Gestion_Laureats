@@ -15,6 +15,7 @@ namespace PFA_Gestion_Laureats.Models
         public string Login { get; set; }
         public string Password { get; set; }
         public string Photo_Profil { get; set; }
+       
         public bool Isvalide { get; set; }
         public IList<Annonce>? annonces { get; set; }
         public IList<Message>? messagesEnvoyees { get; set; }

@@ -46,6 +46,9 @@
           }
         }
       },
+      "FroalaEditor/4.0.18": {
+        "type": "package"
+      },
       "Humanizer.Core/2.14.1": {
         "type": "package",
         "compile": {
@@ -56,6 +59,22 @@
         "runtime": {
           "lib/net6.0/Humanizer.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "MailKit/3.6.0": {
+        "type": "package",
+        "dependencies": {
+          "MimeKit": "3.6.0"
+        },
+        "compile": {
+          "lib/net6.0/MailKit.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/MailKit.dll": {
+            "related": ".pdb;.xml"
           }
         }
       },
@@ -654,6 +673,25 @@
           }
         }
       },
+      "MimeKit/3.6.0": {
+        "type": "package",
+        "dependencies": {
+          "Portable.BouncyCastle": "1.9.0",
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0",
+          "System.Security.Cryptography.Pkcs": "6.0.0",
+          "System.Text.Encoding.CodePages": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/MimeKit.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/MimeKit.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "Mono.TextTemplating/2.2.1": {
         "type": "package",
         "dependencies": {
@@ -664,6 +702,19 @@
         },
         "runtime": {
           "lib/netstandard2.0/Mono.TextTemplating.dll": {}
+        }
+      },
+      "Portable.BouncyCastle/1.9.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/BouncyCastle.Crypto.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/BouncyCastle.Crypto.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Buffers/4.5.1": {
@@ -742,17 +793,20 @@
           }
         }
       },
-      "System.Formats.Asn1/5.0.0": {
+      "System.Formats.Asn1/6.0.0": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/_._": {
+          "lib/net6.0/System.Formats.Asn1.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/netstandard2.0/System.Formats.Asn1.dll": {
+          "lib/net6.0/System.Formats.Asn1.dll": {
             "related": ".xml"
           }
+        },
+        "build": {
+          "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
       "System.Globalization/4.3.0": {
@@ -973,6 +1027,31 @@
           }
         }
       },
+      "System.Security.Cryptography.Pkcs/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Formats.Asn1": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/System.Security.Cryptography.Pkcs.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/System.Security.Cryptography.Pkcs.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/netcoreapp3.1/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net6.0/System.Security.Cryptography.Pkcs.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
       "System.Security.Cryptography.ProtectedData/5.0.0": {
         "type": "package",
         "compile": {
@@ -1045,23 +1124,26 @@
           }
         }
       },
-      "System.Text.Encoding.CodePages/5.0.0": {
+      "System.Text.Encoding.CodePages/6.0.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "5.0.0"
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0"
         },
         "compile": {
-          "lib/netstandard2.0/_._": {
+          "lib/net6.0/System.Text.Encoding.CodePages.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/netstandard2.0/System.Text.Encoding.CodePages.dll": {
+          "lib/net6.0/System.Text.Encoding.CodePages.dll": {
             "related": ".xml"
           }
         },
+        "build": {
+          "buildTransitive/netcoreapp3.1/_._": {}
+        },
         "runtimeTargets": {
-          "runtimes/win/lib/netcoreapp2.0/System.Text.Encoding.CodePages.dll": {
+          "runtimes/win/lib/net6.0/System.Text.Encoding.CodePages.dll": {
             "assetType": "runtime",
             "rid": "win"
           }
@@ -1197,6 +1279,271 @@
         "lib/netstandard2.0/Azure.Identity.xml"
       ]
     },
+    "FroalaEditor/4.0.18": {
+      "sha512": "GeuQd8fjNGLLEXGM0QolKGC6FYoS+kor2l4PZW9QYJiXPpCl+eNyggLbCR9hfFu3OZbHzmhfQNwNXZFUxIq88Q==",
+      "type": "package",
+      "path": "froalaeditor/4.0.18",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Content/Scripts/froala-editor/.github/ISSUE_TEMPLATE.md",
+        "Content/Scripts/froala-editor/Froala_ThirdPartyLicense.txt",
+        "Content/Scripts/froala-editor/css/froala_editor.css",
+        "Content/Scripts/froala-editor/css/froala_editor.min.css",
+        "Content/Scripts/froala-editor/css/froala_editor.pkgd.css",
+        "Content/Scripts/froala-editor/css/froala_editor.pkgd.min.css",
+        "Content/Scripts/froala-editor/css/froala_style.css",
+        "Content/Scripts/froala-editor/css/froala_style.min.css",
+        "Content/Scripts/froala-editor/css/plugins.pkgd.css",
+        "Content/Scripts/froala-editor/css/plugins.pkgd.min.css",
+        "Content/Scripts/froala-editor/css/plugins/char_counter.css",
+        "Content/Scripts/froala-editor/css/plugins/char_counter.min.css",
+        "Content/Scripts/froala-editor/css/plugins/code_view.css",
+        "Content/Scripts/froala-editor/css/plugins/code_view.min.css",
+        "Content/Scripts/froala-editor/css/plugins/colors.css",
+        "Content/Scripts/froala-editor/css/plugins/colors.min.css",
+        "Content/Scripts/froala-editor/css/plugins/draggable.css",
+        "Content/Scripts/froala-editor/css/plugins/draggable.min.css",
+        "Content/Scripts/froala-editor/css/plugins/emoticons.css",
+        "Content/Scripts/froala-editor/css/plugins/emoticons.min.css",
+        "Content/Scripts/froala-editor/css/plugins/file.css",
+        "Content/Scripts/froala-editor/css/plugins/file.min.css",
+        "Content/Scripts/froala-editor/css/plugins/files_manager.css",
+        "Content/Scripts/froala-editor/css/plugins/files_manager.min.css",
+        "Content/Scripts/froala-editor/css/plugins/fullscreen.css",
+        "Content/Scripts/froala-editor/css/plugins/fullscreen.min.css",
+        "Content/Scripts/froala-editor/css/plugins/help.css",
+        "Content/Scripts/froala-editor/css/plugins/help.min.css",
+        "Content/Scripts/froala-editor/css/plugins/image.css",
+        "Content/Scripts/froala-editor/css/plugins/image.min.css",
+        "Content/Scripts/froala-editor/css/plugins/image_manager.css",
+        "Content/Scripts/froala-editor/css/plugins/image_manager.min.css",
+        "Content/Scripts/froala-editor/css/plugins/line_breaker.css",
+        "Content/Scripts/froala-editor/css/plugins/line_breaker.min.css",
+        "Content/Scripts/froala-editor/css/plugins/markdown.css",
+        "Content/Scripts/froala-editor/css/plugins/markdown.min.css",
+        "Content/Scripts/froala-editor/css/plugins/quick_insert.css",
+        "Content/Scripts/froala-editor/css/plugins/quick_insert.min.css",
+        "Content/Scripts/froala-editor/css/plugins/special_characters.css",
+        "Content/Scripts/froala-editor/css/plugins/special_characters.min.css",
+        "Content/Scripts/froala-editor/css/plugins/table.css",
+        "Content/Scripts/froala-editor/css/plugins/table.min.css",
+        "Content/Scripts/froala-editor/css/plugins/trim_video.css",
+        "Content/Scripts/froala-editor/css/plugins/trim_video.min.css",
+        "Content/Scripts/froala-editor/css/plugins/video.css",
+        "Content/Scripts/froala-editor/css/plugins/video.min.css",
+        "Content/Scripts/froala-editor/css/themes/dark.css",
+        "Content/Scripts/froala-editor/css/themes/dark.min.css",
+        "Content/Scripts/froala-editor/css/themes/gray.css",
+        "Content/Scripts/froala-editor/css/themes/gray.min.css",
+        "Content/Scripts/froala-editor/css/themes/royal.css",
+        "Content/Scripts/froala-editor/css/themes/royal.min.css",
+        "Content/Scripts/froala-editor/css/third_party/embedly.css",
+        "Content/Scripts/froala-editor/css/third_party/embedly.min.css",
+        "Content/Scripts/froala-editor/css/third_party/font_awesome.css",
+        "Content/Scripts/froala-editor/css/third_party/font_awesome.min.css",
+        "Content/Scripts/froala-editor/css/third_party/image_tui.css",
+        "Content/Scripts/froala-editor/css/third_party/image_tui.min.css",
+        "Content/Scripts/froala-editor/css/third_party/spell_checker.css",
+        "Content/Scripts/froala-editor/css/third_party/spell_checker.min.css",
+        "Content/Scripts/froala-editor/editor.jpg",
+        "Content/Scripts/froala-editor/html/3rd-party/aviary/index.html",
+        "Content/Scripts/froala-editor/html/3rd-party/bootstrap/grid.html",
+        "Content/Scripts/froala-editor/html/3rd-party/bootstrap/lists.html",
+        "Content/Scripts/froala-editor/html/3rd-party/bootstrap/modal.html",
+        "Content/Scripts/froala-editor/html/3rd-party/code-mirror.html",
+        "Content/Scripts/froala-editor/html/3rd-party/font-awesome-5-css.html",
+        "Content/Scripts/froala-editor/html/3rd-party/font-awesome-5-js.html",
+        "Content/Scripts/froala-editor/html/3rd-party/jquery/mobile.html",
+        "Content/Scripts/froala-editor/html/3rd-party/jquery/ui_modal.html",
+        "Content/Scripts/froala-editor/html/3rd-party/spell-checker/spell-checker.html",
+        "Content/Scripts/froala-editor/html/3rd-party/tui/index.html",
+        "Content/Scripts/froala-editor/html/api/get_html.html",
+        "Content/Scripts/froala-editor/html/api/init_destroy.html",
+        "Content/Scripts/froala-editor/html/api/insert_html.html",
+        "Content/Scripts/froala-editor/html/api/live_code_preview.html",
+        "Content/Scripts/froala-editor/html/api/live_content_preview.html",
+        "Content/Scripts/froala-editor/html/api/selection.html",
+        "Content/Scripts/froala-editor/html/buttons/custom_buttons.html",
+        "Content/Scripts/froala-editor/html/buttons/custom_dropdown.html",
+        "Content/Scripts/froala-editor/html/buttons/external_button.html",
+        "Content/Scripts/froala-editor/html/buttons/subscript_superscript.html",
+        "Content/Scripts/froala-editor/html/events/blur_focus.html",
+        "Content/Scripts/froala-editor/html/events/content_changed.html",
+        "Content/Scripts/froala-editor/html/events/drop.html",
+        "Content/Scripts/froala-editor/html/events/image_removed.html",
+        "Content/Scripts/froala-editor/html/events/initialized_destroy.html",
+        "Content/Scripts/froala-editor/html/file_s3_upload.php",
+        "Content/Scripts/froala-editor/html/image/custom_button.html",
+        "Content/Scripts/froala-editor/html/image/default_width.html",
+        "Content/Scripts/froala-editor/html/image/image_styles.html",
+        "Content/Scripts/froala-editor/html/image/insert_base64.html",
+        "Content/Scripts/froala-editor/html/image_s3_upload.php",
+        "Content/Scripts/froala-editor/html/init_inside_iframe/basic.html",
+        "Content/Scripts/froala-editor/html/init_inside_iframe/content.html",
+        "Content/Scripts/froala-editor/html/init_inside_iframe/inline.html",
+        "Content/Scripts/froala-editor/html/init_on_click/basic.html",
+        "Content/Scripts/froala-editor/html/init_on_click/inline.html",
+        "Content/Scripts/froala-editor/html/init_on_click/two_editors.html",
+        "Content/Scripts/froala-editor/html/initialization/edit_in_popup.html",
+        "Content/Scripts/froala-editor/html/initialization/init_on_button.html",
+        "Content/Scripts/froala-editor/html/initialization/init_on_click.html",
+        "Content/Scripts/froala-editor/html/initialization/init_on_h1.html",
+        "Content/Scripts/froala-editor/html/initialization/init_on_image.html",
+        "Content/Scripts/froala-editor/html/initialization/init_on_link.html",
+        "Content/Scripts/froala-editor/html/initialization/initialized_event.html",
+        "Content/Scripts/froala-editor/html/international/direction_rtl.html",
+        "Content/Scripts/froala-editor/html/international/language.html",
+        "Content/Scripts/froala-editor/html/international/rtl_ltr_buttons.html",
+        "Content/Scripts/froala-editor/html/link/custom_validation.html",
+        "Content/Scripts/froala-editor/html/link/link_styles.html",
+        "Content/Scripts/froala-editor/html/link/predefined_links.html",
+        "Content/Scripts/froala-editor/html/misc/scrollable_container.html",
+        "Content/Scripts/froala-editor/html/misc/scrollable_container_inline.html",
+        "Content/Scripts/froala-editor/html/paragraph_modes/enter_br.html",
+        "Content/Scripts/froala-editor/html/paragraph_modes/enter_div.html",
+        "Content/Scripts/froala-editor/html/paragraph_modes/enter_p.html",
+        "Content/Scripts/froala-editor/html/paste/attrs.html",
+        "Content/Scripts/froala-editor/html/paste/plain.html",
+        "Content/Scripts/froala-editor/html/paste/tags.html",
+        "Content/Scripts/froala-editor/html/plugins/char_counter.html",
+        "Content/Scripts/froala-editor/html/plugins/full_screen.html",
+        "Content/Scripts/froala-editor/html/plugins/line_breaker.html",
+        "Content/Scripts/froala-editor/html/plugins/quick_insert.html",
+        "Content/Scripts/froala-editor/html/popular/disable_edit.html",
+        "Content/Scripts/froala-editor/html/popular/disable_paragraphs.html",
+        "Content/Scripts/froala-editor/html/popular/full.html",
+        "Content/Scripts/froala-editor/html/popular/full_page.html",
+        "Content/Scripts/froala-editor/html/popular/iframe.html",
+        "Content/Scripts/froala-editor/html/popular/init_on_click.html",
+        "Content/Scripts/froala-editor/html/popular/textarea.html",
+        "Content/Scripts/froala-editor/html/popular/toolbar_buttons.html",
+        "Content/Scripts/froala-editor/html/popular/toolbar_inline.html",
+        "Content/Scripts/froala-editor/html/popular/two_instances.html",
+        "Content/Scripts/froala-editor/html/popular/z_index.html",
+        "Content/Scripts/froala-editor/html/popups/colors.html",
+        "Content/Scripts/froala-editor/html/popups/custom.html",
+        "Content/Scripts/froala-editor/html/popups/emoticons.html",
+        "Content/Scripts/froala-editor/html/styling/adjustable_height.html",
+        "Content/Scripts/froala-editor/html/styling/font_family.html",
+        "Content/Scripts/froala-editor/html/styling/height.html",
+        "Content/Scripts/froala-editor/html/styling/inline.html",
+        "Content/Scripts/froala-editor/html/styling/paragraph.html",
+        "Content/Scripts/froala-editor/html/styling/placeholder.html",
+        "Content/Scripts/froala-editor/html/styling/width.html",
+        "Content/Scripts/froala-editor/html/table/cell_style.html",
+        "Content/Scripts/froala-editor/html/table/insert_helper.html",
+        "Content/Scripts/froala-editor/html/table/nested.html",
+        "Content/Scripts/froala-editor/html/table/resize.html",
+        "Content/Scripts/froala-editor/html/table/style.html",
+        "Content/Scripts/froala-editor/html/themes/dark.html",
+        "Content/Scripts/froala-editor/html/themes/gray.html",
+        "Content/Scripts/froala-editor/html/themes/royal.html",
+        "Content/Scripts/froala-editor/html/toolbar/bottom.html",
+        "Content/Scripts/froala-editor/html/toolbar/bottom_offset.html",
+        "Content/Scripts/froala-editor/html/toolbar/buttons.html",
+        "Content/Scripts/froala-editor/html/toolbar/external.html",
+        "Content/Scripts/froala-editor/html/toolbar/external_inline.html",
+        "Content/Scripts/froala-editor/html/toolbar/inline.html",
+        "Content/Scripts/froala-editor/html/toolbar/inline_selection.html",
+        "Content/Scripts/froala-editor/html/toolbar/offset.html",
+        "Content/Scripts/froala-editor/html/toolbar/show_selection.html",
+        "Content/Scripts/froala-editor/html/toolbar/sticky.html",
+        "Content/Scripts/froala-editor/html/typing/keep_format.html",
+        "Content/Scripts/froala-editor/html/typing/shortcuts.html",
+        "Content/Scripts/froala-editor/html/typing/tab.html",
+        "Content/Scripts/froala-editor/img/photo1.jpg",
+        "Content/Scripts/froala-editor/index.html",
+        "Content/Scripts/froala-editor/js/froala_editor.min.js",
+        "Content/Scripts/froala-editor/js/froala_editor.pkgd.min.js",
+        "Content/Scripts/froala-editor/js/languages/ar.js",
+        "Content/Scripts/froala-editor/js/languages/bs.js",
+        "Content/Scripts/froala-editor/js/languages/cs.js",
+        "Content/Scripts/froala-editor/js/languages/da.js",
+        "Content/Scripts/froala-editor/js/languages/de.js",
+        "Content/Scripts/froala-editor/js/languages/el.js",
+        "Content/Scripts/froala-editor/js/languages/en_ca.js",
+        "Content/Scripts/froala-editor/js/languages/en_gb.js",
+        "Content/Scripts/froala-editor/js/languages/es.js",
+        "Content/Scripts/froala-editor/js/languages/et.js",
+        "Content/Scripts/froala-editor/js/languages/fa.js",
+        "Content/Scripts/froala-editor/js/languages/fi.js",
+        "Content/Scripts/froala-editor/js/languages/fr.js",
+        "Content/Scripts/froala-editor/js/languages/he.js",
+        "Content/Scripts/froala-editor/js/languages/hr.js",
+        "Content/Scripts/froala-editor/js/languages/hu.js",
+        "Content/Scripts/froala-editor/js/languages/id.js",
+        "Content/Scripts/froala-editor/js/languages/it.js",
+        "Content/Scripts/froala-editor/js/languages/ja.js",
+        "Content/Scripts/froala-editor/js/languages/ko.js",
+        "Content/Scripts/froala-editor/js/languages/ku.js",
+        "Content/Scripts/froala-editor/js/languages/me.js",
+        "Content/Scripts/froala-editor/js/languages/nb.js",
+        "Content/Scripts/froala-editor/js/languages/nl.js",
+        "Content/Scripts/froala-editor/js/languages/pl.js",
+        "Content/Scripts/froala-editor/js/languages/pt_br.js",
+        "Content/Scripts/froala-editor/js/languages/pt_pt.js",
+        "Content/Scripts/froala-editor/js/languages/ro.js",
+        "Content/Scripts/froala-editor/js/languages/ru.js",
+        "Content/Scripts/froala-editor/js/languages/sk.js",
+        "Content/Scripts/froala-editor/js/languages/sl.js",
+        "Content/Scripts/froala-editor/js/languages/sr.js",
+        "Content/Scripts/froala-editor/js/languages/sv.js",
+        "Content/Scripts/froala-editor/js/languages/th.js",
+        "Content/Scripts/froala-editor/js/languages/tr.js",
+        "Content/Scripts/froala-editor/js/languages/uk.js",
+        "Content/Scripts/froala-editor/js/languages/vi.js",
+        "Content/Scripts/froala-editor/js/languages/zh_cn.js",
+        "Content/Scripts/froala-editor/js/languages/zh_tw.js",
+        "Content/Scripts/froala-editor/js/plugins.pkgd.min.js",
+        "Content/Scripts/froala-editor/js/plugins/align.min.js",
+        "Content/Scripts/froala-editor/js/plugins/char_counter.min.js",
+        "Content/Scripts/froala-editor/js/plugins/code_beautifier.min.js",
+        "Content/Scripts/froala-editor/js/plugins/code_view.min.js",
+        "Content/Scripts/froala-editor/js/plugins/colors.min.js",
+        "Content/Scripts/froala-editor/js/plugins/cryptojs.min.js",
+        "Content/Scripts/froala-editor/js/plugins/draggable.min.js",
+        "Content/Scripts/froala-editor/js/plugins/edit_in_popup.min.js",
+        "Content/Scripts/froala-editor/js/plugins/emoticons.min.js",
+        "Content/Scripts/froala-editor/js/plugins/entities.min.js",
+        "Content/Scripts/froala-editor/js/plugins/file.min.js",
+        "Content/Scripts/froala-editor/js/plugins/files_manager.min.js",
+        "Content/Scripts/froala-editor/js/plugins/font_family.min.js",
+        "Content/Scripts/froala-editor/js/plugins/font_size.min.js",
+        "Content/Scripts/froala-editor/js/plugins/forms.min.js",
+        "Content/Scripts/froala-editor/js/plugins/fullscreen.min.js",
+        "Content/Scripts/froala-editor/js/plugins/help.min.js",
+        "Content/Scripts/froala-editor/js/plugins/image.min.js",
+        "Content/Scripts/froala-editor/js/plugins/image_manager.min.js",
+        "Content/Scripts/froala-editor/js/plugins/inline_class.min.js",
+        "Content/Scripts/froala-editor/js/plugins/inline_style.min.js",
+        "Content/Scripts/froala-editor/js/plugins/line_breaker.min.js",
+        "Content/Scripts/froala-editor/js/plugins/line_height.min.js",
+        "Content/Scripts/froala-editor/js/plugins/link.min.js",
+        "Content/Scripts/froala-editor/js/plugins/lists.min.js",
+        "Content/Scripts/froala-editor/js/plugins/markdown.min.js",
+        "Content/Scripts/froala-editor/js/plugins/paragraph_format.min.js",
+        "Content/Scripts/froala-editor/js/plugins/paragraph_style.min.js",
+        "Content/Scripts/froala-editor/js/plugins/print.min.js",
+        "Content/Scripts/froala-editor/js/plugins/quick_insert.min.js",
+        "Content/Scripts/froala-editor/js/plugins/quote.min.js",
+        "Content/Scripts/froala-editor/js/plugins/save.min.js",
+        "Content/Scripts/froala-editor/js/plugins/special_characters.min.js",
+        "Content/Scripts/froala-editor/js/plugins/table.min.js",
+        "Content/Scripts/froala-editor/js/plugins/track_changes.min.js",
+        "Content/Scripts/froala-editor/js/plugins/trim_video.min.js",
+        "Content/Scripts/froala-editor/js/plugins/url.min.js",
+        "Content/Scripts/froala-editor/js/plugins/video.min.js",
+        "Content/Scripts/froala-editor/js/plugins/word_paste.min.js",
+        "Content/Scripts/froala-editor/js/third_party/embedly.min.js",
+        "Content/Scripts/froala-editor/js/third_party/font_awesome.min.js",
+        "Content/Scripts/froala-editor/js/third_party/image_tui.min.js",
+        "Content/Scripts/froala-editor/js/third_party/showdown.min.js",
+        "Content/Scripts/froala-editor/js/third_party/spell_checker.min.js",
+        "froalaeditor.4.0.18.nupkg.sha512",
+        "froalaeditor.nuspec"
+      ]
+    },
     "Humanizer.Core/2.14.1": {
       "sha512": "lQKvtaTDOXnoVJ20ibTuSIOf2i0uO0MPbDhd1jm238I+U/2ZnRENj0cktKZhtchBMtCUSRQ5v4xBCUbKNmyVMw==",
       "type": "package",
@@ -1213,6 +1560,36 @@
         "lib/netstandard2.0/Humanizer.dll",
         "lib/netstandard2.0/Humanizer.xml",
         "logo.png"
+      ]
+    },
+    "MailKit/3.6.0": {
+      "sha512": "P7sL/bWj6girXBYlmZmCQnS6Y0DHMe947iiH+Dzl3vlJJiFUcnhxJei/gnrIARuaFUpPoYoFjVqguHwOT4Myzg==",
+      "type": "package",
+      "path": "mailkit/3.6.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icons/mailkit-50.png",
+        "lib/net462/MailKit.dll",
+        "lib/net462/MailKit.pdb",
+        "lib/net462/MailKit.xml",
+        "lib/net47/MailKit.dll",
+        "lib/net47/MailKit.pdb",
+        "lib/net47/MailKit.xml",
+        "lib/net48/MailKit.dll",
+        "lib/net48/MailKit.pdb",
+        "lib/net48/MailKit.xml",
+        "lib/net6.0/MailKit.dll",
+        "lib/net6.0/MailKit.pdb",
+        "lib/net6.0/MailKit.xml",
+        "lib/netstandard2.0/MailKit.dll",
+        "lib/netstandard2.0/MailKit.pdb",
+        "lib/netstandard2.0/MailKit.xml",
+        "lib/netstandard2.1/MailKit.dll",
+        "lib/netstandard2.1/MailKit.pdb",
+        "lib/netstandard2.1/MailKit.xml",
+        "mailkit.3.6.0.nupkg.sha512",
+        "mailkit.nuspec"
       ]
     },
     "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
@@ -2116,6 +2493,36 @@
         "version.txt"
       ]
     },
+    "MimeKit/3.6.0": {
+      "sha512": "R7WNYvUA+qn4PHt1rMaIUJ3nyloZ2SlWyLjnLfGm90kbMcU/4sYS2QSQMs1dWbtcts5B0CSfB5a2jB9fWX9DAQ==",
+      "type": "package",
+      "path": "mimekit/3.6.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icons/mimekit-50.png",
+        "lib/net462/MimeKit.dll",
+        "lib/net462/MimeKit.pdb",
+        "lib/net462/MimeKit.xml",
+        "lib/net47/MimeKit.dll",
+        "lib/net47/MimeKit.pdb",
+        "lib/net47/MimeKit.xml",
+        "lib/net48/MimeKit.dll",
+        "lib/net48/MimeKit.pdb",
+        "lib/net48/MimeKit.xml",
+        "lib/net6.0/MimeKit.dll",
+        "lib/net6.0/MimeKit.pdb",
+        "lib/net6.0/MimeKit.xml",
+        "lib/netstandard2.0/MimeKit.dll",
+        "lib/netstandard2.0/MimeKit.pdb",
+        "lib/netstandard2.0/MimeKit.xml",
+        "lib/netstandard2.1/MimeKit.dll",
+        "lib/netstandard2.1/MimeKit.pdb",
+        "lib/netstandard2.1/MimeKit.xml",
+        "mimekit.3.6.0.nupkg.sha512",
+        "mimekit.nuspec"
+      ]
+    },
     "Mono.TextTemplating/2.2.1": {
       "sha512": "KZYeKBET/2Z0gY1WlTAK7+RHTl7GSbtvTLDXEZZojUdAPqpQNDL6tHv7VUpqfX5VEOh+uRGKaZXkuD253nEOBQ==",
       "type": "package",
@@ -2127,6 +2534,21 @@
         "lib/netstandard2.0/Mono.TextTemplating.dll",
         "mono.texttemplating.2.2.1.nupkg.sha512",
         "mono.texttemplating.nuspec"
+      ]
+    },
+    "Portable.BouncyCastle/1.9.0": {
+      "sha512": "eZZBCABzVOek+id9Xy04HhmgykF0wZg9wpByzrWN7q8qEI0Qen9b7tfd7w8VA3dOeesumMG7C5ZPy0jk7PSRHw==",
+      "type": "package",
+      "path": "portable.bouncycastle/1.9.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net40/BouncyCastle.Crypto.dll",
+        "lib/net40/BouncyCastle.Crypto.xml",
+        "lib/netstandard2.0/BouncyCastle.Crypto.dll",
+        "lib/netstandard2.0/BouncyCastle.Crypto.xml",
+        "portable.bouncycastle.1.9.0.nupkg.sha512",
+        "portable.bouncycastle.nuspec"
       ]
     },
     "System.Buffers/4.5.1": {
@@ -2275,24 +2697,27 @@
         "version.txt"
       ]
     },
-    "System.Formats.Asn1/5.0.0": {
-      "sha512": "MTvUIktmemNB+El0Fgw9egyqT9AYSIk6DTJeoDSpc3GIHxHCMo8COqkWT1mptX5tZ1SlQ6HJZ0OsSvMth1c12w==",
+    "System.Formats.Asn1/6.0.0": {
+      "sha512": "T6fD00dQ3NTbPDy31m4eQUwKW84s03z0N2C8HpOklyeaDgaJPa/TexP4/SkORMSOwc7WhKifnA6Ya33AkzmafA==",
       "type": "package",
-      "path": "system.formats.asn1/5.0.0",
+      "path": "system.formats.asn1/6.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/netcoreapp2.0/System.Formats.Asn1.targets",
+        "buildTransitive/netcoreapp3.1/_._",
         "lib/net461/System.Formats.Asn1.dll",
         "lib/net461/System.Formats.Asn1.xml",
+        "lib/net6.0/System.Formats.Asn1.dll",
+        "lib/net6.0/System.Formats.Asn1.xml",
         "lib/netstandard2.0/System.Formats.Asn1.dll",
         "lib/netstandard2.0/System.Formats.Asn1.xml",
-        "system.formats.asn1.5.0.0.nupkg.sha512",
+        "system.formats.asn1.6.0.0.nupkg.sha512",
         "system.formats.asn1.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
+        "useSharedDesignerContext.txt"
       ]
     },
     "System.Globalization/4.3.0": {
@@ -3030,6 +3455,43 @@
         "version.txt"
       ]
     },
+    "System.Security.Cryptography.Pkcs/6.0.0": {
+      "sha512": "elM3x+xSRhzQysiqo85SbidJJ2YbZlnvmh+53TuSZHsD7dNuuEWser+9EFtY+rYupBwkq2avc6ZCO3/6qACgmg==",
+      "type": "package",
+      "path": "system.security.cryptography.pkcs/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/netcoreapp2.0/System.Security.Cryptography.Pkcs.targets",
+        "buildTransitive/netcoreapp3.1/_._",
+        "lib/net461/System.Security.Cryptography.Pkcs.dll",
+        "lib/net461/System.Security.Cryptography.Pkcs.xml",
+        "lib/net6.0/System.Security.Cryptography.Pkcs.dll",
+        "lib/net6.0/System.Security.Cryptography.Pkcs.xml",
+        "lib/netcoreapp3.1/System.Security.Cryptography.Pkcs.dll",
+        "lib/netcoreapp3.1/System.Security.Cryptography.Pkcs.xml",
+        "lib/netstandard2.0/System.Security.Cryptography.Pkcs.dll",
+        "lib/netstandard2.0/System.Security.Cryptography.Pkcs.xml",
+        "lib/netstandard2.1/System.Security.Cryptography.Pkcs.dll",
+        "lib/netstandard2.1/System.Security.Cryptography.Pkcs.xml",
+        "runtimes/win/lib/net461/System.Security.Cryptography.Pkcs.dll",
+        "runtimes/win/lib/net461/System.Security.Cryptography.Pkcs.xml",
+        "runtimes/win/lib/net6.0/System.Security.Cryptography.Pkcs.dll",
+        "runtimes/win/lib/net6.0/System.Security.Cryptography.Pkcs.xml",
+        "runtimes/win/lib/netcoreapp3.1/System.Security.Cryptography.Pkcs.dll",
+        "runtimes/win/lib/netcoreapp3.1/System.Security.Cryptography.Pkcs.xml",
+        "runtimes/win/lib/netstandard2.0/System.Security.Cryptography.Pkcs.dll",
+        "runtimes/win/lib/netstandard2.0/System.Security.Cryptography.Pkcs.xml",
+        "runtimes/win/lib/netstandard2.1/System.Security.Cryptography.Pkcs.dll",
+        "runtimes/win/lib/netstandard2.1/System.Security.Cryptography.Pkcs.xml",
+        "system.security.cryptography.pkcs.6.0.0.nupkg.sha512",
+        "system.security.cryptography.pkcs.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
     "System.Security.Cryptography.ProtectedData/5.0.0": {
       "sha512": "HGxMSAFAPLNoxBvSfW08vHde0F9uh7BjASwu6JF9JnXuEPhCY3YUqURn0+bQV/4UWeaqymmrHWV+Aw9riQCtCA==",
       "type": "package",
@@ -3231,45 +3693,43 @@
         "system.text.encoding.nuspec"
       ]
     },
-    "System.Text.Encoding.CodePages/5.0.0": {
-      "sha512": "NyscU59xX6Uo91qvhOs2Ccho3AR2TnZPomo1Z0K6YpyztBPM/A5VbkzOO19sy3A3i1TtEnTxA7bCe3Us+r5MWg==",
+    "System.Text.Encoding.CodePages/6.0.0": {
+      "sha512": "ZFCILZuOvtKPauZ/j/swhvw68ZRi9ATCfvGbk1QfydmcXBkIWecWKn/250UH7rahZ5OoDBaiAudJtPvLwzw85A==",
       "type": "package",
-      "path": "system.text.encoding.codepages/5.0.0",
+      "path": "system.text.encoding.codepages/6.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/netcoreapp2.0/System.Text.Encoding.CodePages.targets",
+        "buildTransitive/netcoreapp3.1/_._",
         "lib/MonoAndroid10/_._",
         "lib/MonoTouch10/_._",
-        "lib/net46/System.Text.Encoding.CodePages.dll",
         "lib/net461/System.Text.Encoding.CodePages.dll",
         "lib/net461/System.Text.Encoding.CodePages.xml",
-        "lib/netstandard1.3/System.Text.Encoding.CodePages.dll",
+        "lib/net6.0/System.Text.Encoding.CodePages.dll",
+        "lib/net6.0/System.Text.Encoding.CodePages.xml",
+        "lib/netcoreapp3.1/System.Text.Encoding.CodePages.dll",
+        "lib/netcoreapp3.1/System.Text.Encoding.CodePages.xml",
         "lib/netstandard2.0/System.Text.Encoding.CodePages.dll",
         "lib/netstandard2.0/System.Text.Encoding.CodePages.xml",
         "lib/xamarinios10/_._",
         "lib/xamarinmac20/_._",
         "lib/xamarintvos10/_._",
         "lib/xamarinwatchos10/_._",
-        "ref/MonoAndroid10/_._",
-        "ref/MonoTouch10/_._",
-        "ref/xamarinios10/_._",
-        "ref/xamarinmac20/_._",
-        "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._",
         "runtimes/win/lib/net461/System.Text.Encoding.CodePages.dll",
         "runtimes/win/lib/net461/System.Text.Encoding.CodePages.xml",
-        "runtimes/win/lib/netcoreapp2.0/System.Text.Encoding.CodePages.dll",
-        "runtimes/win/lib/netcoreapp2.0/System.Text.Encoding.CodePages.xml",
-        "runtimes/win/lib/netstandard1.3/System.Text.Encoding.CodePages.dll",
+        "runtimes/win/lib/net6.0/System.Text.Encoding.CodePages.dll",
+        "runtimes/win/lib/net6.0/System.Text.Encoding.CodePages.xml",
+        "runtimes/win/lib/netcoreapp3.1/System.Text.Encoding.CodePages.dll",
+        "runtimes/win/lib/netcoreapp3.1/System.Text.Encoding.CodePages.xml",
         "runtimes/win/lib/netstandard2.0/System.Text.Encoding.CodePages.dll",
         "runtimes/win/lib/netstandard2.0/System.Text.Encoding.CodePages.xml",
-        "system.text.encoding.codepages.5.0.0.nupkg.sha512",
+        "system.text.encoding.codepages.6.0.0.nupkg.sha512",
         "system.text.encoding.codepages.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
+        "useSharedDesignerContext.txt"
       ]
     },
     "System.Text.Encodings.Web/7.0.0": {
@@ -3504,6 +3964,8 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "FroalaEditor >= 4.0.18",
+      "MailKit >= 3.6.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.4",
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.4"
     ]
@@ -3552,6 +4014,14 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
+          "FroalaEditor": {
+            "target": "Package",
+            "version": "[4.0.18, )"
+          },
+          "MailKit": {
+            "target": "Package",
+            "version": "[3.6.0, )"
+          },
           "Microsoft.EntityFrameworkCore.SqlServer": {
             "target": "Package",
             "version": "[7.0.4, )"

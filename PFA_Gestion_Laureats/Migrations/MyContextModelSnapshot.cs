@@ -36,19 +36,21 @@ namespace PFA_Gestion_Laureats.Migrations
                     b.Property<DateTime>("Date_limite_Deposer")
                         .HasColumnType("datetime2");
 
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Email_Reception")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("EntrepriseId")
+                        .HasColumnType("int");
+
                     b.Property<string>("Photo")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Titre")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Url")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -56,6 +58,8 @@ namespace PFA_Gestion_Laureats.Migrations
                         .HasColumnType("int");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("EntrepriseId");
 
                     b.HasIndex("UtilisateurId");
 
@@ -113,6 +117,10 @@ namespace PFA_Gestion_Laureats.Migrations
                         .HasColumnType("bit");
 
                     b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Email")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -387,9 +395,6 @@ namespace PFA_Gestion_Laureats.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("EtudiantRole")
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<bool>("Isvalide")
                         .HasColumnType("bit");
 
@@ -440,7 +445,7 @@ namespace PFA_Gestion_Laureats.Migrations
                 {
                     b.HasBaseType("PFA_Gestion_Laureats.Models.Utilisateur");
 
-                    b.HasDiscriminator().HasValue("Agent");
+                    b.HasDiscriminator().HasValue("AgentDirection");
                 });
 
             modelBuilder.Entity("PFA_Gestion_Laureats.Models.Etudiant", b =>
@@ -469,11 +474,19 @@ namespace PFA_Gestion_Laureats.Migrations
 
             modelBuilder.Entity("PFA_Gestion_Laureats.Models.Annonce", b =>
                 {
+                    b.HasOne("PFA_Gestion_Laureats.Models.Entreprise", "entreprise")
+                        .WithMany("annonces")
+                        .HasForeignKey("EntrepriseId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("PFA_Gestion_Laureats.Models.Utilisateur", "utilisateur")
                         .WithMany("annonces")
                         .HasForeignKey("UtilisateurId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("entreprise");
 
                     b.Navigation("utilisateur");
                 });
@@ -613,6 +626,8 @@ namespace PFA_Gestion_Laureats.Migrations
 
             modelBuilder.Entity("PFA_Gestion_Laureats.Models.Entreprise", b =>
                 {
+                    b.Navigation("annonces");
+
                     b.Navigation("experiences");
 
                     b.Navigation("stages");

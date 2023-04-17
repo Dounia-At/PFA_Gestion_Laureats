@@ -1,0 +1,48 @@
+﻿@model IList<Annonce>
+@section title {
+   Accueil
+}
+<div class="content-wrapper">
+
+    <div class="container-xxl flex-grow-1 container-p-y">
+        <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Accueil /</span> Annonces</h4>
+        @foreach (Annonce a in Model)
+        {
+            <div class="row mb-5 d-flex justify-content-between">
+                <div class="col-md">
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img class="card-img-left container my-3" src="~/@a.entreprise.Logo" alt="Card image" width="146" height="146" />
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <div class="flex-grow-1 row">
+                                        <div class="col-9 mb-sm-0 mb-2">
+                                            <h5 class="mb-0 text-dark"><strong>@a.utilisateur.Nom @a.utilisateur.Prenom</strong></h5>
+                                            <small class="text-muted">@a.utilisateur.Titre_Profil</small>
+                                        </div>
+
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <h5 class="card-title mx-3 my-3 ">@a.Titre</h5>
+                                        <a asp-controller="Annonce" asp-action="Details" asp-route-id="@a.Id" class="btn btn-outline-primary waves-effect rounded-pill">Voir l'Annonce</a>
+                                       
+                                       
+                                    </div>
+                                   @* <p class="card-text mt-3">*@
+                                        
+                                   @* </p>*@
+                                    <p class="card-text"><small class="text-muted">@a.Date_Creation.Date.ToString("MM/dd/yyyy")</small></p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+           
+        }
+        
+    </div>
+ </div>

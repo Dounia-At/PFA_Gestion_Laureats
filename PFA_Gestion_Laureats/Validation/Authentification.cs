@@ -6,7 +6,7 @@ namespace PFA_Gestion_Laureats.Validation
     {
         public override void OnActionExecuting(ActionExecutingContext context)
         {
-            if (context.HttpContext.Session.GetString("login") == null)
+            if (context.HttpContext.Session.GetString("Login") == null)
             {
                 context.HttpContext.Response.Redirect("/User/Login");
             }
