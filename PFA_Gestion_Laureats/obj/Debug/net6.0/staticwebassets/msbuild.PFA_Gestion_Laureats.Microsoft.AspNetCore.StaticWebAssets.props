@@ -16,38 +16,6 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\css\demo.css))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\img\avatars\0d442e2b-d4ca-4003-8e3b-3c41d93bc5f1BIMO.jpg))">
-      <SourceType>Package</SourceType>
-      <SourceId>PFA_Gestion_Laureats</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/PFA_Gestion_Laureats</BasePath>
-      <RelativePath>assets/img/avatars/0d442e2b-d4ca-4003-8e3b-3c41d93bc5f1BIMO.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\img\avatars\0d442e2b-d4ca-4003-8e3b-3c41d93bc5f1BIMO.jpg))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\css\demo.css))">
-      <SourceType>Package</SourceType>
-      <SourceId>PFA_Gestion_Laureats</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/PFA_Gestion_Laureats</BasePath>
-      <RelativePath>assets/css/demo.css</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\css\demo.css))</OriginalItemSpec>
-    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\img\Annones\3c3697f1-84de-42fa-9f9c-a2d7d21f2bf9EHEI.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>PFA_Gestion_Laureats</SourceId>
@@ -111,6 +79,22 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\img\Annones\5592bcc0-f12e-4a2f-ab87-4cb98a67aa52689327.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\img\avatars\0d442e2b-d4ca-4003-8e3b-3c41d93bc5f1BIMO.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>PFA_Gestion_Laureats</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/PFA_Gestion_Laureats</BasePath>
+      <RelativePath>assets/img/avatars/0d442e2b-d4ca-4003-8e3b-3c41d93bc5f1BIMO.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\img\avatars\0d442e2b-d4ca-4003-8e3b-3c41d93bc5f1BIMO.jpg))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\img\avatars\953436dc-872d-4dea-b227-886c0868b943cat2.jpg))">
       <SourceType>Package</SourceType>
@@ -1663,22 +1647,6 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\vendor\libs\typeahead-js\typeahead.js.LICENSE.txt))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\bd00e2f7-8272-4f66-aa12-b7aed85a72b81.png))">
-      <SourceType>Package</SourceType>
-      <SourceId>PFA_Gestion_Laureats</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/PFA_Gestion_Laureats</BasePath>
-      <RelativePath>bd00e2f7-8272-4f66-aa12-b7aed85a72b81.png</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\bd00e2f7-8272-4f66-aa12-b7aed85a72b81.png))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\ckeditor\adapters\jquery.js))">
       <SourceType>Package</SourceType>

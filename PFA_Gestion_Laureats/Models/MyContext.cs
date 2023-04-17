@@ -29,6 +29,10 @@ namespace PFA_Gestion_Laureats.Models
             .IsUnique();
 
             modelBuilder.Entity<Utilisateur>()
+            .HasIndex(u => u.Email)
+            .IsUnique();
+
+            modelBuilder.Entity<Utilisateur>()
               .HasDiscriminator<string>("UtilisateurRole")
               .HasValue<AgentDirection>("AgentDirection")
               .HasValue<Etudiant>("Etudiant")

@@ -53,7 +53,7 @@ namespace PFA_Gestion_Laureats.Controllers
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            ViewBag.entreprises = new SelectList(db.Entreprises.ToList(), "Id", "Nom", testView.EntrepriseId*);
+            ViewBag.entreprises = new SelectList(db.Entreprises.ToList(), "Id", "Nom", testView.EntrepriseId);
 
             return View(testView);
         }

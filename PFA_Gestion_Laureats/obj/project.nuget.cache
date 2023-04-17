@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "TcxUhP0lNmnCU2t87Q6S+fi/oW2oOYre9QNdFbShm7mSOIcdUgKnfnSSRG7mAxntcXFlb6L/TMeaYJDcWR+5Dw==",
+  "dgSpecHash": "7cDDHcnTiqz1CSM/UOK9YKM1Iqm1DuVc/7mcJtLSZ3LTLnuR0tZsdwC0JFdb9oHJuAR5xKRg1QTu7EDYaztLUg==",
   "success": true,
   "projectFilePath": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats.csproj",
   "expectedPackageFiles": [
@@ -9,7 +9,9 @@
     "C:\\Users\\atoin\\.nuget\\packages\\epplus\\6.2.1\\epplus.6.2.1.nupkg.sha512",
     "C:\\Users\\atoin\\.nuget\\packages\\epplus.interfaces\\6.1.1\\epplus.interfaces.6.1.1.nupkg.sha512",
     "C:\\Users\\atoin\\.nuget\\packages\\epplus.system.drawing\\6.1.1\\epplus.system.drawing.6.1.1.nupkg.sha512",
+    "C:\\Users\\atoin\\.nuget\\packages\\froalaeditor\\4.0.18\\froalaeditor.4.0.18.nupkg.sha512",
     "C:\\Users\\atoin\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
+    "C:\\Users\\atoin\\.nuget\\packages\\mailkit\\3.6.0\\mailkit.3.6.0.nupkg.sha512",
     "C:\\Users\\atoin\\.nuget\\packages\\microsoft.aspnet.mvc\\5.2.9\\microsoft.aspnet.mvc.5.2.9.nupkg.sha512",
     "C:\\Users\\atoin\\.nuget\\packages\\microsoft.aspnet.razor\\3.2.9\\microsoft.aspnet.razor.3.2.9.nupkg.sha512",
     "C:\\Users\\atoin\\.nuget\\packages\\microsoft.aspnet.webpages\\3.2.9\\microsoft.aspnet.webpages.3.2.9.nupkg.sha512",
@@ -55,7 +57,9 @@
     "C:\\Users\\atoin\\.nuget\\packages\\microsoft.web.infrastructure\\1.0.0\\microsoft.web.infrastructure.1.0.0.nupkg.sha512",
     "C:\\Users\\atoin\\.nuget\\packages\\microsoft.win32.registry\\5.0.0\\microsoft.win32.registry.5.0.0.nupkg.sha512",
     "C:\\Users\\atoin\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
+    "C:\\Users\\atoin\\.nuget\\packages\\mimekit\\3.6.0\\mimekit.3.6.0.nupkg.sha512",
     "C:\\Users\\atoin\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
+    "C:\\Users\\atoin\\.nuget\\packages\\portable.bouncycastle\\1.9.0\\portable.bouncycastle.1.9.0.nupkg.sha512",
     "C:\\Users\\atoin\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\atoin\\.nuget\\packages\\system.codedom\\4.4.0\\system.codedom.4.4.0.nupkg.sha512",
     "C:\\Users\\atoin\\.nuget\\packages\\system.configuration.configurationmanager\\5.0.0\\system.configuration.configurationmanager.5.0.0.nupkg.sha512",

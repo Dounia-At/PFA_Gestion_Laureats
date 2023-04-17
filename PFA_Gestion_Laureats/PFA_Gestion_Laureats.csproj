@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="EPPlus" Version="6.2.1" />
     <PackageReference Include="FroalaEditor" Version="4.0.18" />
     <PackageReference Include="MailKit" Version="3.6.0" />
     <PackageReference Include="Microsoft.AspNet.Mvc" Version="5.2.9" />
