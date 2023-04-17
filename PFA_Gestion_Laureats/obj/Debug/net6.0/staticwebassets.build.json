@@ -54,7 +54,7 @@
       "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\css\\demo.css",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/css/demo.css",
       "AssetKind": "All",
@@ -71,7 +71,7 @@
       "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\img\\avatars\\0d442e2b-d4ca-4003-8e3b-3c41d93bc5f1BIMO.jpg",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/img/avatars/0d442e2b-d4ca-4003-8e3b-3c41d93bc5f1BIMO.jpg",
       "AssetKind": "All",
@@ -1632,10 +1632,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\libs\\perfect-scrollbar\\perfect-scrollbar.js.LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\libs\\select2\\select2.css",
+      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\libs\\select2\\select2.css",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/vendor/libs/select2/select2.css",
       "AssetKind": "All",
@@ -1649,10 +1649,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\libs\\select2\\select2.css"
     },
     {
-      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\libs\\select2\\select2.js",
+      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\libs\\select2\\select2.js",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/vendor/libs/select2/select2.js",
       "AssetKind": "All",
@@ -1666,10 +1666,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\libs\\select2\\select2.js"
     },
     {
-      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\libs\\select2\\select2.js.LICENSE.txt",
+      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\libs\\select2\\select2.js.LICENSE.txt",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "assets/vendor/libs/select2/select2.js.LICENSE.txt",
       "AssetKind": "All",
@@ -1683,7 +1683,7 @@
       "OriginalItemSpec": "wwwroot\\assets\\vendor\\libs\\select2\\select2.js.LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\libs\\typeahead-js\\typeahead.css",
+      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\libs\\typeahead-js\\typeahead.css",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
@@ -1737,7 +1737,7 @@
       "Identity": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\css\\site.css",
       "SourceId": "PFA_Gestion_Laureats",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
       "BasePath": "_content/PFA_Gestion_Laureats",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -2752,6 +2752,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\logo.png",
+      "SourceId": "PFA_Gestion_Laureats",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "BasePath": "_content/PFA_Gestion_Laureats",
+      "RelativePath": "logo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\logo.png"
+    },
+    {
+      "Identity": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\novelis.jpg",
+      "SourceId": "PFA_Gestion_Laureats",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\",
+      "BasePath": "_content/PFA_Gestion_Laureats",
+      "RelativePath": "novelis.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\novelis.jpg"
     }
   ]
 }

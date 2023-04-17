@@ -64,7 +64,7 @@
                 <div class="app-brand demo">
                     <a href="index.html" class="app-brand-link">
                         <span class="app-brand-logo demo">
-                            <img src="../../assets/img/logo/eheio.png" alt class="img-fluid img-thumbnail" />
+                            <img src="../../assets/img/logo/eheio.png"  class="img-fluid img-thumbnail" />
                         </span>
                         <span class="app-brand-text demo menu-text fw-bold">EHEIO</span>
                     </a>
@@ -130,7 +130,7 @@
                         
                         
                     }
-                    @if (Convert.ToString(Context.Response.HttpContext.Session.GetString("Role")) == "Agent")
+                    @if (Convert.ToString(Context.Response.HttpContext.Session.GetString("Role")) == "AgentDirection")
                     {
                         <li class="menu-item mt-3">
                             <a href="" class="menu-link ">
@@ -157,12 +157,12 @@
                        
 
                     }
-                    @if (Convert.ToString(Context.Response.HttpContext.Session.GetString("Role")) == "Agent" || (Convert.ToString(Context.Response.HttpContext.Session.GetString("Role")) == "Laureat"))
+                    @if (Convert.ToString(Context.Response.HttpContext.Session.GetString("Role")) == "AgentDirection" || (Convert.ToString(Context.Response.HttpContext.Session.GetString("Role")) == "Laureat"))
                     {
                         <li class="menu-item mt-3">
-                            <a href="" class="menu-link ">
+                            <a asp-controller="Annonce" asp-action="MesAnnonces" class="menu-link ">
                                 <i class="menu-icon tf-icons ti ti-file "></i>
-                                <div data-i18n="Mes Expériences professionnelles"> Annonces</div>
+                                <div data-i18n="Mes Annonces"> Mes Annonces</div>
                             </a>
 
                         </li>
@@ -281,7 +281,7 @@
                             <li class="nav-item navbar-dropdown dropdown-user dropdown">
                                 <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
                                     <div class="avatar avatar-online">
-                                        <img src="../../assets/img/avatars/1.png" alt class="h-auto rounded-circle" />
+                                        <img src="../../assets/img/avatars/1.png"  class="h-auto rounded-circle" />
                                     </div>
                                 </a>
                                 <ul class="dropdown-menu dropdown-menu-end">
@@ -295,7 +295,7 @@
                                                 </div>
                                                 <div class="flex-grow-1">
                                                     <span class="fw-semibold d-block"></span>
-                                                    <small class="text-muted">Admin</small>
+                                                    <small class="text-muted">  @Html.Raw(Context.Response.HttpContext.Session.GetString("Role"))</small>
                                                 </div>
                                             </div>
                                         </a>

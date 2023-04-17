@@ -704,20 +704,12 @@ namespace PFA_Gestion_Laureats.Controllers
                     {
                         HttpContext.Session.SetString("Login", utilisateur.Login);
                         HttpContext.Session.SetString("Role", utilisateur.GetType().Name);
-
-
-                        if (utilisateur.GetType().Name == "AgentDirection")
-                        {
-                            HttpContext.Session.SetString("Role", "Agent");
-                        }
-                        else
-                        {
-                            HttpContext.Session.SetString("Role", utilisateur.GetType().Name);
-                        }
-
-                        return RedirectToAction("Index", "Home");
+                       
+                        return RedirectToAction("Annonces", "Annonce");
 
                     }
+
+
                 }
                 else
                 {

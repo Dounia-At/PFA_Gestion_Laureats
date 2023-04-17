@@ -17,7 +17,7 @@
       "PackagePath": "staticwebassets\\assets\\img\\avatars\\953436dc-872d-4dea-b227-886c0868b943cat2.jpg"
     },
     {
-      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\img\\avatars\\profil.png",
+      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\img\\avatars\\profil.png",
       "PackagePath": "staticwebassets\\assets\\img\\avatars\\profil.png"
     },
     {
@@ -161,7 +161,7 @@
       "PackagePath": "staticwebassets\\assets\\vendor\\css\\pages\\cards-advance.css"
     },
     {
-      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\pages\\page-auth.css",
+      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\css\\pages\\page-auth.css",
       "PackagePath": "staticwebassets\\assets\\vendor\\css\\pages\\page-auth.css"
     },
     {
@@ -377,19 +377,19 @@
       "PackagePath": "staticwebassets\\assets\\vendor\\libs\\perfect-scrollbar\\perfect-scrollbar.js.LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\libs\\select2\\select2.css",
+      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\libs\\select2\\select2.css",
       "PackagePath": "staticwebassets\\assets\\vendor\\libs\\select2\\select2.css"
     },
     {
-      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\libs\\select2\\select2.js",
+      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\libs\\select2\\select2.js",
       "PackagePath": "staticwebassets\\assets\\vendor\\libs\\select2\\select2.js"
     },
     {
-      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\libs\\select2\\select2.js.LICENSE.txt",
+      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\libs\\select2\\select2.js.LICENSE.txt",
       "PackagePath": "staticwebassets\\assets\\vendor\\libs\\select2\\select2.js.LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\libs\\typeahead-js\\typeahead.css",
+      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\vendor\\libs\\typeahead-js\\typeahead.css",
       "PackagePath": "staticwebassets\\assets\\vendor\\libs\\typeahead-js\\typeahead.css"
     },
     {
@@ -639,6 +639,14 @@
     {
       "Id": "C:\\Users\\atoin\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\logo.png",
+      "PackagePath": "staticwebassets\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\novelis.jpg",
+      "PackagePath": "staticwebassets\\novelis.jpg"
     },
     {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.PFA_Gestion_Laureats.Microsoft.AspNetCore.StaticWebAssets.props",

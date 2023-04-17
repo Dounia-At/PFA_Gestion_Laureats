@@ -30,7 +30,7 @@ namespace PFA_Gestion_Laureats.Models
 
             modelBuilder.Entity<Utilisateur>()
               .HasDiscriminator<string>("UtilisateurRole")
-              .HasValue<AgentDirection>("Agent")
+              .HasValue<AgentDirection>("AgentDirection")
               .HasValue<Etudiant>("Etudiant")
               .HasValue<Laureat>("Laureat");
 

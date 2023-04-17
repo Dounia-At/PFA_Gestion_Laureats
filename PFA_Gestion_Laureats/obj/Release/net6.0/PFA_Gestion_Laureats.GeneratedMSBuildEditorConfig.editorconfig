@@ -16,6 +16,30 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Computer\OneDrive\Documents\GitHub\PFA_Gestion_Laureats\PFA_Gestion_Laureats
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Computer/OneDrive/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/Annonce/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5ub25jZVxBZGQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Computer/OneDrive/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/Annonce/Annonces.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5ub25jZVxBbm5vbmNlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Computer/OneDrive/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/Annonce/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5ub25jZVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Computer/OneDrive/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/Annonce/MesAnnonces.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5ub25jZVxNZXNBbm5vbmNlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Computer/OneDrive/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/Annonce/Postuler.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5ub25jZVxQb3N0dWxlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Computer/OneDrive/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/Annonce/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5ub25jZVxVcGRhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Computer/OneDrive/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -32,8 +56,28 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Computer/OneDrive/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/User/InscriptionEtudiant.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxJbnNjcmlwdGlvbkV0dWRpYW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Computer/OneDrive/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/User/InscriptionLaureat.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxJbnNjcmlwdGlvbkxhdXJlYXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Computer/OneDrive/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/User/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Computer/OneDrive/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/User/UpdateCompte.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxVcGRhdGVDb21wdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Computer/OneDrive/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/User/UpdatePicture.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxVcGRhdGVQaWN0dXJlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Computer/OneDrive/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/User/UpdateSecurite.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxVcGRhdGVTZWN1cml0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Computer/OneDrive/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/_ViewImports.cshtml]
@@ -47,3 +91,7 @@ build_metadata.AdditionalFiles.CssScope =
 [C:/Users/Computer/OneDrive/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-rd21htmrtb
+
+[C:/Users/Computer/OneDrive/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/Shared/_LayoutInscription.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRJbnNjcmlwdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-coogu5b3jl

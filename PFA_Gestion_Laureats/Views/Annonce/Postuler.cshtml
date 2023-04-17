@@ -1,0 +1,43 @@
+﻿@model PFA_Gestion_Laureats.ViewModels.AddPostulerViewModel
+<h4 class="fw-bold py-3 mb-4 card-header"><a class="text-muted fw-light" asp-controller="Annonce" asp-action="Annonces">Accueil /</a> Postuler</h4>
+<div class="row">
+
+    <div class="col-12">
+        <div class="card">
+
+            <div class="card-body">
+                <form id="formValidationExamples" class="row g-3" method="post" enctype="multipart/form-data">
+                    <!-- Titre Annonce-->
+
+                    <div class="col-12">
+                        <h6 class="fw-semibold">Votre Email : @ViewBag.email </h6>
+                        <hr class="mt-0" />
+                    </div>
+                    @if (@ViewBag.Alert != null)
+                    {
+                        <div class="alert alert-danger alert-dismissible fade show">
+
+                            <strong>@ViewBag.Alert</strong>
+                        </div>
+                    }
+
+                    <div class="col-md-12">
+                        <label asp-for="password" class="form-label"></label>
+                        <input class="form-control" asp-for="password" required />
+                        <span asp-validation-for="password"></span>
+                    </div>
+                    <div class="col-md-12">
+                        <label asp-for="CV" class="form-label"></label>
+                        <input class="form-control" asp-for="CV" required />
+                        <span asp-validation-for="CV"></span>
+                    </div>
+                    <div class="col-12">
+
+                        <button type="submit" name="submitButton" class="btn btn-success btn-submit waves-effect waves-light">Postuler</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+   
+</div>
