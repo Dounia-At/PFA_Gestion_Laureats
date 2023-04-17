@@ -704,7 +704,9 @@ namespace PFA_Gestion_Laureats.Controllers
                     {
                         HttpContext.Session.SetString("Login", utilisateur.Login);
                         HttpContext.Session.SetString("Role", utilisateur.GetType().Name);
-                       
+                        utilisateur.date_Login= DateTime.Now;
+                        db.Utilisateurs.Update(utilisateur);
+                        db.SaveChanges();
                         return RedirectToAction("Annonces", "Annonce");
 
                     }
@@ -721,6 +723,12 @@ namespace PFA_Gestion_Laureats.Controllers
         }
         public IActionResult logout()
         {
+            string login=HttpContext.Session.GetString("Login");
+            Utilisateur utilisateur = db.Utilisateurs.Where(us => us.Login == login).FirstOrDefault();
+
+            utilisateur.date_Logout = DateTime.Now;
+            db.Utilisateurs.Update(utilisateur);
+            db.SaveChanges();
             HttpContext.Session.Remove("Login");
             return RedirectToAction("Login", "User");
         }

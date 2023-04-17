@@ -28,6 +28,11 @@ namespace PFA_Gestion_Laureats.Models
         public string? Photo_Profil { get; set; }
         [DefaultValue(false)]
         public bool Isvalide { get; set; }
+        [DefaultValue(false)]
+        public bool IsComfirmed { get; set; }
+        public DateTime ?date_Login { get;set; }
+        public DateTime ?date_Logout { get; set; }
+
         public IList<Annonce>? annonces { get; set; }
         public IList<Message>? messagesEnvoyees { get; set; }
         public IList<Message>? BoitesReception { get; set; }

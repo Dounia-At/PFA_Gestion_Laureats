@@ -12,7 +12,7 @@ using PFA_Gestion_Laureats.Models;
 namespace PFA_Gestion_Laureats.Migrations
 {
     [DbContext(typeof(MyContext))]
-    [Migration("20230417112301_Fourth")]
+    [Migration("20230417143035_Fourth")]
     partial class Fourth
     {
         /// <inheritdoc />
@@ -398,6 +398,9 @@ namespace PFA_Gestion_Laureats.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
+                    b.Property<bool>("IsComfirmed")
+                        .HasColumnType("bit");
+
                     b.Property<bool>("Isvalide")
                         .HasColumnType("bit");
 
@@ -430,6 +433,12 @@ namespace PFA_Gestion_Laureats.Migrations
                     b.Property<string>("UtilisateurRole")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("date_Login")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("date_Logout")
+                        .HasColumnType("datetime2");
 
                     b.HasKey("Id");
 

@@ -395,6 +395,9 @@ namespace PFA_Gestion_Laureats.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
+                    b.Property<bool>("IsComfirmed")
+                        .HasColumnType("bit");
+
                     b.Property<bool>("Isvalide")
                         .HasColumnType("bit");
 
@@ -427,6 +430,12 @@ namespace PFA_Gestion_Laureats.Migrations
                     b.Property<string>("UtilisateurRole")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("date_Login")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("date_Logout")
+                        .HasColumnType("datetime2");
 
                     b.HasKey("Id");
 
