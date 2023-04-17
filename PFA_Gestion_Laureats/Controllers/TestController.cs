@@ -21,12 +21,8 @@ namespace PFA_Gestion_Laureats.Controllers
             {
                 ViewBag.role = "Agent";
             }
-            List<Test> tests = db.Tests.OrderByDescending(t => t.Id).AsNoTracking().ToList();
-            foreach (Test test in tests)
-            {
-                test.entreprise = db.Entreprises.Find(test.EntrepriseId);
-                test.agentDirection = db.Agents.Find(test.AgentDirectionId);
-            }
+            List<Test> tests = db.Tests.OrderByDescending(t => t.Id).Include(t => t.entreprise).Include(t => t.agentDirection).AsNoTracking().ToList();
+            
 
             return View(tests);
         }

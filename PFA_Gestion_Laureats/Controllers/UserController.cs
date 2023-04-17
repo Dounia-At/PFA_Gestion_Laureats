@@ -29,7 +29,7 @@ namespace PFA_Gestion_Laureats.Controllers
             utilisateur.Isvalide = true;
             db.Utilisateurs.Update(utilisateur);
             db.SaveChanges();
-            return View();
+            return RedirectToAction("Validation");
         }
         [Authentification]
         public async Task< List<Utilisateur> > ImportExcel(IFormFile file)
@@ -421,7 +421,7 @@ namespace PFA_Gestion_Laureats.Controllers
             db.Utilisateurs.Remove(utilisateur);
             db.SaveChanges();
 
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("Validation");
         }
 
 

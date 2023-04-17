@@ -97,6 +97,7 @@ C:\Users\atoin\Documents\GitHub\PFA_Gestion_Laureats\PFA_Gestion_Laureats\bin\De
 C:\Users\atoin\Documents\GitHub\PFA_Gestion_Laureats\PFA_Gestion_Laureats\bin\Debug\net6.0\Microsoft.IO.RecyclableMemoryStream.dll
 C:\Users\atoin\Documents\GitHub\PFA_Gestion_Laureats\PFA_Gestion_Laureats\bin\Debug\net6.0\MimeKit.dll
 C:\Users\atoin\Documents\GitHub\PFA_Gestion_Laureats\PFA_Gestion_Laureats\bin\Debug\net6.0\BouncyCastle.Crypto.dll
+C:\Users\atoin\Documents\GitHub\PFA_Gestion_Laureats\PFA_Gestion_Laureats\bin\Debug\net6.0\Microsoft.IO.RecyclableMemoryStream.dll
 C:\Users\atoin\Documents\GitHub\PFA_Gestion_Laureats\PFA_Gestion_Laureats\bin\Debug\net6.0\System.Security.Cryptography.Pkcs.dll
 C:\Users\atoin\Documents\GitHub\PFA_Gestion_Laureats\PFA_Gestion_Laureats\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
 C:\Users\atoin\Documents\GitHub\PFA_Gestion_Laureats\PFA_Gestion_Laureats\bin\Debug\net6.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
