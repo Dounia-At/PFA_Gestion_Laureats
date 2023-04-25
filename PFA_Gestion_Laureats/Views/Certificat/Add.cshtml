@@ -1,0 +1,58 @@
+﻿@model PFA_Gestion_Laureats.ViewModels.Certificats.AddCertificatViewModel
+@section title {
+   Nouvelle Certificat
+}
+<h4 class="fw-bold py-3 mb-4 card-header"><a class="text-muted fw-light" asp-controller="Annonce" asp-action="Annonces">Accueil /</a>  Nouvelle Certificat</h4>
+<div class="row">
+
+    <div class="col-12">
+        <div class="card">
+
+            <div class="card-body">
+                <form id="formValidationExamples" class="row g-3" method="post">
+                   
+
+                    <div class="col-12">
+                        <h5 class="fw-semibold">Certificat</h5>
+                        <hr class="mt-0" />
+                    </div>
+
+                    <div class="col-md-12">
+                        <label asp-for="Nom" class="form-label">Nom <strong style="color:red">*</strong></label>
+                        <input class="form-control" asp-for="Nom" placeholder="Ex:Certified Network Associate Security (CCNA)" required />
+                        <span asp-validation-for="Nom" style="color:red"></span>
+                    </div>
+
+                    <div class="col-md-12">
+                        <label asp-for="Organisation" class="form-label">Organisation  <strong style="color:red">*</strong></label>
+                        <input class="form-control" asp-for="Organisation" placeholder="Ex:Microsoft" required />
+                        <span asp-validation-for="Organisation" style="color:red"></span>
+                    </div>
+
+
+                    <div class="col-12 mt-3">
+                        <label asp-for="Date_Emission" class="form-label">Date d'emission <strong style="color:red">*</strong>'</label>
+                        <input class="form-control" asp-for="Date_Emission" type="date" required />
+                        <span asp-validation-for="Date_Emission" style="color:red"></span>
+                    </div>
+                    <div class="col-12 mt-3">
+                        <label asp-for="Date_Expiration" class="form-label"></label>
+                        <input class="form-control" asp-for="Date_Expiration" type="date" />
+                        <span asp-validation-for="Date_Expiration" style="color:red"></span>
+                    </div>
+                    <div class="col-md-12">
+                        <label asp-for="Url" class="form-label"></label>
+                        <input class="form-control" asp-for="Url" type="url"  />
+                        <span asp-validation-for="Url" style="color:red"></span>
+                    </div>
+
+                    <div class="col-12">
+
+                        <button type="submit" name="submitButton" class="btn btn-success btn-submit waves-effect waves-light">Ajouter</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- /FormValidation -->
+</div>

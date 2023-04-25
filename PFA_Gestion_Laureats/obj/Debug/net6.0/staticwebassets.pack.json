@@ -125,6 +125,14 @@
       "PackagePath": "staticwebassets\\assets\\img\\logo\\entrepriseLogo.jpg"
     },
     {
+      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\img\\logo\\logo.png",
+      "PackagePath": "staticwebassets\\assets\\img\\logo\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\img\\logo\\novelis.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\logo\\novelis.jpg"
+    },
+    {
       "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\assets\\js\\config.js",
       "PackagePath": "staticwebassets\\assets\\js\\config.js"
     },
@@ -2463,14 +2471,6 @@
     {
       "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
-    },
-    {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\logo.png",
-      "PackagePath": "staticwebassets\\logo.png"
-    },
-    {
-      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\novelis.jpg",
-      "PackagePath": "staticwebassets\\novelis.jpg"
     },
     {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.PFA_Gestion_Laureats.Microsoft.AspNetCore.StaticWebAssets.props",

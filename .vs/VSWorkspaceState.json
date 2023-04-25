@@ -3,13 +3,11 @@
     "",
     "\\PFA_Gestion_Laureats",
     "\\PFA_Gestion_Laureats\\Controllers",
-    "\\PFA_Gestion_Laureats\\Models",
-    "\\PFA_Gestion_Laureats\\ViewModels",
     "\\PFA_Gestion_Laureats\\Views",
     "\\PFA_Gestion_Laureats\\Views\\Annonce",
     "\\PFA_Gestion_Laureats\\Views\\Shared",
     "\\PFA_Gestion_Laureats\\Views\\User"
   ],
-  "SelectedNode": "\\PFA_Gestion_Laureats\\Controllers\\AnnonceController.cs",
+  "SelectedNode": "\\PFA_Gestion_Laureats\\Views\\User\\Detail_User.cshtml",
   "PreviewInSolutionExplorer": false
 }

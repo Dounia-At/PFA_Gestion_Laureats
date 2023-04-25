@@ -16,6 +16,8 @@ namespace PFA_Gestion_Laureats.Models
         public DbSet<Stage> Stages { get; set; }
         public DbSet<Projet> Projets { get; set; }
         public DbSet<Formation> Formations { get; set; }
+        public DbSet<Certificat> Certificat { get; set; }
+        public DbSet<ExperiencePro>ExperiencePro{ get; set; }
         public DbSet<Test> Tests { get; set; }
         public DbSet<Message> Messages { get; set; }
         public DbSet<Entreprise> Entreprises { get; set; }

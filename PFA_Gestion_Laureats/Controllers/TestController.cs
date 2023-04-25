@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using PFA_Gestion_Laureats.Models;
 using PFA_Gestion_Laureats.Validation;
-using PFA_Gestion_Laureats.ViewModels;
+using PFA_Gestion_Laureats.ViewModels.Tests;
 
 namespace PFA_Gestion_Laureats.Controllers
 {

@@ -1,0 +1,132 @@
+﻿@model PFA_Gestion_Laureats.ViewModels.Certificats.UpdateCertificatViewModel
+@section title {
+   Modifier Certificat
+}
+@section js{
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css" />
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/froala-editor@latest/js/froala_editor.pkgd.min.js'></script>
+    <script>
+
+
+
+        var editor = new FroalaEditor('#example', {
+            imageUpload: false,
+            imageInsertButtons: false,
+            videoInsertButtons: false,
+            fileInsertButtons: false,
+            fileUpload: false,
+        }, function () {
+
+
+
+            editor.imageUpload.hide();
+
+        })
+    </script>
+
+    <script>
+
+        var deleteButtons = document.querySelectorAll(".deleteButton");
+        deleteButtons.forEach(function (button) {
+            button.addEventListener("click", function (event) {
+
+                event.preventDefault();
+
+
+                swal({
+                    title: "Êtes-vous sûr de vouloir supprimer cette Certificat  ?",
+                    text: "Cette action ne peut pas être annulée !",
+                    type: "warning",
+                    showCancelButton: true,
+                    confirmButtonColor: "#DD6B55",
+                    confirmButtonText: "Oui, supprimer !",
+                    cancelButtonText: "Annuler",
+                    closeOnConfirm: false,
+                    closeOnCancel: true
+                },
+                    function (isConfirmed) {
+                        if (isConfirmed) {
+
+                            var form = document.createElement("form");
+                            form.method = "post";
+                            form.action = "@Url.Action("Delete", "Certificat")/" + button.getAttribute("data-id");
+                            form.innerHTML = '@Html.AntiForgeryToken()';
+                            var submitButton = document.createElement("button");
+                            submitButton.type = "submit";
+                            submitButton.style.display = "none";
+                            form.appendChild(submitButton);
+                            document.body.appendChild(form);
+                            form.submit();
+                        }
+                    });
+            });
+        });
+    </script>
+
+
+}
+
+<h4 class="fw-bold py-3 mb-4 card-header"><a class="text-muted fw-light" asp-controller="Annonce" asp-action="Annonces">Accueil /</a>Certificat</h4>
+<div class="row">
+
+    <div class="col-12">
+        <div class="card">
+
+            <div class="card-body">
+
+
+                <form id="formValidationExamples" class="row g-3" method="post">
+                   
+
+                    <div class="d-flex justify-content-between">
+
+                        <h5>Certificat</h5>
+
+
+                        <button class="btn btn-danger btn-sm deleteButton mb-2" data-id="@Model.Id"><i class="ti ti-trash ti-sm"></i></button>
+
+
+                    </div>
+                    <hr class="mt-0" />
+
+
+                    <div class="col-md-12">
+                        <label asp-for="Nom" class="form-label">Nom  <strong style="color:red">*</strong></label>
+                        <input class="form-control" asp-for="Nom" required />
+                        <span asp-validation-for="Nom" style="color:red"></span>
+                    </div>
+                    <div class="col-md-12">
+                        <label asp-for="Organisation" class="form-label">Organisation  <strong style="color:red">*</strong></label>
+                        <input class="form-control" asp-for="Organisation" required />
+                        <span asp-validation-for="Organisation" style="color:red"></span>
+                    </div>
+
+                    <div class="col-12 mt-3">
+                        <label asp-for="Date_Emission" class="form-label">Date d'emission <strong style="color:red">*</strong>'</label>
+                        <input class="form-control" asp-for="Date_Emission" type="date" required />
+                        <span asp-validation-for="Date_Emission" style="color:red"></span>
+                    </div>
+                    <div class="col-12 mt-3">
+                        <label asp-for="Date_Expiration" class="form-label"></label>
+                        <input class="form-control" asp-for="Date_Expiration" type="date" />
+                        <span asp-validation-for="Date_Expiration" style="color:red"></span>
+                    </div>
+                    <div class="col-md-12">
+                        <label asp-for="Url" class="form-label"></label>
+                        <input class="form-control" asp-for="Url"  />
+                        <span asp-validation-for="Url" style="color:red"></span>
+                    </div>
+
+                    <div class="col-12">
+
+                        <button type="submit" name="submitButton" class="btn btn-success btn-submit waves-effect waves-light">Modifier</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- /FormValidation -->
+</div>

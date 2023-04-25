@@ -1,0 +1,75 @@
+﻿@model PFA_Gestion_Laureats.ViewModels.Users.UserViewModel
+@section title {
+   @Model.Nom @Model.Prenom
+}
+<div class="container-xxl flex-grow-1 container-p-y">
+
+    <!-- Header -->
+    <div class="row">
+        <div class="col-12">
+            <div class="card mb-4">
+
+                <div class="user-profile-header d-flex flex-column flex-sm-row text-sm-start text-center mb-4">
+                    <div class="flex-shrink-0 mt-n2 mx-sm-0 mx-auto">
+                        <img src=".. /../assets/img/avatars/@Model.URL_Photo_Profil"
+                             alt="user image" height="100" width="100"
+                             class="d-block ms-0 ms-sm-4 rounded user-profile-img" />
+                    </div>
+                    <div class="flex-grow-1 mt-3 mt-sm-5">
+                        <div class="d-flex align-items-md-end align-items-sm-start align-items-center justify-content-md-between justify-content-start mx-4 flex-md-row flex-column gap-4">
+                            <div class="user-profile-info">
+                                <h4>@Model.Nom @Model.Prenom</h4>
+                                <ul class="list-inline mb-0 d-flex align-items-center flex-wrap justify-content-sm-start justify-content-center gap-2">
+                                    <li class="list-inline-item">@Model.Titre_Profil</li>
+                                    <li class="list-inline-item"></li>
+                                </ul>
+                            </div>
+                            <a href="javascript:void(0)" class="btn btn-primary">
+                                <i class="ti ti-messages me-1"></i> Message
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/ Header -->
+    <!-- User Profile Content -->
+    <div class="row">
+        <div class="col-xl-12 col-lg-12 col-md-12">
+            <!-- About User -->
+            <div class="card mb-4">
+                <div class="card-body">
+                    <small class="card-text text-uppercase">A PROPOS</small>
+                    <ul class="list-unstyled mb-4 mt-3">
+                        <li class="d-flex align-items-center mb-3">
+                            <i class="ti ti-user"></i><span class="fw-bold mx-2">NOM COMPLET:</span>@Model.Nom @Model.Prenom<span></span>
+                        </li>
+
+                        <li class="d-flex align-items-center mb-3">
+                            <i class="ti ti-crown"></i><span class="fw-bold mx-2">Titre:</span> <span>@Model.Titre_Profil</span>
+                        </li>
+                        <li class="d-flex align-items-center mb-3">
+                            <i class="ti ti-map-pin"></i><span class="fw-bold mx-2">Address:</span> <span>@Model.Adresse</span>
+                        </li>
+                       
+                    </ul>
+                    <small class="card-text text-uppercase">Contacts</small>
+                    <ul class="list-unstyled mb-4 mt-3">
+                        <li class="d-flex align-items-center mb-3">
+                            <i class="ti ti-phone-call"></i><span class="fw-bold mx-2">Contact:</span>
+                            <span>@Model.Tel</span>
+                        </li>
+                        <li class="d-flex align-items-center mb-3">
+                            <i class="ti ti-mail"></i><span class="fw-bold mx-2">Email:</span>
+                            <span>@Model.Email</span>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            <!--/ About User -->
+
+        </div>
+    </div>
+</div>

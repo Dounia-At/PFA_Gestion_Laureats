@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using OfficeOpenXml;
 using PFA_Gestion_Laureats.Models;
 using PFA_Gestion_Laureats.Validation;
-using PFA_Gestion_Laureats.ViewModels;
+using PFA_Gestion_Laureats.ViewModels.Users;
 
 namespace PFA_Gestion_Laureats.Controllers
 {
@@ -56,11 +56,12 @@ namespace PFA_Gestion_Laureats.Controllers
         }
 
 
-        [Route("/User/Detail/{login}")]
+        [Route("/User/Details/{login}")]
         [Authentification]
         public IActionResult Detail_User(string login)
         {
             Utilisateur utilisateur = db.Utilisateurs.Where(u => u.Login == login).AsNoTracking().SingleOrDefault();
+            
             if (utilisateur != null)
             {
                 UserViewModel user = new UserViewModel(utilisateur.Id, utilisateur.Nom,
@@ -72,31 +73,23 @@ namespace PFA_Gestion_Laureats.Controllers
                 if (utilisateur.GetType().Name == "AgentDirection")
                 {
                     AgentDirection agent = db.Agents.Where(u => u.Login == login).AsNoTracking().SingleOrDefault();
-                    user = new UserViewModel(agent.Id, agent.Nom,
-                                                        agent.Prenom, agent.Tel,
-                                                        agent.Email, agent.Titre_Profil,
-                                                        agent.Adresse, null, agent.Login, agent.Photo_Profil);
+                    user = new UserViewModel(agent.Id,agent.Nom,agent.Prenom,agent.Tel,agent.Email,agent.Titre_Profil,agent.Adresse,agent.Password,agent.Login,agent.Photo_Profil);
+                    return View("Profil",user);
 
                 }
                 else if (utilisateur.GetType().Name == "Etudiant")
                 {
-                    Etudiant etudiant = db.Etudiants.Where(u => u.Login == login).AsNoTracking().SingleOrDefault();
-                    user = new UserViewModel(etudiant.Id, etudiant.Nom,
-                                                        etudiant.Prenom, etudiant.Tel,
-                                                        etudiant.Email, etudiant.Titre_Profil,
-                                                        etudiant.Adresse, null, etudiant.Login, etudiant.Photo_Profil,
-                                                        etudiant.specialite, etudiant.date_Inscriptionion);
+                    Etudiant etudiant = db.Etudiants.Where(u => u.Login == login).Include(e=>e.projets).Include(e => e.stages).Include(e => e.experiences).Include(e => e.formations).Include(e => e.certificats).AsNoTracking().SingleOrDefault();
+                   
+                    user = new ProfilViewModel(etudiant);
                 }
                 else if (utilisateur.GetType().Name == "Laureat")
                 {
-                    Laureat laureat = db.Laureats.Where(u => u.Login == login).AsNoTracking().SingleOrDefault();
-                    user = new UserViewModel(laureat.Id, laureat.Nom,
-                                                        laureat.Prenom, laureat.Tel,
-                                                        laureat.Email, laureat.Titre_Profil,
-                                                        laureat.Adresse, null, laureat.Login, laureat.Photo_Profil,
-                                                        laureat.specialite, laureat.date_Inscriptionion, laureat.Date_Fin_Etude);
-                }
+                    Laureat laureat = db.Laureats.Where(u => u.Login == login).Include(L => L.projets).Include(e => e.stages).ThenInclude(e=>e.entreprise).Include(e => e.experiences).ThenInclude(e => e.entreprise).Include(e => e.formations).Include(e => e.certificats).Include(e => e.certificats).AsNoTracking().SingleOrDefault();
 
+                    user = new ProfilViewModel(laureat);
+                }
+               
                 return View(user);
             }
             return RedirectToAction("Index", "Home");
@@ -704,6 +697,8 @@ namespace PFA_Gestion_Laureats.Controllers
                     {
                         HttpContext.Session.SetString("Login", utilisateur.Login);
                         HttpContext.Session.SetString("Role", utilisateur.GetType().Name);
+                        HttpContext.Session.SetString("photo", utilisateur.Photo_Profil);
+                      
                         utilisateur.date_Login= DateTime.Now;
                         db.Utilisateurs.Update(utilisateur);
                         db.SaveChanges();
