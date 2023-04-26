@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using PFA_Gestion_Laureats.Models;
 using PFA_Gestion_Laureats.Validation;
-using PFA_Gestion_Laureats.ViewModels;
+using PFA_Gestion_Laureats.ViewModels.Entreprises;
 
 namespace PFA_Gestion_Laureats.Controllers
 {
@@ -109,5 +109,6 @@ namespace PFA_Gestion_Laureats.Controllers
             db.SaveChanges();
             return RedirectToAction("Index");
         }
+       
     }
 }

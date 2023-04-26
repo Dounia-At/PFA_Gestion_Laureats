@@ -1,0 +1,88 @@
+﻿@model PFA_Gestion_Laureats.ViewModels.Formations.AddFormationViewModel
+@section title {
+   Nouvelle formation
+}
+<link href='https://cdn.jsdelivr.net/npm/froala-editor@latest/css/froala_editor.pkgd.min.css' rel='stylesheet' type='text/css' />
+@section js{
+
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/froala-editor@latest/js/froala_editor.pkgd.min.js'></script>
+    <script>
+
+
+
+        var editor = new FroalaEditor('#example', {
+            imageUpload: false,
+            imageInsertButtons: false,
+            videoInsertButtons: false,
+            fileInsertButtons: false,
+            fileUpload: false,
+        }, function () {
+
+
+
+            editor.imageUpload.hide();
+
+        })
+    </script>
+
+
+
+
+}
+<h4 class="fw-bold py-3 mb-4 card-header"><a class="text-muted fw-light" asp-controller="Annonce" asp-action="Annonces">Accueil /</a>  Nouvelle Formation</h4>
+<div class="row">
+
+    <div class="col-12">
+        <div class="card">
+
+            <div class="card-body">
+                <form id="formValidationExamples" class="row g-3" method="post">
+                    <!-- Formation-->
+
+                    <div class="col-12">
+                        <h5 class="fw-semibold">Formation</h5>
+                        <hr class="mt-0" />
+                    </div>
+
+                    <div class="col-md-12">
+                        <label asp-for="Ecole" class="form-label">Ecole  <strong style="color:red">*</strong></label>
+                        <input class="form-control" asp-for="Ecole" placeholder="Ex:EHEIO" required />
+                        <span asp-validation-for="Ecole"></span>
+                    </div>
+
+                    <div class="col-md-12">
+                        <label asp-for="Diplome" class="form-label">Diplome <strong style="color:red">*</strong></label>
+                        <input class="form-control" asp-for="Diplome" placeholder="Ex:Licence" required />
+                        <span asp-validation-for="Diplome" ></span>
+                    </div>
+
+
+                    <div class="col-md-12 mt-3">
+                        <label for="formValidationFile" class="form-label">Description  <strong style="color:red">*</strong></label>
+                        <textarea id="example" asp-for="Description"></textarea>
+
+                    </div>
+
+
+
+                    <div class="col-12 mt-3">
+                        <label asp-for="Date_Debut" class="form-label">Date de dèbut <strong style="color:red">*</strong></label>
+                        <input class="form-control" asp-for="Date_Debut" type="date" required />
+                        <span asp-validation-for="Date_Debut"></span>
+                    </div>
+                    <div class="col-12 mt-3">
+                        <label asp-for="Date_Fin" class="form-label">Date de fin  <strong style="color:red">*</strong></label>
+                        <input class="form-control" asp-for="Date_Fin" type="date" />
+                        <span asp-validation-for="Date_Fin"></span>
+                    </div>
+
+                    <div class="col-12">
+
+                        <button type="submit" name="submitButton" class="btn btn-success btn-submit waves-effect waves-light">Ajouter</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- /FormValidation -->
+</div>

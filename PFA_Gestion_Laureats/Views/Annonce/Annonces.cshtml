@@ -13,13 +13,16 @@
                     <div class="card mb-3">
                         <div class="row g-0">
                             <div class="col-md-4">
-                                <img class="card-img-left container my-3" src="~/@a.entreprise.Logo" alt="Card image" width="146" height="146" />
+                                <img class="card-img-left container my-3" src="~/assets/img/logo/@a.entreprise.Logo" alt="Card image" width="146" height="146" />
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
                                     <div class="flex-grow-1 row">
                                         <div class="col-9 mb-sm-0 mb-2">
-                                            <h5 class="mb-0 text-dark"><strong>@a.utilisateur.Nom @a.utilisateur.Prenom</strong></h5>
+                                            <a asp-controller="User" asp-action="Details" asp-route-id="@a.utilisateur.Login">
+                                                <h5 class="mb-0 text-dark"><strong>@a.utilisateur.Nom @a.utilisateur.Prenom</strong></h5>
+                                            </a>
+                                            
                                             <small class="text-muted">@a.utilisateur.Titre_Profil</small>
                                         </div>
 

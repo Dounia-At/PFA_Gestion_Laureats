@@ -1,5 +1,5 @@
 ﻿using PFA_Gestion_Laureats.Services;
-using PFA_Gestion_Laureats.ViewModels;
+using PFA_Gestion_Laureats.ViewModels.Annonces;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace PFA_Gestion_Laureats.Models

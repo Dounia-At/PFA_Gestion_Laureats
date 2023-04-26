@@ -15,6 +15,19 @@
         public IList<ExperiencePro>? experiences { get; set; }
         public IList<Stage>? stages { get; set; }
         public IList<Annonce>? annonces { get; set; }
-
+        public Entreprise() { }
+        public Entreprise(string nom)
+        {
+          
+            Nom = nom;
+            Pays = "";
+            Ville = "";
+            Adresse = "";
+            Logo = "";
+            Email = "";
+            Description = "";
+            Convention = false;
+            
+        }
     }
 }

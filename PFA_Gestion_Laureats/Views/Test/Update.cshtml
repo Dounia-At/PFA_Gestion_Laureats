@@ -1,6 +1,30 @@
-﻿@model PFA_Gestion_Laureats.ViewModels.TestViewModel
+﻿@model PFA_Gestion_Laureats.ViewModels.Tests.TestViewModel
+
+@section title {
+   Nouveau Tessi
+}
+@section js{
+    <link href='https://cdn.jsdelivr.net/npm/froala-editor@latest/css/froala_editor.pkgd.min.css' rel='stylesheet' type='text/css' />
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/froala-editor@latest/js/froala_editor.pkgd.min.js'></script>
+    <script>
 
 
+
+        var editor = new FroalaEditor('#example', {
+            imageUpload: false,
+            imageInsertButtons: false,
+            videoInsertButtons: false,
+            fileInsertButtons: false,
+            fileUpload: false,
+        }, function () {
+
+
+
+            editor.imageUpload.hide();
+
+        })
+    </script>
+}
 <div class="row">
     <div class="col-md-12">
 
@@ -41,8 +65,7 @@
                         <br />
                         <div class="form-group">
                             <label asp-for="Description" class="form-label"></label>
-                            <textarea asp-for="Description"
-                                      class="form-control " required></textarea>
+                            <textarea id="example" asp-for="Description" required></textarea>
                             <span asp-validation-for="Description"></span>
                         </div>
 

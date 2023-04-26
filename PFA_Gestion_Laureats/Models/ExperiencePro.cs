@@ -1,4 +1,7 @@
-﻿namespace PFA_Gestion_Laureats.Models
+﻿using PFA_Gestion_Laureats.ViewModels;
+using PFA_Gestion_Laureats.ViewModels.ExperiencePros;
+
+namespace PFA_Gestion_Laureats.Models
 {
     public class ExperiencePro
     {
@@ -10,6 +13,15 @@
         public Entreprise entreprise { get; set; }
         public int EtudiantId { get; set; }
         public Etudiant Etudiant { get; set; }
+        public ExperiencePro() { }
+        public ExperiencePro(AddExperienceProViewModel amv)
+        {
+            this.Post = amv.Post;
+            this.Type_Emploi= amv.Type_Emploi;
+            this.Etat=amv.Etat;
+            this.EtudiantId=amv.EtudiantId;
+            this.EntrepriseId = amv.EntrepriseId;
+        }
 
 
     }

@@ -8,16 +8,16 @@ using MimeKit;
 using PFA_Gestion_Laureats.Models;
 using PFA_Gestion_Laureats.Services;
 using PFA_Gestion_Laureats.Validation;
-using PFA_Gestion_Laureats.ViewModels;
 using System.Linq;
 using MailKit.Net.Smtp;
 using System.Net.Mail;
 using System.Net;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using PFA_Gestion_Laureats.ViewModels.Annonces;
 
 namespace PFA_Gestion_Laureats.Controllers
 {
-    
+
     public class AnnonceController : Controller
     {
         MyContext db;
@@ -41,10 +41,19 @@ namespace PFA_Gestion_Laureats.Controllers
             {
                 String login = HttpContext.Session.GetString("Login");
                 Utilisateur utilisateur = db.Utilisateurs.Where(us => us.Login == login).FirstOrDefault();
-                Entreprise entreprise = db.Entreprises.Where(ae=>ae.Id==amv.EntrepriseId).FirstOrDefault();
-                if(utilisateur is IModirateur)
+                //Entreprise entreprise = db.Entreprises.Where(ae=>ae.Id==amv.EntrepriseId).FirstOrDefault();
+                Entreprise entreprise = db.Entreprises.Where(ae => ae.Nom.ToUpper() == amv.Entreprise).FirstOrDefault();
+               
+                if (utilisateur is IModirateur)
                 {
-
+                    if (entreprise == null)
+                    {
+                        Entreprise en = new Entreprise(amv.Entreprise);
+                        db.Entreprises.Add(en);
+                        db.SaveChanges();
+                    }
+                   
+                    amv.EntrepriseId = entreprise.Id;
                     Annonce annonce1 = new Annonce(amv);
                     annonce1.utilisateur = utilisateur;
                     annonce1.entreprise = entreprise;
@@ -137,14 +146,24 @@ namespace PFA_Gestion_Laureats.Controllers
         [HttpPost]
         public IActionResult Update(UpdateAnnonceViewModel amv)
         {
-            String login = HttpContext.Session.GetString("Login");
-            Utilisateur utilisateur = db.Utilisateurs.Where(us => us.Login == login).FirstOrDefault();
-            Annonce annonce = db.Annonces.Include(an => an.utilisateur).Where(an => an.Id == amv.Id && an.utilisateur.Id == utilisateur.Id).FirstOrDefault();
-             
-              
+           
             if (ModelState.IsValid)
             {
+                String login = HttpContext.Session.GetString("Login");
+                Utilisateur utilisateur = db.Utilisateurs.Where(us => us.Login == login).FirstOrDefault();
+                Annonce annonce = db.Annonces.Include(an => an.utilisateur).Where(an => an.Id == amv.Id && an.utilisateur.Id == utilisateur.Id).FirstOrDefault();
+
+                Entreprise entreprise = db.Entreprises.Where(ae => ae.Nom.ToUpper() == amv.Entreprise).FirstOrDefault();
+
+                if (entreprise == null)
+                {
+                    Entreprise en = new Entreprise(amv.Entreprise);
+                    db.Entreprises.Add(en);
+                    db.SaveChanges();
+                }
               
+                amv.EntrepriseId = entreprise.Id;
+
                 if (annonce != null)
                 {
                     annonce.Titre=amv.Titre;
@@ -152,6 +171,7 @@ namespace PFA_Gestion_Laureats.Controllers
                     annonce.Email_Reception=amv.Email_Reception;
                     //annonce.Photo=amv.Photo.FileName;
                     annonce.Date_limite_Deposer = amv.Date_limite_Deposer;
+                    annonce.entreprise = entreprise;
                     if(amv.Photo!=null)
                     {
                         string[] AllowedExt = { ".png", ".jpg" , ".jpeg" };

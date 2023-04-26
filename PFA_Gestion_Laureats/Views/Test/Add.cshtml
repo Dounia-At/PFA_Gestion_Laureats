@@ -1,18 +1,44 @@
-﻿@model PFA_Gestion_Laureats.ViewModels.TestViewModel
+﻿@model PFA_Gestion_Laureats.ViewModels.Tests.TestViewModel
+@section title {
+   Nouveau Test
+}
+@section js{
+    <link href='https://cdn.jsdelivr.net/npm/froala-editor@latest/css/froala_editor.pkgd.min.css' rel='stylesheet' type='text/css' />
+   <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/froala-editor@latest/js/froala_editor.pkgd.min.js'></script>
+    <script>
 
 
+
+        var editor = new FroalaEditor('#example', {
+            imageUpload: false,
+            imageInsertButtons: false,
+            videoInsertButtons: false,
+            fileInsertButtons: false,
+            fileUpload: false,
+        }, function () {
+
+
+
+            editor.imageUpload.hide();
+
+        })
+    </script>
+}
+<h3 class="fw-bold py-2 mb-2 card-header "><a class="text-muted fw-light" asp-controller="Annonce" asp-action="Annonces">Accueil /</a>  Nouveau Test</h3>
 <div class="row">
     <div class="col-md-12">
 
-        <div class="card mb-4">
-            <h5 class="card-header">Ajouter Un Test</h5>
-
-            <form method="POST" >
-
-                <div class="card-body">
+        <div class="card mb-2">
+            <div class="col-12">
+                <h5 class="card-header">Test</h5>
+                <hr class="mt-0" />
+            </div>
+            
+            <div class="card-body">
+                <form method="POST" >
 
                     <div class="row">
-                        <div class="form-group">
+                        <div class="form-group col-md-12 ">
                             <label asp-for="EntrepriseId" class="form-label"></label>
                             <select asp-for="EntrepriseId" asp-items="ViewBag.entreprises" class="form-control">
                             </select>
@@ -20,8 +46,8 @@
                             <span asp-validation-for="EntrepriseId"></span>
 
                         </div>
-                        <br />
-                        <div class="col-sm-6">
+                        
+                        <div class="col-sm-6 mt-3">
                             <label asp-for="Date_Test" class="form-label"></label>
                             <input required 
                                    type="date"
@@ -30,7 +56,7 @@
                             <span asp-validation-for="Date_Test"></span>
                         </div>
                         
-                        <div class="col-sm-6">
+                        <div class="col-sm-6 mt-3">
                             <label asp-for="Heure_Test" class="form-label"></label>
                             <input required
                                    type="time"
@@ -38,23 +64,23 @@
                                    class="form-control" />
                             <span asp-validation-for="Heure_Test"></span>
                         </div>
-                        <br />
-                        <div class="form-group">
+                        
+                        <div class="form-group col-md-12 mt-3">
                             <label asp-for="Description" class="form-label"></label>
-                            <textarea asp-for="Description"
-                                      class="form-control " required></textarea>
+                            <textarea id="example" asp-for="Description" required></textarea>
                             <span asp-validation-for="Description"></span>
                         </div>
                         
                     </div>
 
-                    <div class="mt-2">
+                    <div class="mt-3">
                         <button type="submit" class="btn btn-primary me-2">Ajouter</button>
                         <a class="btn btn-secondary" asp-controller="Test" asp-action="Index">Cancel</a>
                     </div>
 
-                </div>
-            </form>
+               
+               </form>
+            </div>
 
         </div>
 

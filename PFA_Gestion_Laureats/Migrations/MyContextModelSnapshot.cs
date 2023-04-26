@@ -77,7 +77,7 @@ namespace PFA_Gestion_Laureats.Migrations
                     b.Property<DateTime>("Date_Emission")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime>("Date_Expiration")
+                    b.Property<DateTime?>("Date_Expiration")
                         .HasColumnType("datetime2");
 
                     b.Property<int>("EtudiantId")
@@ -333,7 +333,7 @@ namespace PFA_Gestion_Laureats.Migrations
                     b.Property<int>("EtudiantId")
                         .HasColumnType("int");
 
-                    b.Property<string>("Sujet")
+                    b.Property<string>("Intitulé_poste")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
