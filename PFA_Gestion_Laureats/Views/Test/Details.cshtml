@@ -1,0 +1,102 @@
+﻿@model Test
+@section title {
+   Details Test
+}
+@section Style{
+    <style>
+
+    </style>
+}
+@section js {
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css" />
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+
+    <!-- JavaScript -->
+    <script>
+
+        var deleteButtons = document.querySelectorAll(".deleteButton");
+        deleteButtons.forEach(function (button) {
+            button.addEventListener("click", function (event) {
+
+                event.preventDefault();
+
+
+                swal({
+                    title: "Êtes-vous sûr de vouloir supprimer Ce test  ?",
+                    text: "Cette action ne peut pas être annulée !",
+                    type: "warning",
+                    showCancelButton: true,
+                    confirmButtonColor: "#DD6B55",
+                    confirmButtonText: "Oui, supprimer !",
+                    cancelButtonText: "Annuler",
+                    closeOnConfirm: false,
+                    closeOnCancel: true
+                },
+                    function (isConfirmed) {
+                        if (isConfirmed) {
+
+                            var form = document.createElement("form");
+                            form.method = "post";
+                            form.action = "@Url.Action("Delete", "Test")/" + button.getAttribute("data-id");
+                            form.innerHTML = '@Html.AntiForgeryToken()';
+                            var submitButton = document.createElement("button");
+                            submitButton.type = "submit";
+                            submitButton.style.display = "none";
+                            form.appendChild(submitButton);
+                            document.body.appendChild(form);
+                            form.submit();
+                        }
+                    });
+            });
+        });
+    </script>
+}
+@if (ViewBag.role == "AgentDirection")
+{
+    <div class="container mt-5 d-flex flex-row-reverse">
+        <button class="btn btn-danger btn-icon waves-effect deleteButton" data-id="@Model.Id"><i class="ti ti-trash ti-sm"></i></button>
+
+        <a asp-controller="Test" asp-action="Update" asp-route-id="@Model.Id" class="btn btn-label-success btn-icon waves-effect ">
+            <i class="ti ti-edit ti-sm"></i>
+        </a>
+    </div>
+}
+
+<div class="container">
+    <div class="card-body">
+        <div class="card-title">
+            <div class="d-flex align-items-center mb-3">
+                <a asp-controller="Entreprise" asp-action="Details" asp-route-id="@Model.EntrepriseId" class="d-flex align-items-center">
+                    <div class="avatar me-2">
+                        <img src="../../assets/img/logo/@Model.entreprise.Logo"
+                             alt="Logo"
+                             class="rounded-circle" />
+                    </div>
+                    <div class="me-2 text-body h5 mb-0">@Model.entreprise.Nom</div>
+                </a>
+
+            </div>
+        </div>
+
+        <div class="card-subtitle text-muted">
+            <ul class="">
+                <li asp-format="{0:dd/MM/yyyy}">Le @String.Format("{0:d}", Model.Date_Test)</li>
+                <li asp-format="{0:HH:mm}">A @String.Format("{0:HH:mm}", Model.Heure_Test)</li>
+            </ul>
+        </div>
+        <hr class="my-0" />
+        <p class="card-text">
+            <div class="mx-3 my-2">@Html.Raw(Model.Description)</div>
+            <div class="d-flex flex-row-reverse">
+                <a asp-controller="User" asp-action="Details" asp-route-id="@Model.agentDirection.Login">
+                    <span class="text-muted fw-light">@Model.agentDirection.Nom @Model.agentDirection.Prenom</span>
+                </a>
+            </div>
+        </p>
+
+    </div>
+</div>

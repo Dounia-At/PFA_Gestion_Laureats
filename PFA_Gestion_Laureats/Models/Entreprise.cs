@@ -8,7 +8,6 @@
         public string Ville { get; set; }
         public string Adresse { get; set; }
         public string Logo { get; set; }
-        public string Email { get; set; }
         public string Description { get; set; }
         public bool Convention { get; set; }
         public IList<Test>? tests { get; set; }
@@ -24,7 +23,6 @@
             Ville = "";
             Adresse = "";
             Logo = "";
-            Email = "";
             Description = "";
             Convention = false;
             

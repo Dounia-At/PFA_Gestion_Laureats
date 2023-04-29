@@ -52,6 +52,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW50cmVwcmlzZVxBZGQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/atoin/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/Entreprise/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW50cmVwcmlzZVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/atoin/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/Entreprise/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW50cmVwcmlzZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -114,6 +118,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/atoin/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/Test/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVzdFxBZGQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/atoin/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/Test/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVzdFxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/atoin/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/Test/Index.cshtml]

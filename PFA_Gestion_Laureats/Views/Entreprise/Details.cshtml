@@ -1,0 +1,99 @@
+﻿@model Entreprise
+@section title{
+    Details Entreprise
+}
+@section Style{
+    <style>
+        .taille{
+            max-height : 300!important;
+            max-width : 300!important;
+
+        }
+    </style>
+}
+@section js{
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0/themes/smoothness/jquery-ui.css" />
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+    <script>
+
+        var deleteButtons = document.querySelectorAll(".deleteButton");
+        deleteButtons.forEach(function (button) {
+            button.addEventListener("click", function (event) {
+
+                event.preventDefault();
+
+
+                swal({
+                    title: "Êtes-vous sûr de vouloir supprimer cette Entreprise ?!",
+                    text: "Cette action ne peut pas être annulée !",
+                    type: "warning",
+                    showCancelButton: true,
+                    confirmButtonColor: "#DD6B55",
+                    confirmButtonText: "Oui, supprimer !",
+                    cancelButtonText: "Annuler",
+                    closeOnConfirm: false,
+                    closeOnCancel: true
+                },
+                    function (isConfirmed) {
+                        if (isConfirmed) {
+
+                            var form = document.createElement("form");
+                            form.method = "post";
+                            form.action = "@Url.Action("Delete", "Entreprise")/" + button.getAttribute("data-id");
+                            form.innerHTML = '@Html.AntiForgeryToken()';
+                            var submitButton = document.createElement("button");
+                            submitButton.type = "submit";
+                            submitButton.style.display = "none";
+                            form.appendChild(submitButton);
+                            document.body.appendChild(form);
+                            form.submit();
+                        }
+                    });
+            });
+        });
+    </script>
+    
+}
+
+@if (ViewBag.role == "AgentDirection")
+{
+    <div class="container mt-5 d-flex flex-row-reverse">
+        <button class="btn btn-danger btn-icon waves-effect  deleteButton" data-id="@Model.Id"><i class="ti ti-trash ti-sm"></i></button>
+
+
+        <a asp-controller="Entreprise" asp-action="Update" asp-route-id="@Model.Id" class="btn btn-label-success btn-icon waves-effect ">
+            <i class="ti ti-edit ti-sm"></i>
+        </a>
+    </div>
+}
+
+<div class="container">
+    <div class="card-body">
+        <h5 class="card-title">@Model.Nom</h5>
+        @if (Model.Convention)
+        {
+            <h6 class="card-subtitle text-muted">Conventionné</h6>
+        }
+        else
+        {
+            <h6 class="card-subtitle text-muted">Non Conventionné</h6>
+        }
+        <br />
+        <img class="img-fluid d-flex mx-auto my-4 rounded taille"  src="../../assets/img/logo/@Model.Logo" alt="@Model.Nom">
+        <br /> <br />
+        <p class="card-text">
+            <div class="mx-3 my-2">@Html.Raw(Model.Description)</div>
+            <hr class="my-0" />
+            <br />
+            @Model.Pays @Model.Ville
+            <br />
+            @Model.Adresse
+        </p>
+    </div>
+</div>
+
+
+                    

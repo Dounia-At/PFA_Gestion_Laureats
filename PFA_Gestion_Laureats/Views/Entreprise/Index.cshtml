@@ -1,54 +1,128 @@
 ﻿@model List<Entreprise>
+@section title {
+   Entreprises
+}
+@section Style{
+    <style>
+       
+    </style>
+}
+@section js {
 
-@if(ViewBag.role == "Agent")
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css" />
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+
+    <!-- JavaScript -->
+    <script>
+
+        var deleteButtons = document.querySelectorAll(".deleteButton");
+        deleteButtons.forEach(function (button) {
+            button.addEventListener("click", function (event) {
+
+                event.preventDefault();
+
+
+                swal({
+                    title: "Êtes-vous sûr de vouloir supprimer cette Entreprise ?!",
+                    text: "Cette action ne peut pas être annulée !",
+                    type: "warning",
+                    showCancelButton: true,
+                    confirmButtonColor: "#DD6B55",
+                    confirmButtonText: "Oui, supprimer !",
+                    cancelButtonText: "Annuler",
+                    closeOnConfirm: false,
+                    closeOnCancel: true
+                },
+                    function (isConfirmed) {
+                        if (isConfirmed) {
+
+                            var form = document.createElement("form");
+                            form.method = "post";
+                            form.action = "@Url.Action("Delete", "Entreprise")/" + button.getAttribute("data-id");
+                            form.innerHTML = '@Html.AntiForgeryToken()';
+                            var submitButton = document.createElement("button");
+                            submitButton.type = "submit";
+                            submitButton.style.display = "none";
+                            form.appendChild(submitButton);
+                            document.body.appendChild(form);
+                            form.submit();
+                        }
+                    });
+            });
+        });
+    </script>
+}
+<h3 class="fw-bold py-2 mb-2 card-header ">
+    <a class="text-muted fw-light" asp-controller="Annonce" asp-action="Annonces">Accueil /</a>
+    Entreprises
+</h3>
+
+@if (ViewBag.role == "AgentDirection")
 {
     <div class="container mt-5 d-flex flex-row-reverse">
-        <a class="btn btn-primary" asp-controller="Entreprise" asp-action="Add">+ Nouvelle Entreprise</a>
+        <a class="btn btn-primary" asp-controller="Entreprise" asp-action="Add">
+            <i class="ti ti-plus me-1"></i>
+            <span class="align-middle">Nouvelle Entreprise</span>
+        </a>
         <br />
     </div>
     
 }
+<div class="container-fluid my-4">
+    @if (Model != null)
+    {
+        <div class="row mb-5">
+            @foreach (Entreprise entreprise in Model)
+            {
 
-@foreach(Entreprise entreprise in Model)
-{
-    <div class="row g-4">
-        <div class="col-md">
-            <div class="card mb-3">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <img class="card-img card-img-left" src="../../assets/img/logo/@entreprise.Logo" alt="Card image" />
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title">@entreprise.Nom</h5>
-                            <p class="card-text">
-                                @entreprise.Description
-                                <br/> <br/> 
-                                @if (entreprise.Convention)
-                                {
-                                    <b>Conventionné</b>
-                                }
-
-                                <hr class="my-0" /> <br/>
-                                @entreprise.Pays @entreprise.Ville
-                                <br />
-                                @entreprise.Adresse
-                            </p>
-                            @if(ViewBag.role == "Agent")
-                            {
-                                <a asp-controller="Entreprise" asp-action="Delete" asp-route-id="@entreprise.Id" class="btn btn-label-danger btn-icon waves-effect ">
-                                    <i class="ti ti-trash ti-sm"></i>
+                <div class="col-xl-4 col-lg-6 col-md-6">
+                    <div class="card mb-3">
+                        <div class="row g-0 ">
+                            <div class="col-md-4">
+                                <a asp-controller="Entreprise" asp-action="Details" asp-route-id="@entreprise.Id">
+                                    <img class="card-img card-img-left" src="../../assets/img/logo/@entreprise.Logo" alt="Card image" max-width="200" max-height="200" />
                                 </a>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">@entreprise.Nom</h5>
+                                    <p class="card-text">
 
-                                <a asp-controller="Entreprise" asp-action="Update" asp-route-id="@entreprise.Id" class="btn btn-label-success btn-icon waves-effect ">
-                                    <i class="ti ti-edit ti-sm"></i>
-                                </a>
-                            }
+                                        @entreprise.Pays @entreprise.Ville
+                                        <br />
+
+                                        @entreprise.Adresse.Substring(0, Math.Min(20, entreprise.Adresse.Length)) <span class="text-muted ">...</span>
+                                        <br>
+                                        <a asp-controller="Entreprise" asp-action="Details" asp-route-id="@entreprise.Id">
+                                            <div class="text-primary"> Plus Details</div>
+                                        </a>
+
+                                    </p>
+
+                                    @if (ViewBag.role == "AgentDirection")
+                                    {
+                                        <button class="btn btn-danger btn-icon waves-effect  deleteButton" data-id="@entreprise.Id"><i class="ti ti-trash ti-sm"></i></button>
+
+
+                                        <a asp-controller="Entreprise" asp-action="Update" asp-route-id="@entreprise.Id" class="btn btn-label-success btn-icon waves-effect ">
+                                            <i class="ti ti-edit ti-sm"></i>
+                                        </a>
+                                    }
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            }
         </div>
-        
-    </div>
-}
+    }
+    else
+    {
+        <div>
+            <h3>Aucune entreprise pour le moment!!</h3>
+        </div>
+    }
+</div>

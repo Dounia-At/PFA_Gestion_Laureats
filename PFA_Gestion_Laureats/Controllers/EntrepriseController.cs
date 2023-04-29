@@ -17,12 +17,21 @@ namespace PFA_Gestion_Laureats.Controllers
         }
         public IActionResult Index()
         {
-            if(HttpContext.Session.GetString("Role") == "Agent")
+            if(HttpContext.Session.GetString("Role") == "AgentDirection")
             {
-                ViewBag.role = "Agent";
+                ViewBag.role = "AgentDirection";
             }
             List<Entreprise> Entreprises = db.Entreprises.AsNoTracking().ToList();
             return View(Entreprises);
+        }
+        public IActionResult Details(int id)
+        {
+            if (HttpContext.Session.GetString("Role") == "AgentDirection")
+            {
+                ViewBag.role = "AgentDirection";
+            }
+            Entreprise entreprise = db.Entreprises.Find(id);
+            return View(entreprise);
         }
         public IActionResult Add()
         {
@@ -64,10 +73,7 @@ namespace PFA_Gestion_Laureats.Controllers
         public IActionResult Update(int id)
         {
             Entreprise entreprise = db.Entreprises.Find(id);
-            EntrepriseViewModel entrepriseView = new EntrepriseViewModel(entreprise.Id, entreprise.Nom,
-                                                                            entreprise.Pays, entreprise.Ville,
-                                                                            entreprise.Adresse, entreprise.Logo,
-                                                                            entreprise.Description, entreprise.Convention);
+            EntrepriseViewModel entrepriseView = new EntrepriseViewModel(entreprise);
             return View(entrepriseView);
         }
         [HttpPost]
@@ -80,8 +86,10 @@ namespace PFA_Gestion_Laureats.Controllers
                 entreprise.Pays = entrepriseView.Pays;
                 entreprise.Ville = entrepriseView.Ville;
                 entreprise.Adresse = entrepriseView.Adresse;
+                entreprise.Description = entrepriseView.Description;
                 entreprise.Convention = (bool)entrepriseView.Convention;
-                if(entrepriseView.Logo != null)
+
+                if (entrepriseView.Photo != null)
                 {
                     System.IO.File.Delete(Path.Combine("wwwroot/assets/img/logo", entreprise.Logo));
                     string NewName = Guid.NewGuid() + entrepriseView.Photo.FileName;

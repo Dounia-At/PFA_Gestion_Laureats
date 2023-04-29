@@ -56,67 +56,72 @@
     <div class="container-xxl flex-grow-1 container-p-y">
       
         <div class="d-flex bd-highlight my-2">
-            <a asp-controller="Annonce" asp-action="Add" class="ms-auto p-2 bd-highlight">
-            <button class="btn btn-primary btn-toggle-sidebar waves-effect waves-light " data-bs-toggle="offcanvas" data-bs-target="#addEventSidebar" aria-controls="addEventSidebar" >
+            <button asp-controller="Annonce" asp-action="Add" class="btn btn-primary btn-toggle-sidebar waves-effect waves-light " data-bs-toggle="offcanvas" data-bs-target="#addEventSidebar" aria-controls="addEventSidebar" >
                
                     <i class="ti ti-plus me-1"></i>
                     <span class="align-middle">Nouvelle Annonce</span>
                 
                
             </button>
-            </a>
         </div>
-        @foreach (Annonce a in Model)
+        @if(Model != null)
         {
-           
-            <div class="col-md-12 col-lg-12 mb-3 ">
-                <div class="card ">
-                    <div class="card-body">
+            @foreach (Annonce a in Model)
+            {
 
-                        <div class="d-flex mb-3">
-                            <div class="flex-shrink-0">
-                                <img src=".. /../assets/img/avatars/@a.utilisateur.Photo_Profil" class="me-3" height="38">
-                            </div>
-                            <div class="flex-grow-1 row">
-                                <div class="col-9 mb-sm-0 mb-2">
-                                    <h5 class="mb-0 text-dark"><strong >@a.utilisateur.Nom @a.utilisateur.Prenom</strong></h5>
-                                    <small class="text-muted">@a.utilisateur.Titre_Profil</small>
+                <div class="col-md-12 col-lg-12 mb-3 ">
+                    <div class="card ">
+                        <div class="card-body">
+
+                            <div class="d-flex mb-3">
+                                <div class="flex-shrink-0">
+                                    <img src=".. /../assets/img/avatars/@a.utilisateur.Photo_Profil" class="me-3" height="38">
                                 </div>
+                                <div class="flex-grow-1 row">
+                                    <div class="col-9 mb-sm-0 mb-2">
+                                        <h5 class="mb-0 text-dark"><strong>@a.utilisateur.Nom @a.utilisateur.Prenom</strong></h5>
+                                        <small class="text-muted">@a.utilisateur.Titre_Profil</small>
+                                    </div>
 
+                                </div>
                             </div>
-                        </div>
-                        <div>
-                        </div>
-                        <h5 class="card-title mt-5">@a.Titre</h5>
-                        <h6 class="card-subtitle text-muted">
-                            @a.Date_Creation.Date.ToString("MM/dd/yyyy")</h6>
-                             @if (a.Photo!=null)
-                             {
+                            <div>
+                            </div>
+                            <h5 class="card-title mt-5">@a.Titre</h5>
+                            <h6 class="card-subtitle text-muted">
+                                @a.Date_Creation.Date.ToString("MM/dd/yyyy")
+                            </h6>
+                            @if (a.Photo != null)
+                            {
                                 <img class="img-fluid d-flex mx-auto my-4 rounded"
-                                     src="~/assets/img/Annones/@a.Photo"
-                                     />
+                                     src="~/assets/img/Annones/@a.Photo" />
                             }
-                        <div class="container mt-5">@Html.Raw(a.Description)</div>
+                            <div class="container mt-5">@Html.Raw(a.Description)</div>
 
-                        <p class="card-text"><span class="text-muted fw-light">le Dernier Délai:  </span>@a.Date_limite_Deposer.Date.ToString("MM/dd/yyyy")</p>
+                            <p class="card-text"><span class="text-muted fw-light">le Dernier Délai:  </span>@a.Date_limite_Deposer.Date.ToString("MM/dd/yyyy")</p>
 
-                       
-                       
 
-                        <button class="btn btn-danger btn-sm deleteButton" data-id="@a.Id"><i class="ti ti-trash ti-sm"></i></button>
+
+
+                            <button class="btn btn-danger btn-icon waves-effect deleteButton" data-id="@a.Id"><i class="ti ti-trash ti-sm"></i></button>
                             <a asp-controller="Annonce" asp-action="Update" asp-route-id="@a.Id" class="btn btn-label-success btn-icon waves-effect ">
                                 <i class="ti ti-edit ti-sm"></i>
                             </a>
-                      
-                           
-                            
-                        
 
-                        @* <a href="javascript:void(0);" class="card-link">Another link</a>*@
+
+
+
+
+                            @* <a href="javascript:void(0);" class="card-link">Another link</a>*@
+                        </div>
                     </div>
                 </div>
-            </div>
-          
+
+            }
+        }
+        else
+        {
+            <h3>Aucune annonce pour le moment!!</h3>
         }
 
     </div>

@@ -400,6 +400,38 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\img\icons\brands\vue-logo.png))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\img\logo\00ed15b9-de07-44ac-8eaa-0c55186cf6a025329.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>PFA_Gestion_Laureats</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/PFA_Gestion_Laureats</BasePath>
+      <RelativePath>assets/img/logo/00ed15b9-de07-44ac-8eaa-0c55186cf6a025329.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\img\logo\00ed15b9-de07-44ac-8eaa-0c55186cf6a025329.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\img\logo\09d03a72-c6bf-4425-b7bc-917b3e4c45ec0x0.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>PFA_Gestion_Laureats</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/PFA_Gestion_Laureats</BasePath>
+      <RelativePath>assets/img/logo/09d03a72-c6bf-4425-b7bc-917b3e4c45ec0x0.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\img\logo\09d03a72-c6bf-4425-b7bc-917b3e4c45ec0x0.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\img\logo\2e9e7e11-4afd-4d93-b97e-d7cedd848ca2SQLI Oujda.png))">
       <SourceType>Package</SourceType>
       <SourceId>PFA_Gestion_Laureats</SourceId>
@@ -415,6 +447,22 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\img\logo\2e9e7e11-4afd-4d93-b97e-d7cedd848ca2SQLI Oujda.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\img\logo\38072c17-970d-4409-8f07-4b9fc20eb8bdsqli.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>PFA_Gestion_Laureats</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/PFA_Gestion_Laureats</BasePath>
+      <RelativePath>assets/img/logo/38072c17-970d-4409-8f07-4b9fc20eb8bdsqli.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\img\logo\38072c17-970d-4409-8f07-4b9fc20eb8bdsqli.png))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\img\logo\4c286e85-3dae-42ba-8488-31fde9cd8ebb739984.png))">
       <SourceType>Package</SourceType>
@@ -432,6 +480,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\img\logo\4c286e85-3dae-42ba-8488-31fde9cd8ebb739984.png))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\img\logo\8269e7d0-3f43-495b-b628-39030a8b78e3739984.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>PFA_Gestion_Laureats</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/PFA_Gestion_Laureats</BasePath>
+      <RelativePath>assets/img/logo/8269e7d0-3f43-495b-b628-39030a8b78e3739984.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\img\logo\8269e7d0-3f43-495b-b628-39030a8b78e3739984.png))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\img\logo\8b5d1bfa-66ae-462c-8f4b-a31666fa0d47SQLI Oujda.png))">
       <SourceType>Package</SourceType>
       <SourceId>PFA_Gestion_Laureats</SourceId>
@@ -447,6 +511,70 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\img\logo\8b5d1bfa-66ae-462c-8f4b-a31666fa0d47SQLI Oujda.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\img\logo\b70b2493-f787-47e6-9212-dcaaaef8207c1000_F_190806704_Wz5YvQrmk3mKIditaN0yPrCgnnhCaQIx.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>PFA_Gestion_Laureats</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/PFA_Gestion_Laureats</BasePath>
+      <RelativePath>assets/img/logo/b70b2493-f787-47e6-9212-dcaaaef8207c1000_F_190806704_Wz5YvQrmk3mKIditaN0yPrCgnnhCaQIx.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\img\logo\b70b2493-f787-47e6-9212-dcaaaef8207c1000_F_190806704_Wz5YvQrmk3mKIditaN0yPrCgnnhCaQIx.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\img\logo\d86f2522-79c0-4774-8577-f9bf8e7b70b4novelis.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>PFA_Gestion_Laureats</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/PFA_Gestion_Laureats</BasePath>
+      <RelativePath>assets/img/logo/d86f2522-79c0-4774-8577-f9bf8e7b70b4novelis.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\img\logo\d86f2522-79c0-4774-8577-f9bf8e7b70b4novelis.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\img\logo\d8d3ca51-92fc-461b-a27e-572b8f25964a589-5891497_industrial-vector-engineering-transparent-background-travel-icons-hd.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>PFA_Gestion_Laureats</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/PFA_Gestion_Laureats</BasePath>
+      <RelativePath>assets/img/logo/d8d3ca51-92fc-461b-a27e-572b8f25964a589-5891497_industrial-vector-engineering-transparent-background-travel-icons-hd.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\img\logo\d8d3ca51-92fc-461b-a27e-572b8f25964a589-5891497_industrial-vector-engineering-transparent-background-travel-icons-hd.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\img\logo\df5245e5-6f7e-4332-b084-844f3d33c9beSQLI Oujda.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>PFA_Gestion_Laureats</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/PFA_Gestion_Laureats</BasePath>
+      <RelativePath>assets/img/logo/df5245e5-6f7e-4332-b084-844f3d33c9beSQLI Oujda.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\img\logo\df5245e5-6f7e-4332-b084-844f3d33c9beSQLI Oujda.png))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\img\logo\eheio.png))">
       <SourceType>Package</SourceType>
