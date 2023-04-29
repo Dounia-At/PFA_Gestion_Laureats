@@ -6,7 +6,7 @@ namespace PFA_Gestion_Laureats.Validation
     {
         public override void OnActionExecuting(ActionExecutingContext context)
         {
-            if (context.HttpContext.Session.GetString("Role") != "Agent")
+            if (context.HttpContext.Session.GetString("Role") != "AgentDirection")
             {
                 context.HttpContext.Response.Redirect("/Home");
             }

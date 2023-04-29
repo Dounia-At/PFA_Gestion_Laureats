@@ -1,7 +1,7 @@
 ﻿@model PFA_Gestion_Laureats.ViewModels.Tests.TestViewModel
 
 @section title {
-   Nouveau Tessi
+   Modifier Test
 }
 @section js{
     <link href='https://cdn.jsdelivr.net/npm/froala-editor@latest/css/froala_editor.pkgd.min.css' rel='stylesheet' type='text/css' />
@@ -25,11 +25,16 @@
         })
     </script>
 }
+<h3 class="fw-bold py-2 mb-2 card-header ">
+    <a class="text-muted fw-light" asp-controller="Annonce" asp-action="Annonces">Accueil /</a>
+    <a class="text-muted fw-light" asp-controller="Test" asp-action="Index">Testes /</a>
+    Modifier Test
+</h3>
 <div class="row">
     <div class="col-md-12">
 
         <div class="card mb-4">
-            <h5 class="card-header">Modifier le Test</h5>
+            <h5 class="card-header">Modifier Test</h5>
 
             <form method="POST">
 

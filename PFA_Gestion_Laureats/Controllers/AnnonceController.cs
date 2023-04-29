@@ -87,7 +87,8 @@ namespace PFA_Gestion_Laureats.Controllers
         }
         public IActionResult Annonces()
         {
-          List<Annonce>annonces=db.Annonces.Include(annonce=>annonce.utilisateur).Include(annonce => annonce.entreprise).OrderByDescending(an=>an.Date_Creation).AsNoTracking().ToList();
+            if (db.Entreprises.Count() == 0) return RedirectToAction("Index", "Entreprise");
+            List<Annonce>annonces=db.Annonces.Include(annonce=>annonce.utilisateur).Include(annonce => annonce.entreprise).OrderByDescending(an=>an.Date_Creation).AsNoTracking().ToList();
             return View(annonces);
         }
         public IActionResult Details(int id)

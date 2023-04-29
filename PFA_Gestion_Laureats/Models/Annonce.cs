@@ -16,9 +16,9 @@ namespace PFA_Gestion_Laureats.Models
         public IList<Postulation>? postulations { get; set; }
 
         public int UtilisateurId { get; set; }
-        public Utilisateur utilisateur { get; set; }
+        public Utilisateur? utilisateur { get; set; }
         public int EntrepriseId { get; set; }
-        public Entreprise entreprise { get; set; }
+        public Entreprise? entreprise { get; set; }
         public Annonce() { }
         public Annonce(AddAnnonceViewModel amv) { 
             this.Titre = amv.Titre;

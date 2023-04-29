@@ -1,4 +1,5 @@
-﻿using PFA_Gestion_Laureats.Validation;
+﻿using PFA_Gestion_Laureats.Models;
+using PFA_Gestion_Laureats.Validation;
 using System.ComponentModel.DataAnnotations;
 
 namespace PFA_Gestion_Laureats.ViewModels.Entreprises
@@ -16,10 +17,10 @@ namespace PFA_Gestion_Laureats.ViewModels.Entreprises
         [Required(ErrorMessage = "Champ obligatoire!")]
         public string Ville { get; set; }
         public string? Adresse { get; set; }
-
         public string? Logo { get; set; }
 
         [Required(ErrorMessage = "Champ obligatoire!")]
+        [MaxLength(500, ErrorMessage ="Ne depasser pas 500 Mots!")]
         public string Description { get; set; }
 
         public bool Convention { get; set; }
@@ -29,20 +30,16 @@ namespace PFA_Gestion_Laureats.ViewModels.Entreprises
         {
 
         }
-        public EntrepriseViewModel(int Id, string Nom, string Pays, string? Ville,
-                            string Adresse, string Logo,
-                            string Description, bool Convention)
+        public EntrepriseViewModel(Entreprise e)
         {
-            this.Id = Id;
-            this.Nom = Nom;
-            this.Pays = Pays;
-            this.Ville = Ville;
-            this.Logo = Logo;
-            this.Adresse = Adresse;
-            this.Description = Description;
-            this.Convention = Convention;
-
-
+            this.Id = e.Id;
+            this.Nom = e.Nom;
+            this.Pays = e.Pays;
+            this.Ville = e.Ville;
+            this.Logo = e.Logo;
+            this.Adresse = e.Adresse;
+            this.Description =  e.Description;
+            this.Convention = e.Convention;
         }
     }
 }

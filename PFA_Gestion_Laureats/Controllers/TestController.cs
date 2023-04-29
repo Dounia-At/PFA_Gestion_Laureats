@@ -17,14 +17,28 @@ namespace PFA_Gestion_Laureats.Controllers
         }
         public IActionResult Index()
         {
-            if (HttpContext.Session.GetString("Role") == "Agent")
+            if (HttpContext.Session.GetString("Role") == "AgentDirection")
             {
-                ViewBag.role = "Agent";
+                ViewBag.role = "AgentDirection";
             }
+            if (db.Entreprises.Count() == 0) return RedirectToAction("Index", "Entreprise");
+            if (db.Agents.Count() == 0) return RedirectToAction("Add_Agent", "User");
             List<Test> tests = db.Tests.OrderByDescending(t => t.Id).Include(t => t.entreprise).Include(t => t.agentDirection).AsNoTracking().ToList();
             
 
             return View(tests);
+        }
+        public IActionResult Details(int id)
+        {
+            if (HttpContext.Session.GetString("Role") == "AgentDirection")
+            {
+                ViewBag.role = "AgentDirection";
+            }
+            Test test = db.Tests.Find(id);
+            test.entreprise = db.Entreprises.Find(test.EntrepriseId);
+            test.agentDirection = db.Agents.Find(test.AgentDirectionId);
+
+            return View(test);
         }
         public IActionResult Add()
         {

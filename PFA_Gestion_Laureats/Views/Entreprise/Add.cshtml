@@ -1,11 +1,40 @@
 ﻿@model PFA_Gestion_Laureats.ViewModels.Entreprises.EntrepriseViewModel
+@section title {
+   Nouvelle Entreprise
+}
+@section Style{
+    <link href='https://cdn.jsdelivr.net/npm/froala-editor@latest/css/froala_editor.pkgd.min.css' rel='stylesheet' type='text/css' />
+}
+@section js{
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0/themes/smoothness/jquery-ui.css" />
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"></script>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/froala-editor@latest/js/froala_editor.pkgd.min.js'></script>
+    <script>
 
+        var editor = new FroalaEditor('#example', {
+            imageUpload: false,
+            imageInsertButtons: false,
+            videoInsertButtons: false,
+            fileInsertButtons: false,
+            fileUpload: false,
+        }, function () {
+            editor.imageUpload.hide();
+        })
+    </script>
 
+}
+
+<h3 class="fw-bold py-2 mb-2 card-header ">
+    <a class="text-muted fw-light" asp-controller="Annonce" asp-action="Annonces">Accueil / </a>
+    <a class="text-muted fw-light" asp-controller="Entreprise" asp-action="Index">Entreprises / </a>
+    Nouvelle Entreprise
+</h3>
 <div class="row">
     <div class="col-md-12">
        
         <div class="card mb-4">
-            <h5 class="card-header">Ajouter Une Entreprise</h5>
+            <h5 class="card-header">Nouvelle Entreprise</h5>
             
             <form method="POST" enctype="multipart/form-data">
 
@@ -14,69 +43,60 @@
                     <div class="row">
 
                         <div class="mb-3 col-md-6">
+                            <label>Image <strong style="color:red">*</strong></label>
                             <input type="file"
                                    class="form-control"
                                    asp-for="Photo" required />
                         </div>
                         <hr class="my-0" /> <br />
                         <div class= "mb-3 col-md-6" >
-
-                        <label asp-for= "Nom" class= "form-label" ></label >
-
-                        <input required
-                        asp-for="Nom"
-                        class= "form-control"/>
-                        <span asp-validation-for= "Nom" ></span >
+                            <div>
+                                <label asp-for="Nom" class="form-label"></label> <strong style="color:red">*</strong>
+                            </div>
+                            <input required asp-for="Nom" class= "form-control"/>
+                            <span asp-validation-for="Nom" style="color:red"></span>
 
                         </div >
-
+                        <br /> <br />
                         <div class="mb-3 col-sm-6 form-check">
 
-                            <label asp-for="Convention" class="form-check-label"></label> <br/>
+                            <label asp-for="Convention" class="form-check-label"></label> 
                             <input class="form-check-input" asp-for="Convention" type="checkbox"  />
-
-                            <span asp-validation-for="Convention"></span>
+                            <span asp-validation-for="Convention" style="color:red"></span>
                         </div>
 
+                       
+
                         <div class="mb-3 col-sm-6">
-
-                        <label asp-for= "Pays" class= "form-label" ></label >
-
-                        <input  required
-                        asp-for="Pays"
-                        class= "form-control" />
-                        <span asp-validation-for= "Pays" ></span >
+                            <div>
+                                <label asp-for="Pays" class="form-label"></label><strong style="color:red">*</strong>
+                            </div>
+                            <input  required asp-for="Pays" class= "form-control" />
+                            <span asp-validation-for="Pays" style="color:red"></span>
                         </div >
 
                         <div class="mb-3 col-sm-6">
-
-                        <label asp-for= "Ville" class= "form-label" ></label >
-
-                        <input type = "text"
-                        asp-for= "Ville"
-                        class= "form-control " required />
-
-                        <span asp-validation-for="Ville"></span>
-                    </div>
+                            <div>
+                                <label asp-for="Ville" class="form-label"></label> <strong style="color:red">*</strong>
+                            </div>
+                            <input type = "text" asp-for= "Ville" class= "form-control " required />
+                            <span asp-validation-for="Ville" style="color:red"></span>
+                        </div>
                         <div class="mb-3">
+                            <div>
+                                <label asp-for="Adresse" class="form-label"></label> <strong style="color:red">*</strong>
+                            </div>
+                            <input type = "text" asp-for= "Adresse" class= "form-control " required/>
+                            <span asp-validation-for="Adresse" style="color:red"></span>
+                        </div>
 
-
-                    <label asp-for= "Adresse" class= "form-label" ></label >
-                    <input type = "text"
-                    asp-for= "Adresse"
-                    class= "form-control " required/>
-
-
-                    <span asp-validation-for="Adresse"></span>
-                </div>
-
-                    <div class="mb-3 ">
-                <label asp-for= "Description" class= "form-label" ></label >
-                <textarea rows="3"
-                asp-for= "Description"
-                class= "form-control " required ></textarea>
-                        <span asp-validation-for="Description"></span>
-                 </div>
+                        <div class="mb-3">
+                            <div>
+                                <label asp-for="Description" class="form-label"></label> <strong style="color:red">*</strong>
+                            </div>
+                            <textarea rows="3" asp-for="Description" maxlength="500" class="form-control " id="example" required ></textarea>
+                            <span asp-validation-for="Description" style="color:red"></span>
+                         </div>
                  </div>
 
                     <div class="mt-2">

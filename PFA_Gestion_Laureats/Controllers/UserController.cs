@@ -4,7 +4,11 @@ using Microsoft.EntityFrameworkCore;
 using OfficeOpenXml;
 using PFA_Gestion_Laureats.Models;
 using PFA_Gestion_Laureats.Validation;
+using System.Net.Mail;
+using System.Net;
 using PFA_Gestion_Laureats.ViewModels.Users;
+using System.Text;
+using NuGet.Protocol.Plugins;
 
 namespace PFA_Gestion_Laureats.Controllers
 {
@@ -14,6 +18,15 @@ namespace PFA_Gestion_Laureats.Controllers
         public UserController(MyContext db)
         {
             this.db = db;
+        }
+        public IActionResult Confirm(int id)
+        {
+            Utilisateur utilisateur = db.Utilisateurs.Find(id);
+            utilisateur.IsComfirmed = true;
+            db.Utilisateurs.Update(utilisateur);
+            db.SaveChanges();
+
+            return RedirectToAction("Login");
         }
         [Authentification]
         public IActionResult Validation()
@@ -25,10 +38,52 @@ namespace PFA_Gestion_Laureats.Controllers
         [Authentification]
         public IActionResult Valider(string login)
         {
-            Utilisateur utilisateur = db.Utilisateurs.Where(u => u.Login == login).SingleOrDefault();
-            utilisateur.Isvalide = true;
-            db.Utilisateurs.Update(utilisateur);
-            db.SaveChanges();
+            
+            try
+            {
+                String loginAgent = HttpContext.Session.GetString("Login");
+                Utilisateur utilisateur = db.Utilisateurs.Where(u => u.Login == login).SingleOrDefault();
+                AgentDirection agent = db.Agents.Where(u => u.Login == loginAgent).SingleOrDefault();
+
+                using (MailMessage mail = new MailMessage(agent.Email, utilisateur.Email))
+                {
+
+                    mail.Subject = "Votre compte est valide!!";
+                    // href!!!
+                    mail.Body = "<p>L'ecole EHEI vous informe que votre compte a été valider.</p>" +
+                                "<a class=\"btn btn-primary\" href='User/Login/"+utilisateur+"' > Bienvenure! </a>";
+                    mail.BodyEncoding = Encoding.UTF8;
+
+                    mail.IsBodyHtml = true;
+                    using (System.Net.Mail.SmtpClient smtp = new System.Net.Mail.SmtpClient())
+                    {
+                        smtp.Host = "smtp.gmail.com";
+
+                        NetworkCredential NetworkCred = new NetworkCredential(agent.Email, utilisateur.Password);
+                        // smtp.Connect("smtp.ethereal.email", 587, SecureSocketOptions.StartTls);
+                        smtp.EnableSsl = true;
+                        smtp.UseDefaultCredentials = false;
+                        smtp.Credentials = NetworkCred;
+
+                        smtp.Port = 587;
+                        //smtp.Credentials = CredentialCache.DefaultNetworkCredentials;
+                        smtp.Send(mail);
+
+                    }
+
+                }
+                utilisateur.Isvalide = true;
+                db.Utilisateurs.Update(utilisateur);
+                db.SaveChanges();
+            }
+            catch (System.Net.Mail.SmtpException ex)
+            {
+
+                ViewBag.Alert = "Ressayer ultérieurement!";
+                return View();
+
+
+            }
             return RedirectToAction("Validation");
         }
         [Authentification]
@@ -314,6 +369,7 @@ namespace PFA_Gestion_Laureats.Controllers
                 else if (utilisateur.GetType().Name == "Laureat")
                 {
                     Laureat laureat = db.Laureats.Where(u => u.Login == login).SingleOrDefault();
+                    
                     user = new UserViewModel(laureat.Id, laureat.Nom,
                                                         laureat.Prenom, laureat.Tel,
                                                         laureat.Email, laureat.Titre_Profil,
@@ -449,8 +505,51 @@ namespace PFA_Gestion_Laureats.Controllers
                             etudiant.specialite = user.specialite;
                             etudiant.Photo_Profil = "profil.png";
 
+                            try
+                            {
+                                String loginAgent = HttpContext.Session.GetString("Login");
+                                AgentDirection agent = db.Agents.Where(u => u.Login == loginAgent).SingleOrDefault();
+
+                                using (MailMessage mail = new MailMessage(agent.Email, etudiant.Email))
+                                {
+
+                                    mail.Subject = "Confirmer votre adresse!!";
+                                    // href!!!
+                                    mail.Body = "<p>Veuillez cliquer sur le bouton suivant pour confirmer votre inscription.</p>" +
+                                                "<a class=\"btn btn-primary\" href='User/Confirm/" + etudiant.Id + "' > Confirmation d'adresse! </a>";
+                                    mail.BodyEncoding = Encoding.UTF8;
+
+                                    mail.IsBodyHtml = true;
+                                    using (System.Net.Mail.SmtpClient smtp = new System.Net.Mail.SmtpClient())
+                                    {
+                                        smtp.Host = "smtp.gmail.com";
+
+                                        NetworkCredential NetworkCred = new NetworkCredential(agent.Email, etudiant.Password);
+                                        // smtp.Connect("smtp.ethereal.email", 587, SecureSocketOptions.StartTls);
+                                        smtp.EnableSsl = true;
+                                        smtp.UseDefaultCredentials = false;
+                                        smtp.Credentials = NetworkCred;
+
+                                        smtp.Port = 587;
+                                        //smtp.Credentials = CredentialCache.DefaultNetworkCredentials;
+                                        smtp.Send(mail);
+
+                                    }
+
+                                }
+                            }
+                            catch (System.Net.Mail.SmtpException ex)
+                            {
+
+                                ViewBag.Alert = "Une erreur est survenue, veuillez réessayer ultérieurement!";
+                                return View();
+
+
+                            }
+
                             db.Etudiants.Add(etudiant);
                             db.SaveChanges();
+
                         }
                         else
                         {
@@ -506,6 +605,48 @@ namespace PFA_Gestion_Laureats.Controllers
                             laureat.specialite = user.specialite;
                             laureat.Date_Fin_Etude = (DateTime)user.Date_Fin_Etude;
                             laureat.Photo_Profil = "profil.png";
+
+                            try
+                            {
+                                String loginAgent = HttpContext.Session.GetString("Login");
+                                AgentDirection agent = db.Agents.Where(u => u.Login == loginAgent).SingleOrDefault();
+
+                                using (MailMessage mail = new MailMessage(agent.Email, laureat.Email))
+                                {
+
+                                    mail.Subject = "Confirmer votre adresse!!";
+                                    // href!!!
+                                    mail.Body = "<p>Veuillez cliquer sur le bouton suivant pour confirmer votre inscription.</p>" +
+                                                "<a class=\"btn btn-primary\" href='User/Confirm/" + laureat.Id + "' > Confirmation d'adresse! </a>";
+                                    mail.BodyEncoding = Encoding.UTF8;
+
+                                    mail.IsBodyHtml = true;
+                                    using (System.Net.Mail.SmtpClient smtp = new System.Net.Mail.SmtpClient())
+                                    {
+                                        smtp.Host = "smtp.gmail.com";
+
+                                        NetworkCredential NetworkCred = new NetworkCredential(agent.Email, laureat.Password);
+                                        // smtp.Connect("smtp.ethereal.email", 587, SecureSocketOptions.StartTls);
+                                        smtp.EnableSsl = true;
+                                        smtp.UseDefaultCredentials = false;
+                                        smtp.Credentials = NetworkCred;
+
+                                        smtp.Port = 587;
+                                        //smtp.Credentials = CredentialCache.DefaultNetworkCredentials;
+                                        smtp.Send(mail);
+
+                                    }
+
+                                }
+                            }
+                            catch (System.Net.Mail.SmtpException ex)
+                            {
+
+                                ViewBag.Alert = "Une erreur est survenue, veuillez réessayer ultérieurement!";
+                                return View();
+
+
+                            }
 
                             db.Laureats.Add(laureat);
                             db.SaveChanges();
@@ -689,9 +830,15 @@ namespace PFA_Gestion_Laureats.Controllers
                 Utilisateur utilisateur = db.Utilisateurs.Where(us => us.Login == mv.Login && us.Password == mv.Password).FirstOrDefault();
                 if (utilisateur != null)
                 {
-                    if (utilisateur.Isvalide == false)
+                    if(!utilisateur.IsComfirmed)
                     {
-                        ViewBag.msgValidation = "Ce compte n'est pas encore validé";
+                        ViewBag.msgValidation = "Ce compte n'est pas encore Confirmé!";
+                        return View();
+                    }
+                    else if (utilisateur.Isvalide == false)
+                    {
+                        ViewBag.msgValidation = "Ce compte n'est pas encore validé!";
+                        return View();
                     }
                     else
                     {
