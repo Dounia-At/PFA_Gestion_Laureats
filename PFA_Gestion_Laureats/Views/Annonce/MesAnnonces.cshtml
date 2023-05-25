@@ -49,75 +49,113 @@
             });
         });
     </script>
-}
-<h4 class="fw-bold py-3 mb-4 card-header"><a class="text-muted fw-light" asp-controller="Annonce" asp-action="Annonces">Accueil /</a>Mes Annonces</h4>
-<div class="content-wrapper">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0/themes/smoothness/jquery-ui.css" />
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"></script>
 
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#Name").autocomplete({
+                source: function (request, response) {
+                    $.ajax({
+                        url: "/Annonce/GetSearchResults/",
+                        type: "POST",
+                        dataType: "json",
+                        data: { Prefix: request.term },
+                        success: function (data) {
+                            response($.map(data, function (item) {
+                                return item;
+                            }))
+
+                        }
+                    })
+                },
+                messages: {
+                    noResults: "", results: ""
+                }
+            });
+        })
+    </script>
+}
+
+
+<div class="content-wrapper">
+   
     <div class="container-xxl flex-grow-1 container-p-y">
-      
-        <div class="d-flex bd-highlight my-2">
-            <button asp-controller="Annonce" asp-action="Add" class="btn btn-primary btn-toggle-sidebar waves-effect waves-light " data-bs-toggle="offcanvas" data-bs-target="#addEventSidebar" aria-controls="addEventSidebar" >
-               
-                    <i class="ti ti-plus me-1"></i>
-                    <span class="align-middle">Nouvelle Annonce</span>
-                
-               
-            </button>
+        <h4 class="fw-bold py-3 mb-4 card-header "><a class="text-muted fw-light" asp-controller="Annonce" asp-action="Annonces">Accueil /</a>Mes Annonces</h4>
+        <div class="container mt-5 d-flex flex-row-reverse mb-3 mx-3">
+            <a class="btn btn-primary" asp-controller="Annonce" asp-action="Add">
+                <i class="ti ti-plus me-1"></i>
+                <span class="align-middle">Nouvelle Annonce</span>
+            </a>
         </div>
         @if(Model != null)
         {
-            @foreach (Annonce a in Model)
+            <div class="row g-4">
+            @foreach (Annonce annonce in Model)
             {
 
-                <div class="col-md-12 col-lg-12 mb-3 ">
-                    <div class="card ">
+                <div class="col-xl-4 col-lg-6 col-md-6">
+                    <div class="card" style="max-height:100% !important">
                         <div class="card-body">
-
-                            <div class="d-flex mb-3">
-                                <div class="flex-shrink-0">
-                                    <img src=".. /../assets/img/avatars/@a.utilisateur.Photo_Profil" class="me-3" height="38">
-                                </div>
-                                <div class="flex-grow-1 row">
-                                    <div class="col-9 mb-sm-0 mb-2">
-                                        <h5 class="mb-0 text-dark"><strong>@a.utilisateur.Nom @a.utilisateur.Prenom</strong></h5>
-                                        <small class="text-muted">@a.utilisateur.Titre_Profil</small>
+                            <div class="d-flex align-items-center mb-3">
+                                <a asp-controller="Entreprise" asp-action="Details" asp-route-id="@annonce.EntrepriseId" class="d-flex align-items-center">
+                                    <div class="avatar me-2">
+                                        <img src="../../assets/img/logo/@annonce.entreprise.Logo"
+                                             alt="Logo"
+                                             class="rounded-circle" />
                                     </div>
+                                    <div class="me-2 text-body h5 mb-0">@annonce.entreprise.Nom</div>
+                                </a>
 
+                            </div>
+                            <div class="mb-1">
+                                @if (@annonce.Titre.Length > 30)
+                                {
+                                        <a asp-controller="Annonce" asp-action="Details" asp-route-id="@annonce.Id">
+                                            <h5 class="card-title mx-3 my-4 ">@annonce.Titre.Substring(0,26)...</h5>
+                                        </a>
+                                   
+                                }
+                                else
+                                {
+                                        <a asp-controller="Annonce" asp-action="Details" asp-route-id="@annonce.Id">
+                                            <h5 class="card-title mx-3 my-4 ">@annonce.Titre</h5>
+                                        </a>
+
+                                   
+
+                                }
+
+                                <hr class="my-0" /> <br />
+                               @* <a asp-controller="Annonce" asp-action="Details" asp-route-id="@annonce.Id">
+                                    <p class="mx-3 my-2 text-primary">Plus Details ...</p>
+                                </a>*@
+                            </div>
+
+                            <div class="d-flex align-items-center pt-1">
+                                @*<div class="d-flex align-items-center">
+                                    <a asp-controller="User" asp-action="Details" asp-route-id="@annonce.utilisateur.Login">
+                                        <span class="text-muted fw-light">@annonce.utilisateur.Nom @annonce.utilisateur.Prenom</span>
+                                    </a>
+                                </div>*@
+                                <div class="ms-auto ">
+                                    <button class="btn btn-danger btn-icon waves-effect deleteButton mx-2" data-id="@annonce.Id"><i class="ti ti-trash ti-sm"></i></button>
+
+                                    <a asp-controller="Annonce" asp-action="Update" asp-route-id="@annonce.Id" class="btn btn-label-success btn-icon waves-effect ">
+                                        <i class="ti ti-edit ti-sm"></i>
+                                    </a>
                                 </div>
+
                             </div>
-                            <div>
-                            </div>
-                            <h5 class="card-title mt-5">@a.Titre</h5>
-                            <h6 class="card-subtitle text-muted">
-                                @a.Date_Creation.Date.ToString("MM/dd/yyyy")
-                            </h6>
-                            @if (a.Photo != null)
-                            {
-                                <img class="img-fluid d-flex mx-auto my-4 rounded"
-                                     src="~/assets/img/Annones/@a.Photo" />
-                            }
-                            <div class="container mt-5">@Html.Raw(a.Description)</div>
-
-                            <p class="card-text"><span class="text-muted fw-light">le Dernier Délai:  </span>@a.Date_limite_Deposer.Date.ToString("MM/dd/yyyy")</p>
 
 
-
-
-                            <button class="btn btn-danger btn-icon waves-effect deleteButton" data-id="@a.Id"><i class="ti ti-trash ti-sm"></i></button>
-                            <a asp-controller="Annonce" asp-action="Update" asp-route-id="@a.Id" class="btn btn-label-success btn-icon waves-effect ">
-                                <i class="ti ti-edit ti-sm"></i>
-                            </a>
-
-
-
-
-
-                            @* <a href="javascript:void(0);" class="card-link">Another link</a>*@
                         </div>
                     </div>
                 </div>
 
             }
+            </div>
         }
         else
         {

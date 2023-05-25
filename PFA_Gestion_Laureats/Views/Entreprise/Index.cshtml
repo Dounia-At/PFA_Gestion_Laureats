@@ -74,48 +74,62 @@
 <div class="container-fluid my-4">
     @if (Model != null)
     {
-        <div class="row mb-5">
+        <div class="row g-4">
             @foreach (Entreprise entreprise in Model)
             {
+                 <div class="col-xl-4 col-lg-6 col-md-6">
+                        <div class="card" style="max-height:100% !important">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center mb-3">
+                                    <a asp-controller="Entreprise" asp-action="Details" asp-route-id="@entreprise.Id" class="d-flex align-items-center">
+                                        <div class="avatar me-2">
+                                            <img src="../../assets/img/logo/@entreprise.Logo"
+                                                 alt="Logo"
+                                                 class="rounded-circle" />
+                                        </div>
+                                        <div class="me-2 text-body h5 mb-0">@entreprise.Nom</div>
+                                    </a>
 
-                <div class="col-xl-4 col-lg-6 col-md-6">
-                    <div class="card mb-3">
-                        <div class="row g-0 ">
-                            <div class="col-md-4">
-                                <a asp-controller="Entreprise" asp-action="Details" asp-route-id="@entreprise.Id">
-                                    <img class="card-img card-img-left" src="../../assets/img/logo/@entreprise.Logo" alt="Card image" max-width="200" max-height="200" />
-                                </a>
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">@entreprise.Nom</h5>
-                                    <p class="card-text">
+                                </div>
+                            <div class="mb-1">
+                               @* <p >@entreprise.Pays @entreprise.Ville</p>*@
+                               
+                                <p class=" my-4"> @entreprise.Adresse.Substring(0, Math.Min(20, entreprise.Adresse.Length)) <span class="text-muted  mb-2">...</span></p>
+                               
 
-                                        @entreprise.Pays @entreprise.Ville
-                                        <br />
-
-                                        @entreprise.Adresse.Substring(0, Math.Min(20, entreprise.Adresse.Length)) <span class="text-muted ">...</span>
-                                        <br>
-                                        <a asp-controller="Entreprise" asp-action="Details" asp-route-id="@entreprise.Id">
-                                            <div class="text-primary"> Plus Details</div>
-                                        </a>
-
-                                    </p>
-
+                                    <hr class="my-0" /> <br />
+                                    @* <a asp-controller="Annonce" asp-action="Details" asp-route-id="@annonce.Id">
+                            <p class="mx-3 my-2 text-primary">Plus Details ...</p>
+                            </a>*@
+                                </div>
+                            <div class="d-flex align-items-center pt-1">
+                                <div class="d-flex align-items-center">
+                                   
+                                        <span class="text-muted fw-light">@entreprise.Ville,@entreprise.Pays</span>
+                                   
+                                </div>
+                                <div class="ms-auto">
                                     @if (ViewBag.role == "AgentDirection")
                                     {
-                                        <button class="btn btn-danger btn-icon waves-effect  deleteButton" data-id="@entreprise.Id"><i class="ti ti-trash ti-sm"></i></button>
-
-
-                                        <a asp-controller="Entreprise" asp-action="Update" asp-route-id="@entreprise.Id" class="btn btn-label-success btn-icon waves-effect ">
+                                        <a asp-controller="Entreprise" asp-action="Update" asp-route-id="@entreprise.Id" class="btn btn-label-success btn-icon waves-effect mx-2 ">
                                             <i class="ti ti-edit ti-sm"></i>
                                         </a>
+                                        <button class="btn btn-danger btn-icon waves-effect   deleteButton" data-id="@entreprise.Id"><i class="ti ti-trash ti-sm"></i></button>
+
+
+
                                     }
                                 </div>
                             </div>
+
+                               
+
+                            </div>
+
                         </div>
                     </div>
-                </div>
+
+                
             }
         </div>
     }

@@ -6,6 +6,7 @@ namespace PFA_Gestion_Laureats.ViewModels.Annonces
     public class AddAnnonceViewModel
     {
         [Required]
+        [MaxLength(30)]
         public string Titre { get; set; }
         public string Description { get; set; }
 

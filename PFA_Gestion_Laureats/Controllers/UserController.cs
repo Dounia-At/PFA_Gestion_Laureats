@@ -31,7 +31,7 @@ namespace PFA_Gestion_Laureats.Controllers
         [Authentification]
         public IActionResult Validation()
         {            
-            List<Utilisateur> utilisateurs = db.Utilisateurs.Where(u => u.Isvalide == false).AsNoTracking().ToList();
+            List<Utilisateur> utilisateurs = db.Utilisateurs.Where(u => u.Isvalide == false && u.IsComfirmed == true).AsNoTracking().ToList();
             return View(utilisateurs);
         }
         [Route("/User/Valider/{login}")]
@@ -127,7 +127,7 @@ namespace PFA_Gestion_Laureats.Controllers
 
                 if (utilisateur.GetType().Name == "AgentDirection")
                 {
-                    AgentDirection agent = db.Agents.Where(u => u.Login == login).AsNoTracking().SingleOrDefault();
+                    AgentDirection agent = db.Agents.Where(u => u.Login == login).Include(e => e.annonces).AsNoTracking().SingleOrDefault();
                     user = new UserViewModel(agent.Id,agent.Nom,agent.Prenom,agent.Tel,agent.Email,agent.Titre_Profil,agent.Adresse,agent.Password,agent.Login,agent.Photo_Profil);
                     return View("Profil",user);
 
@@ -140,7 +140,7 @@ namespace PFA_Gestion_Laureats.Controllers
                 }
                 else if (utilisateur.GetType().Name == "Laureat")
                 {
-                    Laureat laureat = db.Laureats.Where(u => u.Login == login).Include(L => L.projets).Include(e => e.stages).ThenInclude(e=>e.entreprise).Include(e => e.experiences).ThenInclude(e => e.entreprise).Include(e => e.formations).Include(e => e.certificats).Include(e => e.certificats).AsNoTracking().SingleOrDefault();
+                    Laureat laureat = db.Laureats.Where(u => u.Login == login).Include(L => L.projets).Include(e => e.stages).ThenInclude(e=>e.entreprise).Include(e => e.experiences).ThenInclude(e => e.entreprise).Include(e => e.formations).Include(e => e.certificats).Include(e => e.certificats).Include(e=>e.annonces).ThenInclude(e=>e.entreprise).AsNoTracking().SingleOrDefault();
 
                     user = new ProfilViewModel(laureat);
                 }

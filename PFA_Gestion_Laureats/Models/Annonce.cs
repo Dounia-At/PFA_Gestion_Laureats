@@ -13,12 +13,16 @@ namespace PFA_Gestion_Laureats.Models
         public string Email_Reception { get; set; }
         public DateTime Date_limite_Deposer { get; set; }
         public DateTime Date_Creation { get; set; }
+
+        public string Nature { get; set; }
+        public bool Remuniration { get; set; }
         public IList<Postulation>? postulations { get; set; }
 
         public int UtilisateurId { get; set; }
         public Utilisateur? utilisateur { get; set; }
         public int EntrepriseId { get; set; }
         public Entreprise? entreprise { get; set; }
+        public IList<Technologie>? technologies { get; set; }
         public Annonce() { }
         public Annonce(AddAnnonceViewModel amv) { 
             this.Titre = amv.Titre;

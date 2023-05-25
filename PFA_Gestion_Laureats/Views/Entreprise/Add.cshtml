@@ -2,14 +2,12 @@
 @section title {
    Nouvelle Entreprise
 }
-@section Style{
-    <link href='https://cdn.jsdelivr.net/npm/froala-editor@latest/css/froala_editor.pkgd.min.css' rel='stylesheet' type='text/css' />
-}
+
 @section js{
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0/themes/smoothness/jquery-ui.css" />
     <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"></script>
-    <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/froala-editor@latest/js/froala_editor.pkgd.min.js'></script>
+    
     <script>
 
         var editor = new FroalaEditor('#example', {
@@ -48,16 +46,18 @@
                                    class="form-control"
                                    asp-for="Photo" required />
                         </div>
-                        <hr class="my-0" /> <br />
+                        <hr class="my-0" /> 
                         <div class= "mb-3 col-md-6" >
-                            <div>
+                           <div>
                                 <label asp-for="Nom" class="form-label"></label> <strong style="color:red">*</strong>
-                            </div>
+                           </div>
+                               
+                            
                             <input required asp-for="Nom" class= "form-control"/>
                             <span asp-validation-for="Nom" style="color:red"></span>
 
                         </div >
-                        <br /> <br />
+                        
                         <div class="mb-3 col-sm-6 form-check">
 
                             <label asp-for="Convention" class="form-check-label"></label> 

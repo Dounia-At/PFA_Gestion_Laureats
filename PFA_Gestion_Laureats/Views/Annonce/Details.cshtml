@@ -35,8 +35,21 @@
             <div class="container mt-5">@Html.Raw(Model.Description)</div>
 
             <p class="card-text"><span class="text-muted fw-light" >le Dernier Délai:  </span>@Model.Date_limite_Deposer.Date.ToString("MM/dd/yyyy")</p>
+            @if (Model.utilisateur.Login == Convert.ToString(Context.Response.HttpContext.Session.GetString("Login")))
+            {
+                <div class="ms-auto">
+                    <button class="btn btn-danger btn-icon waves-effect deleteButton mx-2" data-id="@Model.Id"><i class="ti ti-trash ti-sm"></i></button>
 
-            <a asp-controller="Annonce" asp-action="Postuler" class="btn btn-primary waves-effect"> Postuler</a>
+                    <a asp-controller="Annonce" asp-action="Update" asp-route-id="@Model.Id" class="btn btn-label-success btn-icon waves-effect ">
+                        <i class="ti ti-edit ti-sm"></i>
+                    </a>
+                </div>
+            }
+            else
+            {
+                <a asp-controller="Annonce" asp-action="Postuler" class="btn btn-primary waves-effect"> Postuler</a>
+            }
+           
            
 
             

@@ -8,14 +8,6 @@
     </style>
 }
 @section js {
-
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css" />
-
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
-
-    <!-- JavaScript -->
     <script>
 
         var deleteButtons = document.querySelectorAll(".deleteButton");
@@ -55,10 +47,11 @@
         });
     </script>
 }
+<h4 class="fw-bold py-3 mb-4 card-header"><a class="text-muted fw-light" asp-controller="Annonce" asp-action="Annonces">Accueil /</a>Test </h4>
 @if (ViewBag.role == "AgentDirection")
 {
     <div class="container mt-5 d-flex flex-row-reverse">
-        <button class="btn btn-danger btn-icon waves-effect deleteButton" data-id="@Model.Id"><i class="ti ti-trash ti-sm"></i></button>
+        <button class="btn btn-danger btn-icon waves-effect deleteButton mx-3" data-id="@Model.Id"><i class="ti ti-trash ti-sm"></i></button>
 
         <a asp-controller="Test" asp-action="Update" asp-route-id="@Model.Id" class="btn btn-label-success btn-icon waves-effect ">
             <i class="ti ti-edit ti-sm"></i>

@@ -94,14 +94,45 @@
                 </div>
             </div>
             <!--/ About User -->
-            
+            <div class="card mb-4">
+                <div class="card-body">
+                    <p class="card-text text-uppercase">Offres</p>
+                    <ul class="list-unstyled mb-0">
+                        @foreach(Annonce annonce in Model.annonces)
+                        {
+                            <li class="mb-3">
+                                <div class="d-flex align-items-center">
+                                    <div class="d-flex align-items-start">
+                                        <div class="avatar me-2">
+                                            <img src="../../assets/img/logo/@annonce.entreprise.Logo"
+                                                 alt="Avatar"
+                                                 class="rounded-circle" />
+                                        </div>
+                                        <div class="me-2 ms-1">
+                                            <a asp-controller="Annonce" asp-action="Details" asp-route-id="@annonce.Id">
+                                                <h6 class="mb-0">@annonce.Titre</h6>
+                                            </a>
+                                            
+                                            <small class="text-muted">@annonce.Date_Creation.Date.ToString("MM/dd/yyyy")</small>
+                                        </div>
+                                    </div>
+                                    @*<div class="ms-auto">
+                                        <a href="javascript:;"><span class="badge bg-label-danger">Developer</span></a>
+                                    </div>*@
+                                </div>
+                            </li>
+                        }
+                       
+                    </ul>
+                </div>
+            </div>
         </div>
         
 
         <div class="col-xl-8 col-lg-7 col-md-7">
            
            
-            <div class="row">
+           @* <div class="row">*@
                 <!-- Stage -->
                
                     <div class="card card-action mb-4">
@@ -114,7 +145,7 @@
                             @if (Convert.ToString(Context.Response.HttpContext.Session.GetString("Login")) == Model.Login)
                             {
 
-                                <a asp-controller="Stage" asp-action="Add" class="btn btn-outline-primary  waves-effect waves-light mb-2 mt-3">
+                        <a asp-controller="Stage" asp-action="Add" class="btn btn-outline-primary  waves-effect waves-light mb-2 mt-3  mx-2">
 
                                     <i class="ti ti-plus me-1"></i>
 
@@ -190,7 +221,7 @@
                         @if (Convert.ToString(Context.Response.HttpContext.Session.GetString("Login")) == Model.Login)
                         {
 
-                            <a asp-controller="Experience_professionnelle" asp-action="Add" class="btn btn-outline-primary  waves-effect waves-light mb-2 mt-3">
+                        <a asp-controller="Experience_professionnelle" asp-action="Add" class="btn btn-outline-primary  waves-effect waves-light mb-2 mt-3  mx-2">
 
                                 <i class="ti ti-plus me-1"></i>
                               
@@ -203,8 +234,8 @@
                         }
                     </div>
                    
-                         <div class="card-body">
-                        <div class="card-action-element">
+                     <div class="card-body">
+                         <div class="card-action-element">
                             <div class="card-body pb-0">
                                 <ul class="timeline ms-1 mb-0">
                                     @if(Model.experiences != null)
@@ -238,8 +269,8 @@
                                     }
                                 </ul>
                             </div>
-                        </div>
-                      </div>
+                         </div>
+                     </div>
                 
                     
 
@@ -258,7 +289,7 @@
                             
                             @if (Convert.ToString(Context.Response.HttpContext.Session.GetString("Login")) == Model.Login)
                             {
-                                <a asp-controller="Projet" asp-action="Add"  class="btn btn-outline-primary  waves-effect waves-light mb-2 mt-3">
+                        <a asp-controller="Projet" asp-action="Add" class="btn btn-outline-primary  waves-effect waves-light mb-2 mt-3  mx-2">
 
                                     <i class="ti ti-plus me-1"></i>
                                   
@@ -272,45 +303,45 @@
                         
                    
                         <div class="card-body">
-                        <div class="card-action-element">
-                            <div class="card-body pb-0">
-                                <ul class="timeline ms-1 mb-0">
-                                   @if(Model.projets != null)
-                                   {
-                                        @foreach (Projet p in Model.projets)
-                                        {
+                               <div class="card-action-element">
+                                    <div class="card-body pb-0">
+                                        <ul class="timeline ms-1 mb-0">
+                                           @if(Model.projets != null)
+                                           {
+                                                @foreach (Projet p in Model.projets)
+                                                {
 
-                                            <li class="timeline-item timeline-item-transparent">
-                                                <span class="timeline-point timeline-point-primary"></span>
-                                                <div class="timeline-event">
-                                                    <div class="timeline-header">
-                                                        <a asp-controller="Projet" asp-action="Update" asp-route-id="@p.Id"><h6 class="mb-0">@p.Nom</h6></a>
-                                                        <small class="text-muted">
-                                                            @{
-                                                                int mois = (int)(new TimeSpan(p.Date_Fin.Ticks - p.Date_Debut.Ticks).TotalDays / 30); ;
-                                                            }<span>@mois mois </span>
-                                                        </small>
-                                                    </div>
-                                                    <p class="mb-2">@p.Date_Debut.Date.ToString("MM/dd/yyyy") -- @p.Date_Fin.Date.ToString("MM/dd/yyyy")</p>
-                                                    <div class="d-flex flex-wrap">
+                                                    <li class="timeline-item timeline-item-transparent">
+                                                        <span class="timeline-point timeline-point-primary"></span>
+                                                        <div class="timeline-event">
+                                                            <div class="timeline-header">
+                                                                <a asp-controller="Projet" asp-action="Update" asp-route-id="@p.Id"><h6 class="mb-0">@p.Nom</h6></a>
+                                                                <small class="text-muted">
+                                                                    @{
+                                                                        int mois = (int)(new TimeSpan(p.Date_Fin.Ticks - p.Date_Debut.Ticks).TotalDays / 30); ;
+                                                                    }<span>@mois mois </span>
+                                                                </small>
+                                                            </div>
+                                                            <p class="mb-2">@p.Date_Debut.Date.ToString("MM/dd/yyyy") -- @p.Date_Fin.Date.ToString("MM/dd/yyyy")</p>
+                                                            <div class="d-flex flex-wrap">
 
-                                                        <div class="ms-1">
-                                                            <p class="mx-3 my-2">@Html.Raw(p.Description)</p>
+                                                                <div class="ms-1">
+                                                                    <p class="mx-3 my-2">@Html.Raw(p.Description)</p>
+                                                                </div>
+                                                            </div>
                                                         </div>
-                                                    </div>
-                                                </div>
-                                            </li>
+                                                    </li>
 
-                                        }
-                                   }
-                                    else
-                                    {
-                                        <h3>Aucun Projet!</h3>
-                                    }
-                                </ul>
-                            </div>
+                                                }
+                                           }
+                                            else
+                                            {
+                                                <h3>Aucun Projet!</h3>
+                                            }
+                                        </ul>
+                                     </div>
+                              </div>
                         </div>
-                    </div>
                     </div>
                 
                 <!--/ Projet -->
@@ -325,7 +356,7 @@
 
                         @if (Convert.ToString(Context.Response.HttpContext.Session.GetString("Login")) == Model.Login)
                         {
-                            <a asp-controller="Formation" asp-action="Add" class="btn btn-outline-primary  waves-effect waves-light mb-2 mt-3">
+                        <a asp-controller="Formation" asp-action="Add" class="btn btn-outline-primary  waves-effect waves-light mb-2 mt-3  mx-2">
 
                                 <i class="ti ti-plus me-1"></i>
                                
@@ -337,7 +368,7 @@
                         }
                     </div>
 
-                <!--Formation -->
+                  <!--Formation -->
                     <div class="card-body">
                         <div class="card-action-element">
                             <div class="card-body pb-0">
@@ -377,7 +408,7 @@
                             </div>
                         </div>
                     </div>
-                      </div>
+               </div>
                 <!--/ Formation -->
                 <!-- Certificat -->
               
@@ -391,7 +422,7 @@
 
                             @if (Convert.ToString(Context.Response.HttpContext.Session.GetString("Login")) == Model.Login)
                             {
-                                <a asp-controller="Certificat" asp-action="Add" class="btn btn-outline-primary  waves-effect waves-light mb-2 mt-3">
+                                <a asp-controller="Certificat" asp-action="Add" class="btn btn-outline-primary  waves-effect waves-light mb-2 mt-3 mx-2">
 
                                     <i class="ti ti-plus me-1"></i>
                                     
@@ -459,9 +490,10 @@
                 
                
                 <!--/ Certificat -->
-            </div>
+            @*</div>*@
 
         </div>
     </div>
     <!--/ User Profile Content -->
 </div>
+

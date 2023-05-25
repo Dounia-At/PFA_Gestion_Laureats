@@ -30,6 +30,7 @@ namespace PFA_Gestion_Laureats.Models
         public bool Isvalide { get; set; }
         [DefaultValue(false)]
         public bool IsComfirmed { get; set; }
+        public bool IsVisibleTel { get; set; }
         public DateTime ?date_Login { get;set; }
         public DateTime ?date_Logout { get; set; }
 
@@ -37,6 +38,7 @@ namespace PFA_Gestion_Laureats.Models
         public IList<Message>? messagesEnvoyees { get; set; }
         public IList<Message>? BoitesReception { get; set; }
 
+        public string ?ConnectionId { get; set; }
     }
 
 }

@@ -17,8 +17,9 @@
    
 
     <meta name="description" content="" />
+    <link href="~/sweetalert/sweetalert.min.css" rel="stylesheet" />
 
-
+    <link href="~/froala/froala_editor.pkgd.min.css" rel="stylesheet" />
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -38,8 +39,9 @@
     <link rel="stylesheet" href="../../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
     <link rel="stylesheet" href="../../assets/vendor/libs/node-waves/node-waves.css" />
     <link rel="stylesheet" href="../../assets/vendor/libs/typeahead-js/typeahead.css" />
-           
 
+    <link href="~/assets/vendor/libs/bootstrap-select/bootstrap-select.css" rel="stylesheet" />
+    <link href="~/assets/vendor/libs/select2/select2.css" rel="stylesheet" />
     <!-- Page CSS -->
     <link rel="stylesheet" href="../../assets/vendor/css/pages/cards-advance.css" />
     <!-- Helpers -->
@@ -88,15 +90,18 @@
                             <div data-i18n="Home">Accueil</div>
                         </a>
                     </li>
-                    @if (Convert.ToString(Context.Response.HttpContext.Session.GetString("Role")) == "Etudiant" || (Convert.ToString(Context.Response.HttpContext.Session.GetString("Role")) == "Laureat"))
+                    <li class="menu-item mt-3">
+                        <a href="" class="menu-link">
+                            <i class="menu-icon tf-icons ti ti-messages"></i>
+                            <div data-i18n="Chat">Chat</div>
+                            <div class="badge bg-label-primary rounded-pill ms-auto">3</div>
+                        </a>
+                    </li>
+                   
+                    
+                   @* @if (Convert.ToString(Context.Response.HttpContext.Session.GetString("Role")) == "Etudiant" || (Convert.ToString(Context.Response.HttpContext.Session.GetString("Role")) == "Laureat"))
                     {
-                        <li class="menu-item mt-3">
-                            <a href="" class="menu-link">
-                                <i class="menu-icon tf-icons ti ti-messages"></i>
-                                <div data-i18n="Chat">Chat</div>
-                                <div class="badge bg-label-primary rounded-pill ms-auto">3</div>
-                            </a>
-                        </li>
+                       
 
                         <li class="menu-item mt-3">
                             <a asp-controller="Stage"  asp-action="Add" class="menu-link">
@@ -129,11 +134,11 @@
                        
                         
                         
-                    }
+                    }*@
                     @if (Convert.ToString(Context.Response.HttpContext.Session.GetString("Role")) == "AgentDirection")
                     {
                         <li class="menu-item mt-3">
-                            <a href="" class="menu-link ">
+                            <a asp-controller="User" asp-action="Validation" class="menu-link ">
                                 <i class="menu-icon tf-icons ti ti-users"></i>
                                 <div data-i18n="Users">Utilisateurs</div>
                             </a>
@@ -147,9 +152,16 @@
 
                         </li>
                         <li class="menu-item mt-3">
-                            <a href="" class="menu-link ">
+                            <a asp-controller="Test" asp-action="Index" class="menu-link ">
                                 <i class="menu-icon tf-icons ti-xs ti ti-file-description me-1"></i>
                                 <div data-i18n="Statistics">Tests</div>
+                            </a>
+
+                        </li>
+                        <li class="menu-item mt-3">
+                            <a asp-controller="Entreprise" asp-action="Index" class="menu-link ">
+                                <i class=" menu-icon tf-icons ti ti-layout-grid ti-xs me-1"></i>
+                                <div data-i18n="Mes Projets">Entreprises</div>
                             </a>
 
                         </li>
@@ -169,7 +181,7 @@
                         
                     }
                     <li class="menu-item mt-3">
-                        <a href="" class="menu-link ">
+                        <a asp-controller="User" asp-action="Update_Compte" class="menu-link ">
                             <i class="menu-icon tf-icons ti ti-settings"></i>
                             <div data-i18n="Settings">Settings</div>
                         </a>
@@ -195,14 +207,14 @@
 
                     <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
                         <!-- Search -->
-                        <div class="navbar-nav align-items-center">
+                        @*<div class="navbar-nav align-items-center">
                             <div class="nav-item navbar-search-wrapper mb-0">
                                 <a class="nav-item nav-link search-toggler d-flex align-items-center px-0" href="javascript:void(0);">
                                     <i class="ti ti-search ti-md me-2"></i>
                                     <span class="d-none d-md-inline-block text-muted">Search (Ctrl+/)</span>
                                 </a>
                             </div>
-                        </div>
+                        </div>*@
                         <!-- /Search -->
 
                         <ul class="navbar-nav flex-row align-items-center ms-auto">
@@ -216,7 +228,7 @@
                             </li>
                             <!--/ Style Switcher -->
                             <!-- Notification -->
-                            <li class="nav-item dropdown-notifications navbar-dropdown dropdown me-3 me-xl-1">
+                           @* <li class="nav-item dropdown-notifications navbar-dropdown dropdown me-3 me-xl-1">
                                 <a class="nav-link dropdown-toggle hide-arrow"
                                    href="javascript:void(0);"
                                    data-bs-toggle="dropdown"
@@ -275,7 +287,7 @@
                                         </a>
                                     </li>
                                 </ul>
-                            </li>
+                            </li>*@
                             <!--/ Notification -->
                             <!-- User -->
                             <li class="nav-item navbar-dropdown dropdown-user dropdown">
@@ -365,12 +377,16 @@
     <script src="../../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
     <script src="../../assets/vendor/libs/node-waves/node-waves.js"></script>
     <script src="../../assets/vendor/libs/typeahead-js/typeahead.js"></script>
-
+    <script src="~/sweetalert/sweetalert.min.js"></script>
     <script src="../../assets/vendor/js/menu.js"></script>
-           
-    <!-- endbuild -->
+    <script src="~/froala/froala_editor.pkgd.min.js"></script>
+    <script src="~/assets/vendor/libs/select2/select2.js"></script>
+   <script src="~/assets/vendor/libs/bootstrap-select/bootstrap-select.js"></script>
+  <script src="~/assets/vendor/js/forms-selects.js"></script>
+            <!-- endbuild -->
     <!-- Main JS -->
     <script src="../../assets/js/main.js"></script>
+
     @RenderSection("js", false)
 
 

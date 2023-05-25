@@ -1,6 +1,17 @@
 ﻿@section title {
    Modifier Image Profil
 }
+@section js {
+   <script>
+       let img = document.getElementById('img');
+       let input = document.getElementById('input');
+
+       input.onchange = (e) => {
+           if(input.files[0])
+           img.src = URL.createObjectURL(input.files[0]);
+       };
+   </script>
+}
 @model PFA_Gestion_Laureats.ViewModels.Users.UserViewModel
 
 <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Modification du Profil /</span> Profil</h4>
@@ -32,13 +43,13 @@
                             <img src="../../assets/img/avatars/@Model.URL_Photo_Profil"
                                      alt="user-avatar"
                                      class="d-block w-px-100 h-px-100 rounded"
-                                     id="uploadedAvatar" />
+                                     id="img" />
                               
                             </div>
                         <hr class="my-0" />
                         <br /> <br />
                         <div class="mb-3 col-md-6">                           
-                            <input type="file"
+                            <input type="file" id="input"
                                    class="form-control"
                                    asp-for="Photo" required />                            
                         </div>

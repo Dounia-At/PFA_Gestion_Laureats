@@ -2,51 +2,187 @@
 @section title {
    Accueil
 }
+@section js{
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0/themes/smoothness/jquery-ui.css" />
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"></script>
+   
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#Technologie").autocomplete({
+                source: function (request, response) {
+                    $.ajax({
+                        url: "/Annonce/GetSearchTechnologies/",
+                        type: "POST",
+                        dataType: "json",
+                        data: { Prefix: request.term },
+                        success: function (data) {
+                            response($.map(data, function (item) {
+                                return item;
+                            }))
+
+                        }
+                    })
+                },
+                messages: {
+                    noResults: "", results: ""
+                }
+            });
+        })
+    </script>
+    }
+
+
+
 <div class="content-wrapper">
     @if (Model != null)
     {
         <div class="container-xxl flex-grow-1 container-p-y">
             <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Accueil /</span> Annonces</h4>
-            @foreach (Annonce a in Model)
-            {
-                <div class="row mb-5 d-flex justify-content-between">
-                    <div class="col-md">
-                        <div class="card mb-3">
-                            <div class="row g-0">
-                                <div class="col-md-4">
-                                    <img class="card-img-left container my-3" src="~/assets/img/logo/@a.entreprise.Logo" alt="Card image" width="146" height="146" />
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                        <div class="flex-grow-1 row">
-                                            <div class="col-9 mb-sm-0 mb-2">
-                                                <a asp-controller="User" asp-action="Details" asp-route-id="@a.utilisateur.Login">
-                                                    <h5 class="mb-0 text-dark"><strong>@a.utilisateur.Nom @a.utilisateur.Prenom</strong></h5>
-                                                </a>
-
-                                                <small class="text-muted">@a.utilisateur.Titre_Profil</small>
-                                            </div>
-
-                                        </div>
-                                        <div class="d-flex justify-content-between">
-                                            <h5 class="card-title mx-3 my-3 ">@a.Titre</h5>
-                                            <a asp-controller="Annonce" asp-action="Details" asp-route-id="@a.Id" class="btn btn-outline-primary waves-effect rounded-pill">Voir l'Annonce</a>
-
-
-                                        </div>
-                                        @* <p class="card-text mt-3">*@
-
-                                        @* </p>*@
-                                        <p class="card-text"><small class="text-muted">@a.Date_Creation.Date.ToString("MM/dd/yyyy")</small></p>
-
-                                    </div>
-                                </div>
-                            </div>
+            
+                <form method="get">
+                <div class="row g-4">
+                    <div class="col-md-4 col-xl-3 col-lg-4 mb-2">
+                        <div class="input-group input-group-merge">
+                            <span class="input-group-text" id="basic-addon-search31"><i class="ti ti-search"></i></span>
+                            <input type="text" class="form-control" placeholder="Nom/Ville d'entreprise" aria-label="Nom/Ville d'entreprise"
+                                   aria-describedby="basic-addon-search31" name="SearchString" value="@ViewBag.SearchString">
                         </div>
                     </div>
-                </div>
+                    <div class="col-md-4 col-xl-3 col-lg-4 mb-2">
+                        <label class="form-label"></label>
+                        <input class="form-control" id="Technologie" placeholder="Technologie..." aria-label="Technologie..." name="Technologie" value="@ViewBag.Technologie" />
 
-            }
+                    </div>
+                    <div class="col-md-4 col-xl-3 col-lg-4 mb-2">
+                        <select class="form-control" name="Nature" >
+                            <option selected value="">Type de poste</option>
+                            <option value="PFA">PFA</option>
+                            <option value="PFE">PFE</option>
+                            <option value="CDI">CDI</option>
+                            <option value="CDD">CDD</option>
+                            <option value="Temps Partiel">Temps Partiel</option>
+                            <option value="Temps Plein">Temps Plein</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4 col-xl-3 col-lg-4 mb-2">
+                        <select class="form-control" name="remunerer">
+                            <option selected value="">Rémunération</option>
+                            <option value="Remunerer">Rémunérer</option>
+                            <option value="NonRemunerer">Non Rémunérer</option>
+                            
+                        </select>
+                       
+                       
+                    </div>
+                        
+                    <div class="col-md-4 col-xl-3 col-lg-4 mb-2">
+                        <select class="form-control" name="orderBy">
+                            <option selected value="">Order Par</option>
+                            <option value="plusConsultes">Les plus consultés</option>
+                            <option value="plusPostules">Les plus postulés</option>
+                            <option value="moinsConsultes">Les moins consultés</option>
+                            <option value="moinsPostules">Les monis postulés</option>                            
+                        </select>
+                    </div>
+                    <div class="col-md-4 col-xl-3 col-lg-4 mb-2 justify-content-between">
+
+                        <button type="submit" class="btn btn-primary btn-submit waves-effect waves-light">Chercher</button>
+                        <button asp-action="NoFiltre" class="btn btn-secondary btn-submit waves-effect waves-light mx-2">Annuler</button>
+
+                    </div>
+                  
+                </div>
+                </form>
+               
+                @*<div class="col-md-6 mb-4">
+                    <label for="selectpickerLiveSearch" class="form-label">Live Search</label>
+                    <div class="dropdown bootstrap-select w-100">
+                        <select id="selectpickerLiveSearch" class="selectpicker w-100" data-style="btn-default" data-live-search="true" tabindex="null">
+                            <option data-tokens="ketchup mustard">Hot Dog, Fries and a Soda</option>
+                            <option data-tokens="mustard">Burger, Shake and a Smile</option>
+                            <option data-tokens="frosting">Sugar, Spice and all things nice</option>
+                        </select><button type="button" tabindex="-1" class="btn dropdown-toggle btn-default" data-bs-toggle="dropdown" role="combobox" aria-owns="bs-select-4" aria-haspopup="listbox" aria-expanded="false" title="Sugar, Spice and all things nice" data-id="selectpickerLiveSearch"><div class="filter-option"><div class="filter-option-inner"><div class="filter-option-inner-inner">Sugar, Spice and all things nice</div></div> </div></button><div class="dropdown-menu" style="max-height: 378.288px; overflow: hidden; min-height: 46px;"><div class="bs-searchbox"><input type="search" class="form-control" autocomplete="off" role="combobox" aria-label="Search" aria-controls="bs-select-4" aria-autocomplete="list" aria-activedescendant="bs-select-4-2"></div><div class="inner show" role="listbox" id="bs-select-4" tabindex="-1" style="max-height: 316.288px; overflow: hidden auto; min-height: 0px;"><ul class="dropdown-menu inner show" role="presentation" style="margin-top: 0px; margin-bottom: 0px;"><li class=""><a role="option" class="dropdown-item" id="bs-select-4-0" tabindex="0" aria-setsize="3" aria-posinset="1"><span class="ti ti-check text-white check-mark"></span><span class="text">Hot Dog, Fries and a Soda</span></a></li><li class=""><a role="option" class="dropdown-item" id="bs-select-4-1" tabindex="0" aria-setsize="3" aria-posinset="2"><span class="ti ti-check text-white check-mark"></span><span class="text">Burger, Shake and a Smile</span></a></li><li class="selected active"><a role="option" class="dropdown-item selected active" id="bs-select-4-2" tabindex="0" aria-setsize="3" aria-posinset="3" aria-selected="true"><span class="ti ti-check text-white check-mark"></span><span class="text">Sugar, Spice and all things nice</span></a></li></ul></div></div>
+                    </div>
+                </div>*@
+            
+            <div class="row g-4 mt-2">
+                
+                @foreach (Annonce annonce in Model)
+                {
+
+                    <div class="col-xl-4 col-lg-6 col-md-6">
+                        <div class="card" style="max-height:100% !important">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center mb-3">
+                                    <a asp-controller="Entreprise" asp-action="Details" asp-route-id="@annonce.EntrepriseId" class="d-flex align-items-center">
+                                        <div class="avatar me-2">
+                                            <img src="../../assets/img/logo/@annonce.entreprise.Logo"
+                                                 alt="Logo"
+                                                 class="rounded-circle" />
+                                        </div>
+                                        <div class="me-2 text-body h5 mb-0">@annonce.entreprise.Nom</div>
+                                    </a>
+
+                                </div>
+                                <div class="mb-1">
+                                    @if (@annonce.Titre.Length > 30)
+                                    {
+                                        <a asp-controller="Annonce" asp-action="Details" asp-route-id="@annonce.Id">
+                                            <h5 class="card-title mx-3 my-4 ">@annonce.Titre.Substring(0,26)...</h5>
+                                        </a>
+
+                                    }
+                                    else
+                                    {
+                                        <a asp-controller="Annonce" asp-action="Details" asp-route-id="@annonce.Id">
+                                            <h5 class="card-title mx-3 my-4 ">@annonce.Titre</h5>
+                                        </a>
+
+
+
+                                    }
+
+                                    <hr class="my-0" /> <br />
+                                    @* <a asp-controller="Annonce" asp-action="Details" asp-route-id="@annonce.Id">
+                            <p class="mx-3 my-2 text-primary">Plus Details ...</p>
+                            </a>*@
+                                </div>
+
+                                <div class="d-flex align-items-center ">
+
+                                    <div class="d-flex align-items-center ">
+                                        <a asp-controller="User" asp-action="Details" asp-route-id="@annonce.utilisateur.Login" class="d-flex align-items-center">
+                                            <img src="../../assets/img/avatars/@annonce.utilisateur.Photo_Profil" class="rounded-circle me-3" alt="avatar" height="24" width="24">
+                                            
+                                            <p @*class="avatar me-2"*@ class=" mt-3 text-muted ">
+                                               @*<img src="../../assets/img/avatars/@annonce.utilisateur.Photo_Profil"
+                                                     alt=""
+                                                     class="rounded-circle"
+                                                     height="24"
+                                                     width="24" />*@
+                                               
+                                                 @annonce.utilisateur.Nom  @annonce.utilisateur.Prenom
+                                            </p>
+                                           
+                                           
+                                        </a>
+
+                                    </div>
+                                    <div class="ms-auto">
+                                        <p class="card-text"><small class="text-muted">@annonce.Date_Creation.Date.ToString("MM/dd/yyyy")</small></p>
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                }
+            </div>
 
         </div>
     }   

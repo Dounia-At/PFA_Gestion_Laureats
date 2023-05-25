@@ -20,6 +20,8 @@ namespace PFA_Gestion_Laureats.ViewModels.Tests
 
         [Required(ErrorMessage = "Champ obligatoire!")]
         public string Description { get; set; }
+        [Required]
+        public string Entreprise { get; set; }
 
         [Required(ErrorMessage = "Champ obligatoire!")]
         public int EntrepriseId { get; set; }

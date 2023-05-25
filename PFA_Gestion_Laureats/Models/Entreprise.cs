@@ -22,7 +22,7 @@
             Pays = "";
             Ville = "";
             Adresse = "";
-            Logo = "";
+            Logo = "entrepriseLogo.jpg";
             Description = "";
             Convention = false;
             

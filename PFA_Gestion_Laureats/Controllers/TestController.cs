@@ -48,7 +48,18 @@ namespace PFA_Gestion_Laureats.Controllers
 
         [HttpPost]
         public IActionResult Add(TestViewModel testView)
-        {            
+        {
+            Entreprise entreprise = db.Entreprises.Where(ae => ae.Nom.ToUpper() == testView.Entreprise).FirstOrDefault();
+
+            if (entreprise == null)
+            {
+                Entreprise en = new Entreprise(testView.Entreprise);
+                db.Entreprises.Add(en);
+                db.SaveChanges();
+                entreprise = db.Entreprises.Where(ae => ae.Nom.ToUpper() == en.Nom).FirstOrDefault();
+            }
+
+            testView.EntrepriseId = entreprise.Id;
             if (ModelState.IsValid)
             {
                 Test test = new Test();
@@ -69,6 +80,7 @@ namespace PFA_Gestion_Laureats.Controllers
         }
         public IActionResult Update(int id)
         {
+            
             Test test = db.Tests.Find(id);
             TestViewModel testView = new TestViewModel(test.Id, test.Date_Test, test.Heure_Test, 
                                                         test.Description, test.EntrepriseId );
@@ -81,6 +93,16 @@ namespace PFA_Gestion_Laureats.Controllers
         {
             if (ModelState.IsValid)
             {
+                Entreprise entreprise = db.Entreprises.Where(ae => ae.Nom.ToUpper() == testView.Entreprise).FirstOrDefault();
+
+                if (entreprise == null)
+                {
+                    Entreprise en = new Entreprise(testView.Entreprise);
+                    db.Entreprises.Add(en);
+                    db.SaveChanges();
+                    entreprise = db.Entreprises.Where(ae => ae.Nom.ToUpper() == en.Nom).FirstOrDefault();
+                }
+                testView.EntrepriseId = entreprise.Id;
                 Test test = db.Tests.Find(testView.Id);
                 test.Date_Test = testView.Date_Test;
                 test.Description = testView.Description;
@@ -106,6 +128,11 @@ namespace PFA_Gestion_Laureats.Controllers
             db.Tests.Remove(test);
             db.SaveChanges();
             return RedirectToAction("Index");
+        }
+        public JsonResult GetSearchResults(string Prefix)
+        {
+            var res = db.Entreprises.Where(en => en.Nom.ToUpper().Contains(Prefix)).Select(en => en.Nom).ToList();
+            return Json(res);
         }
     }
 }

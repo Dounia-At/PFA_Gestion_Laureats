@@ -22,6 +22,21 @@ namespace PFA_Gestion_Laureats.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("AnnonceTechnologie", b =>
+                {
+                    b.Property<int>("annoncesId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("technologiesId")
+                        .HasColumnType("int");
+
+                    b.HasKey("annoncesId", "technologiesId");
+
+                    b.HasIndex("technologiesId");
+
+                    b.ToTable("AnnonceTechnologie");
+                });
+
             modelBuilder.Entity("PFA_Gestion_Laureats.Models.Annonce", b =>
                 {
                     b.Property<int>("Id")
@@ -47,8 +62,15 @@ namespace PFA_Gestion_Laureats.Migrations
                     b.Property<int>("EntrepriseId")
                         .HasColumnType("int");
 
+                    b.Property<string>("Nature")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Photo")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("Remuniration")
+                        .HasColumnType("bit");
 
                     b.Property<string>("Titre")
                         .IsRequired()
@@ -342,6 +364,23 @@ namespace PFA_Gestion_Laureats.Migrations
                     b.ToTable("Stages");
                 });
 
+            modelBuilder.Entity("PFA_Gestion_Laureats.Models.Technologie", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Libelle")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Technologie");
+                });
+
             modelBuilder.Entity("PFA_Gestion_Laureats.Models.Test", b =>
                 {
                     b.Property<int>("Id")
@@ -387,11 +426,17 @@ namespace PFA_Gestion_Laureats.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("ConnectionId")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Email")
                         .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<bool>("IsComfirmed")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsVisibleTel")
                         .HasColumnType("bit");
 
                     b.Property<bool>("Isvalide")
@@ -477,6 +522,21 @@ namespace PFA_Gestion_Laureats.Migrations
                         .HasColumnType("datetime2");
 
                     b.HasDiscriminator().HasValue("Laureat");
+                });
+
+            modelBuilder.Entity("AnnonceTechnologie", b =>
+                {
+                    b.HasOne("PFA_Gestion_Laureats.Models.Annonce", null)
+                        .WithMany()
+                        .HasForeignKey("annoncesId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("PFA_Gestion_Laureats.Models.Technologie", null)
+                        .WithMany()
+                        .HasForeignKey("technologiesId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("PFA_Gestion_Laureats.Models.Annonce", b =>

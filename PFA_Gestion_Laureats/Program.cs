@@ -1,7 +1,12 @@
 using PFA_Gestion_Laureats.Models;
 using Microsoft.EntityFrameworkCore;
+using PFA_Gestion_Laureats.SignalR;
 
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddSignalR(o =>
+{
+    o.EnableDetailedErrors = true;
+});
 builder.Services.AddSession(
     opt =>
     {
@@ -34,7 +39,7 @@ app.UseStaticFiles();
 app.UseRouting();
 app.UseSession();
 app.UseAuthorization();
-
+app.MapHub<ChatHub>("/chatHub");
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=User}/{action=Login}/{id?}");

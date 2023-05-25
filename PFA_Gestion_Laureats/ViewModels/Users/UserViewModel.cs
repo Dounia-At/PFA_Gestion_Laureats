@@ -13,8 +13,10 @@ namespace PFA_Gestion_Laureats.ViewModels.Users
     {
         public int? Id { get; set; }
         public string? Nom { get; set; }
+        [Display(Name = "Prénom")]
         public string? Prenom { get; set; }
         [DataType(DataType.PhoneNumber)]
+        [Display(Name = "Téléphone")]
         public string? Tel { get; set; }
         [DataType(DataType.EmailAddress)]
         public string? Email { get; set; }

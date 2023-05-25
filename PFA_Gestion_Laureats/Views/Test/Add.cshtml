@@ -3,8 +3,7 @@
    Nouveau Test
 }
 @section js{
-    <link href='https://cdn.jsdelivr.net/npm/froala-editor@latest/css/froala_editor.pkgd.min.css' rel='stylesheet' type='text/css' />
-   <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/froala-editor@latest/js/froala_editor.pkgd.min.js'></script>
+    
     <script>
 
 
@@ -23,6 +22,33 @@
 
         })
     </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0/themes/smoothness/jquery-ui.css" />
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"></script>
+
+    <script type="text/javascript">
+    $(document).ready(function () {
+        $("#Name").autocomplete({
+            source: function (request, response) {
+                $.ajax({
+                    url: "/Test/GetSearchResults/",
+                    type: "POST",
+                    dataType: "json",
+                    data: { Prefix: request.term },
+                    success: function (data) {
+                        response($.map(data, function (item) {
+                            return item;
+                        }))
+
+                    }
+                })
+            },
+            messages: {
+                noResults: "", results: ""
+            }
+        });
+    })
+    </script>
 }
 <h3 class="fw-bold py-2 mb-2 card-header "><a class="text-muted fw-light" asp-controller="Annonce" asp-action="Annonces">Accueil /</a> 
                                            <a class="text-muted fw-light" asp-controller="Test" asp-action="Index">Testes /</a> 
@@ -40,13 +66,10 @@
                 <form method="POST" >
 
                     <div class="row">
-                        <div class="form-group col-md-12 ">
-                            <label asp-for="EntrepriseId" class="form-label"></label>
-                            <select asp-for="EntrepriseId" asp-items="ViewBag.entreprises" class="form-control">
-                            </select>
-
-                            <span asp-validation-for="EntrepriseId"></span>
-
+                        <div class="col-md-12">
+                            <label class="form-label" asp-for="Entreprise">Entreprise<strong style="color:red">*</strong></label>
+                            <input class="form-control" id="Name" asp-for="Entreprise" required />
+                            <span asp-validation-for="Entreprise"></span>
                         </div>
                         
                         <div class="col-sm-6 mt-3">

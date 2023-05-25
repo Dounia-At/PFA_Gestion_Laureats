@@ -5,8 +5,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0/themes/smoothness/jquery-ui.css" />
     <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+   
     <script>
 
         var validateBTN = document.querySelectorAll(".ValidateButton");
@@ -19,9 +18,9 @@
                 swal({
                     title: "Êtes-vous sûr de vouloir valider ce compte  ?",
                     text: "Cette action ne peut pas être annulée !",
-                    type: "warning",
+                    type: "success",
                     showCancelButton: true,
-                    confirmButtonColor: "#DD6B55",
+                    confirmButtonColor: "#3A9D23",
                     confirmButtonText: "Oui, Valider !",
                     cancelButtonText: "Annuler",
                     closeOnConfirm: false,
@@ -84,47 +83,68 @@
 @model List<Utilisateur>
 
 
-<table class="table-primary  w-100 my-5 ">
-    <thead>
-        <tr>
-            <th>
-                Nom
-            </th>
-            <th>
-                Prenom
-            </th>
-            <th>
-                Telephone 
-            </th>
-            <th>
-                Email    
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @item.Nom
-            </td>
-            <td>
-                @item.Prenom
-            </td>
-            <td>
-                @item.Tel
-            </td>
-            <td >
-                @item.Email
-            </td>
-            
-            <td>
-                 <button  data-id="@item.Login" class="btn btn-primary ValidateButton"> Valider</button>
-                <a asp-action="Update_User" asp-route-id="@item.Login" class="btn btn-warning">Modifier</a>
-                <button data-id="@item.Login" class="btn btn-danger deleteButton">Rejeter</button>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
 
+ <div class="col-12">
+    <h4 class="fw-bold py-3 mb-4 card-header"><a class="text-muted fw-light" asp-controller="Annonce" asp-action="Annonces">Accueil /</a>  Validation des Comptes</h4>
+       
+        <div class="row g-4">
+            @foreach(Utilisateur utilisateur in Model)
+            {
+                <div class="col-xl-4 col-lg-6 col-md-6">
+                    <div class="card">
+                        <div class="card-body ">
+                            <div class="dropdown btn-pinned">
+                                <button type="button"
+                                        class="btn dropdown-toggle hide-arrow p-0"
+                                        data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                    <i class="ti ti-dots-vertical text-muted"></i>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item" asp-action="Update" asp-route-id="@utilisateur.Login">Détails</a></li>
+                                    <li>
+                                    <button data-id="@utilisateur.Login" class="dropdown-item  ValidateButton "> Valider</button>
+                                       @* <a class="dropdown-item" href="javascript:void(0);">Valider</a></li>*@
+                                    <li>
+                                        <hr class="dropdown-divider" />
+                                    </li>
+                                    <li>
+                                    <button data-id="@utilisateur.Login" class="dropdown-item text-danger  deleteButton">Rejeter</button>
+                                       
+                                </ul>
+                            </div>
+                        <div class="mx-auto my-3 text-center">
+                                <img src="../../assets/img/avatars/@utilisateur.Photo_Profil" alt="Avatar Image" class="rounded-circle w-px-100" />
+                            </div>
+                        <h4 class="mb-1 card-title text-center">@utilisateur.Nom @utilisateur.Prenom </h4>
+                        <p class="pb-1 text-center">@utilisateur.Titre_Profil</p>
+                       
+                           
+
+                            <div class=" my-3 py-1">
+                                    <p> <strong>Téléphone : </strong>@utilisateur.Tel</p>
+                                    <p><strong>Email : </strong>@utilisateur.Email</p>
+                                    <p><strong>Adresse : </strong>@utilisateur.Adresse</p>
+                                @*<div>
+                                    <h6 class="mb-0">Téléphone</h6>
+                                    <span>@utilisateur.Tel</span>
+                                </div>
+                                <div>
+                                    <h6 class="mb-0">Email</h6>
+                                <span>@utilisateur.Email</span>
+                                </div>
+                                <div>
+                                    <h6 class="mb-0">Adresse</h6>
+                                     <span>@utilisateur.Adresse</span>
+                                </div>*@
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+            }
+           
+        </div>
+
+ </div>
+  

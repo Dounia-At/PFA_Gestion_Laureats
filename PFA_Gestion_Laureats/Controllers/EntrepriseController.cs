@@ -30,7 +30,7 @@ namespace PFA_Gestion_Laureats.Controllers
             {
                 ViewBag.role = "AgentDirection";
             }
-            Entreprise entreprise = db.Entreprises.Find(id);
+            Entreprise entreprise = db.Entreprises.Include(e=>e.annonces).Where(e=>e.Id==id).FirstOrDefault();
             return View(entreprise);
         }
         public IActionResult Add()
