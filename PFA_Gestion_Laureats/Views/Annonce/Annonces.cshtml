@@ -85,9 +85,13 @@
                             <option value="moinsPostules">Les monis postulés</option>                            
                         </select>
                     </div>
-                    <div class="col-md-4 col-xl-3 col-lg-4 mb-2 justify-content-between">
+                    <div class="col-md-2 col-xl-1 col-lg-2 mb-2 ">
 
                         <button type="submit" class="btn btn-primary btn-submit waves-effect waves-light">Chercher</button>
+
+                    </div>
+                    <div class="col-md-2 col-xl-1 col-lg-2 mb-2 ">
+
                         <button asp-action="NoFiltre" class="btn btn-secondary btn-submit waves-effect waves-light mx-2">Annuler</button>
 
                     </div>
@@ -110,7 +114,7 @@
                 
                 @foreach (Annonce annonce in Model)
                 {
-
+                    
                     <div class="col-xl-4 col-lg-6 col-md-6">
                         <div class="card" style="max-height:100% !important">
                             <div class="card-body">

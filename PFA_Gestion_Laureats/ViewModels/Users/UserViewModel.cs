@@ -51,7 +51,9 @@ namespace PFA_Gestion_Laureats.ViewModels.Users
         [DataType(DataType.Date)]
         [Display(Name = "Date de fin d'étude")]
         public DateTime? Date_Fin_Etude { get; set; }
+        public IList<Annonce>? annonces { get; set; }
 
+        
         public UserViewModel()
         {
 

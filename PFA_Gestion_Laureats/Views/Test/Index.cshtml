@@ -97,11 +97,18 @@
                         @if (ViewBag.role == "AgentDirection")
                         {
                             <div class="d-flex align-items-center pt-1">
-                                <div class="d-flex align-items-center">
-                                        <a asp-controller="User" asp-action="Details" asp-route-id="@test.agentDirection.Login">
-                                        <span class="text-muted fw-light">@test.agentDirection.Nom @test.agentDirection.Prenom</span>
+                                    <a asp-controller="User" asp-action="Details" asp-route-id="@test.agentDirection.Login" class="d-flex align-items-center">
+                                        <img src="../../assets/img/avatars/@test.agentDirection.Photo_Profil" class="rounded-circle me-3" alt="avatar" height="24" width="24">
+
+                                        <p  class=" mt-3 text-muted ">
+
+
+                                            @test.agentDirection.Nom @test.agentDirection.Prenom
+                                        </p>
+
+
                                     </a>
-                                </div>
+                               
                                 <div class="ms-auto">
                                     <button class="btn btn-danger btn-icon waves-effect deleteButton mx-2" data-id="@test.Id"><i class="ti ti-trash ti-sm"></i></button>
 

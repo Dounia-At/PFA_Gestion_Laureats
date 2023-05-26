@@ -130,21 +130,30 @@
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0/themes/smoothness/jquery-ui.css" />*@
     <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"></script>
 
-    <script src="~/js/signalr/dist/browser/signalr.js"></script>
+    @*@<script src="~/js/signalr/dist/browser/signalr.js"></script>
     @*<script src="~/js/chat.js"></script>*@
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/6.0.16/signalr.js" integrity="sha512-EcLNouRbMbjpfOdXh5oUkvTSzDa8Boqo3HU2a6zQkGCtOrvgORovbdvCivn6F63DiMvHpneEdLH/UJXlx2LNAQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-    var connection = new signalR.HubConnectionBuilder()
+    const connection = new signalR.HubConnectionBuilder()
         .configureLogging(signalR.LogLevel.Debug)
         .withUrl("/chatHub")
         .configureLogging(signalR.LogLevel.Information)
         .build();
    
          document.getElementById("sendButton").disabled = true;
-
+         showReceived = true;
     connection.on("ReceiveMessage", function (senderId,message) {
-
-           console.log("Received message: " + message);
-          $("#messagesList").append("<li>" + message + "</li>");
+        var senderIdFromHidden = document.getElementById("senderInput").value;
+        alert(senderId);
+        alert(senderIdFromHidden);
+        
+        if(senderIdFromHidden != senderId)
+        {
+            console.log("Received message: " + message);
+            $("#messagesList").append("<li>" + message + "</li>");
+        }
+        
             //    var P = document.createElement("p");
             //    document.getElementById("messagesList").append(p);
                 
@@ -164,6 +173,7 @@
         });
    
        document.getElementById("sendButton").addEventListener("click", function (event) {
+      
         var receiverId = document.getElementById("receiverInput").value;
         var message = document.getElementById("messageInput").value;
         var senderId = document.getElementById("senderInput").value;
@@ -177,7 +187,7 @@
         event.preventDefault();
     });
         connection.on("OwnMessage", (message) => {
-        console.log("Received message: " + message);
+        console.log("é - Received message: " + message);
        
         $("#teste").append("<p>" + message + "</p>");
     });

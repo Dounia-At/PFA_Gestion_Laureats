@@ -145,7 +145,7 @@ namespace PFA_Gestion_Laureats.Controllers
             if (!string.IsNullOrEmpty(orderBy))
             {
                 List<Annonce> annonces1 = new List<Annonce>();
-                                              
+                List<Annonce> annonces2 = db.Annonces.ToList();                                            
                 switch (orderBy)
                 {                   
                     case "plusConsultes":
@@ -165,11 +165,12 @@ namespace PFA_Gestion_Laureats.Controllers
                                 if (post.postId == annonce.Id)
                                 {
                                     annonces1.Add(annonce);
-                                }
-                            }
-                            
+                                    annonces2.Remove(annonce);
+                                }                                
+                            }                            
                         }
-                        annonces = annonces1;
+                        
+                        annonces = annonces1.Concat(annonces2).ToList() ;
                         break;
                   
                     case "plusPostules":
@@ -190,11 +191,12 @@ namespace PFA_Gestion_Laureats.Controllers
                                 if (post.postId == annonce.Id)
                                 {
                                     annonces1.Add(annonce);
+                                    annonces2.Remove(annonce);
                                 }
                             }
-
                         }
-                        annonces = annonces1;
+
+                        annonces = annonces1.Concat(annonces2).ToList();
                         break;
                     case "moinsConsultes":
                         var postsMC = db.Postulations.
@@ -213,11 +215,12 @@ namespace PFA_Gestion_Laureats.Controllers
                                 if (post.postId == annonce.Id)
                                 {
                                     annonces1.Add(annonce);
+                                    annonces2.Remove(annonce);
                                 }
                             }
-
                         }
-                        annonces = annonces1;
+
+                        annonces = annonces1.Concat(annonces2).ToList();
                         break;
                     case "moinsPostules":
 
@@ -238,11 +241,12 @@ namespace PFA_Gestion_Laureats.Controllers
                                 if (post.postId == annonce.Id)
                                 {
                                     annonces1.Add(annonce);
+                                    annonces2.Remove(annonce);
                                 }
                             }
-
                         }
-                        annonces = annonces1;
+
+                        annonces = annonces1.Concat(annonces2).ToList();
                         break;
 
                    

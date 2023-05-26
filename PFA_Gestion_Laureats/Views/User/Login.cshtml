@@ -73,17 +73,15 @@
                     <div class="card-body">
                         <!-- Logo -->
                         <div class="app-brand justify-content-center mb-4 mt-2">
-                            <a href="index.html" class="app-brand-link gap-2">
-                                <span class="app-brand-logo demo">
-                                   
-                                        <img src="../../assets/img/logo/eheio.png" alt class="img-fluid img-thumbnail" />
-                                    
-                                </span>
+                            <div  class="app-brand-link gap-2">
+                                @*<span class="app-brand-logo demo">*@
+                                    <img src="~/assets/img/logo/ehei.png" width="auto" height="28rem" />
+                                @*</span>*@
                                 <span class="app-brand-text demo text-body fw-bold ms-1 ">EHEI</span>
-                            </a>
+                            </div>
                         </div>
                         <!-- /Logo -->
-                        <h4 class="mb-1 pt-2 mx-5">BIENVENUE</h4>
+                       @* <h4 class="mb-1 pt-2 mx-5">BIENVENUE</h4>*@
                         @if (@ViewBag.msgErreur != null)
                         {
                             <div class="alert alert-danger alert-dismissible fade show">
@@ -104,13 +102,14 @@
                                 <span asp-validation-for="Login"></span>
                             </div>
                             <div class="mb-3 form-password-toggle">
-                               @* <div class="d-flex justify-content-between">
+                                <div class="d-flex justify-content-between">
                                     <label class="form-label" asp-for="Password"></label>
-                                    <a href="auth-forgot-password-basic.html">
+                                   @* <a href="auth-forgot-password-basic.html">
                                         <small>Forgot Password?</small>
-                                    </a>
-                                </div>*@
+                                    </a>*@
+                                </div>
                                 <div class="input-group input-group-merge">
+                                   
                                     <input asp-for="Password"
                                            
                                            class="form-control"

@@ -127,8 +127,9 @@ namespace PFA_Gestion_Laureats.Controllers
 
                 if (utilisateur.GetType().Name == "AgentDirection")
                 {
-                    AgentDirection agent = db.Agents.Where(u => u.Login == login).Include(e => e.annonces).AsNoTracking().SingleOrDefault();
+                    AgentDirection agent = db.Agents.Where(u => u.Login == login).Include(e => e.annonces).ThenInclude(e => e.entreprise).AsNoTracking().SingleOrDefault();
                     user = new UserViewModel(agent.Id,agent.Nom,agent.Prenom,agent.Tel,agent.Email,agent.Titre_Profil,agent.Adresse,agent.Password,agent.Login,agent.Photo_Profil);
+                    user.annonces = agent.annonces;
                     return View("Profil",user);
 
                 }
