@@ -20,7 +20,6 @@ namespace PFA_Gestion_Laureats.ViewModels.Entreprises
         public string? Logo { get; set; }
 
         [Required(ErrorMessage = "Champ obligatoire!")]
-        [MaxLength(500, ErrorMessage ="Ne depasser pas 500 Mots!")]
         public string Description { get; set; }
 
         public bool Convention { get; set; }

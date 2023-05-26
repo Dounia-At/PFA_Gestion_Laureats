@@ -102,7 +102,7 @@ namespace PFA_Gestion_Laureats.Controllers
             ViewBag.Technologie = Technologie;
 
 
-            if (db.Entreprises.Count() == 0) return RedirectToAction("Index", "Entreprise");
+            //if (db.Entreprises.Count() == 0) return RedirectToAction("Index", "Entreprise");
             List<Annonce> annonces = db.Annonces.Include(annonce => annonce.utilisateur).Include(annonce => annonce.entreprise).Include(annonce => annonce.technologies).Include(annonce => annonce.postulations).OrderByDescending(an=>an.Date_Creation).AsNoTracking().ToList();
             
             if (!string.IsNullOrEmpty(SearchString))

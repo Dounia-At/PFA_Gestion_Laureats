@@ -615,3 +615,8 @@ C:\Users\Computer\OneDrive\Documents\GitHub\PFA_Gestion_Laureats\PFA_Gestion_Lau
 C:\Users\Computer\OneDrive\Documents\GitHub\PFA_Gestion_Laureats\PFA_Gestion_Laureats\bin\Debug\net6.0\Microsoft.Owin.dll
 C:\Users\Computer\OneDrive\Documents\GitHub\PFA_Gestion_Laureats\PFA_Gestion_Laureats\bin\Debug\net6.0\Microsoft.Owin.Security.dll
 C:\Users\Computer\OneDrive\Documents\GitHub\PFA_Gestion_Laureats\PFA_Gestion_Laureats\bin\Debug\net6.0\Owin.dll
+C:\Users\atoin\Documents\GitHub\PFA_Gestion_Laureats\PFA_Gestion_Laureats\bin\Debug\net6.0\libman.json
+C:\Users\atoin\Documents\GitHub\PFA_Gestion_Laureats\PFA_Gestion_Laureats\bin\Debug\net6.0\Microsoft.AspNet.SignalR.Core.dll
+C:\Users\atoin\Documents\GitHub\PFA_Gestion_Laureats\PFA_Gestion_Laureats\bin\Debug\net6.0\Microsoft.Owin.dll
+C:\Users\atoin\Documents\GitHub\PFA_Gestion_Laureats\PFA_Gestion_Laureats\bin\Debug\net6.0\Microsoft.Owin.Security.dll
+C:\Users\atoin\Documents\GitHub\PFA_Gestion_Laureats\PFA_Gestion_Laureats\bin\Debug\net6.0\Owin.dll
