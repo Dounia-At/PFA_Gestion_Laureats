@@ -85,6 +85,8 @@ namespace PFA_Gestion_Laureats.Controllers
             TestViewModel testView = new TestViewModel(test.Id, test.Date_Test, test.Heure_Test, 
                                                         test.Description, test.EntrepriseId );
             ViewBag.entreprises = new SelectList(db.Entreprises.ToList(), "Id", "Nom", testView.EntrepriseId);
+            Entreprise entreprise = db.Entreprises.Where(ae => ae.Id == testView.EntrepriseId).FirstOrDefault();
+            ViewBag.entreprise = entreprise.Nom;
 
             return View(testView);
         }

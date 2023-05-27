@@ -9,205 +9,205 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = PFA_Gestion_Laureats
 build_property.RootNamespace = PFA_Gestion_Laureats
-build_property.ProjectDir = C:\Users\atoin\Documents\GitHub\PFA_Gestion_Laureats\PFA_Gestion_Laureats\
+build_property.ProjectDir = C:\Users\Computer\OneDrive\Documents\GitHub\PFA_Gestion_Laureats\PFA_Gestion_Laureats\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\atoin\Documents\GitHub\PFA_Gestion_Laureats\PFA_Gestion_Laureats
+build_property.MSBuildProjectDirectory = C:\Users\Computer\OneDrive\Documents\GitHub\PFA_Gestion_Laureats\PFA_Gestion_Laureats
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/atoin/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/Annonce/Add.cshtml]
+[C:/Users/Computer/OneDrive/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/Annonce/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5ub25jZVxBZGQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/atoin/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/Annonce/Annonces.cshtml]
+[C:/Users/Computer/OneDrive/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/Annonce/Annonces.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5ub25jZVxBbm5vbmNlcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/atoin/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/Annonce/Details.cshtml]
+[C:/Users/Computer/OneDrive/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/Annonce/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5ub25jZVxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/atoin/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/Annonce/MesAnnonces.cshtml]
+[C:/Users/Computer/OneDrive/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/Annonce/MesAnnonces.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5ub25jZVxNZXNBbm5vbmNlcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/atoin/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/Annonce/Postuler.cshtml]
+[C:/Users/Computer/OneDrive/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/Annonce/Postuler.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5ub25jZVxQb3N0dWxlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/atoin/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/Annonce/Update.cshtml]
+[C:/Users/Computer/OneDrive/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/Annonce/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5ub25jZVxVcGRhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/atoin/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/Certificat/Add.cshtml]
+[C:/Users/Computer/OneDrive/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/Certificat/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2VydGlmaWNhdFxBZGQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/atoin/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/Certificat/Update.cshtml]
+[C:/Users/Computer/OneDrive/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/Certificat/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2VydGlmaWNhdFxVcGRhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/atoin/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/Entreprise/Add.cshtml]
+[C:/Users/Computer/OneDrive/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/Entreprise/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW50cmVwcmlzZVxBZGQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/atoin/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/Entreprise/Details.cshtml]
+[C:/Users/Computer/OneDrive/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/Entreprise/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW50cmVwcmlzZVxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/atoin/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/Entreprise/Index.cshtml]
+[C:/Users/Computer/OneDrive/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/Entreprise/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW50cmVwcmlzZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/atoin/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/Entreprise/Update.cshtml]
+[C:/Users/Computer/OneDrive/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/Entreprise/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW50cmVwcmlzZVxVcGRhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/atoin/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/Experience_professionnelle/Add.cshtml]
+[C:/Users/Computer/OneDrive/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/Experience_professionnelle/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhwZXJpZW5jZV9wcm9mZXNzaW9ubmVsbGVcQWRkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/atoin/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/Experience_professionnelle/Update.cshtml]
+[C:/Users/Computer/OneDrive/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/Experience_professionnelle/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhwZXJpZW5jZV9wcm9mZXNzaW9ubmVsbGVcVXBkYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/atoin/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/Formation/Add.cshtml]
+[C:/Users/Computer/OneDrive/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/Formation/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybWF0aW9uXEFkZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/atoin/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/Formation/Update.cshtml]
+[C:/Users/Computer/OneDrive/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/Formation/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybWF0aW9uXFVwZGF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/atoin/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/Home/Index.cshtml]
+[C:/Users/Computer/OneDrive/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/atoin/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/Home/Privacy.cshtml]
+[C:/Users/Computer/OneDrive/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/atoin/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/Message/Chat.cshtml]
+[C:/Users/Computer/OneDrive/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/Message/Chat.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVzc2FnZVxDaGF0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/atoin/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/Message/Index.cshtml]
+[C:/Users/Computer/OneDrive/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/Message/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVzc2FnZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/atoin/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/Projet/Add.cshtml]
+[C:/Users/Computer/OneDrive/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/Projet/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamV0XEFkZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/atoin/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/Projet/Update.cshtml]
+[C:/Users/Computer/OneDrive/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/Projet/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamV0XFVwZGF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/atoin/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/Shared/Error.cshtml]
+[C:/Users/Computer/OneDrive/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/atoin/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Computer/OneDrive/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/atoin/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/Stage/Add.cshtml]
+[C:/Users/Computer/OneDrive/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/Stage/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZ2VcQWRkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/atoin/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/Stage/ContenuSupplementaire.cshtml]
+[C:/Users/Computer/OneDrive/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/Stage/ContenuSupplementaire.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZ2VcQ29udGVudVN1cHBsZW1lbnRhaXJlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/atoin/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/Stage/Update.cshtml]
+[C:/Users/Computer/OneDrive/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/Stage/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZ2VcVXBkYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/atoin/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/Test/Add.cshtml]
+[C:/Users/Computer/OneDrive/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/Test/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVzdFxBZGQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/atoin/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/Test/Details.cshtml]
+[C:/Users/Computer/OneDrive/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/Test/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVzdFxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/atoin/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/Test/Index.cshtml]
+[C:/Users/Computer/OneDrive/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/Test/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVzdFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/atoin/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/Test/Update.cshtml]
+[C:/Users/Computer/OneDrive/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/Test/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVzdFxVcGRhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/atoin/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/User/Add_Agent.cshtml]
+[C:/Users/Computer/OneDrive/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/User/Add_Agent.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxBZGRfQWdlbnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/atoin/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/User/Add_Etudiant.cshtml]
+[C:/Users/Computer/OneDrive/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/User/Add_Etudiant.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxBZGRfRXR1ZGlhbnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/atoin/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/User/Add_Laureat.cshtml]
+[C:/Users/Computer/OneDrive/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/User/Add_Laureat.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxBZGRfTGF1cmVhdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/atoin/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/User/Detail_User.cshtml]
+[C:/Users/Computer/OneDrive/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/User/Detail_User.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxEZXRhaWxfVXNlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/atoin/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/User/ImportExcel.cshtml]
+[C:/Users/Computer/OneDrive/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/User/ImportExcel.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxJbXBvcnRFeGNlbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/atoin/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/User/Inscription_Etudiant.cshtml]
+[C:/Users/Computer/OneDrive/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/User/Inscription_Etudiant.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxJbnNjcmlwdGlvbl9FdHVkaWFudC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/atoin/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/User/Inscription_Laureat.cshtml]
+[C:/Users/Computer/OneDrive/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/User/Inscription_Laureat.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxJbnNjcmlwdGlvbl9MYXVyZWF0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/atoin/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/User/Login.cshtml]
+[C:/Users/Computer/OneDrive/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/User/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/atoin/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/User/Profil.cshtml]
+[C:/Users/Computer/OneDrive/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/User/Profil.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxQcm9maWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/atoin/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/User/Update_Compte.cshtml]
+[C:/Users/Computer/OneDrive/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/User/Update_Compte.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxVcGRhdGVfQ29tcHRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/atoin/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/User/Update_Picture.cshtml]
+[C:/Users/Computer/OneDrive/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/User/Update_Picture.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxVcGRhdGVfUGljdHVyZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/atoin/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/User/Update_Securite.cshtml]
+[C:/Users/Computer/OneDrive/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/User/Update_Securite.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxVcGRhdGVfU2VjdXJpdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/atoin/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/User/Update_User.cshtml]
+[C:/Users/Computer/OneDrive/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/User/Update_User.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxVcGRhdGVfVXNlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/atoin/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/User/Validation.cshtml]
+[C:/Users/Computer/OneDrive/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/User/Validation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxWYWxpZGF0aW9uLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/atoin/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/_ViewImports.cshtml]
+[C:/Users/Computer/OneDrive/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/atoin/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/_ViewStart.cshtml]
+[C:/Users/Computer/OneDrive/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/atoin/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/Shared/_Layout.cshtml]
+[C:/Users/Computer/OneDrive/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-rd21htmrtb
 
-[C:/Users/atoin/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/Shared/_LayoutInscription.cshtml]
+[C:/Users/Computer/OneDrive/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/Shared/_LayoutInscription.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRJbnNjcmlwdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = b-coogu5b3jl

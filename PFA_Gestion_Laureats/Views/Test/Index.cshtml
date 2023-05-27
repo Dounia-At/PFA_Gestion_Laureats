@@ -18,7 +18,7 @@
 
 
                 swal({
-                    title: "Êtes-vous sûr de vouloir supprimer Ce test  ?",
+                    title: "Êtes-vous sûr de vouloir supprimer ce Test  ?",
                     text: "Cette action ne peut pas être annulée !",
                     type: "warning",
                     showCancelButton: true,
@@ -47,27 +47,28 @@
         });
     </script>
 }
-<h3 class="fw-bold py-2 mb-2 card-header ">
-    <a class="text-muted fw-light" asp-controller="Annonce" asp-action="Annonces">Accueil /</a>
-    Testes
-</h3>
-@if (ViewBag.role == "AgentDirection")
-{
-    <div class="container mt-5 d-flex flex-row-reverse">
-        <a class="btn btn-primary" asp-controller="Test" asp-action="Add">
-            <i class="ti ti-plus me-1"></i>
-            <span class="align-middle">Nouveau Test</span>
-        </a>
-    </div>
 
-}
 
 <div class="container-fluid my-4">
-    
+    <h3 class="fw-bold py-2 mb-2 card-header ">
+        <a class="text-muted fw-light" asp-controller="Annonce" asp-action="Annonces">Accueil /</a>
+        Testes
+    </h3>
+    @if (ViewBag.role == "AgentDirection")
+    {
+        <div class="container mt-5 d-flex flex-row-reverse">
+            <a class="btn btn-primary" asp-controller="Test" asp-action="Add">
+                <i class="ti ti-plus me-1"></i>
+                <span class="align-middle">Nouveau Test</span>
+            </a>
+        </div>
+
+    }
 @if(Model != null)
 {
     <!-- Tests Cards -->
-    <div class="row g-4">
+    <div class="row g-4 mt-2">
+
         @foreach (Test test in Model)
         {
             <div class="col-xl-4 col-lg-6 col-md-6">
