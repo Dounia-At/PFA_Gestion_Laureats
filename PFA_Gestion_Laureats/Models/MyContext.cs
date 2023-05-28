@@ -24,9 +24,14 @@ namespace PFA_Gestion_Laureats.Models
         public DbSet<Annonce> Annonces { get; set; }
         public DbSet<Postulation> Postulations { get; set; }
         public DbSet<Technologie> Technologie { get; set; }
+        public DbSet<AnnonceTechnologie> AnnonceTechnologies { get; set; }
+
         public MyContext(DbContextOptions<MyContext> opt) : base(opt) { }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<AnnonceTechnologie>()
+            .HasKey("AnnonceId", "TechnologieId");
+
             modelBuilder.Entity<Utilisateur>()
             .HasIndex(u => u.Login)
             .IsUnique();

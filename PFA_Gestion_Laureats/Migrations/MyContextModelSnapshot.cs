@@ -17,25 +17,10 @@ namespace PFA_Gestion_Laureats.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "7.0.4")
+                .HasAnnotation("ProductVersion", "7.0.5")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
-
-            modelBuilder.Entity("AnnonceTechnologie", b =>
-                {
-                    b.Property<int>("annoncesId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("technologiesId")
-                        .HasColumnType("int");
-
-                    b.HasKey("annoncesId", "technologiesId");
-
-                    b.HasIndex("technologiesId");
-
-                    b.ToTable("AnnonceTechnologie");
-                });
 
             modelBuilder.Entity("PFA_Gestion_Laureats.Models.Annonce", b =>
                 {
@@ -86,6 +71,21 @@ namespace PFA_Gestion_Laureats.Migrations
                     b.HasIndex("UtilisateurId");
 
                     b.ToTable("Annonces");
+                });
+
+            modelBuilder.Entity("PFA_Gestion_Laureats.Models.AnnonceTechnologie", b =>
+                {
+                    b.Property<int>("AnnonceId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("TechnologieId")
+                        .HasColumnType("int");
+
+                    b.HasKey("AnnonceId", "TechnologieId");
+
+                    b.HasIndex("TechnologieId");
+
+                    b.ToTable("AnnonceTechnologies");
                 });
 
             modelBuilder.Entity("PFA_Gestion_Laureats.Models.Certificat", b =>
@@ -376,6 +376,9 @@ namespace PFA_Gestion_Laureats.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Logo")
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("Id");
 
                     b.ToTable("Technologie");
@@ -524,21 +527,6 @@ namespace PFA_Gestion_Laureats.Migrations
                     b.HasDiscriminator().HasValue("Laureat");
                 });
 
-            modelBuilder.Entity("AnnonceTechnologie", b =>
-                {
-                    b.HasOne("PFA_Gestion_Laureats.Models.Annonce", null)
-                        .WithMany()
-                        .HasForeignKey("annoncesId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("PFA_Gestion_Laureats.Models.Technologie", null)
-                        .WithMany()
-                        .HasForeignKey("technologiesId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
             modelBuilder.Entity("PFA_Gestion_Laureats.Models.Annonce", b =>
                 {
                     b.HasOne("PFA_Gestion_Laureats.Models.Entreprise", "entreprise")
@@ -556,6 +544,25 @@ namespace PFA_Gestion_Laureats.Migrations
                     b.Navigation("entreprise");
 
                     b.Navigation("utilisateur");
+                });
+
+            modelBuilder.Entity("PFA_Gestion_Laureats.Models.AnnonceTechnologie", b =>
+                {
+                    b.HasOne("PFA_Gestion_Laureats.Models.Annonce", "Annonce")
+                        .WithMany("AnnonceTechnologies")
+                        .HasForeignKey("AnnonceId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("PFA_Gestion_Laureats.Models.Technologie", "Technologie")
+                        .WithMany("AnnonceTechnologies")
+                        .HasForeignKey("TechnologieId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Annonce");
+
+                    b.Navigation("Technologie");
                 });
 
             modelBuilder.Entity("PFA_Gestion_Laureats.Models.Certificat", b =>
@@ -688,6 +695,8 @@ namespace PFA_Gestion_Laureats.Migrations
 
             modelBuilder.Entity("PFA_Gestion_Laureats.Models.Annonce", b =>
                 {
+                    b.Navigation("AnnonceTechnologies");
+
                     b.Navigation("postulations");
                 });
 
@@ -700,6 +709,11 @@ namespace PFA_Gestion_Laureats.Migrations
                     b.Navigation("stages");
 
                     b.Navigation("tests");
+                });
+
+            modelBuilder.Entity("PFA_Gestion_Laureats.Models.Technologie", b =>
+                {
+                    b.Navigation("AnnonceTechnologies");
                 });
 
             modelBuilder.Entity("PFA_Gestion_Laureats.Models.Utilisateur", b =>

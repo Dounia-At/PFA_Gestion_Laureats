@@ -31,7 +31,7 @@ namespace PFA_Gestion_Laureats.Controllers
         public IActionResult NoFiltre()
         {
             if (db.Entreprises.Count() == 0) return RedirectToAction("Index", "Entreprise");
-            List<Annonce> annonces = db.Annonces.Include(annonce => annonce.utilisateur).Include(annonce => annonce.entreprise).Include(annonce => annonce.technologies).Include(annonce => annonce.postulations).OrderByDescending(an => an.Date_Creation).AsNoTracking().ToList();
+            List<Annonce> annonces = db.Annonces.Include(annonce => annonce.utilisateur).Include(annonce => annonce.entreprise).Include(annonce => annonce.AnnonceTechnologies).Include(annonce => annonce.postulations).OrderByDescending(an => an.Date_Creation).AsNoTracking().ToList();
             return RedirectToAction("Annonces", annonces);
         }
         public IActionResult Add()
@@ -39,19 +39,21 @@ namespace PFA_Gestion_Laureats.Controllers
             
                 List<Entreprise>entreprises=db.Entreprises.ToList();
                ViewBag.entreprises = new SelectList(entreprises, "Id", "Nom");
+            List<Technologie> technologies = db.Technologie.ToList();
+            ViewBag.technologies = new SelectList(technologies, "Id", "Libelle");
 
 
             return View();
         }
         [HttpPost] 
-        public IActionResult Add(AddAnnonceViewModel amv) {
+        public IActionResult Add(AddAnnonceViewModel amv,string[] technologies) {
             if(ModelState.IsValid)
             {
                 String login = HttpContext.Session.GetString("Login");
                 Utilisateur utilisateur = db.Utilisateurs.Where(us => us.Login == login).FirstOrDefault();
                 //Entreprise entreprise = db.Entreprises.Where(ae=>ae.Id==amv.EntrepriseId).FirstOrDefault();
-                Entreprise entreprise = db.Entreprises.Where(ae => ae.Nom.ToUpper() == amv.Entreprise).FirstOrDefault();
-               
+                Entreprise entreprise = db.Entreprises.Where(ae => ae.Nom.ToUpper() == amv.Entreprise.ToUpper()).FirstOrDefault();
+                
                 if (utilisateur is IModirateur)
                 {
                     if (entreprise == null)
@@ -66,6 +68,7 @@ namespace PFA_Gestion_Laureats.Controllers
                     Annonce annonce1 = new Annonce(amv);
                     annonce1.utilisateur = utilisateur;
                     annonce1.entreprise = entreprise;
+                    
                     if (amv.Photo != null)
                     {
                         string[] AllowedExt = { ".png", ".jpg", ".jpeg" };
@@ -86,13 +89,24 @@ namespace PFA_Gestion_Laureats.Controllers
                         
                     }
                    
-                    db.Annonces.Add(annonce1);
+                    db.Annonces.Add(annonce1);                   
                     db.SaveChanges();
+                    int annonceId = db.Annonces.Where(a => a.Date_Creation == annonce1.Date_Creation).Select(a => a.Id).FirstOrDefault();
+                    foreach (string item in technologies)
+                    {                                                                         
+                            AnnonceTechnologie at = new AnnonceTechnologie();
+                            at.AnnonceId = annonceId;
+                            at.TechnologieId = int.Parse(item);
+                            db.AnnonceTechnologies.Add(at);
+                                                 
+                    }
+                    db.SaveChanges();
+
                 }
                
 
             }
-            return RedirectToAction("Annonces");
+            return RedirectToAction("MesAnnonces");
         }
         public IActionResult Annonces(string SearchString, string Nature,string remunerer,string Technologie, string orderBy)
         {
@@ -103,7 +117,7 @@ namespace PFA_Gestion_Laureats.Controllers
 
 
             //if (db.Entreprises.Count() == 0) return RedirectToAction("Index", "Entreprise");
-            List<Annonce> annonces = db.Annonces.Include(annonce => annonce.utilisateur).Include(annonce => annonce.entreprise).Include(annonce => annonce.technologies).Include(annonce => annonce.postulations).OrderByDescending(an=>an.Date_Creation).AsNoTracking().ToList();
+            List<Annonce> annonces = db.Annonces.Include(annonce => annonce.utilisateur).Include(annonce => annonce.entreprise).Include(annonce => annonce.AnnonceTechnologies).Include(annonce => annonce.postulations).OrderByDescending(an=>an.Date_Creation).AsNoTracking().ToList();
             
             if (!string.IsNullOrEmpty(SearchString))
             {
@@ -128,18 +142,18 @@ namespace PFA_Gestion_Laureats.Controllers
             
             if (!string.IsNullOrEmpty(Technologie))
             {
-                List<Annonce> annonces1 = new List<Annonce>();
-                foreach (Annonce annonce in annonces.ToList())
-                {
-                    foreach (Technologie technologie in annonce.technologies)
-                    {
-                        if (technologie.Libelle.Equals(Technologie))
-                        {
-                            annonces1.Add(annonce);
-                        }
-                    }
-                }
-                annonces = annonces1;
+                //List<Annonce> annonces1 = new List<Annonce>();
+                //foreach (Annonce annonce in annonces.ToList())
+                //{
+                //    foreach (Technologie technologie in annonce.technologies)
+                //    {
+                //        if (technologie.Libelle.Equals(Technologie))
+                //        {
+                //            annonces1.Add(annonce);
+                //        }
+                //    }
+                //}
+                //annonces = annonces1;
             }
 
             if (!string.IsNullOrEmpty(orderBy))
@@ -270,7 +284,7 @@ namespace PFA_Gestion_Laureats.Controllers
         public IActionResult MesAnnonces()
         {
             String login = HttpContext.Session.GetString("Login");
-            List<Annonce> annonces = db.Annonces.Include(annonce => annonce.utilisateur).Include(annonce=>annonce.entreprise).Where(an => an.utilisateur.Login == login).OrderByDescending(an => an.Date_Creation).AsNoTracking().ToList();
+            List<Annonce> annonces = db.Annonces.Include(annonce => annonce.utilisateur).Include(annonce => annonce.postulations).Include(annonce=>annonce.entreprise).Where(an => an.utilisateur.Login == login).OrderByDescending(an => an.Date_Creation).AsNoTracking().ToList();
             return View(annonces);
         }
         [Authentification]
@@ -300,10 +314,14 @@ namespace PFA_Gestion_Laureats.Controllers
         {
             String login = HttpContext.Session.GetString("Login");
             Utilisateur utilisateur = db.Utilisateurs.Where(us => us.Login == login).FirstOrDefault();
-            Annonce annonce = db.Annonces.Include(an => an.utilisateur).Where(an => an.Id == id && an.utilisateur.Id == utilisateur.Id).FirstOrDefault();
+            Annonce annonce = db.Annonces.Include(an => an.utilisateur).Include(an=> an.AnnonceTechnologies).Where(an => an.Id == id && an.utilisateur.Id == utilisateur.Id).FirstOrDefault();
             if (annonce != null)
             {
                 UpdateAnnonceViewModel annonceViewModel = new UpdateAnnonceViewModel(annonce);
+                ViewBag.entreprise = db.Entreprises.Where(e=> e.Id == annonce.EntrepriseId).Select(e=> e.Nom).FirstOrDefault();
+                ViewBag.technologies = new SelectList(db.Technologie.ToList(), "Id", "Libelle");
+                ViewBag.technoVal = annonce.AnnonceTechnologies.Select(t => t.TechnologieId).ToList();
+                
                 return View(annonceViewModel);
             }
             return RedirectToAction("Annonces");

@@ -2,9 +2,9 @@
 {
     public class Technologie
     {
-        public int Id { get; set; }
-       
+        public int Id { get; set; }       
         public string Libelle { get; set; }
-        public IList<Annonce>? annonces { get; set; }
+        public string? Logo { get; set; }
+        public IList<AnnonceTechnologie>? AnnonceTechnologies { get; set; }
     }
 }

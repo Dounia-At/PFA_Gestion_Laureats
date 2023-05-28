@@ -1,5 +1,6 @@
 ﻿using PFA_Gestion_Laureats.Models;
 using PFA_Gestion_Laureats.Validation;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
 namespace PFA_Gestion_Laureats.ViewModels.Entreprises
@@ -21,7 +22,7 @@ namespace PFA_Gestion_Laureats.ViewModels.Entreprises
 
         [Required(ErrorMessage = "Champ obligatoire!")]
         public string Description { get; set; }
-
+        [DefaultValue(false)]
         public bool Convention { get; set; }
         [ImageExtentionValidation(new string[] { ".png", ".jpg", ".jpeg" }, ErrorMessage = "l'extention doit être png, jpg ou jpeg")]
         public IFormFile? Photo { get; set; }

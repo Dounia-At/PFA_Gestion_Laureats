@@ -127,6 +127,45 @@
 
                                 }
 
+                                    <hr class="my-1" /> <br />
+
+                                    <div class="mb-1">
+                                        <ul class="list-unstyled mb-4 mt-3">
+
+                                            <li class="d-flex align-items-center justify-content-around mb-3">
+                                                <div><i class="ti ti-map-pin r-3"></i><span class="fw-bold mx-2">@annonce.entreprise.Ville</span></div>
+                                                <div><i class="ti ti-file-description r-3"></i><span class="fw-bold mx-2">@annonce.Nature</span></div>
+                                            </li>
+
+                                            <li class="d-flex align-items-center mb-3">
+                                                <span>Consultation</span>
+                                                <div class="ms-auto">
+                                                    @if (annonce.postulations == null || annonce.postulations.Count == 0)
+                                                    {
+                                                        <a href="javascript:;"><span class="badge bg-label-secondary">0</span></a>
+                                                    }
+                                                    else
+                                                    {
+                                                        <a href="javascript:;" class="me-2"><span class="badge bg-label-success">@annonce.postulations.Count</span></a>
+                                                    }
+
+                                                </div>
+                                            </li>
+                                            <li class="d-flex align-items-center mb-3">
+                                                <span>Postulation</span>
+                                                <div class="ms-auto">
+                                                    @if (annonce.postulations == null || annonce.postulations.Count(p => p.Date_Postulation != null) == 0)
+                                                    {
+                                                        <a href="javascript:;"><span class="badge bg-label-secondary">0</span></a>
+                                                    }
+                                                    else
+                                                    {
+                                                        <a href="javascript:;" class="me-2"><span class="badge bg-label-success">@annonce.postulations.Count(p => p.Date_Postulation != null) </span></a>
+                                                    }
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 <hr class="my-0" /> <br />
                                @* <a asp-controller="Annonce" asp-action="Details" asp-route-id="@annonce.Id">
                                     <p class="mx-3 my-2 text-primary">Plus Details ...</p>

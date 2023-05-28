@@ -22,7 +22,7 @@ namespace PFA_Gestion_Laureats.Models
         public Utilisateur? utilisateur { get; set; }
         public int EntrepriseId { get; set; }
         public Entreprise? entreprise { get; set; }
-        public IList<Technologie>? technologies { get; set; }
+        public IList<AnnonceTechnologie>? AnnonceTechnologies { get; set; }
         public Annonce() { }
         public Annonce(AddAnnonceViewModel amv) { 
             this.Titre = amv.Titre;
@@ -32,6 +32,8 @@ namespace PFA_Gestion_Laureats.Models
             this.Date_limite_Deposer=amv.Date_limite_Deposer;
             this.Date_Creation=DateTime.Now;
             this.EntrepriseId= amv.EntrepriseId;
+            this.Remuniration = amv.Remuniration;
+            this.Nature = amv.Nature;
         }
         
         
