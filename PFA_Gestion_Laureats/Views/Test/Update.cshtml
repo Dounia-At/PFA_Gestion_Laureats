@@ -4,6 +4,9 @@
    Modifier Test
 }
 @section js{
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0/themes/smoothness/jquery-ui.css" />
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"></script>
    
     <script>
 
@@ -23,17 +26,41 @@
 
         })
     </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#Name").autocomplete({
+                source: function (request, response) {
+                    $.ajax({
+                        url: "/Test/GetSearchResults/",
+                        type: "POST",
+                        dataType: "json",
+                        data: { Prefix: request.term },
+                        success: function (data) {
+                            response($.map(data, function (item) {
+                                return item;
+                            }))
+
+                        }
+                    })
+                },
+                messages: {
+                    noResults: "", results: ""
+                }
+            });
+        })
+    </script>
 }
-<h3 class="fw-bold py-2 mb-2 card-header ">
-    <a class="text-muted fw-light" asp-controller="Annonce" asp-action="Annonces">Accueil /</a>
-    <a class="text-muted fw-light" asp-controller="Test" asp-action="Index">Testes /</a>
-    Modifier Test
-</h3>
+
 <div class="row">
     <div class="col-md-12">
-
-        <div class="card mb-4">
+        <h3 class="fw-bold py-2 mb-2 card-header ">
+            <a class="text-muted fw-light" asp-controller="Annonce" asp-action="Annonces">Accueil /</a>
+            <a class="text-muted fw-light" asp-controller="Test" asp-action="Index">Testes /</a>
+            Modifier Test
+        </h3>
+        <div class="card mb-4 mt-2">
             <h5 class="card-header">Modifier Test</h5>
+            <hr class="mt-0" />
 
             <form method="POST">
 
@@ -41,16 +68,16 @@
 
                     <div class="row">
                         <div class="form-group">
-                            <label asp-for="EntrepriseId" class="form-label"></label>
-                            <select asp-for="EntrepriseId" asp-items="ViewBag.entreprises" class="form-control">
-                            </select>
-
-                            <span asp-validation-for="EntrepriseId"></span>
+                            <div class="col-md-12">
+                                <label class="form-label" asp-for="Entreprise">Entreprise<strong style="color:red">*</strong></label>
+                                <input class="form-control" id="Name" asp-for="Entreprise" value="@ViewBag.entreprise" required />
+                                <span asp-validation-for="Entreprise"></span>
+                            </div>
 
                         </div>
                         <br />
-                        <div class="col-sm-6">
-                            <label asp-for="Date_Test" class="form-label"></label>
+                        <div class="col-sm-6 mt-2">
+                            <label asp-for="Date_Test" class="form-label">Date Test<strong style="color:red">*</strong></label>
                             <input required 
                                    type="date"
                                    asp-for="Date_Test"
@@ -58,8 +85,8 @@
                             <span asp-validation-for="Date_Test"></span>
                         </div>
                         
-                        <div class="col-sm-6">
-                            <label asp-for="Heure_Test" class="form-label"></label>
+                        <div class="col-sm-6  mt-2">
+                            <label asp-for="Heure_Test" class="form-label">Heure Test<strong style="color:red">*</strong></label>
                             <input required
                                    type="time"
                                    asp-for="Heure_Test"
@@ -67,8 +94,8 @@
                             <span asp-validation-for="Heure_Test"></span>
                         </div>
                         <br />
-                        <div class="form-group">
-                            <label asp-for="Description" class="form-label"></label>
+                        <div class="form-group  mt-2">
+                            <label asp-for="Description" class="form-label">Description<strong style="color:red">*</strong></label>
                             <textarea id="example" asp-for="Description" required></textarea>
                             <span asp-validation-for="Description"></span>
                         </div>
@@ -76,8 +103,8 @@
                     </div>
 
                     <div class="mt-2">
-                        <button type="submit" class="btn btn-primary me-2">Modifier</button>
-                        <a class="btn btn-secondary" asp-controller="Test" asp-action="Index">Cancel</a>
+                        <button type="submit" class="btn btn-success me-2">Modifier</button>
+                       @* <a class="btn btn-secondary" asp-controller="Test" asp-action="Index">Cancel</a>*@
                     </div>
 
                 </div>

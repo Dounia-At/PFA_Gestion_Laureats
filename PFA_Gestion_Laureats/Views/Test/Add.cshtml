@@ -50,13 +50,16 @@
     })
     </script>
 }
-<h3 class="fw-bold py-2 mb-2 card-header "><a class="text-muted fw-light" asp-controller="Annonce" asp-action="Annonces">Accueil /</a> 
-                                           <a class="text-muted fw-light" asp-controller="Test" asp-action="Index">Testes /</a> 
-                                           Nouveau Test</h3>
+
 <div class="row">
     <div class="col-md-12">
+        <h3 class="fw-bold py-2 mb-2 card-header ">
+            <a class="text-muted fw-light" asp-controller="Annonce" asp-action="Annonces">Accueil /</a>
+            <a class="text-muted fw-light" asp-controller="Test" asp-action="Index">Testes /</a>
+            Nouveau Test
+        </h3>
 
-        <div class="card mb-2">
+        <div class="card mb-2 mt-2">
             <div class="col-12">
                 <h5 class="card-header">Nouveau Test</h5>
                 <hr class="mt-0" />
@@ -66,14 +69,14 @@
                 <form method="POST" >
 
                     <div class="row">
-                        <div class="col-md-12">
+                        <div class="col-md-12 ">
                             <label class="form-label" asp-for="Entreprise">Entreprise<strong style="color:red">*</strong></label>
                             <input class="form-control" id="Name" asp-for="Entreprise" required />
                             <span asp-validation-for="Entreprise"></span>
                         </div>
                         
                         <div class="col-sm-6 mt-3">
-                            <label asp-for="Date_Test" class="form-label"></label>
+                            <label asp-for="Date_Test" class="form-label">Date Test<strong style="color:red">*</strong></label>
                             <input required 
                                    type="date"
                                    asp-for="Date_Test"
@@ -82,7 +85,7 @@
                         </div>
                         
                         <div class="col-sm-6 mt-3">
-                            <label asp-for="Heure_Test" class="form-label"></label>
+                            <label asp-for="Heure_Test" class="form-label">Heure Test<strong style="color:red">*</strong></label>
                             <input required
                                    type="time"
                                    asp-for="Heure_Test"
@@ -91,7 +94,7 @@
                         </div>
                         
                         <div class="form-group col-md-12 mt-3">
-                            <label asp-for="Description" class="form-label"></label>
+                            <label asp-for="Description" class="form-label">Description<strong style="color:red">*</strong></label>
                             <textarea id="example" asp-for="Description" required></textarea>
                             <span asp-validation-for="Description"></span>
                         </div>
@@ -99,8 +102,8 @@
                     </div>
 
                     <div class="mt-3">
-                        <button type="submit" class="btn btn-primary me-2">Ajouter</button>
-                        <a class="btn btn-secondary" asp-controller="Test" asp-action="Index">Cancel</a>
+                        <button type="submit" class="btn btn-success me-2">Ajouter</button>
+                       @* <a class="btn btn-secondary" asp-controller="Test" asp-action="Index">Cancel</a>*@
                     </div>
 
                
