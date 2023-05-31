@@ -9,6 +9,7 @@ using System.Net;
 using PFA_Gestion_Laureats.ViewModels.Users;
 using System.Text;
 using NuGet.Protocol.Plugins;
+using Microsoft.AspNetCore.Http;
 
 namespace PFA_Gestion_Laureats.Controllers
 {
@@ -135,7 +136,7 @@ namespace PFA_Gestion_Laureats.Controllers
                 }
                 else if (utilisateur.GetType().Name == "Etudiant")
                 {
-                    Etudiant etudiant = db.Etudiants.Where(u => u.Login == login).Include(e=>e.projets).Include(e => e.stages).Include(e => e.experiences).Include(e => e.formations).Include(e => e.certificats).AsNoTracking().SingleOrDefault();
+                    Etudiant etudiant = db.Etudiants.Where(u => u.Login == login).Include(e=>e.projets).Include(e => e.stages).ThenInclude(e => e.entreprise).Include(e => e.experiences).ThenInclude(e => e.entreprise).Include(e => e.formations).Include(e => e.certificats).AsNoTracking().SingleOrDefault();
                    
                     user = new ProfilViewModel(etudiant);
                 }
@@ -850,7 +851,15 @@ namespace PFA_Gestion_Laureats.Controllers
                         utilisateur.date_Login= DateTime.Now;
                         db.Utilisateurs.Update(utilisateur);
                         db.SaveChanges();
-                        return RedirectToAction("Annonces", "Annonce");
+                        if (HttpContext.Session.GetString("Role") == "AgentDirection")
+                        {
+                            return RedirectToAction("Index", "Dashboard");
+                        }
+                        else
+                        {
+                            return RedirectToAction("Annonces", "Annonce");
+                        }
+                       
 
                     }
 

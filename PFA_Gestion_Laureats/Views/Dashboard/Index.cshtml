@@ -1,0 +1,497 @@
+﻿@section Style{
+
+    <link href="~/assets/vendor/libs/swiper/swiper.css" rel="stylesheet" />
+    <link href="~/assets/vendor/libs/morris/morris.css" rel="stylesheet" />
+}
+@section js{
+
+    <script src="~/assets/vendor/libs/swiper/swiper.js"></script>
+    <script src="~/assets/js/dashboards-analytics.js"></script>
+    <script src="~/assets/vendor/libs/morris/raphael.min.js"></script>
+    <script src="~/assets/vendor/libs/morris/morris.min.js"></script>
+    <script>
+        $(function () {
+            new Morris.Donut({
+                element: 'studentChart',
+                data: [
+                    { label: 'Employées', value: @ViewBag.WorkingCount },
+                    { label: 'En recherche', value: @ViewBag.NotWorkingCount }
+                ],
+                resize: true,
+                colors: ['#FFAD5F', '#00CFE8'],
+                formatter: function (x) { return x + "%" }
+            });
+        });
+
+        $(function () {
+            new Morris.Bar({
+                element: 'StageChart',
+                data: [
+                    { label: 'Sans Stage', value: @ViewBag.SansStage },
+                    { label: '1 Stage', value: @ViewBag.UnStage },
+                    { label: '+1 Stages', value: @ViewBag.PlusStage }
+                ],
+                xkey: 'label',
+                ykeys: ['value'],
+                labels: ['Nbr'],
+                barColors: ['#83DEAC'], 
+                resize: true,
+                xLabelMargin:10
+            });
+          
+        });
+        $(function () {
+            new Morris.Bar({
+                element: 'ProjetChart',
+                data: [
+                    { label: 'Sans Projet', value: @ViewBag.SansProjet },
+                    { label: '1 Projet', value: @ViewBag.UnProjet },
+                    { label: '+1 Projets', value: @ViewBag.PlusProjet }
+                ],
+                xkey: 'label',
+                ykeys: ['value'],
+                labels: ['Nbr'],
+                barColors: ['#FCE5E6'], 
+                resize: true,
+                xLabelMargin: 10
+            });
+
+        });
+        $(function () {
+           
+            new Morris.Bar({
+                element: 'FormationChart',
+                data: [
+                    { label: 'Sans Formation', value: @ViewBag.SansFormation },
+                    { label: '1 Formation', value: @ViewBag.UneFormation },
+                    { label: '+1 Formations', value: @ViewBag.PlusFormation }
+                ],
+                xkey: 'label',
+                ykeys: ['value'],
+                labels: ['Nbr'],
+                barColors: ['#C0C6FA'],
+                resize: true,
+                xLabelMargin: 10
+            });
+        });
+        $(function () {
+
+            new Morris.Bar({
+                element: 'CertificatChart',
+                data: [
+                    { label: 'Sans Certificat', value: @ViewBag.SansCertificat },
+                    { label: '1 Certificat', value: @ViewBag.UneCertificat },
+                    { label: '+1 Certificats', value: @ViewBag.PlusCertificat }
+                ],
+                xkey: 'label',
+                ykeys: ['value'],
+                labels: ['Nbr'],
+                barColors: ['#FFC28C'],
+                resize: true,
+                xLabelMargin: 10
+            });
+        });
+        $(function () {
+            var data = @Html.Raw(Json.Serialize(ViewBag.annoncesByMonth));
+
+            var chartData = [];
+            data.forEach(function (item) {
+                chartData.push({ x: item.year + '-' + item.month, y: item.annonceCount });
+            });
+
+            new Morris.Line({
+                element: 'line-chart',
+                data: chartData,
+                xkey: 'x',
+                ykeys: ['y'],
+                labels: ['Nombre Annonces'],
+                lineColors: ['#00CFE8 '],
+                pointStrokeColors: ['#D9F8FC'],
+                pointFillColors: ['#D9F8FC'],
+                parseTime: false,
+                hideHover: true,
+                resize: true
+            });
+        });
+    </script>
+}
+
+<div class="col-lg-9 mb-4">
+    <div class="swiper-container swiper-container-horizontal swiper swiper-card-advance-bg swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden" id="swiper-with-pagination-cards">
+        <div class="swiper-wrapper" id="swiper-wrapper-663659eccb8ef66c" aria-live="off" style="transform: translate3d(-1716px, 0px, 0px); transition-duration: 0ms;">
+            <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next" data-swiper-slide-index="2" role="group" aria-label="3 / 3" style="width: 858px;">
+                <div class="row">
+                    <div class="col-12">
+                        <h4 class="text-white mb-0 mt-2">Dashboard</h4>
+                    </div>
+                  
+                   
+                </div>
+            </div>
+            <div class="swiper-slide swiper-slide-prev" data-swiper-slide-index="0" role="group" aria-label="1 / 3" style="width: 858px;">
+                <div class="row">
+                    <div class="col-12">
+                        <h4 class="text-white mb-0 mt-2">Dashboard</h4>
+                    </div>
+                    <div class=" p-3 mt-4">
+                        <div class="row gap-4 gap-sm-0">
+                            <div class="col-12 col-sm-4">
+                                <div class="d-flex gap-2 align-items-center">
+
+                                    <div class="badge p-2 bg-label-success mb-2 rounded"><h6 class="mb-0 text-success">Etudiants/Lauréats</h6></div>
+                                </div>
+                               
+                                <h4 class="my-3 pt-1 text-white">@ViewBag.NbrEtudiant</h4>
+                                <div class="progress w-75" style="height: 4px">
+                                    <div class="progress-bar bg-success" role="progressbar" style="width: 75%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                               
+                            </div>
+                            <div class="col-12 col-sm-4">
+                                <div class="d-flex gap-2 align-items-center">
+                                    <div class="badge p-2 bg-label-warning mb-2 rounded"><h6 class="mb-0 text-warning">Lauréats Employées</h6></div>
+                                    
+                                </div>
+                                <h4 class="my-3 pt-1 text-white">@ViewBag.WorkingCount</h4>
+                                <div class="progress w-75" style="height: 4px">
+                                    <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                               
+                            </div>
+                            <div class="col-12 col-sm-4">
+                                <div class="d-flex gap-2 align-items-center">
+                                    <div class="badge p-2 bg-label-dark mb-2 rounded"><h6 class="mb-0 text-dark">Annonces</h6></div>
+                                    
+                                </div>
+                                <h4 class="my-3 pt-1 text-white">@ViewBag.NbrAnnonces</h4>
+                                <div class="progress w-75" style="height: 4px">
+                                    <div class="progress-bar bg-dark" role="progressbar" style="width: 75%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="1" role="group" aria-label="2 / 3" style="width: 858px;">
+                <div class="row">
+                    <div class="col-12">
+                        <h4 class="text-white mb-0 mt-2">Dashboard</h4>
+                       @* <small>Total 28.5% Conversion Rate</small>*@
+                    </div>
+                    <div class=" p-3 mt-4">
+                        <div class="row gap-4 gap-sm-0">
+                            <div class="col-12 col-sm-4">
+                                <div class="d-flex gap-2 align-items-center">
+
+                                    <div class="badge p-2 bg-label-info mb-2 rounded"><h6 class="mb-0 text-info">Annonces d'Emploie</h6></div>
+                                </div>
+
+                                <h4 class="my-3 pt-1 text-white">@ViewBag.NbrAnnoncesEmploie</h4>
+                                <div class="progress w-75" style="height: 4px">
+                                    <div class="progress-bar bg-info" role="progressbar" style="width: 75%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+
+                            </div>
+                            <div class="col-12 col-sm-4">
+                                <div class="d-flex gap-2 align-items-center">
+                                    <div class="badge p-2 bg-label-primary mb-2 rounded"><h6 class="mb-0 text-primary">Annonces de Stage</h6></div>
+
+                                </div>
+                                <h4 class="my-3 pt-1 text-white">@ViewBag.NbrAnnoncesStages</h4>
+                                <div class="progress w-75" style="height: 4px">
+                                    <div class="progress-bar bg-primary" role="progressbar" style="width: 75%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+
+                            </div>
+                            <div class="col-12 col-sm-4">
+                                <div class="d-flex gap-2 align-items-center">
+                                    <div class="badge p-2 bg-label-danger mb-2 rounded"><h6 class="mb-0 text-danger">Entreprises</h6></div>
+
+                                </div>
+                                <h4 class="my-3 pt-1 text-white">@ViewBag.NbrEntreprise</h4>
+                                <div class="progress w-75" style="height: 4px">
+                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 75%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+            <div class="swiper-slide swiper-slide-next" data-swiper-slide-index="2" role="group" aria-label="3 / 3" style="width: 858px;">
+                <div class="row">
+                    <div class="col-12">
+                        <h4 class="text-white mb-0 mt-2">Dashboard</h4>
+                    </div>
+                    <div class=" p-3 mt-4">
+                        <div class="row gap-4 gap-sm-0">
+                            <div class="col-12 col-sm-4">
+                                <div class="d-flex gap-2 align-items-center">
+
+                                    <div class="badge p-2 bg-label-danger mb-2 rounded"><h6 class="mb-0 text-danger">Consulations</h6></div>
+                                </div>
+
+                                <h4 class="my-3 pt-1 text-white">@ViewBag.NbrConsultation</h4>
+                                <div class="progress w-75" style="height: 4px">
+                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 75%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+
+                            </div>
+                            <div class="col-12 col-sm-4">
+                                <div class="d-flex gap-2 align-items-center">
+                                    <div class="badge p-2 bg-label-info mb-2 rounded"><h6 class="mb-0 text-info">Postulations</h6></div>
+
+                                </div>
+                                <h4 class="my-3 pt-1 text-white">@ViewBag.NbrPostulation</h4>
+                                <div class="progress w-75" style="height: 4px">
+                                    <div class="progress-bar bg-info" role="progressbar" style="width: 75%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+
+                            </div>
+                            <div class="col-12 col-sm-4">
+                                <div class="d-flex gap-2 align-items-center">
+                                    <div class="badge p-2 bg-label-primary mb-2 rounded"><h6 class="mb-0 text-primary">Tests</h6></div>
+
+                                </div>
+                                <h4 class="my-3 pt-1 text-white">@ViewBag.NbrTest</h4>
+                                <div class="progress w-75" style="height: 4px">
+                                    <div class="progress-bar bg-primary" role="progressbar" style="width: 75%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev" data-swiper-slide-index="0" role="group" aria-label="1 / 3" style="width: 858px;">
+                <div class="row">
+                    <div class="col-12">
+                        <h5 class="text-white mb-0 mt-2">Website Analytics</h5>
+                        <small>Total 28.5% Conversion Rate</small>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 1"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 2" aria-current="true"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span></div>
+        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+    </div>
+</div>
+<div class="col-lg-3 col-md-12 col-sm-12 mb-4">
+    <div class="card">
+
+        <div class="card-body " style="position: relative;">
+            <h5 class="card-title mb-0">Lauréats</h5>
+            <div id="studentChart" style="min-height: 200px;"></div>
+        </div>
+    </div>
+</div>
+@*<div class="col-lg-6 col-md-12 col-sm-12 mb-4 row">*@
+    <div class="col-lg-6 col-md-6 col-sm-6 mb-4">
+        <div class="card">
+            <div class="card-body pb-0">
+
+                <h5 class="card-title mb-0 mt-2">Projets</h5>
+                @*  <small>Revenue Generated</small>*@
+            </div>
+
+            <div id="ProjetChart" style="min-height: 230px;"></div>
+
+        </div>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-6 mb-4">
+        <div class="card">
+            <div class="card-body pb-0">
+
+                <h5 class="card-title mb-0 mt-2">Satges</h5>
+                @*  <small>Revenue Generated</small>*@
+            </div>
+
+            <div id="StageChart" style="min-height: 230px;"></div>
+
+        </div>
+    </div>
+   
+    <div class="col-lg-6 col-md-6 col-sm-6 mb-4">
+        <div class="card">
+            <div class="card-body pb-0">
+
+                <h5 class="card-title mb-0 mt-2">Certificats</h5>
+                @*  <small>Revenue Generated</small>*@
+            </div>
+
+            <div id="CertificatChart" style="min-height: 230px;"></div>
+
+        </div>
+        </div>
+
+        <div class="col-lg-6 col-md-6 col-sm-6 mb-4">
+            <div class="card">
+                <div class="card-body pb-0">
+
+                    <h5 class="card-title mb-0 mt-2">Formations</h5>
+                    @*  <small>Revenue Generated</small>*@
+                </div>
+
+                <div id="FormationChart" style="min-height: 230px;"></div>
+
+            </div>
+</div>
+@*</div>*@
+
+<div class="col-12 col-xl-12 mb-4 col-lg-12">
+    <div class="card">
+        <div class="card-header pb-3">
+            <h5 class="m-0 me-2 card-title">Annonces</h5>
+        </div>
+        <div class="card-body">
+            <div id="line-chart" style="min-height: 450px;"></div>
+        </div>
+    </div>
+</div>
+<div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
+    <div class="card h-100">
+        <div class="card-header d-flex justify-content-between">
+            <div class="card-title m-0 me-2">
+                <h5 class="m-0 me-2"> Top 10 Entrprises</h5>
+               
+            </div>
+           
+        </div>
+        <div class="card-body">
+            <ul class="p-0 m-0">
+                @foreach (Entreprise entreprise in ViewBag.top10Entreprises)
+               {
+                    <li class="d-flex mb-3 pb-1 align-items-center">
+                      
+                            <div class="avatar me-2">
+                                <img src="../../assets/img/logo/@entreprise.Logo"
+                                     alt="Logo"
+                                     class="rounded-circle" />
+                            </div>
+                        
+                        <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
+                            <div class="me-2">
+                                @if (@entreprise.Nom.Length > 30)
+                                {
+                                    <a asp-controller="Entreprise" asp-action="Details" asp-route-id="@entreprise.Id">
+                                        <h5 class="card-title mx-3 my-4 ">@entreprise.Nom.Substring(0,26)...</h5>
+                                    </a>
+
+                                }
+                                else
+                                {
+                                    <a asp-controller="Entreprise" asp-action="Details" asp-route-id="@entreprise.Id">
+                                        <h5 class="card-title mx-3 my-4 ">@entreprise.Nom</h5>
+                                    </a>
+
+
+
+                                }
+                            </div>
+
+                        </div>
+                    </li>
+                }
+
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
+    <div class="card h-100">
+        <div class="card-header d-flex justify-content-between">
+            <div class="card-title m-0 me-2">
+                <h5 class="m-0 me-2">Top 10 Technologies</h5>
+              @*  <small class="text-muted">Total 58 Transactions done in this Month</small>*@
+            </div>
+
+        </div>
+        <div class="card-body">
+            <ul class="p-0 m-0">
+                @foreach (Technologie technologie in ViewBag.top10Technologies)
+                {
+                    <li class="d-flex mb-3 pb-1 align-items-center">
+
+                        <div class="avatar me-2">
+                            <img src="../../assets/img/logo/@technologie.Logo"
+                                 alt="Logo"
+                                 class="rounded-circle" />
+                        </div>
+
+                        <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
+                            <div class="me-2">
+                                @if (technologie.Libelle.Length > 30)
+                                {
+                                   
+                                        <h5 class="card-title mx-3 my-4 ">@technologie.Libelle.Substring(0,26)...</h5>
+                                  
+
+                                }
+                                else
+                                {
+                                 
+                                        <h5 class="card-title mx-3 my-4 ">@technologie.Libelle</h5>
+                                    
+                                }
+                            </div>
+
+                        </div>
+                    </li>
+                }
+
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
+    <div class="card h-100">
+        <div class="card-header d-flex justify-content-between">
+            <div class="card-title m-0 me-2">
+                <h5 class="m-0 me-2">Top 10 Engagement</h5>
+               @* <small class="text-muted">Total 58 Transactions done in this Month</small>*@
+            </div>
+
+        </div>
+        <div class="card-body">
+            <ul class="p-0 m-0">
+                @foreach (Entreprise entreprise in ViewBag.top10Engagement)
+                {
+                    <li class="d-flex mb-3 pb-1 align-items-center">
+
+                        <div class="avatar me-2">
+                            <img src="../../assets/img/logo/@entreprise.Logo"
+                                 alt="Logo"
+                                 class="rounded-circle" />
+                        </div>
+
+                        <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
+                            <div class="me-2">
+                                @if (@entreprise.Nom.Length > 30)
+                                {
+                                    <a asp-controller="Entreprise" asp-action="Details" asp-route-id="@entreprise.Id">
+                                        <h5 class="card-title mx-3 my-4 ">@entreprise.Nom.Substring(0,26)...</h5>
+                                    </a>
+
+                                }
+                                else
+                                {
+                                    <a asp-controller="Entreprise" asp-action="Details" asp-route-id="@entreprise.Id">
+                                        <h5 class="card-title mx-3 my-4 ">@entreprise.Nom</h5>
+                                    </a>
+
+
+
+                                }
+                            </div>
+
+                        </div>
+                    </li>
+                }
+
+            </ul>
+        </div>
+    </div>
+</div>

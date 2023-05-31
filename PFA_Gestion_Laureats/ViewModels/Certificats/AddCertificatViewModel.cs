@@ -11,12 +11,12 @@ namespace PFA_Gestion_Laureats.ViewModels.Certificats
         [Required]
         [Display(Name = "Date d'emission")]
         public DateTime Date_Emission { get; set; }
-        [Required]
-        [Display(Name = "Date d'expiration  ")]
+        
+        [Display(Name = "Date d'expiration ")]
         //[Compare("Date_Emission", ErrorMessage = "La date d'expiration doit être postérieure à la date d'emission")]
-        public DateTime? Date_Expiration { get; set; }
+        public DateTime ?Date_Expiration { get; set; }
         [DataType(DataType.Url)]
-        public string? Url { get; set; }
+        public string ?Url { get; set; }
         [Required]
         public int EtudiantId { get; set; }
     }

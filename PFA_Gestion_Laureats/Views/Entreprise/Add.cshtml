@@ -46,7 +46,7 @@
                                    asp-for="Photo" required />
                         </div>
                         <hr class="my-0" /> 
-                        <div class= "mb-3 col-md-6" >
+                        <div class= "mb-3 col-md-12" >
                            <div>
                                 <label asp-for="Nom" class="form-label"></label> <strong style="color:red">*</strong>
                            </div>
@@ -57,12 +57,7 @@
 
                         </div >
                         
-                        <div class=" col-sm-6 mt-3 form-check">
-
-                            <label asp-for="Convention" class="form-check-label"></label> 
-                            <input class="form-check-input" asp-for="Convention" type="checkbox"  />
-                            <span asp-validation-for="Convention" style="color:red"></span>
-                        </div>
+                       
 
                        
 
@@ -88,8 +83,13 @@
                             <input type = "text" asp-for= "Adresse" class= "form-control " required/>
                             <span asp-validation-for="Adresse" style="color:red"></span>
                         </div>
+                        <div class=" col-md-12 col-sm-6 mt-4  mx-2 form-check ">
 
-                        <div class="mb-3">
+                            <label asp-for="Convention" class="form-check-label"></label>
+                            <input class="form-check-input" asp-for="Convention" type="checkbox" />
+                            <span asp-validation-for="Convention" style="color:red"></span>
+                        </div>
+                        <div class="mb-3 mt-2">
                             <div>
                                 <label asp-for="Description" class="form-label"></label> <strong style="color:red">*</strong>
                             </div>
@@ -99,8 +99,8 @@
                  </div>
 
                     <div class="mt-2">
-                        <button type="submit" class="btn btn-primary me-2">Ajouter</button>
-                        <a class="btn btn-secondary" asp-controller="Entreprise" asp-action="Index">Cancel</a>
+                        <button type="submit" class="btn btn-success me-2">Ajouter</button>
+                      @*  <a class="btn btn-secondary" asp-controller="Entreprise" asp-action="Index">Cancel</a>*@
                     </div>
 
                 </div>

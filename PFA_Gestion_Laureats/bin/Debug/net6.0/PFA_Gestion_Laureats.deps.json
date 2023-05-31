@@ -13,7 +13,7 @@
           "MailKit": "3.6.0",
           "Microsoft.AspNet.Mvc": "5.2.9",
           "Microsoft.AspNet.SignalR.Core": "2.4.3",
-          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.4",
+          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.5",
           "Microsoft.EntityFrameworkCore.Tools": "7.0.5",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "6.0.13",
           "Select2.js": "4.0.13"
@@ -1075,15 +1075,15 @@
           }
         }
       },
-      "Microsoft.EntityFrameworkCore.SqlServer/7.0.4": {
+      "Microsoft.EntityFrameworkCore.SqlServer/7.0.5": {
         "dependencies": {
           "Microsoft.Data.SqlClient": "5.0.1",
           "Microsoft.EntityFrameworkCore.Relational": "7.0.5"
         },
         "runtime": {
           "lib/net6.0/Microsoft.EntityFrameworkCore.SqlServer.dll": {
-            "assemblyVersion": "7.0.4.0",
-            "fileVersion": "7.0.423.11504"
+            "assemblyVersion": "7.0.5.0",
+            "fileVersion": "7.0.523.16503"
           }
         }
       },
@@ -2976,12 +2976,12 @@
       "path": "microsoft.entityframeworkcore.relational/7.0.5",
       "hashPath": "microsoft.entityframeworkcore.relational.7.0.5.nupkg.sha512"
     },
-    "Microsoft.EntityFrameworkCore.SqlServer/7.0.4": {
+    "Microsoft.EntityFrameworkCore.SqlServer/7.0.5": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-3yUw/jaMhM65pfRqJVfLY3cOSV0qqh4dnl+VXuCxgUYcAtBaEcSEa12QvJWz9FFGh3fDN/kbm560oXcl2lDNyQ==",
-      "path": "microsoft.entityframeworkcore.sqlserver/7.0.4",
-      "hashPath": "microsoft.entityframeworkcore.sqlserver.7.0.4.nupkg.sha512"
+      "sha512": "sha512-cUJqCiamT0EvpKNgZEV5fqNv2MyVfKNgOPQfFINqHiIKHOYrS0nTCUJP97+UuG0JIIrP792/PwnuNjbekImtBg==",
+      "path": "microsoft.entityframeworkcore.sqlserver/7.0.5",
+      "hashPath": "microsoft.entityframeworkcore.sqlserver.7.0.5.nupkg.sha512"
     },
     "Microsoft.EntityFrameworkCore.Tools/7.0.5": {
       "type": "package",

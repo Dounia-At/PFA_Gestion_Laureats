@@ -78,57 +78,49 @@
         <div class="row g-4 mt-2">
             @foreach (Entreprise entreprise in Model)
             {
-                 <div class="col-xl-4 col-lg-6 col-md-6">
-                        <div class="card" style="max-height:100% !important">
-                            <div class="card-body">
-                                <div class="d-flex align-items-center mb-3">
-                                    <a asp-controller="Entreprise" asp-action="Details" asp-route-id="@entreprise.Id" class="d-flex align-items-center">
-                                        <div class="avatar me-2">
-                                            <img src="../../assets/img/logo/@entreprise.Logo"
-                                                 alt="Logo"
-                                                 class="rounded-circle" />
-                                        </div>
-                                        <div class="me-2 text-body h5 mb-0">@entreprise.Nom</div>
-                                    </a>
+                <div class="col-xl-3 col-lg-6 col-md-6">
+                   
+                    <div class="card">
+                        <div class="card-body ">
+                            <div class="dropdown btn-pinned">
+                                <button type="button"
+                                class="btn dropdown-toggle hide-arrow p-0"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                    <i class="ti ti-dots-vertical text-muted"></i>
+                                </button>
+                                @if (ViewBag.role == "AgentDirection")
+                                {
+                                    <ul class="dropdown-menu dropdown-menu-end">
 
-                                </div>
-                            <div class="mb-1">
-                               @* <p >@entreprise.Pays @entreprise.Ville</p>*@
-                               
-                                <p class=" my-4"> @entreprise.Adresse.Substring(0, Math.Min(20, entreprise.Adresse.Length)) <span class="text-muted  mb-2">...</span></p>
-                               
+                                        <li><a class="dropdown-item btn btn-success btn-icon waves-effect" asp-action="Update" asp-route-id="@entreprise.Id">Modifier</a></li>
+                                        <li>
+                                            <button class=" dropdown-item btn btn-danger btn-icon waves-effect   deleteButton" data-id="@entreprise.Id">Supprimer</button>
+                                            @* <a class="dropdown-item" href="javascript:void(0);">Valider</a></li>*@
+                                           @* <li>
+                                                <hr class="dropdown-divider" />
+                                            </li>*@
 
-                                    <hr class="my-0" /> <br />
-                                    @* <a asp-controller="Annonce" asp-action="Details" asp-route-id="@annonce.Id">
-                            <p class="mx-3 my-2 text-primary">Plus Details ...</p>
-                            </a>*@
-                                </div>
-                            <div class="d-flex align-items-center pt-1">
-                                <div class="d-flex align-items-center">
-                                   
-                                        <span class="text-muted fw-light">@entreprise.Ville,@entreprise.Pays</span>
-                                   
-                                </div>
-                                <div class="ms-auto">
-                                    @if (ViewBag.role == "AgentDirection")
-                                    {
-                                        <a asp-controller="Entreprise" asp-action="Update" asp-route-id="@entreprise.Id" class="btn btn-label-success btn-icon waves-effect mx-2 ">
-                                            <i class="ti ti-edit ti-sm"></i>
-                                        </a>
-                                        <button class="btn btn-danger btn-icon waves-effect   deleteButton" data-id="@entreprise.Id"><i class="ti ti-trash ti-sm"></i></button>
-
-
-
-                                    }
-                                </div>
+                                       </li>
+                                    </ul>
+                                }
                             </div>
-
+                            <div class="mx-auto my-3 text-center">
+                                <img src="../../assets/img/logo/@entreprise.Logo"
+                                     alt="Logo"
+                                     class="rounded-circle" style="max-width:200px !important;max-height:200px;"  />
                                
-
                             </div>
+                            <a asp-action="Details" asp-route-id="@entreprise.Id">
+                                <h4 class="mb-1 card-title text-center">@entreprise.Nom  </h4>
+                            </a>
+                           
+                           
 
                         </div>
                     </div>
+                </div>
+                
 
                 
             }
