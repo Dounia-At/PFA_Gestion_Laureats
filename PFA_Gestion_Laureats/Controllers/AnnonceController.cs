@@ -183,21 +183,35 @@ namespace PFA_Gestion_Laureats.Controllers
 
             return View(annonces);
         }
+        [Authentification]
         public IActionResult Details(int id)
         { 
             Annonce annonce=db.Annonces.Include(annonce => annonce.utilisateur).Where(an=>an.Id==id).FirstOrDefault();
             if (annonce != null)
             {
+                string login = HttpContext.Session.GetString("Login");
+                int utilisateurId = db.Utilisateurs.Where(us => us.Login == login).Select(u => u.Id).FirstOrDefault();
+                Postulation p = db.Postulations.Where(p => p.AnnonceId == annonce.Id && p.EtudiantId == utilisateurId).FirstOrDefault();
+                if (p == null)
+                {
+                    p = new Postulation();
+                    p.EtudiantId = utilisateurId;
+                    p.AnnonceId = annonce.Id;
+                    p.Date_Consultation = DateTime.Now;
+                    db.Postulations.Add(p);
+                    db.SaveChanges();
+                }
                 an = annonce;
+
                 return View(annonce);
             }
 
             return RedirectToAction("Annonces");
         }
-            [Authentification]
+        [Authentification]
         public IActionResult MesAnnonces()
         {
-            String login = HttpContext.Session.GetString("Login");
+            string login = HttpContext.Session.GetString("Login");
             List<Annonce> annonces = db.Annonces.Include(annonce => annonce.utilisateur).Include(annonce => annonce.postulations).Include(annonce=>annonce.entreprise).Where(an => an.utilisateur.Login == login).OrderByDescending(an => an.Date_Creation).AsNoTracking().ToList();
             return View(annonces);
         }
@@ -308,7 +322,7 @@ namespace PFA_Gestion_Laureats.Controllers
         }
         public ActionResult Postuler()
         {
-            String login = HttpContext.Session.GetString("Login");
+            string login = HttpContext.Session.GetString("Login");
             Utilisateur utilisateur = db.Utilisateurs.Where(us => us.Login == login).FirstOrDefault();
             ViewBag.email = utilisateur.Email;
             return View(); 
@@ -316,11 +330,17 @@ namespace PFA_Gestion_Laureats.Controllers
             [HttpPost]
         public ActionResult Postuler(AddPostulerViewModel pmv)
         {
-            String login = HttpContext.Session.GetString("Login");
+            string login = HttpContext.Session.GetString("Login");
             Utilisateur utilisateur = db.Utilisateurs.Where(us => us.Login == login).FirstOrDefault();
          
             if (ModelState.IsValid)
             {
+                Postulation p = db.Postulations.Where(p => p.AnnonceId == an.Id && p.EtudiantId == utilisateur.Id).FirstOrDefault();
+                
+                    p.Date_Postulation = DateTime.Now;
+                    db.Postulations.Add(p);
+                    db.SaveChanges();
+                
                 try
                 {
                     using (MailMessage mail = new MailMessage(utilisateur.Email, an.Email_Reception))
@@ -355,11 +375,8 @@ namespace PFA_Gestion_Laureats.Controllers
                 {
 
                     ViewBag.Alert = "Impossible d'envoyer l'e-mail. Vérifiez votre Mot de Passe";
-                    return View();
-                     
-                   
-                }
-              
+                    return View();                     
+                }              
             }
            
             return RedirectToAction("Annonces");

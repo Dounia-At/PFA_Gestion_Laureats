@@ -27,8 +27,13 @@
                 messages: {
                     noResults: "", results: ""
                 }
+            }); 
+        });
+        $(document).ready(function () {
+            $('#filtrer').click(function () {
+                $("#filtreDiv").toggle();
             });
-        })
+        });
     </script>
     }
 
@@ -39,65 +44,80 @@
     {
         <div class="container-xxl flex-grow-1 container-p-y">
             <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Accueil /</span> Annonces</h4>
-            
+            <div class="d-flex align-items-center justify-content-end mb-2">
+                <label class="switch switch-primary">
+                    <input type="checkbox" class="switch-input" id="filtrer" >
+                    <span class="switch-toggle-slider">
+                        <span class="switch-on">
+                            <i class="ti ti-check mt-1"></i>
+                        </span>
+                        <span class="switch-off">
+                            <i class="ti ti-x mt-1"></i>
+                        </span>
+                    </span>
+                    <span class="switch-label">Filtrer</span>
+                </label>
+            </div>
+               <div id="filtreDiv" style="display: none">
                 <form method="get">
-                <div class="row g-4">
-                    <div class="col-md-4 col-xl-3 col-lg-4 mb-2">
-                        <div class="input-group input-group-merge">
-                            <span class="input-group-text" id="basic-addon-search31"><i class="ti ti-search"></i></span>
-                            <input type="text" class="form-control" placeholder="Nom/Ville d'entreprise" aria-label="Nom/Ville d'entreprise"
-                                   aria-describedby="basic-addon-search31" name="SearchString" value="@ViewBag.SearchString">
+                    <div class="row g-4">
+                        <div class="col-md-4 col-xl-3 col-lg-4 mb-2">
+                            <div class="input-group input-group-merge">
+                                <span class="input-group-text" id="basic-addon-search31"><i class="ti ti-search"></i></span>
+                                <input type="text" class="form-control" placeholder="Nom/Ville d'entreprise" aria-label="Nom/Ville d'entreprise"
+                                       aria-describedby="basic-addon-search31" name="SearchString" value="@ViewBag.SearchString">
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-md-4 col-xl-3 col-lg-4 mb-2">
-                        <label class="form-label"></label>
-                        <input class="form-control" id="Technologie" placeholder="Technologie..." aria-label="Technologie..." name="Technologie" value="@ViewBag.Technologie" />
+                        <div class="col-md-4 col-xl-3 col-lg-4 mb-2">
+                            <label class="form-label"></label>
+                            <input class="form-control" id="Technologie" placeholder="Technologie..." aria-label="Technologie..." name="Technologie" value="@ViewBag.Technologie" />
+
+                        </div>
+                        <div class="col-md-4 col-xl-3 col-lg-4 mb-2">
+                            <select class="form-control" name="Nature">
+                                <option selected value="">Type de poste</option>
+                                <option value="PFA">PFA</option>
+                                <option value="PFE">PFE</option>
+                                <option value="CDI">CDI</option>
+                                <option value="CDD">CDD</option>
+                                <option value="Temps Partiel">Temps Partiel</option>
+                                <option value="Temps Plein">Temps Plein</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4 col-xl-3 col-lg-4 mb-2">
+                            <select class="form-control" name="remunerer">
+                                <option selected value="">Rémunération</option>
+                                <option value="Remunerer">Rémunérer</option>
+                                <option value="NonRemunerer">Non Rémunérer</option>
+
+                            </select>
+
+
+                        </div>
+
+                        <div class="col-md-4 col-xl-3 col-lg-4 mb-2">
+                            <select class="form-control" name="orderBy">
+                                <option selected value="">Order Par</option>
+                                <option value="plusConsultes">Les plus consultés</option>
+                                <option value="plusPostules">Les plus postulés</option>
+                                <option value="moinsConsultes">Les moins consultés</option>
+                                <option value="moinsPostules">Les monis postulés</option>
+                            </select>
+                        </div>
+                        <div class="col-md-2 col-xl-1 col-lg-2 mb-2 ">
+
+                            <button type="submit" class="btn btn-primary btn-submit waves-effect waves-light">Chercher</button>
+
+                        </div>
+                        <div class="col-md-2 col-xl-1 col-lg-2 mb-2 ">
+
+                            <button asp-action="NoFiltre" class="btn btn-secondary btn-submit waves-effect waves-light mx-2">Annuler</button>
+
+                        </div>
 
                     </div>
-                    <div class="col-md-4 col-xl-3 col-lg-4 mb-2">
-                        <select class="form-control" name="Nature" >
-                            <option selected value="">Type de poste</option>
-                            <option value="PFA">PFA</option>
-                            <option value="PFE">PFE</option>
-                            <option value="CDI">CDI</option>
-                            <option value="CDD">CDD</option>
-                            <option value="Temps Partiel">Temps Partiel</option>
-                            <option value="Temps Plein">Temps Plein</option>
-                        </select>
-                    </div>
-                    <div class="col-md-4 col-xl-3 col-lg-4 mb-2">
-                        <select class="form-control" name="remunerer">
-                            <option selected value="">Rémunération</option>
-                            <option value="Remunerer">Rémunérer</option>
-                            <option value="NonRemunerer">Non Rémunérer</option>
-                            
-                        </select>
-                       
-                       
-                    </div>
-                        
-                    <div class="col-md-4 col-xl-3 col-lg-4 mb-2">
-                        <select class="form-control" name="orderBy">
-                            <option selected value="">Order Par</option>
-                            <option value="plusConsultes">Les plus consultés</option>
-                            <option value="plusPostules">Les plus postulés</option>
-                            <option value="moinsConsultes">Les moins consultés</option>
-                            <option value="moinsPostules">Les monis postulés</option>                            
-                        </select>
-                    </div>
-                    <div class="col-md-2 col-xl-1 col-lg-2 mb-2 ">
-
-                        <button type="submit" class="btn btn-primary btn-submit waves-effect waves-light">Chercher</button>
-
-                    </div>
-                    <div class="col-md-2 col-xl-1 col-lg-2 mb-2 ">
-
-                        <button asp-action="NoFiltre" class="btn btn-secondary btn-submit waves-effect waves-light mx-2">Annuler</button>
-
-                    </div>
-                  
-                </div>
                 </form>
+               </div>
                
                 @*<div class="col-md-6 mb-4">
                     <label for="selectpickerLiveSearch" class="form-label">Live Search</label>
@@ -162,11 +182,11 @@
                                                 <div class="ms-auto">
                                                     @if(annonce.postulations == null || annonce.postulations.Count == 0)
                                                     {
-                                                        <a href="javascript:;"><span class="badge bg-label-secondary">0</span></a>
+                                                        <span class="badge bg-label-secondary">0</span>
                                                     }
                                                     else
                                                     {
-                                                        <a href="javascript:;" class="me-2"><span class="badge bg-label-success">@annonce.postulations.Count</span></a>
+                                                        <span class="badge bg-label-success">@annonce.postulations.Count</span>
                                                     }
                                                    
                                                 </div>
@@ -176,11 +196,11 @@
                                                 <div class="ms-auto">
                                                     @if (annonce.postulations == null || annonce.postulations.Count(p => p.Date_Postulation != null) == 0)
                                                     {
-                                                        <a href="javascript:;"><span class="badge bg-label-secondary">0</span></a>
+                                                        <span class="badge bg-label-secondary">0</span>
                                                     }
                                                     else
                                                     {
-                                                        <a href="javascript:;" class="me-2"><span class="badge bg-label-success">@annonce.postulations.Count(p => p.Date_Postulation != null) </span></a>
+                                                        <span class="badge bg-label-success">@annonce.postulations.Count(p => p.Date_Postulation != null) </span>
                                                     }
                                                 </div>
                                             </li>
