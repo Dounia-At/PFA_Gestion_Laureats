@@ -94,38 +94,44 @@
                 </div>
             </div>
             <!--/ About User -->
-            <div class="card mb-4">
-                <div class="card-body">
-                    <p class="card-text text-uppercase">Offres</p>
-                    <ul class="list-unstyled mb-0">
-                        @foreach(Annonce annonce in Model.annonces)
-                        {
-                            <li class="mb-3">
-                                <div class="d-flex align-items-center">
-                                    <div class="d-flex align-items-start">
-                                        <div class="avatar me-2">
-                                            <img src="../../assets/img/logo/@annonce.entreprise.Logo"
-                                                 alt="Avatar"
-                                                 class="rounded-circle" />
+             @if (Model.annonces != null)
+            {
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <p class="card-text text-uppercase">Offres</p>
+                        <ul class="list-unstyled mb-0">
+
+                            @foreach (Annonce annonce in Model.annonces)
+                            {
+                                <li class="mb-3">
+                                    <div class="d-flex align-items-center">
+                                        <div class="d-flex align-items-start">
+                                            <div class="avatar me-2">
+                                                <img src="../../assets/img/logo/@annonce.entreprise.Logo"
+                                                alt="Avatar"
+                                                class="rounded-circle" />
+                                            </div>
+                                            <div class="me-2 ms-1">
+                                                <a asp-controller="Annonce" asp-action="Details" asp-route-id="@annonce.Id">
+                                                    <h6 class="mb-0">@annonce.Titre</h6>
+                                                </a>
+
+                                                <small class="text-muted">@annonce.Date_Creation.Date.ToString("MM/dd/yyyy")</small>
+                                            </div>
                                         </div>
-                                        <div class="me-2 ms-1">
-                                            <a asp-controller="Annonce" asp-action="Details" asp-route-id="@annonce.Id">
-                                                <h6 class="mb-0">@annonce.Titre</h6>
-                                            </a>
-                                            
-                                            <small class="text-muted">@annonce.Date_Creation.Date.ToString("MM/dd/yyyy")</small>
-                                        </div>
+                                        @*<div class="ms-auto">
+                                <a href="javascript:;"><span class="badge bg-label-danger">Developer</span></a>
+                                </div>*@
                                     </div>
-                                    @*<div class="ms-auto">
-                                        <a href="javascript:;"><span class="badge bg-label-danger">Developer</span></a>
-                                    </div>*@
-                                </div>
-                            </li>
-                        }
+                                </li>
+                            }
+
+                       
                        
                     </ul>
                 </div>
             </div>
+            }
         </div>
         
 

@@ -26,15 +26,23 @@ namespace PFA_Gestion_Laureats.Controllers
 
                 Etudiant etudiant = db.Etudiants.Where(us => us.Login == login).FirstOrDefault();
 
+                if (etudiant == null)
+                {
+                    return View("Login");
+                }
+                else
+                {
+                    Formation formation = new Formation(amv);
+                    formation.Etudiant = etudiant;
 
 
-                Formation formation = new Formation(amv);
-                formation.Etudiant = etudiant;
 
+                    db.Formations.Add(formation);
+                    db.SaveChanges();
+                   
 
-
-                db.Formations.Add(formation);
-                db.SaveChanges();
+                }
+               
 
 
 
