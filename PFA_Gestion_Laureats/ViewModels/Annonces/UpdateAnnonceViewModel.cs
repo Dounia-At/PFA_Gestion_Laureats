@@ -26,7 +26,9 @@ namespace PFA_Gestion_Laureats.ViewModels.Annonces
         
         [Required]
         public string Entreprise { get; set; }
-        public int EntrepriseId { get; set; }
+        public int? EntrepriseId { get; set; }
+        public IList<Technologie>? Technologies { get; set; }
+        public List<int>? SelectedTechnologies { get; set; }
         public UpdateAnnonceViewModel() { }
         public UpdateAnnonceViewModel(Annonce annonce)
         {

@@ -117,7 +117,7 @@ namespace PFA_Gestion_Laureats.Controllers
 
 
             //if (db.Entreprises.Count() == 0) return RedirectToAction("Index", "Entreprise");
-            List<Annonce> annonces = db.Annonces.Include(annonce => annonce.utilisateur).Include(annonce => annonce.entreprise).Include(annonce => annonce.AnnonceTechnologies).Include(annonce => annonce.postulations).OrderByDescending(an=>an.Date_Creation).AsNoTracking().ToList();
+            List<Annonce> annonces = db.Annonces.Include(annonce => annonce.utilisateur).Include(annonce => annonce.entreprise).Include(annonce => annonce.AnnonceTechnologies).ThenInclude(an=> an.Technologie).Include(annonce => annonce.postulations).OrderByDescending(an=>an.Date_Creation).AsNoTracking().ToList();
             
             if (!string.IsNullOrEmpty(SearchString))
             {
@@ -142,125 +142,40 @@ namespace PFA_Gestion_Laureats.Controllers
             
             if (!string.IsNullOrEmpty(Technologie))
             {
-                //List<Annonce> annonces1 = new List<Annonce>();
-                //foreach (Annonce annonce in annonces.ToList())
-                //{
-                //    foreach (Technologie technologie in annonce.technologies)
-                //    {
-                //        if (technologie.Libelle.Equals(Technologie))
-                //        {
-                //            annonces1.Add(annonce);
-                //        }
-                //    }
-                //}
-                //annonces = annonces1;
+                List<Annonce> annonces1 = new List<Annonce>();
+                foreach (Annonce annonce in annonces.ToList())
+                {
+                    foreach (AnnonceTechnologie technologie in annonce.AnnonceTechnologies)
+                    {
+                        if (technologie.Technologie.Libelle.Equals(Technologie))
+                        {
+                            annonces1.Add(annonce);
+                        }
+                    }
+                }
+                annonces = annonces1;
             }
 
             if (!string.IsNullOrEmpty(orderBy))
-            {
-                List<Annonce> annonces1 = new List<Annonce>();
-                List<Annonce> annonces2 = db.Annonces.ToList();                                            
+            {                                           
                 switch (orderBy)
                 {                   
                     case "plusConsultes":
-                        var postsPC = db.Postulations.
-                            GroupBy(p => p.AnnonceId)
-                            .Select(g => new
-                            {
-                                postId = g.Key,
-                                CountValue = g.Count()
-                            })
-                            .OrderByDescending(g => g.CountValue)
-                            .ToList();
-                        foreach (var post in postsPC)
-                        {
-                            foreach(Annonce annonce in annonces)
-                            {
-                                if (post.postId == annonce.Id)
-                                {
-                                    annonces1.Add(annonce);
-                                    annonces2.Remove(annonce);
-                                }                                
-                            }                            
-                        }
-                        
-                        annonces = annonces1.Concat(annonces2).ToList() ;
+                       
+                        annonces = annonces.OrderByDescending(a => a.postulations.Count).ToList();
                         break;
                   
                     case "plusPostules":
-                        var postsPP = db.Postulations.
-                           Where(p => p.Date_Postulation != null).
-                           GroupBy(p => p.AnnonceId)
-                           .Select(g => new
-                           {
-                               postId = g.Key,
-                               CountValue = g.Count()
-                           })
-                           .OrderByDescending(g => g.CountValue)
-                           .ToList();
-                        foreach (var post in postsPP)
-                        {
-                            foreach (Annonce annonce in annonces)
-                            {
-                                if (post.postId == annonce.Id)
-                                {
-                                    annonces1.Add(annonce);
-                                    annonces2.Remove(annonce);
-                                }
-                            }
-                        }
-
-                        annonces = annonces1.Concat(annonces2).ToList();
+                       
+                        annonces = annonces.OrderByDescending(a => a.postulations.Count(p=> p.Date_Postulation != null)).ToList();
                         break;
                     case "moinsConsultes":
-                        var postsMC = db.Postulations.
-                            GroupBy(p => p.AnnonceId)
-                            .Select(g => new
-                            {
-                                postId = g.Key,
-                                CountValue = g.Count()
-                            })
-                            .OrderBy(g => g.CountValue)
-                            .ToList();
-                        foreach (var post in postsMC)
-                        {
-                            foreach (Annonce annonce in annonces)
-                            {
-                                if (post.postId == annonce.Id)
-                                {
-                                    annonces1.Add(annonce);
-                                    annonces2.Remove(annonce);
-                                }
-                            }
-                        }
-
-                        annonces = annonces1.Concat(annonces2).ToList();
+                       
+                        annonces = annonces.OrderBy(a => a.postulations.Count).ToList();
                         break;
                     case "moinsPostules":
 
-                        var postsMP = db.Postulations.
-                          Where(p => p.Date_Postulation != null).
-                          GroupBy(p => p.AnnonceId)
-                          .Select(g => new
-                          {
-                              postId = g.Key,
-                              CountValue = g.Count()
-                          })
-                          .OrderBy(g => g.CountValue)
-                          .ToList();
-                        foreach (var post in postsMP)
-                        {
-                            foreach (Annonce annonce in annonces)
-                            {
-                                if (post.postId == annonce.Id)
-                                {
-                                    annonces1.Add(annonce);
-                                    annonces2.Remove(annonce);
-                                }
-                            }
-                        }
-
-                        annonces = annonces1.Concat(annonces2).ToList();
+                        annonces = annonces.OrderBy(a => a.postulations.Count(p => p.Date_Postulation != null)).ToList();
                         break;
 
                    
@@ -320,23 +235,24 @@ namespace PFA_Gestion_Laureats.Controllers
                 UpdateAnnonceViewModel annonceViewModel = new UpdateAnnonceViewModel(annonce);
                 ViewBag.entreprise = db.Entreprises.Where(e=> e.Id == annonce.EntrepriseId).Select(e=> e.Nom).FirstOrDefault();
                 ViewBag.technologies = new SelectList(db.Technologie.ToList(), "Id", "Libelle");
-                ViewBag.technoVal = annonce.AnnonceTechnologies.Select(t => t.TechnologieId).ToList();
-                
+                annonceViewModel.Technologies = db.Technologie.ToList();
+                annonceViewModel.SelectedTechnologies = annonce.AnnonceTechnologies.Select(t => t.TechnologieId).ToList();
+
                 return View(annonceViewModel);
             }
             return RedirectToAction("Annonces");
         }
         [HttpPost]
-        public IActionResult Update(UpdateAnnonceViewModel amv)
+        public IActionResult Update(UpdateAnnonceViewModel amv, string[] technologies)
         {
-           
+
             if (ModelState.IsValid)
             {
                 String login = HttpContext.Session.GetString("Login");
                 Utilisateur utilisateur = db.Utilisateurs.Where(us => us.Login == login).FirstOrDefault();
-                Annonce annonce = db.Annonces.Include(an => an.utilisateur).Where(an => an.Id == amv.Id && an.utilisateur.Id == utilisateur.Id).FirstOrDefault();
+                Annonce annonce = db.Annonces.Include(an => an.utilisateur).Include(a => a.AnnonceTechnologies).Where(an => an.Id == amv.Id && an.utilisateur.Id == utilisateur.Id).FirstOrDefault();
 
-                Entreprise entreprise = db.Entreprises.Where(ae => ae.Nom.ToUpper() == amv.Entreprise).FirstOrDefault();
+                Entreprise entreprise = db.Entreprises.Where(ae => ae.Nom.ToUpper() == amv.Entreprise.ToUpper()).FirstOrDefault();
 
                 if (entreprise == null)
                 {
@@ -371,16 +287,23 @@ namespace PFA_Gestion_Laureats.Controllers
                                 amv.Photo.CopyTo(stream);
                                 annonce.Photo = NewName;
                             }
-
                         }
                     }
                     db.Annonces.Update(annonce);
-                    db.SaveChanges();
-
-                }
-                
-
-
+                    foreach (AnnonceTechnologie techno in annonce.AnnonceTechnologies)
+                    {
+                        db.AnnonceTechnologies.Remove(techno);
+                    }
+                    
+                    foreach (string item in technologies)
+                    {
+                        AnnonceTechnologie at = new AnnonceTechnologie();
+                        at.AnnonceId = annonce.Id;
+                        at.TechnologieId = int.Parse(item);
+                        db.AnnonceTechnologies.Add(at);
+                    }
+                    db.SaveChanges();                                       
+                }                
             }
             return RedirectToAction("MesAnnonces");
         }
@@ -439,12 +362,6 @@ namespace PFA_Gestion_Laureats.Controllers
                 }
               
             }
-
-
-         
-
-           
-
            
             return RedirectToAction("Annonces");
 

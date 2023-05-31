@@ -120,28 +120,32 @@
                     <div class="col-md-12">
                         <label class="form-label" asp-for="Nature">Type<strong style="color:red"></strong></label>
                         <select class="form-control" id="nature" asp-for="Nature" required onchange="showDiv('hidden_div', this)">
-                            <option >- Choisir -</option>
+                            <option selected disabled>- Choisir -</option>
                             <option value="PFA">PFA</option>
                             <option value="PFE">PFE</option>
                             <option value="CDI">CDI</option>
                             <option value="CDD">CDD</option>
                             <option value="Temps Partiel">Temps Partiel</option>
                             <option value="Temps Plein">Temps Plein</option>
-                        </select>
+                        </select> 
                         <span asp-validation-for="Nature"></span>
                     </div>
                     <div id="hidden_div" style="display: none" class="col-md-12 l-2 mt-3 form-check" >
 
-                        <label asp-for="Remuniration" class="form-check-label"></label>
+                        <label asp-for="Remuniration"  class="form-check-label"></label>
                         <input class="form-check-input"  asp-for="Remuniration" type="checkbox" />
                         <span asp-validation-for="Remuniration" style="color:red"></span>
                     </div>
                     <div id="myModal" class="col-md-12">
                         <label class="form-label" >Technologies<strong style="color:red"></strong></label>
-                        <select id="techno" class="form-control" asp-items="ViewBag.technologies"  name="technologies" multiple="multiple">
+                        <select id="techno" class="form-control" asp-for="SelectedTechnologies"  name="technologies" multiple="multiple">
+                            @foreach (Technologie technologie in Model.Technologies)
+                            {
+                                <option value="@technologie.Id" selected="@(Model.SelectedTechnologies.Contains(technologie.Id) ? "selected" : null)">@technologie.Libelle</option>
+                            }
                         </select>
                     </div>
-                    
+                     
                     <!-- Options de Condidature -->
 
                     <div class="col-12 mt-5">
