@@ -33,7 +33,7 @@ namespace PFA_Gestion_Laureats.SignalR
              _dbContext.SaveChangesAsync();
             return base.OnConnectedAsync();
         }
-
+        
         public async Task SendMessage(string receiverLogin,string message)
         {
             string login = Context.GetHttpContext().Session.GetString("Login");
@@ -56,7 +56,7 @@ namespace PFA_Gestion_Laureats.SignalR
 
 
             await Clients.User(receiver.ConnectionId).SendAsync("ReceiveMessage", sender.ConnectionId, message);
-            await Clients.Clients(sender.ConnectionId).SendAsync("OwnMessage", message.Trim());
+            await Clients.User(sender.ConnectionId).SendAsync("OwnMessage", message.Trim());
         }
         public async Task LibererConnectionId()
         {

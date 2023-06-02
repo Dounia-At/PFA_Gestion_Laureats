@@ -31,7 +31,7 @@ namespace PFA_Gestion_Laureats.Controllers
         public IActionResult NoFiltre()
         {
             List<Annonce> annonces = db.Annonces.Include(annonce => annonce.utilisateur).Include(annonce => annonce.entreprise).Include(annonce => annonce.AnnonceTechnologies).Include(annonce => annonce.postulations).OrderByDescending(an => an.Date_Creation).AsNoTracking().ToList();
-            return RedirectToAction("Annonces", annonces);
+            return View("Filtre", annonces);
         }
         public IActionResult Add()
         {

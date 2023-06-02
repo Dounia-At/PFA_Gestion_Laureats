@@ -2,8 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\PFA_Gestion_Laureats",
-    "\\PFA_Gestion_Laureats\\Controllers",
     "\\PFA_Gestion_Laureats\\Views",
+    "\\PFA_Gestion_Laureats\\Views\\Annonce",
     "\\PFA_Gestion_Laureats\\Views\\Shared",
     "\\PFA_Gestion_Laureats\\Views\\Stage",
     "\\PFA_Gestion_Laureats\\Views\\Test",
@@ -11,6 +11,6 @@
     "\\PFA_Gestion_Laureats\\wwwroot",
     "\\PFA_Gestion_Laureats\\wwwroot\\js"
   ],
-  "SelectedNode": "\\PFA_Gestion_Laureats\\Controllers\\CertificatController.cs",
+  "SelectedNode": "\\PFA_Gestion_Laureats\\Views\\Annonce\\Annonces.cshtml",
   "PreviewInSolutionExplorer": false
 }
