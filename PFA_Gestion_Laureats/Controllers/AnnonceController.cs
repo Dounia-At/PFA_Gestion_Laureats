@@ -32,7 +32,90 @@ namespace PFA_Gestion_Laureats.Controllers
         {
             List<Annonce> annonces = db.Annonces.Include(annonce => annonce.utilisateur).Include(annonce => annonce.entreprise).Include(annonce => annonce.AnnonceTechnologies).Include(annonce => annonce.postulations).OrderByDescending(an => an.Date_Creation).AsNoTracking().ToList();
             return View("Filtre", annonces);
+        } 
+        public IActionResult Annonces()
+        {
+            List<Annonce> annonces = db.Annonces.Include(annonce => annonce.utilisateur).Include(annonce => annonce.entreprise).Include(annonce => annonce.AnnonceTechnologies).Include(annonce => annonce.postulations).OrderByDescending(an => an.Date_Creation).AsNoTracking().ToList();
+            return View(annonces);
         }
+
+        public IActionResult Filtre(string SearchString, string Nature, string remunerer, string Technologie, string orderBy)
+        {
+            ViewBag.SearchString = SearchString;
+            ViewBag.Nature = Nature;
+            ViewBag.Remunerer = remunerer;
+            ViewBag.Technologie = Technologie;
+
+
+            //if (db.Entreprises.Count() == 0) return RedirectToAction("Index", "Entreprise");
+            List<Annonce> annonces = db.Annonces.Include(annonce => annonce.utilisateur).Include(annonce => annonce.entreprise).Include(annonce => annonce.AnnonceTechnologies).ThenInclude(an => an.Technologie).Include(annonce => annonce.postulations).OrderByDescending(an => an.Date_Creation).AsNoTracking().ToList();
+
+            if (!string.IsNullOrEmpty(SearchString))
+            {
+                annonces = annonces.Where(a => a.entreprise.Nom.ToLower().Contains(SearchString.ToLower()) || a.entreprise.Ville.ToLower().Contains(SearchString.ToLower())).ToList();
+            }
+            if (!string.IsNullOrEmpty(Nature))
+            {
+                annonces = annonces.Where(a => a.Nature == Nature).ToList();
+            }
+            if (!string.IsNullOrEmpty(remunerer))
+            {
+                if (remunerer == "Remunerer")
+                {
+                    annonces = annonces.Where(a => a.Remuniration == true).ToList();
+                }
+                else if (remunerer == "NonRemunerer")
+                {
+                    annonces = annonces.Where(a => a.Remuniration == false).ToList();
+                }
+
+            }
+
+            if (!string.IsNullOrEmpty(Technologie))
+            {
+                List<Annonce> annonces1 = new List<Annonce>();
+                foreach (Annonce annonce in annonces.ToList())
+                {
+                    foreach (AnnonceTechnologie technologie in annonce.AnnonceTechnologies)
+                    {
+                        if (technologie.Technologie.Libelle.Equals(Technologie))
+                        {
+                            annonces1.Add(annonce);
+                        }
+                    }
+                }
+                annonces = annonces1;
+            }
+
+            if (!string.IsNullOrEmpty(orderBy))
+            {
+                switch (orderBy)
+                {
+                    case "plusConsultes":
+
+                        annonces = annonces.OrderByDescending(a => a.postulations.Count).ToList();
+                        break;
+
+                    case "plusPostules":
+
+                        annonces = annonces.OrderByDescending(a => a.postulations.Count(p => p.Date_Postulation != null)).ToList();
+                        break;
+                    case "moinsConsultes":
+
+                        annonces = annonces.OrderBy(a => a.postulations.Count).ToList();
+                        break;
+                    case "moinsPostules":
+
+                        annonces = annonces.OrderBy(a => a.postulations.Count(p => p.Date_Postulation != null)).ToList();
+                        break;
+
+
+                }
+            }
+
+            return View(annonces);
+        }
+
         public IActionResult Add()
         {
             
@@ -107,82 +190,7 @@ namespace PFA_Gestion_Laureats.Controllers
             }
             return RedirectToAction("MesAnnonces");
         }
-        public IActionResult Annonces(string SearchString, string Nature,string remunerer,string Technologie, string orderBy)
-        {
-            ViewBag.SearchString = SearchString;
-            ViewBag.Nature = Nature;
-            ViewBag.Remunerer = remunerer;
-            ViewBag.Technologie = Technologie;
-
-
-            //if (db.Entreprises.Count() == 0) return RedirectToAction("Index", "Entreprise");
-            List<Annonce> annonces = db.Annonces.Include(annonce => annonce.utilisateur).Include(annonce => annonce.entreprise).Include(annonce => annonce.AnnonceTechnologies).ThenInclude(an=> an.Technologie).Include(annonce => annonce.postulations).OrderByDescending(an=>an.Date_Creation).AsNoTracking().ToList();
-            
-            if (!string.IsNullOrEmpty(SearchString))
-            {
-                annonces = annonces.Where(a => a.entreprise.Nom.ToLower().Contains(SearchString.ToLower()) || a.entreprise.Ville.ToLower().Contains(SearchString.ToLower())).ToList();
-            }
-            if (!string.IsNullOrEmpty(Nature))
-            {
-                annonces = annonces.Where(a => a.Nature==Nature).ToList();
-            }
-            if (!string.IsNullOrEmpty(remunerer))
-            {
-                if(remunerer== "Remunerer")
-                {
-                    annonces = annonces.Where(a => a.Remuniration == true).ToList();
-                }
-                else if (remunerer == "NonRemunerer")
-                {
-                    annonces = annonces.Where(a => a.Remuniration == false).ToList();
-                }
-               
-            }
-            
-            if (!string.IsNullOrEmpty(Technologie))
-            {
-                List<Annonce> annonces1 = new List<Annonce>();
-                foreach (Annonce annonce in annonces.ToList())
-                {
-                    foreach (AnnonceTechnologie technologie in annonce.AnnonceTechnologies)
-                    {
-                        if (technologie.Technologie.Libelle.Equals(Technologie))
-                        {
-                            annonces1.Add(annonce);
-                        }
-                    }
-                }
-                annonces = annonces1;
-            }
-
-            if (!string.IsNullOrEmpty(orderBy))
-            {                                           
-                switch (orderBy)
-                {                   
-                    case "plusConsultes":
-                       
-                        annonces = annonces.OrderByDescending(a => a.postulations.Count).ToList();
-                        break;
-                  
-                    case "plusPostules":
-                       
-                        annonces = annonces.OrderByDescending(a => a.postulations.Count(p=> p.Date_Postulation != null)).ToList();
-                        break;
-                    case "moinsConsultes":
-                       
-                        annonces = annonces.OrderBy(a => a.postulations.Count).ToList();
-                        break;
-                    case "moinsPostules":
-
-                        annonces = annonces.OrderBy(a => a.postulations.Count(p => p.Date_Postulation != null)).ToList();
-                        break;
-
-                   
-                }
-            }
-
-            return View(annonces);
-        }
+       
         [Authentification]
         public IActionResult Details(int id)
         { 

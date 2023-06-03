@@ -35,6 +35,17 @@
             $("#reset").click(function(){
                 $("#screen").load("/Annonce/NoFiltre");
             });
+            $("#submit").click(function () {
+                SearchString = $("#SearchString").val();
+                remunerer = $("#remunerer").val();
+                Technologie = $("#Technologie").val();
+                Nature = $("#Nature").val();
+                orderBy = $("#orderBy").val();
+
+                $("#screen").load("/Annonce/Filtre?SearchString=" + SearchString
+                    + "&Technologie=" + Technologie + "&Nature=" + Nature
+                    + "&remunerer=" + remunerer + "&orderBy=" + orderBy);
+            });
         });
   
     </script>
@@ -62,13 +73,13 @@
                 </label>
             </div>
                <div id="filtreDiv" style="display: none">
-                <form method="get">
+               
                     <div class="row g-4">
                         <div class="col-md-4 col-xl-3 col-lg-4 mb-2">
                             <div class="input-group input-group-merge">
                                 <span class="input-group-text" id="basic-addon-search31"><i class="ti ti-search"></i></span>
                                 <input type="text" class="form-control" placeholder="Nom/Ville d'entreprise" aria-label="Nom/Ville d'entreprise"
-                                       aria-describedby="basic-addon-search31" name="SearchString" value="@ViewBag.SearchString">
+                                       aria-describedby="basic-addon-search31" id="SearchString" name="SearchString" value="@ViewBag.SearchString">
                             </div>
                         </div>
                         <div class="col-md-4 col-xl-3 col-lg-4 mb-2">
@@ -77,7 +88,7 @@
 
                         </div>
                         <div class="col-md-4 col-xl-3 col-lg-4 mb-2">
-                            <select class="form-control" name="Nature">
+                            <select class="form-control" name="Nature" id="Nature">
                                 <option selected value="">Type de poste</option>
                                 <option value="PFA">PFA</option>
                                 <option value="PFE">PFE</option>
@@ -88,7 +99,7 @@
                             </select>
                         </div>
                         <div class="col-md-4 col-xl-3 col-lg-4 mb-2">
-                            <select class="form-control" name="remunerer">
+                            <select class="form-control" id="remunerer" name="remunerer">
                                 <option selected value="">Rémunération</option>
                                 <option value="Remunerer">Rémunérer</option>
                                 <option value="NonRemunerer">Non Rémunérer</option>
@@ -99,7 +110,7 @@
                         </div>
 
                         <div class="col-md-4 col-xl-3 col-lg-4 mb-2">
-                            <select class="form-control" name="orderBy">
+                            <select class="form-control" id="orderBy" name="orderBy">
                                 <option selected value="">Order Par</option>
                                 <option value="plusConsultes">Les plus consultés</option>
                                 <option value="plusPostules">Les plus postulés</option>
@@ -109,7 +120,7 @@
                         </div>
                         <div class="col-md-2 col-xl-1 col-lg-2 mb-2 ">
 
-                            <button type="submit" class="btn btn-primary btn-submit waves-effect waves-light">Chercher</button>
+                            <button id="submit" class="btn btn-primary btn-submit waves-effect waves-light">Chercher</button>
 
                         </div>
                         <div class="col-md-2 col-xl-1 col-lg-2 mb-2 ">
@@ -119,7 +130,7 @@
                         </div>
 
                     </div>
-                </form>
+                
                </div>
                
                 @*<div class="col-md-6 mb-4">

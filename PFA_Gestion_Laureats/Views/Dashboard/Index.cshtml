@@ -21,9 +21,7 @@
                 colors: ['#FFAD5F', '#00CFE8'],
                 formatter: function (x) { return x + "%" }
             });
-        });
-
-        $(function () {
+       
             new Morris.Bar({
                 element: 'StageChart',
                 data: [
@@ -39,8 +37,7 @@
                 xLabelMargin:10
             });
           
-        });
-        $(function () {
+        
             new Morris.Bar({
                 element: 'ProjetChart',
                 data: [
@@ -56,8 +53,6 @@
                 xLabelMargin: 10
             });
 
-        });
-        $(function () {
            
             new Morris.Bar({
                 element: 'FormationChart',
@@ -73,8 +68,7 @@
                 resize: true,
                 xLabelMargin: 10
             });
-        });
-        $(function () {
+       
 
             new Morris.Bar({
                 element: 'CertificatChart',
@@ -90,8 +84,7 @@
                 resize: true,
                 xLabelMargin: 10
             });
-        });
-        $(function () {
+      
             var data = @Html.Raw(Json.Serialize(ViewBag.annoncesByMonth));
 
             var chartData = [];
