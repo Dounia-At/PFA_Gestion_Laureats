@@ -10,6 +10,7 @@ using PFA_Gestion_Laureats.ViewModels.Users;
 using System.Text;
 using NuGet.Protocol.Plugins;
 using Microsoft.AspNetCore.Http;
+using System.Web.Helpers;
 
 namespace PFA_Gestion_Laureats.Controllers
 {
@@ -26,6 +27,37 @@ namespace PFA_Gestion_Laureats.Controllers
             utilisateur.IsComfirmed = true;
             db.Utilisateurs.Update(utilisateur);
             db.SaveChanges();
+            //string senderEmail = "abdellaouihajar826@gmail.com"; // Adresse e-mail de l'expéditeur
+            //string senderPassword = "Sjihoqhsnsvlnpvn"; // Mot de passe de l'expéditeur
+
+            //MailMessage mail = new MailMessage();
+            //SmtpClient smtpClient = new SmtpClient("smtp.gmail.com", 587);
+
+            //// Remplir les détails de l'e-mail
+            //mail.From = new MailAddress(senderEmail);
+            //mail.To.Add(utilisateur.Email);
+            //mail.Subject = "Validation de votre compte";
+            //// href!!!
+           
+
+            //// Envoyez l'email de confirmation
+            //mail.Body = $"Veuillez attendre que l'administration valide votre compte. Merci ";
+
+           
+            //mail.BodyEncoding = Encoding.UTF8;
+
+            //mail.IsBodyHtml = true;
+
+            //// Configurer le client SMTP
+            //smtpClient.EnableSsl = true;
+            //smtpClient.UseDefaultCredentials = false;
+            //smtpClient.Credentials = new NetworkCredential(senderEmail, senderPassword);
+            ViewBag.Confirmation = "Veuillez verifier votre compte gmail pour la confirmation ";
+            // Envoyer l'e-mails
+            //smtpClient.Send(mail);
+
+            //return Redirect("https://mail.google.com/mail/u/1/?ogbl#inbox");
+            TempData["Alert"] = "Veuillez attendre que l'administration valide votre compte.";
 
             return RedirectToAction("Login");
         }
@@ -45,34 +77,29 @@ namespace PFA_Gestion_Laureats.Controllers
                 String loginAgent = HttpContext.Session.GetString("Login");
                 Utilisateur utilisateur = db.Utilisateurs.Where(u => u.Login == login).SingleOrDefault();
                 AgentDirection agent = db.Agents.Where(u => u.Login == loginAgent).SingleOrDefault();
+                string senderEmail = "abdellaouihajar826@gmail.com"; // Adresse e-mail de l'expéditeur
+                string senderPassword = "Sjihoqhsnsvlnpvn"; // Mot de passe de l'expéditeur
 
-                using (MailMessage mail = new MailMessage(agent.Email, utilisateur.Email))
-                {
+                MailMessage mail = new MailMessage();
+                SmtpClient smtpClient = new SmtpClient("smtp.gmail.com", 587); 
 
-                    mail.Subject = "Votre compte est valide!!";
-                    // href!!!
-                    mail.Body = "<p>L'ecole EHEI vous informe que votre compte a été valider.</p>" +
-                                "<a class=\"btn btn-primary\" href='User/Login/"+utilisateur+"' > Bienvenure! </a>";
-                    mail.BodyEncoding = Encoding.UTF8;
+                // Remplir les détails de l'e-mail
+                mail.From = new MailAddress(senderEmail);
+                mail.To.Add(utilisateur.Email);
+                mail.Subject = "Votre compte est valide!!";
+                mail.Body = "<p>L'Ecole EHEI vous informe que votre compte a été valider.</p>";
+                mail.BodyEncoding = Encoding.UTF8;
+                mail.IsBodyHtml = true;
 
-                    mail.IsBodyHtml = true;
-                    using (System.Net.Mail.SmtpClient smtp = new System.Net.Mail.SmtpClient())
-                    {
-                        smtp.Host = "smtp.gmail.com";
+                // Configurer le client SMTP
+                smtpClient.EnableSsl = true;
+                smtpClient.UseDefaultCredentials = false;
+                smtpClient.Credentials = new NetworkCredential(senderEmail, senderPassword);
 
-                        NetworkCredential NetworkCred = new NetworkCredential(agent.Email, utilisateur.Password);
-                        // smtp.Connect("smtp.ethereal.email", 587, SecureSocketOptions.StartTls);
-                        smtp.EnableSsl = true;
-                        smtp.UseDefaultCredentials = false;
-                        smtp.Credentials = NetworkCred;
+                // Envoyer l'e-mail
+                smtpClient.Send(mail);
 
-                        smtp.Port = 587;
-                        //smtp.Credentials = CredentialCache.DefaultNetworkCredentials;
-                        smtp.Send(mail);
-
-                    }
-
-                }
+               
                 utilisateur.Isvalide = true;
                 db.Utilisateurs.Update(utilisateur);
                 db.SaveChanges();
@@ -506,39 +533,71 @@ namespace PFA_Gestion_Laureats.Controllers
                             etudiant.date_Inscriptionion = (DateTime)user.date_Inscription;
                             etudiant.specialite = user.specialite;
                             etudiant.Photo_Profil = "profil.png";
+                            db.Etudiants.Add(etudiant);
+                            db.SaveChanges();
+                            Utilisateur utilisateur = db.Utilisateurs.Where(etu=>etu.Login==etudiant.Login).FirstOrDefault();
 
                             try
                             {
                                 String loginAgent = HttpContext.Session.GetString("Login");
                                 AgentDirection agent = db.Agents.Where(u => u.Login == loginAgent).SingleOrDefault();
+                                string senderEmail = "abdellaouihajar826@gmail.com"; // Adresse e-mail de l'expéditeur
+                                string senderPassword = "Sjihoqhsnsvlnpvn"; // Mot de passe de l'expéditeur
 
-                                using (MailMessage mail = new MailMessage(agent.Email, etudiant.Email))
-                                {
+                                MailMessage mail = new MailMessage();
+                                SmtpClient smtpClient = new SmtpClient("smtp.gmail.com", 587);
 
-                                    mail.Subject = "Confirmer votre adresse!!";
-                                    // href!!!
-                                    mail.Body = "<p>Veuillez cliquer sur le bouton suivant pour confirmer votre inscription.</p>" +
-                                                "<a class=\"btn btn-primary\" href='User/Confirm/" + etudiant.Id + "' > Confirmation d'adresse! </a>";
-                                    mail.BodyEncoding = Encoding.UTF8;
+                                // Remplir les détails de l'e-mail
+                                mail.From = new MailAddress(senderEmail);
+                                mail.To.Add(etudiant.Email);
+                                mail.Subject = "Confirmer votre adresse!!";
+                                // href!!!
+                                var confirmationLink = Url.Action("Confirm", "User", new { Id = utilisateur.Id },HttpContext.Request.Scheme );
 
-                                    mail.IsBodyHtml = true;
-                                    using (System.Net.Mail.SmtpClient smtp = new System.Net.Mail.SmtpClient())
-                                    {
-                                        smtp.Host = "smtp.gmail.com";
+                                // Envoyez l'email de confirmation
+                                mail.Body = $"Veuillez cliquer sur le lien suivant pour confirmer votre email : <a href='{confirmationLink}'>Confirmation Email</a>";
+                               
+                                //mail.Body = "<p>Veuillez cliquer sur le bouton suivant pour confirmer votre inscription.</p>" +
+                                //            "<a class=\"btn btn-primary\"  asp-action=\"Confirm\"" + etudiant.Id + "' > Confirmation d'adresse! </a>";
+                                mail.BodyEncoding = Encoding.UTF8;
 
-                                        NetworkCredential NetworkCred = new NetworkCredential(agent.Email, etudiant.Password);
-                                        // smtp.Connect("smtp.ethereal.email", 587, SecureSocketOptions.StartTls);
-                                        smtp.EnableSsl = true;
-                                        smtp.UseDefaultCredentials = false;
-                                        smtp.Credentials = NetworkCred;
+                                mail.IsBodyHtml = true;
 
-                                        smtp.Port = 587;
-                                        //smtp.Credentials = CredentialCache.DefaultNetworkCredentials;
-                                        smtp.Send(mail);
+                                // Configurer le client SMTP
+                                smtpClient.EnableSsl = true;
+                                smtpClient.UseDefaultCredentials = false;
+                                smtpClient.Credentials = new NetworkCredential(senderEmail, senderPassword);
 
-                                    }
+                                // Envoyer l'e-mail
+                                smtpClient.Send(mail);
 
-                                }
+                                //using (MailMessage mail = new MailMessage(agent.Email, etudiant.Email))
+                                //{
+
+                                //    mail.Subject = "Confirmer votre adresse!!";
+                                //    // href!!!
+                                //    mail.Body = "<p>Veuillez cliquer sur le bouton suivant pour confirmer votre inscription.</p>" +
+                                //                "<a class=\"btn btn-primary\" href='User/Confirm/" + etudiant.Id + "' > Confirmation d'adresse! </a>";
+                                //    mail.BodyEncoding = Encoding.UTF8;
+
+                                //    mail.IsBodyHtml = true;
+                                //    using (System.Net.Mail.SmtpClient smtp = new System.Net.Mail.SmtpClient())
+                                //    {
+                                //        smtp.Host = "smtp.gmail.com";
+
+                                //        NetworkCredential NetworkCred = new NetworkCredential(agent.Email, etudiant.Password);
+                                //        // smtp.Connect("smtp.ethereal.email", 587, SecureSocketOptions.StartTls);
+                                //        smtp.EnableSsl = true;
+                                //        smtp.UseDefaultCredentials = false;
+                                //        smtp.Credentials = NetworkCred;
+
+                                //        smtp.Port = 587;
+                                //        //smtp.Credentials = CredentialCache.DefaultNetworkCredentials;
+                                //        smtp.Send(mail);
+
+                                //    }
+
+                                //}
                             }
                             catch (System.Net.Mail.SmtpException ex)
                             {
@@ -549,8 +608,7 @@ namespace PFA_Gestion_Laureats.Controllers
 
                             }
 
-                            db.Etudiants.Add(etudiant);
-                            db.SaveChanges();
+                            
 
                         }
                         else
@@ -561,17 +619,19 @@ namespace PFA_Gestion_Laureats.Controllers
                     }
                     else
                     {
-                        ViewBag.msgValidation = "Email deja existant!!";
+                        ViewBag.msgValidation = "Email déja existe!!";
                         return View(user);
                     }
 
                 }
                 else
                 {
-                    ViewBag.msgValidation = "Login deja existant!!";
+                    ViewBag.msgValidation = "Login déja existe!!";
                     return View(user);
                 }
-                return RedirectToAction("Login");
+                ViewBag.Confirmation = "Veuillez verifier votre compte gmail pour la confirmation ";
+                //return RedirectToAction("Login");
+                return View(user);
             }
             return View(user);
         }
@@ -607,39 +667,45 @@ namespace PFA_Gestion_Laureats.Controllers
                             laureat.specialite = user.specialite;
                             laureat.Date_Fin_Etude = (DateTime)user.Date_Fin_Etude;
                             laureat.Photo_Profil = "profil.png";
-
+                            db.Laureats.Add(laureat);
+                            db.SaveChanges();
+                            Utilisateur utilisateur = db.Utilisateurs.Where(etu => etu.Login == laureat.Login).FirstOrDefault();
                             try
                             {
                                 String loginAgent = HttpContext.Session.GetString("Login");
                                 AgentDirection agent = db.Agents.Where(u => u.Login == loginAgent).SingleOrDefault();
+                               
+                                string senderEmail = "abdellaouihajar826@gmail.com"; // Adresse e-mail de l'expéditeur
+                                string senderPassword = "Sjihoqhsnsvlnpvn"; // Mot de passe de l'expéditeur
 
-                                using (MailMessage mail = new MailMessage(agent.Email, laureat.Email))
-                                {
+                                MailMessage mail = new MailMessage();
+                                SmtpClient smtpClient = new SmtpClient("smtp.gmail.com", 587);
 
-                                    mail.Subject = "Confirmer votre adresse!!";
-                                    // href!!!
-                                    mail.Body = "<p>Veuillez cliquer sur le bouton suivant pour confirmer votre inscription.</p>" +
-                                                "<a class=\"btn btn-primary\" href='User/Confirm/" + laureat.Id + "' > Confirmation d'adresse! </a>";
-                                    mail.BodyEncoding = Encoding.UTF8;
+                                // Remplir les détails de l'e-mail
+                                mail.From = new MailAddress(senderEmail);
+                                mail.To.Add(laureat.Email);
+                                mail.Subject = "Confirmer votre adresse!!";
+                                // href!!!
+                                var confirmationLink = Url.Action("Confirm", "User", new { Id = utilisateur.Id }, HttpContext.Request.Scheme);
 
-                                    mail.IsBodyHtml = true;
-                                    using (System.Net.Mail.SmtpClient smtp = new System.Net.Mail.SmtpClient())
-                                    {
-                                        smtp.Host = "smtp.gmail.com";
+                                // Envoyez l'email de confirmation
+                                mail.Body = $"Veuillez cliquer sur le lien suivant pour confirmer votre email : <a href='{confirmationLink}'>Confirmation Email</a>";
 
-                                        NetworkCredential NetworkCred = new NetworkCredential(agent.Email, laureat.Password);
-                                        // smtp.Connect("smtp.ethereal.email", 587, SecureSocketOptions.StartTls);
-                                        smtp.EnableSsl = true;
-                                        smtp.UseDefaultCredentials = false;
-                                        smtp.Credentials = NetworkCred;
+                                //mail.Body = "<p>Veuillez cliquer sur le bouton suivant pour confirmer votre inscription.</p>" +
+                                //            "<a class=\"btn btn-primary\"  asp-action=\"Confirm\"" + etudiant.Id + "' > Confirmation d'adresse! </a>";
+                                mail.BodyEncoding = Encoding.UTF8;
 
-                                        smtp.Port = 587;
-                                        //smtp.Credentials = CredentialCache.DefaultNetworkCredentials;
-                                        smtp.Send(mail);
+                                mail.IsBodyHtml = true;
 
-                                    }
+                                // Configurer le client SMTP
+                                smtpClient.EnableSsl = true;
+                                smtpClient.UseDefaultCredentials = false;
+                                smtpClient.Credentials = new NetworkCredential(senderEmail, senderPassword);
 
-                                }
+                                // Envoyer l'e-mail
+                                smtpClient.Send(mail);
+
+                              
                             }
                             catch (System.Net.Mail.SmtpException ex)
                             {
@@ -650,8 +716,7 @@ namespace PFA_Gestion_Laureats.Controllers
 
                             }
 
-                            db.Laureats.Add(laureat);
-                            db.SaveChanges();
+                           
                         }
                         else
                         {
@@ -671,8 +736,11 @@ namespace PFA_Gestion_Laureats.Controllers
                     ViewBag.msgValidation = "Login deja existant!!";
                     return View(user);
                 }
+                ViewBag.Confirmation = "Veuillez verifier votre compte gmail pour la confirmation ";
+                //return RedirectToAction("Login");
+                return View(user);
 
-                return RedirectToAction("Login");
+                
             }
             return View(user);
         }

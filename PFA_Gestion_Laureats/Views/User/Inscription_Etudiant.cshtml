@@ -1,11 +1,12 @@
-﻿@{
+﻿@model PFA_Gestion_Laureats.ViewModels.Users.UserViewModel
+@{
     Layout = "_LayoutInscription";
 }
 
 @section title {
    Inscription Etudiant
 }
-@model PFA_Gestion_Laureats.ViewModels.Users.UserViewModel
+
 
 <div class="container-xl">
 
@@ -17,19 +18,25 @@
                         <a class="nav-link active" href="javascript:void(0);"> Etudiant</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" asp-controller="User" asp-action="Inscription_Laureat"> Laureat</a>
+                        <a class="nav-link" asp-controller="User" asp-action="Inscription_Laureat"> Lauréat</a>
                     </li>
                 </ul>
                 <div class="d-none d-lg-flex col-lg-4 align-items-center justify-content-center p-5 auth-cover-bg-color position-relative ">
 
 
-                    <B>Entrer Votre Information Personel </B>
+                    <B>Entrer Vos informations personnelles </B>
                 </div>
             </div>
             @if (ViewBag.msgValidation != null)
             {
                 <div class="alert alert-warning alert-dismissible fade show">
                     <strong>Attention!</strong> @ViewBag.msgValidation
+                </div>
+            }
+            @if (ViewBag.Confirmation != null)
+            {
+                <div class="alert alert-warning alert-dismissible fade show">
+                    <strong>Attention!</strong> @ViewBag.Confirmation
                 </div>
             }
             <form method="post" enctype="multipart/form-data">

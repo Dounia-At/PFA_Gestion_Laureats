@@ -98,7 +98,17 @@
                             <div class="badge bg-label-primary rounded-pill ms-auto">3</div>
                         </a>
                     </li>
-                   
+                   @if (Convert.ToString(Context.Response.HttpContext.Session.GetString("Role")) == "Etudiant" || (Convert.ToString(Context.Response.HttpContext.Session.GetString("Role")) == "Laureat"))
+                    {
+                       
+
+                        <li class="menu-item mt-3">
+                            <a asp-controller="Annonce"  asp-action="MesPostulation" class="menu-link">
+                                <i class="menu-icon tf-icons ti ti-checkbox"></i>
+                                <div data-i18n="Form Validation">Mes Postulations</div>
+                            </a>
+                        </li>
+                    }
                     
                    @* @if (Convert.ToString(Context.Response.HttpContext.Session.GetString("Role")) == "Etudiant" || (Convert.ToString(Context.Response.HttpContext.Session.GetString("Role")) == "Laureat"))
                     {

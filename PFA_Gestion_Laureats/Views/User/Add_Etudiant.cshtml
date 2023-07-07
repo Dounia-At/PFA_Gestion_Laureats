@@ -9,19 +9,19 @@
             <div class="authentication-inner row">
                 <ul class="nav nav-pills flex-column flex-md-row mb-4">
                     <li class="nav-item">
-                        <a class="nav-link" asp-controller="User" asp-action="Ajouter_Agent"> Agent</a>
+                        <a class="nav-link" asp-controller="User" asp-action="Add_Agent"> Agent Direction</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" href="javascript:void(0);"> Etudiant</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" asp-controller="User" asp-action="Ajouter_Laureat"> Laureat</a>
+                        <a class="nav-link" asp-controller="User" asp-action="Ajouter_Laureat"> Lauréat</a>
                     </li>
                 </ul>
                 <div class="d-none d-lg-flex col-lg-4 align-items-center justify-content-center p-5 auth-cover-bg-color position-relative ">
 
 
-                    <B>Entrer Votre Information Personel </B>
+                    <B>Entrer vos informations personnelles </B>
                 </div>
             </div>
             @if (ViewBag.msgValidation != null)
