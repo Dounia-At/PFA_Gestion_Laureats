@@ -15,6 +15,16 @@ namespace PFA_Gestion_Laureats.Controllers
         {
             this.db = db;
         }
+        [Route("/Stage/Index/{idEtudiant}")]
+        public IActionResult Index(string idEtudiant)
+        {
+
+            IList<Stage> stages = db.Stages.Include(s => s.entreprise).Include(s => s.Etudiant).Where(s => s.Etudiant.Login == idEtudiant).ToList();
+
+            ViewBag.login = idEtudiant;
+            return View(stages);
+        }
+
         public IActionResult Add()
         {
 
@@ -93,7 +103,7 @@ namespace PFA_Gestion_Laureats.Controllers
         [HttpPost]
         public IActionResult Update(UpdateStageViewModel amv)
         {
-            String login = HttpContext.Session.GetString("Login");
+            string login = HttpContext.Session.GetString("Login");
             Etudiant etudiant = db.Etudiants.Where(us => us.Login == login).FirstOrDefault();
 
             if (ModelState.IsValid)

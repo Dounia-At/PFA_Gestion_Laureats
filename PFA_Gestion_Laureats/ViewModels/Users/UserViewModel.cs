@@ -7,7 +7,6 @@ using System.ComponentModel.DataAnnotations;
 
 namespace PFA_Gestion_Laureats.ViewModels.Users
 {
-    [Index(nameof(Email), IsUnique = true)]
     [Index(nameof(Login), IsUnique = true)]
     public class UserViewModel
     {
@@ -27,6 +26,7 @@ namespace PFA_Gestion_Laureats.ViewModels.Users
 
         [Display(Name = "Mot de passe")]
         [DataType(DataType.Password)]
+        [MinLength(8, ErrorMessage = "MDP doit être >= 8")]
         public string? Password { get; set; }
 
         [DataType(DataType.Password)]

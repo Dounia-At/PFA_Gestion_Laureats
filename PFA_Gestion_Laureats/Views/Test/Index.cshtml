@@ -1,4 +1,7 @@
-﻿@model List<Test>
+﻿@using X.PagedList.Mvc.Core;
+@using X.PagedList.Web.Common;
+@using X.PagedList;
+@model IPagedList<Test>
 @section title {
    Testes
 }
@@ -67,7 +70,7 @@
 @if(Model != null)
 {
     <!-- Tests Cards -->
-    <div class="row g-4 mt-2">
+    <div class="row g-4 mt-2 ">
 
         @foreach (Test test in Model)
         {
@@ -125,6 +128,20 @@
             </div>
         }
 
+            <div class="pagination justify-content-center">
+                @Html.PagedListPager(Model, page => Url.Action("Index", new { page }), new PagedListRenderOptions { 
+                    Display = PagedListDisplayMode.IfNeeded,
+                    ActiveLiElementClass = "active",
+                    PageClasses = new[]{ "page-link"},
+                    LiElementClasses=new[] { "page-item" },
+                    UlElementClasses = new[] { "pagination","justify-content-center", "mt-3" },
+                    LinkToNextPageFormat = "Next",
+                    LinkToPreviousPageFormat = "Previous",
+                    MaximumPageNumbersToDisplay = 5,
+                    DisplayLinkToPreviousPage = PagedListDisplayMode.Always,
+                    DisplayLinkToNextPage = PagedListDisplayMode.Always
+                })
+            </div>
     </div>
     <!--/ Tests Cards -->
 }

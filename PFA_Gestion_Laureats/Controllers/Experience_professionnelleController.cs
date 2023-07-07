@@ -13,6 +13,17 @@ namespace PFA_Gestion_Laureats.Controllers
         {
             this.db = db;
         }
+
+        [Route("/Experience_professionnelle/Index/{idEtudiant}")]
+        public IActionResult Index(string idEtudiant)
+        {
+
+            IList<ExperiencePro> experiences = db.ExperiencePro.Include(s => s.entreprise).Include(s => s.Etudiant).Where(s => s.Etudiant.Login == idEtudiant).ToList();
+
+            ViewBag.login = idEtudiant;
+            return View(experiences);
+        }
+
         public IActionResult Add()
         {
 

@@ -1,4 +1,7 @@
-﻿@model IList<Annonce>
+﻿@using X.PagedList.Mvc.Core;
+@using X.PagedList.Web.Common;
+@using X.PagedList;
+@model IPagedList<Annonce>
 @section title {
    Mes Annonces
 }
@@ -194,6 +197,20 @@
                 </div>
 
             }
+                <div class="pagination justify-content-center">
+                    @Html.PagedListPager(Model, page => Url.Action("MesAnnonces", new { page }), new PagedListRenderOptions {
+                    Display = PagedListDisplayMode.IfNeeded,
+                    ActiveLiElementClass = "active",
+                    PageClasses = new[]{ "page-link"},
+                    LiElementClasses=new[] { "page-item" },
+                    UlElementClasses = new[] { "pagination","justify-content-center", "mt-3" },
+                    LinkToNextPageFormat = "Next",
+                    LinkToPreviousPageFormat = "Previous",
+                    MaximumPageNumbersToDisplay = 5,
+                    DisplayLinkToPreviousPage = PagedListDisplayMode.Always,
+                    DisplayLinkToNextPage = PagedListDisplayMode.Always
+                    })
+                </div>
             </div>
         }
         else

@@ -1,0 +1,71 @@
+﻿@model IList<PFA_Gestion_Laureats.Models.Formation>
+
+@{
+    ViewData["Title"] = "Formations";
+}
+
+<div class="card card-action mb-4">
+    <div class="d-flex justify-content-between">
+        <div class="card-header ">
+            <h5 class="card-action-title mb-0">Formations</h5>
+            @* <div class="card-action-element">
+            </div>*@
+        </div>
+
+        @if (Convert.ToString(Context.Response.HttpContext.Session.GetString("Login")) == ViewBag.login)
+        {
+            <a asp-controller="Formation" asp-action="Add" class="btn btn-outline-primary  waves-effect waves-light mb-2 mt-3  mx-2">
+
+                <i class="ti ti-plus me-1"></i>
+
+
+
+
+            </a>
+
+        }
+    </div>
+
+    <!--Formation -->
+    <div class="card-body">
+        <div class="card-action-element">
+            <div class="card-body pb-0">
+                <ul class="timeline ms-1 mb-0">
+                    @if (Model != null && Model.Count > 0)
+                    {
+                        @foreach (Formation f in Model)
+                        {
+
+                            <li class="timeline-item timeline-item-transparent">
+                                <span class="timeline-point timeline-point-info"></span>
+                                <div class="timeline-event">
+                                    <div class="timeline-header">
+                                        <a asp-controller="Formation" asp-action="Update" asp-route-id="@f.Id"><h6 class="mb-0">@f.Diplome</h6></a>
+                                        <small class="text-muted">
+                                            @{
+                                                int mois = (int)(new TimeSpan(f.Date_Fin.Ticks - f.Date_Debut.Ticks).TotalDays / 30);
+                                            }<span>@mois mois </span>
+                                        </small>
+                                    </div>
+                                    <p class="mb-2">@f.Date_Debut.Date.ToString("MM/dd/yyyy") -- @f.Date_Fin.Date.ToString("MM/dd/yyyy")</p>
+                                    <div class="d-flex flex-wrap">
+                                        <p class="mb-2">@f.Ecole</p>
+                                        <div class="ms-1">
+                                            <p class="mx-3 my-2">@Html.Raw(f.Description)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                        }
+                    }
+                    else
+                    {
+                        <h3>Aucune Formation!</h3>
+                    }
+                </ul>
+                
+            </div>
+        </div>
+    </div>
+</div>

@@ -207,15 +207,20 @@
                     </div>
 
                     <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
-                        <!-- Search -->
-                        @*<div class="navbar-nav align-items-center">
-                            <div class="nav-item navbar-search-wrapper mb-0">
-                                <a class="nav-item nav-link search-toggler d-flex align-items-center px-0" href="javascript:void(0);">
-                                    <i class="ti ti-search ti-md me-2"></i>
-                                    <span class="d-none d-md-inline-block text-muted">Search (Ctrl+/)</span>
-                                </a>
-                            </div>
-                        </div>*@
+                        <!-- Search -->       
+                        <div class="navbar-left" style="margin-top:8px;">
+                            @using (Html.BeginForm("SearchUsers", "User", FormMethod.Post))
+                            {
+                                <ul class="nav navbar-nav " >
+                                    <div class="input-group input-group-merge">
+                                        <span class="input-group-text" id="basic-addon-search31"><i class="ti ti-search"></i></span>
+                                        <input type="text" name="term" class="form-control" min="1" placeholder="Utilisateur..." aria-label="Search..." aria-describedby="basic-addon-search31">
+                                    </div>
+                                </ul>
+                            }
+                        </div>
+                       
+                              
                         <!-- /Search -->
 
                         <ul class="navbar-nav flex-row align-items-center ms-auto">
@@ -386,7 +391,56 @@
             <!-- endbuild -->
     <!-- Main JS -->
     <script src="../../assets/js/main.js"></script>
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+            <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"></script><link href="~/assets/vendor/libs/select2/select2.min.css" rel="stylesheet" />
+            <script src="~/assets/vendor/libs/select2/jquery-1.10.2.min.js"></script>
+            <script src="~/assets/vendor/libs/select2/select2.min.js"></script>
+            <script>
+                $(function () {
+                    
+                    $('#searchBar').select2({
+                        dropdownParent: $('#myModal'),
+                        placeholder: 'Search users',
+                        ajax: {
+                            url: '/User/GetSearchUsers',
+                            dataType: 'json',
+                            delay: 250,
+                            data: function (params) {
+                                return {
+                                    term: params.term
+                                };
+                            },
+                            processResults: function (data) {
+                                return {
+                                    results: data.map(function (item) {
+                                        return {
+                                            id: item.id,
+                                            text: item.name,
+                                            imageUrl: item.ProfilePictureUrl
+                                        };
+                                    })
+                                };
+                            },
+                            cache: true
+                        },
+                        templateResult: function (data) {
+                            if (!data.id) {
+                                return data.text;
+                            }
 
+                            var $result = $('<span><img src="~/assets/img/avatars/' + data.imageUrl + '" alt="Profile Picture" width="50" height="50" />' + data.text + '</span>');
+                            return $result;
+                        },
+                        minimumInputLength: 2
+                    });
+
+                    $('#searchBar').on('select2:select', function (e) {
+                        var data = e.params.data;
+                        window.location.href = '/User/Details/' + data.id;
+                    });
+                });
+
+            </script>
     @RenderSection("js", false)
 
 

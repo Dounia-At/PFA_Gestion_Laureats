@@ -1,0 +1,43 @@
+﻿@section title {
+   Chercher Utilisateurs
+}
+@section js{
+   
+}
+@model List<Utilisateur>
+
+
+
+<div class="col-12">
+    <h4 class="fw-bold py-3 mb-4 card-header"><a class="text-muted fw-light" asp-controller="Annonce" asp-action="Annonces">Accueil /</a>  Chercher Utilisateur</h4>
+
+    <div class="row g-4">
+        @if(Model.Count > 0 && Model != null)
+       {
+        @foreach (Utilisateur utilisateur in Model)
+        {
+            <div class="col-xl-3 col-lg-6 col-md-6">
+                <div class="card">
+                    <div class="card-body ">
+                       
+                        <div class="mx-auto my-3 text-center">
+                            <a asp-controller="User" asp-action="Details" asp-route-id="@utilisateur.Login">
+                                <img src="../../assets/img/avatars/@utilisateur.Photo_Profil" alt="Avatar Image" class="rounded-circle w-px-100" />
+                            </a>
+                        </div>
+                        <h4 class="mb-1 card-title text-center">@utilisateur.Nom @utilisateur.Prenom </h4>
+                        <p class="pb-1 text-center">@utilisateur.Titre_Profil</p>
+
+                    </div>
+                </div>
+            </div>
+        }
+       }else
+       {
+           <h3>N'existe pas!!</h3>
+       }
+
+    </div>
+
+</div>
+

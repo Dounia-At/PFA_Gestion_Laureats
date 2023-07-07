@@ -18,10 +18,10 @@
                         <a class="nav-link active" href="javascript:void(0);"> Agent</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " asp-controller="User" asp-action="Ajouter_Laureat"> Etudiant</a>
+                        <a class="nav-link " asp-controller="User" asp-action="Add_Laureat"> Etudiant</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" asp-controller="User" asp-action="Ajouter_Laureat"> Laureat</a>
+                        <a class="nav-link" asp-controller="User" asp-action="Add_Laureat"> Laureat</a>
                     </li>
                 </ul>
                 <div class="d-none d-lg-flex col-lg-4 align-items-center justify-content-center p-5 auth-cover-bg-color position-relative ">
@@ -103,10 +103,11 @@
                         <div class="input-group input-group-merge">
                             <input class="form-control"
                                    asp-for="Password" required
-                                   type="password"
+                                   type="password" id="passwordInput" onkeyup="checkPasswordStrength()"
                                    placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;" />
                             <span class="input-group-text cursor-pointer"><i class="ti ti-eye-off"></i></span>
                         </div>
+                        <span id="passwordStrengthText"></span>
                         <span asp-validation-for="Password"></span>
                     </div>
                     <div class="col-sm-6 form-password-toggle">
@@ -136,3 +137,58 @@
         </div>
     </div>
     </div>
+
+@section js {
+
+    <script>
+        function checkPasswordStrength() {
+            var password = document.getElementById("passwordInput").value;
+            var passwordStrengthText = document.getElementById("passwordStrengthText");
+
+            // Define the criteria for password strength
+            var minLength = 8; // Minimum length requirement
+            var minLowercase = 1; // Minimum number of lowercase letters
+            var minUppercase = 0; // Minimum number of uppercase letters
+            var minDigits = 1; // Minimum number of digits
+            var minSpecialChars = 0; // Minimum number of special characters
+
+            // Evaluate the password against the criteria
+            var strength = 0;
+            if (password.length >= minLength) {
+                strength++;
+            }
+            if (/[a-z]/.test(password)) {
+                strength++;
+            }
+            if (/[A-Z]/.test(password)) {
+                strength++;
+            }
+            if (/\d/.test(password)) {
+                strength++;
+            }
+            if (/[!@@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/.test(password)) {
+                strength++;
+            }
+
+            // Update the password strength text based on the evaluated strength
+            switch (strength) {
+                case 0:
+                    passwordStrengthText.innerText = "Weak";
+                    passwordStrengthText.style.color = "red";
+                    break;
+                case 1:
+                case 2:
+                    passwordStrengthText.innerText = "Medium";
+                    passwordStrengthText.style.color = "orange";
+                    break;
+                case 3:
+                case 4:
+                case 5:
+                    passwordStrengthText.innerText = "Strong";
+                    passwordStrengthText.style.color = "green";
+                    break;
+            }
+        }
+    </script>
+
+}

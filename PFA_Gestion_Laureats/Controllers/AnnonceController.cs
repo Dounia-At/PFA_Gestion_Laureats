@@ -15,6 +15,7 @@ using System.Net;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using PFA_Gestion_Laureats.ViewModels.Annonces;
 using System.Text.RegularExpressions;
+using X.PagedList;
 
 namespace PFA_Gestion_Laureats.Controllers
 {
@@ -28,27 +29,17 @@ namespace PFA_Gestion_Laureats.Controllers
             this.db = db;
         }
 
-        public IActionResult NoFiltre()
-        {
-            List<Annonce> annonces = db.Annonces.Include(annonce => annonce.utilisateur).Include(annonce => annonce.entreprise).Include(annonce => annonce.AnnonceTechnologies).Include(annonce => annonce.postulations).OrderByDescending(an => an.Date_Creation).AsNoTracking().ToList();
-            return View("Filtre", annonces);
-        } 
-        public IActionResult Annonces()
-        {
-            List<Annonce> annonces = db.Annonces.Include(annonce => annonce.utilisateur).Include(annonce => annonce.entreprise).Include(annonce => annonce.AnnonceTechnologies).Include(annonce => annonce.postulations).OrderByDescending(an => an.Date_Creation).AsNoTracking().ToList();
-            return View(annonces);
-        }
-
-        public IActionResult Filtre(string SearchString, string Nature, string remunerer, string Technologie, string orderBy)
+       
+        public IActionResult Annonces(string SearchString, string Nature, string remunerer, string Technologie, string orderBy, int? page)
         {
             ViewBag.SearchString = SearchString;
             ViewBag.Nature = Nature;
             ViewBag.Remunerer = remunerer;
             ViewBag.Technologie = Technologie;
+            ViewBag.orderBy = orderBy;
 
 
-            //if (db.Entreprises.Count() == 0) return RedirectToAction("Index", "Entreprise");
-            List<Annonce> annonces = db.Annonces.Include(annonce => annonce.utilisateur).Include(annonce => annonce.entreprise).Include(annonce => annonce.AnnonceTechnologies).ThenInclude(an => an.Technologie).Include(annonce => annonce.postulations).OrderByDescending(an => an.Date_Creation).AsNoTracking().ToList();
+            List<Annonce> annonces = db.Annonces.Include(annonce => annonce.utilisateur).Include(annonce => annonce.entreprise).Include(annonce => annonce.AnnonceTechnologies).Include(annonce => annonce.postulations).OrderByDescending(an => an.Date_Creation).AsNoTracking().ToList();
 
             if (!string.IsNullOrEmpty(SearchString))
             {
@@ -86,7 +77,6 @@ namespace PFA_Gestion_Laureats.Controllers
                 }
                 annonces = annonces1;
             }
-
             if (!string.IsNullOrEmpty(orderBy))
             {
                 switch (orderBy)
@@ -113,9 +103,16 @@ namespace PFA_Gestion_Laureats.Controllers
                 }
             }
 
-            return View(annonces);
+            int pageSize =   9  ; // Number of cities to display per page
+            int pageNumber = page ?? 1; // Default page number
+
+          
+            var pagedAnnonces = annonces.ToPagedList(pageNumber, pageSize);
+
+            return View(pagedAnnonces);
         }
 
+       
         public IActionResult Add()
         {
             
@@ -217,11 +214,18 @@ namespace PFA_Gestion_Laureats.Controllers
             return RedirectToAction("Annonces");
         }
         [Authentification]
-        public IActionResult MesAnnonces()
+        public IActionResult MesAnnonces(int? page)
         {
             string login = HttpContext.Session.GetString("Login");
+
+            int pageSize = 9; // Number of cities to display per page
+            int pageNumber = page ?? 1; // Default page number
+
             List<Annonce> annonces = db.Annonces.Include(annonce => annonce.utilisateur).Include(annonce => annonce.postulations).Include(annonce=>annonce.entreprise).Where(an => an.utilisateur.Login == login).OrderByDescending(an => an.Date_Creation).AsNoTracking().ToList();
-            return View(annonces);
+
+            var pagedAnnonces = annonces.ToPagedList(pageNumber, pageSize);
+
+            return View(pagedAnnonces);
         }
         [Authentification]
         public IActionResult Delete(int id)

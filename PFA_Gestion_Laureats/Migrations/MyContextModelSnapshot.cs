@@ -434,7 +434,7 @@ namespace PFA_Gestion_Laureats.Migrations
 
                     b.Property<string>("Email")
                         .IsRequired()
-                        .HasColumnType("nvarchar(450)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("IsComfirmed")
                         .HasColumnType("bit");
@@ -482,9 +482,6 @@ namespace PFA_Gestion_Laureats.Migrations
                         .HasColumnType("datetime2");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("Email")
-                        .IsUnique();
 
                     b.HasIndex("Login")
                         .IsUnique();

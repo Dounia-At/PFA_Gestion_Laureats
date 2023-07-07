@@ -1,6 +1,60 @@
 ﻿@section title {
    Modifier Securite
 }
+@section js {
+   
+<script>
+    function checkPasswordStrength() {
+        var password = document.getElementById("passwordInput").value;
+        var passwordStrengthText = document.getElementById("passwordStrengthText");
+
+        // Define the criteria for password strength
+        var minLength = 8; // Minimum length requirement
+        var minLowercase = 1; // Minimum number of lowercase letters
+        var minUppercase = 0; // Minimum number of uppercase letters
+        var minDigits = 1; // Minimum number of digits
+        var minSpecialChars = 0; // Minimum number of special characters
+
+        // Evaluate the password against the criteria
+        var strength = 0;
+        if (password.length >= minLength) {
+            strength++;
+        }
+        if (/[a-z]/.test(password)) {
+            strength++;
+        }
+        if (/[A-Z]/.test(password)) {
+            strength++;
+        }
+        if (/\d/.test(password)) {
+            strength++;
+        }
+        if (/[!@@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/.test(password)) {
+            strength++;
+        }
+
+        // Update the password strength text based on the evaluated strength
+        switch (strength) {
+            case 0:
+                passwordStrengthText.innerText = "Weak";
+                passwordStrengthText.style.color = "red";
+                break;
+            case 1:
+            case 2:
+                passwordStrengthText.innerText = "Medium";
+                passwordStrengthText.style.color = "orange";
+                break;
+            case 3:
+            case 4:
+            case 5:
+                passwordStrengthText.innerText = "Strong";
+                passwordStrengthText.style.color = "green";
+                break;
+        }
+    }
+</script>
+
+}
 @model PFA_Gestion_Laureats.ViewModels.Users.UserViewModel
 
 
@@ -16,12 +70,12 @@
                 <a class="nav-link active" href="javascript:void(0);"><i class="ti-xs ti ti-lock me-1"></i> Security</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" asp-controller="User" asp-action="Update_Picture"><i class="ti-xs ti ti-photo-edit me-1"></i> Profil</a>
+                <a class="nav-link" asp-controller="User" asp-action="Update_Picture"><i class="ti-xs ti ti-IconPhoto me-1"></i> Profil</a>
             </li>
         </ul>
         <!-- Change Password -->
         <div class="card mb-4">
-            <h5 class="card-header">@Model.Nom @Model.Nom @Model.Nom @Model.Prenom</h5>
+            <h5 class="card-header"> @Model.Nom @Model.Prenom</h5>
             <div class="card-body">
                 @if(ViewBag.msgValidation != null)
                 {                    
@@ -50,12 +104,13 @@
                             <div class="input-group input-group-merge">
                                 <input class="form-control"
                                        asp-for="Password" required
-                                       type="password"
+                                       type="password" id="passwordInput" onkeyup="checkPasswordStrength()"
                                        placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;" />
                                 <span class="input-group-text cursor-pointer"><i class="ti ti-eye-off"></i></span>
                             </div>
+                            <span id="passwordStrengthText"></span>
                         </div>
-
+                        
                         <div class="mb-3 col-md-6 form-password-toggle">
                             <label class="form-label" for="confirmPassword">Confirmer le mot de passe</label>
                             <div class="input-group input-group-merge">
@@ -66,11 +121,13 @@
                                 <span class="input-group-text cursor-pointer"><i class="ti ti-eye-off"></i></span>
                             </div>
                         </div>
-                       
+                        
                         <div>
                             <button type="submit" class="btn btn-primary me-2">Modifier</button>
                         </div>
                     </div>
+                
+                
                 </form>
             </div>
         </div>

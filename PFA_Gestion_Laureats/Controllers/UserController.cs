@@ -10,6 +10,10 @@ using PFA_Gestion_Laureats.ViewModels.Users;
 using System.Text;
 using NuGet.Protocol.Plugins;
 using Microsoft.AspNetCore.Http;
+using CsvHelper;
+using System.Globalization;
+using CsvHelper.Configuration.Attributes;
+using CsvHelper.Configuration;
 
 namespace PFA_Gestion_Laureats.Controllers
 {
@@ -38,8 +42,7 @@ namespace PFA_Gestion_Laureats.Controllers
         [Route("/User/Valider/{login}")]
         [Authentification]
         public IActionResult Valider(string login)
-        {
-            
+        {            
             try
             {
                 String loginAgent = HttpContext.Session.GetString("Login");
@@ -87,30 +90,136 @@ namespace PFA_Gestion_Laureats.Controllers
             }
             return RedirectToAction("Validation");
         }
-        [Authentification]
-        public async Task< List<Utilisateur> > ImportExcel(IFormFile file)
+        [IsAdmin]
+        public IActionResult ImportUsers()
         {
-            var list = new List<Utilisateur>();
-            using(var stream = new MemoryStream())
+            return View();
+        }
+        [IsAdmin]
+        [HttpPost]
+        public async Task<IActionResult> ImportUsers(IFormFile file)
+        {
+            if (file == null || file.Length <= 0)
             {
-                await file.CopyToAsync(stream);
-                using (var package = new ExcelPackage())
+                ModelState.AddModelError("", "Please select a CSV file to upload.");
+                return View();
+            }
+
+            var data = new MemoryStream();
+            await file.CopyToAsync(data);
+
+            data.Position = 0;
+            using (var reader = new StreamReader(data))
+            {
+                var bad = new List<string>();
+                var conf = new CsvConfiguration(CultureInfo.InvariantCulture)
                 {
-                    ExcelWorksheet worksheet = package.Workbook.Worksheets[0];
-                    var rowcount = worksheet.Dimension.Rows;
-                    for(int row = 2; row <+ rowcount; row++)
+                    HasHeaderRecord = false,
+                    Delimiter = ";",
+                    HeaderValidated = null,
+                    MissingFieldFound = null,
+                    BadDataFound = context =>
                     {
-                        list.Add(new Utilisateur
+                        bad.Add(context.RawRecord);
+                    }
+                };
+                using (var csvReader = new CsvReader(reader, conf))
+                {
+                    while (csvReader.Read())
+                    {
+                        var NomComplet = csvReader.GetField(0).ToString().TrimEnd();
+                        var fullNameParts = NomComplet.Split(' ');
+                        string Prn, Name, field, phone = "";
+                        if (fullNameParts[0].Length < 3)
                         {
-                            Nom = worksheet.Cells[row, 1].Value.ToString().Trim(),
-                            // ....
+                            Prn = fullNameParts[fullNameParts.Length - 1];
+                            Name = string.Join(" ", fullNameParts.Take(fullNameParts.Length - 1));                            
+                        }
+                        else
+                        {
+                            Name = fullNameParts[0];
+                            Prn = string.Join(" ", fullNameParts.Skip(1));
+                        }
+                        string firstInitial = Name.ToUpper();
+                        string firstName = Prn?.Replace(" ", "") ?? string.Empty;
+                        string baseUsername = firstInitial.Replace(" ", "");
+
+                        if (!string.IsNullOrEmpty(firstName) ) {
+                            firstInitial = Name.Substring(0, 2).ToUpper();
+                            baseUsername = firstInitial + char.ToUpper(firstName[0]) + firstName.Substring(1).ToLower();
+                        }
+                        
+                        string username = baseUsername;
+                        int suffix = 1;
+
+                        // Check if the generated username already exists
+                        while (db.Utilisateurs.Any(u => u.Login == username))
+                        {
+                            // Append a numeric suffix to the base username
+                            username = baseUsername + suffix;
+                            suffix++;
+                        }
+
+
+                        var Adr = csvReader.GetField(2).ToString();
+                        if (csvReader.GetField(1).ToString() != "" && csvReader.GetField(1).ToString() != null)
+                        {
+                            phone = "0" + csvReader.GetField(1).ToString();
+                        }
+                        var titre = csvReader.GetField(5).ToString();
+
+                        if (titre.Contains("Cycle préparatoire intégré"))
+                        {
+                            field = "CPI";
+                        }
+                        else if (titre.Contains("Génie des systèmes industriels"))
+                        {
+                            field = "GSI";
+                        }
+                        else if (titre.Contains("Génie informatique"))
+                        {
+                            field = "GI";
+                        }
+                        else
+                        {
+                            field = "IG";
+                        }
+
+                        var date = csvReader.GetField(4).ToString();
+
+                        DateTime dateInsc;
+                        if (!DateTime.TryParseExact(date, "d/M/yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out dateInsc)
+                            && !DateTime.TryParseExact(date, "dd/MM/yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out dateInsc))
+                        {
+                            // Invalid date format, use a fixed date as fallback
+                            dateInsc = new DateTime(DateTime.Now.Year, 10, 1); // Use any valid date you prefer
+                        }
+
+                        string pass = Guid.NewGuid().ToString("N").Substring(0, 8);
+
+                        await db.Etudiants.AddAsync(new Etudiant
+                        {
+                            Nom = Name,
+                            Prenom = Prn,
+                            Adresse = Adr ?? "",
+                            Tel = phone ?? "",
+                            date_Inscriptionion = dateInsc,
+                            specialite = field,
+                            Titre_Profil = titre,
+                            Login = username,
+                            Email = null,
+                            Password = pass,
+                            Isvalide = true,
+                            IsComfirmed = true,
+                            Photo_Profil = "profil.png"
                         });
+                        db.SaveChanges();
                     }
                 }
             }
-            return list;
-        }
 
+            return RedirectToAction("Index");
+        }
 
         [Route("/User/Details/{login}")]
         [Authentification]
@@ -136,13 +245,24 @@ namespace PFA_Gestion_Laureats.Controllers
                 }
                 else if (utilisateur.GetType().Name == "Etudiant")
                 {
-                    Etudiant etudiant = db.Etudiants.Where(u => u.Login == login).Include(e=>e.projets).Include(e => e.stages).ThenInclude(e => e.entreprise).Include(e => e.experiences).ThenInclude(e => e.entreprise).Include(e => e.formations).Include(e => e.certificats).AsNoTracking().SingleOrDefault();
+                    Etudiant etudiant = db.Etudiants.Where(u => u.Login == login)
+                        .Include(e=>e.projets.OrderByDescending(p => p.Date_Fin).Take(3))
+                        .Include(e => e.stages.OrderByDescending(s => s.Date_Fin).Take(3)).ThenInclude(e => e.entreprise)
+                        .Include(e => e.experiences.OrderByDescending(p => p.Id).Take(3)).ThenInclude(e => e.entreprise)
+                        .Include(e => e.formations.OrderByDescending(f => f.Date_Fin).Take(3))
+                        .Include(e => e.certificats.OrderByDescending(c => c.Date_Emission).Take(3)).AsNoTracking().SingleOrDefault();
                    
                     user = new ProfilViewModel(etudiant);
                 }
                 else if (utilisateur.GetType().Name == "Laureat")
                 {
-                    Laureat laureat = db.Laureats.Where(u => u.Login == login).Include(L => L.projets).Include(e => e.stages).ThenInclude(e=>e.entreprise).Include(e => e.experiences).ThenInclude(e => e.entreprise).Include(e => e.formations).Include(e => e.certificats).Include(e => e.certificats).Include(e=>e.annonces).ThenInclude(e=>e.entreprise).AsNoTracking().SingleOrDefault();
+                    Laureat laureat = db.Laureats.Where(u => u.Login == login)
+                        .Include(L => L.projets.OrderByDescending(p => p.Date_Fin).Take(3))
+                        .Include(e => e.stages.OrderByDescending(p => p.Date_Fin).Take(3))
+                        .ThenInclude(e=>e.entreprise).Include(e => e.experiences.OrderByDescending(p => p.Id).Take(3))
+                        .ThenInclude(e => e.entreprise).Include(e => e.formations.OrderByDescending(p => p.Date_Fin).Take(3))
+                        .Include(e => e.certificats.OrderByDescending(p => p.Date_Emission).Take(3))
+                        .Include(e=>e.annonces).ThenInclude(e=>e.entreprise).AsNoTracking().SingleOrDefault();
 
                     user = new ProfilViewModel(laureat);
                 }
@@ -678,6 +798,21 @@ namespace PFA_Gestion_Laureats.Controllers
         }
 
         [Authentification]
+        public IActionResult Parametres()
+        {
+            String login = HttpContext.Session.GetString("Login");
+            Utilisateur utilisateur = db.Utilisateurs.Where(u => u.Login == login).Single();
+
+            UserViewModel user = new UserViewModel(utilisateur.Id, utilisateur.Nom,
+                                                    utilisateur.Prenom, utilisateur.Tel,
+                                                    utilisateur.Email, utilisateur.Titre_Profil,
+                                                    utilisateur.Adresse, utilisateur.Password,
+                                                    utilisateur.Login, utilisateur.Photo_Profil);
+
+            return View(user);
+        }
+
+        [Authentification]
         public IActionResult Update_Compte()
         {
             String login = HttpContext.Session.GetString("Login");
@@ -697,25 +832,23 @@ namespace PFA_Gestion_Laureats.Controllers
         {
             if (ModelState.IsValid)
             {
-                if (!db.Utilisateurs.Any(u => u.Email == user.Email))
-                {
-                    String login = HttpContext.Session.GetString("Login");
+                
+                    string login = HttpContext.Session.GetString("Login");
                     Utilisateur utilisateur = db.Utilisateurs.Where(u => u.Login == login).Single();
-
+                    if (utilisateur.Adresse != user.Adresse && db.Utilisateurs.Any(u => u.Email == user.Email))
+                    {
+                        ViewBag.msgValidation = "Email deja existant!!";
+                    return View(user);
+                }
                     utilisateur.Tel = user.Tel;
                     utilisateur.Email = user.Email;
+                    
                     utilisateur.Adresse = user.Adresse;
                     utilisateur.Titre_Profil = user.Titre_Profil;
 
                     db.Utilisateurs.Update(utilisateur);
                     db.SaveChanges();
-                }
-                else
-                {
-                    ViewBag.msgValidation = "Email deja existant!!";
-                    return View(user);
-                }
-                return RedirectToAction("Index", "Home");
+               
             }
             return View(user);
 
@@ -749,7 +882,6 @@ namespace PFA_Gestion_Laureats.Controllers
 
                         db.Utilisateurs.Update(utilisateur);
                         db.SaveChanges();
-                        return RedirectToAction("Index", "Home");
                     }
                     else
                     {
@@ -827,6 +959,8 @@ namespace PFA_Gestion_Laureats.Controllers
         [HttpPost]
         public IActionResult Login(UserLoginViewModel mv)
         {
+            TempData["login"] = mv.Login;
+            TempData["password"] = mv.Password;
             if (ModelState.IsValid)
             {
                 Utilisateur utilisateur = db.Utilisateurs.Where(us => us.Login == mv.Login && us.Password == mv.Password).FirstOrDefault();
@@ -834,13 +968,13 @@ namespace PFA_Gestion_Laureats.Controllers
                 {
                     if(!utilisateur.IsComfirmed)
                     {
-                        ViewBag.msgValidation = "Ce compte n'est pas encore Confirmé!";
-                        return View();
+                        TempData["msgValidation"] = "Ce compte n'est pas encore Confirmé!";
+                        return Json(new { username = mv.Login, password = mv.Password, redirectToUrl = Url.Action("Login", "User") });
                     }
                     else if (utilisateur.Isvalide == false)
                     {
-                        ViewBag.msgValidation = "Ce compte n'est pas encore validé!";
-                        return View();
+                        TempData["msgValidation"] = "Ce compte n'est pas encore validé!";
+                        return Json(new { username = mv.Login, password = mv.Password, redirectToUrl = Url.Action("Login", "User") });
                     }
                     else
                     {
@@ -853,11 +987,11 @@ namespace PFA_Gestion_Laureats.Controllers
                         db.SaveChanges();
                         if (HttpContext.Session.GetString("Role") == "AgentDirection")
                         {
-                            return RedirectToAction("Index", "Dashboard");
+                            return Json(new { redirectToUrl = Url.Action("Index", "Dashboard") });  
                         }
                         else
                         {
-                            return RedirectToAction("Annonces", "Annonce");
+                            return Json(new { redirectToUrl = Url.Action("Annonces", "Annonce") }); 
                         }
                        
 
@@ -867,11 +1001,11 @@ namespace PFA_Gestion_Laureats.Controllers
                 }
                 else
                 {
-                    ViewBag.msgErreur = "Login ou Mot de passe incorrect";
+                    TempData["msgErreur"] = "Login ou Mot de passe incorrect";
                 }
             }
 
-            return View();
+            return Json(new { username = mv.Login, password = mv.Password, redirectToUrl = Url.Action("Login", "User") });
         }
         public IActionResult logout()
         {
@@ -884,5 +1018,13 @@ namespace PFA_Gestion_Laureats.Controllers
             HttpContext.Session.Remove("Login");
             return RedirectToAction("Login", "User");
         }
+        [HttpPost]
+        public IActionResult SearchUsers(string term)
+        {
+            var res = db.Utilisateurs.Where(u => u.Nom.ToUpper().Contains(term) || u.Prenom.ToUpper().Contains(term)).ToList();
+            return View(res);
+        }
+
+
     }
 }

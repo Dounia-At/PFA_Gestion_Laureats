@@ -101,15 +101,15 @@
                                     <i class="ti ti-dots-vertical text-muted"></i>
                                 </button>
                                 <ul class="dropdown-menu dropdown-menu-end">
-                                <li><a class="dropdown-item" asp-action="Update" asp-route-id="@utilisateur.Login">Détails</a></li>
+                                <li><a class="dropdown-item" asp-action="Update" asp-route-id="@utilisateur.Login"><i class="ti ti-user-check me-1 ti-xs"></i>  Détails</a></li>
                                     <li>
-                                    <button data-id="@utilisateur.Login" class="dropdown-item  ValidateButton "> Valider</button>
+                                    <button data-id="@utilisateur.Login" class="dropdown-item  ValidateButton "><i class="ti ti-check ti-xs me-1"></i>Valider</button>
                                        @* <a class="dropdown-item" href="javascript:void(0);">Valider</a></li>*@
                                     <li>
                                         <hr class="dropdown-divider" />
                                     </li>
                                     <li>
-                                    <button data-id="@utilisateur.Login" class="dropdown-item text-danger  deleteButton">Rejeter</button>
+                                    <button data-id="@utilisateur.Login" class="dropdown-item text-danger  deleteButton"><i class="ti ti-x me-1 ti-xs"></i> Rejeter</button>
                                        
                                 </ul>
                             </div>

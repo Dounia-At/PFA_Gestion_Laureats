@@ -36,9 +36,7 @@ namespace PFA_Gestion_Laureats.Models
             .HasIndex(u => u.Login)
             .IsUnique();
 
-            modelBuilder.Entity<Utilisateur>()
-            .HasIndex(u => u.Email)
-            .IsUnique();
+          
 
             modelBuilder.Entity<Utilisateur>()
               .HasDiscriminator<string>("UtilisateurRole")

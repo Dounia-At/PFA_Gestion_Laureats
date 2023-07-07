@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using PFA_Gestion_Laureats.Models;
 using PFA_Gestion_Laureats.Validation;
 using PFA_Gestion_Laureats.ViewModels.Tests;
+using X.PagedList;
 
 namespace PFA_Gestion_Laureats.Controllers
 {
@@ -15,18 +16,21 @@ namespace PFA_Gestion_Laureats.Controllers
         {
             this.db = db;
         }
-        public IActionResult Index()
+        public IActionResult Index(int? page)
         {
             if (HttpContext.Session.GetString("Role") == "AgentDirection")
             {
                 ViewBag.role = "AgentDirection";
             }
+            int pageSize = 9; // Number of cities to display per page
+            int pageNumber = page ?? 1; // Default page number
+
             if (db.Entreprises.Count() == 0) return RedirectToAction("Index", "Entreprise");
             if (db.Agents.Count() == 0) return RedirectToAction("Add_Agent", "User");
             List<Test> tests = db.Tests.OrderByDescending(t => t.Id).Include(t => t.entreprise).Include(t => t.agentDirection).AsNoTracking().ToList();
-            
 
-            return View(tests);
+            var pagedTestes = tests.ToPagedList(pageNumber, pageSize);
+            return View(pagedTestes);
         }
         public IActionResult Details(int id)
         {

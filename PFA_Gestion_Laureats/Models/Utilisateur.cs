@@ -12,9 +12,9 @@ namespace PFA_Gestion_Laureats.Models
         [Required(ErrorMessage = "Champ Obligatoire!")]
         public string Prenom { get; set; }
         public string? Tel { get; set; }
-        [EmailAddress]
-        [Required(ErrorMessage = "Champ Obligatoire!")]
-        public string Email { get; set; }
+        
+        [DataType(DataType.EmailAddress)]
+        public string? Email { get; set; }
         [Required(ErrorMessage = "Champ Obligatoire!")]
         [Display(Name = "Titre")]
         public string Titre_Profil { get; set; }

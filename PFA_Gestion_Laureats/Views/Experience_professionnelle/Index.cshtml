@@ -1,0 +1,71 @@
+﻿@model IList<PFA_Gestion_Laureats.Models.ExperiencePro>
+
+@{
+    ViewData["Title"] = "Experiences Professionnelles";
+}
+
+<div class="card card-action mb-4">
+    <div class="d-flex justify-content-between">
+        <div class="card-header ">
+            <h5 class="card-action-title mb-0">Expériences professionnelles</h5>
+
+        </div>
+
+        @if (Convert.ToString(Context.Response.HttpContext.Session.GetString("Login")) == ViewBag.login)
+        {
+
+            <a asp-controller="Experience_professionnelle" asp-action="Add" class="btn btn-outline-primary  waves-effect waves-light mb-2 mt-3  mx-2">
+
+                <i class="ti ti-plus me-1"></i>
+
+
+
+
+            </a>
+
+
+        }
+    </div>
+
+    <div class="card-body">
+        <div class="card-action-element">
+            <div class="card-body pb-0">
+                <ul class="timeline ms-1 mb-0">
+                    @if (Model != null && Model.Count > 0)
+                    {
+                        @foreach (ExperiencePro e in Model)
+                        {
+
+                            <li class="timeline-item timeline-item-transparent">
+                                <span class="timeline-point timeline-point-warning"></span>
+                                <div class="timeline-event">
+                                    <div class="timeline-header">
+                                        <a asp-controller="Experience_professionnelle" asp-action="Update" asp-route-id="@e.Id"><h6 class="mb-0">@e.Post</h6></a>
+
+                                        @if (e.Etat == true)
+                                        {
+                                            <small class="text-muted">En cours</small>
+                                        }
+
+
+                                    </div>
+                                    <p class="mb-2">@e.entreprise.Nom ---@e.Type_Emploi</p>
+
+                                </div>
+                            </li>
+
+                        }
+                    }
+                    else
+                    {
+                        <h3>Aucune Experience Professionelle</h3>
+                    }
+                </ul>
+                
+            </div>
+        </div>
+    </div>
+
+
+
+</div>

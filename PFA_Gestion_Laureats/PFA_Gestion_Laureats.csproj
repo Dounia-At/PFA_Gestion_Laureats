@@ -7,6 +7,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Views\Shared\Partials\**" />
+    <Content Remove="Views\Shared\Partials\**" />
+    <EmbeddedResource Remove="Views\Shared\Partials\**" />
+    <None Remove="Views\Shared\Partials\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CsvHelper" Version="30.0.1" />
     <PackageReference Include="EPPlus" Version="6.2.1" />
     <PackageReference Include="FroalaEditor" Version="4.0.18" />
     <PackageReference Include="MailKit" Version="3.6.0" />
@@ -17,8 +25,9 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.13" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.14" />
     <PackageReference Include="Select2.js" Version="4.0.13" />
+    <PackageReference Include="X.PagedList.Mvc.Core" Version="8.4.7" />
   </ItemGroup>
 
 </Project>

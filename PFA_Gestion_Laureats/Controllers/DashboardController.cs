@@ -105,8 +105,8 @@ namespace PFA_Gestion_Laureats.Controllers
           .ToList();
             ViewBag.top10Technologies = top10Technologies;
 
-            var top10Engagement = db.Entreprises
-          .OrderByDescending(s => (s.stages.Count() + s.experiences.Count()))
+            var top10Engagement = db.Utilisateurs
+          .OrderByDescending(s => s.annonces.Count() )
           .Take(10)
           .ToList();
             ViewBag.top10Engagement = top10Engagement;

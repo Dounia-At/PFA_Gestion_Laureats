@@ -13,6 +13,17 @@ namespace PFA_Gestion_Laureats.Controllers
         {
             this.db = db;
         }
+
+        [Route("/Certificat/Index/{idEtudiant}")]
+        public IActionResult Index(string idEtudiant)
+        {
+
+            IList<Certificat> certificats = db.Certificat.Include(s => s.Etudiant).Where(s => s.Etudiant.Login == idEtudiant).ToList();
+
+            ViewBag.login = idEtudiant;
+            return View(certificats);
+        }
+
         public IActionResult Add()
         {
             return View();

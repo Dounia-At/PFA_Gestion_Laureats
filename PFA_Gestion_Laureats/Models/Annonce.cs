@@ -35,8 +35,73 @@ namespace PFA_Gestion_Laureats.Models
             this.Remuniration = amv.Remuniration;
             this.Nature = amv.Nature;
         }
-        
-        
+
+        public List<Annonce> FilterAnnonces(List<Annonce> annonces, string SearchString, string Nature, string remunerer, string Technologie, string orderBy)
+        {
+            if (!string.IsNullOrEmpty(SearchString))
+            {
+                annonces = annonces.Where(a => a.entreprise.Nom.ToLower().Contains(SearchString.ToLower()) || a.entreprise.Ville.ToLower().Contains(SearchString.ToLower())).ToList();
+            }
+            if (!string.IsNullOrEmpty(Nature))
+            {
+                annonces = annonces.Where(a => a.Nature == Nature).ToList();
+            }
+            if (!string.IsNullOrEmpty(remunerer))
+            {
+                if (remunerer == "Remunerer")
+                {
+                    annonces = annonces.Where(a => a.Remuniration == true).ToList();
+                }
+                else if (remunerer == "NonRemunerer")
+                {
+                    annonces = annonces.Where(a => a.Remuniration == false).ToList();
+                }
+
+            }
+
+            if (!string.IsNullOrEmpty(Technologie))
+            {
+                List<Annonce> annonces1 = new List<Annonce>();
+                foreach (Annonce annonce in annonces.ToList())
+                {
+                    foreach (AnnonceTechnologie technologie in annonce.AnnonceTechnologies)
+                    {
+                        if (technologie.Technologie.Libelle.Equals(Technologie))
+                        {
+                            annonces1.Add(annonce);
+                        }
+                    }
+                }
+                annonces = annonces1;
+            }
+            if (!string.IsNullOrEmpty(orderBy))
+            {
+                switch (orderBy)
+                {
+                    case "plusConsultes":
+
+                        annonces = annonces.OrderByDescending(a => a.postulations.Count).ToList();
+                        break;
+
+                    case "plusPostules":
+
+                        annonces = annonces.OrderByDescending(a => a.postulations.Count(p => p.Date_Postulation != null)).ToList();
+                        break;
+                    case "moinsConsultes":
+
+                        annonces = annonces.OrderBy(a => a.postulations.Count).ToList();
+                        break;
+                    case "moinsPostules":
+
+                        annonces = annonces.OrderBy(a => a.postulations.Count(p => p.Date_Postulation != null)).ToList();
+                        break;
+
+
+                }
+            }
+
+            return annonces;
+        }
 
     }
 }

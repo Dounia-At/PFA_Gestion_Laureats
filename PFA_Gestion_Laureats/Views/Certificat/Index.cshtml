@@ -1,0 +1,82 @@
+﻿@model IList<PFA_Gestion_Laureats.Models.Certificat>
+
+@{
+    ViewData["Title"] = "Certeficats";
+}
+
+<div class="card card-action mb-4">
+    <div class="d-flex justify-content-between">
+        <div class="card-header ">
+            <h5 class="card-action-title mb-0">Certificats</h5>
+            @* <div class="card-action-element">
+            </div>*@
+        </div>
+
+        @if (Convert.ToString(Context.Response.HttpContext.Session.GetString("Login")) == ViewBag.login)
+        {
+            <a asp-controller="Certificat" asp-action="Add" class="btn btn-outline-primary  waves-effect waves-light mb-2 mt-3 mx-2">
+
+                <i class="ti ti-plus me-1"></i>
+
+
+
+
+            </a>
+
+        }
+    </div>
+
+
+    <div class="card-body">
+        <div class="card-action-element">
+            <div class="card-body pb-0">
+                <ul class="timeline ms-1 mb-0">
+                    @if (Model != null && Model.Count > 0)
+                    {
+                        @foreach (Certificat c in Model)
+                        {
+
+                            <li class="timeline-item timeline-item-transparent">
+                                <span class="timeline-point timeline-point-success"></span>
+                                <div class="timeline-event">
+                                    <div class="timeline-header">
+                                        <a asp-controller="Certificat" asp-action="Update" asp-route-id="@c.Id"><h6 class="mb-0">@c.Nom</h6></a>
+                                        <small class="text-muted">
+                                            @c.Organisation
+                                        </small>
+                                    </div>
+                                    @if (c.Date_Expiration != null)
+                                    {
+                                        <p class="mb-2" asp-format="{0:dd/MM/yyyy}">@c.Date_Emission.Date.ToString("MM/dd/yyyy") --  @String.Format("{0:d}",c.Date_Expiration)</p>
+
+                                    }
+                                    else
+                                    {
+                                        <p class="mb-2">@c.Date_Emission.Date.ToString("MM/dd/yyyy") --</p>
+
+                                    }
+
+                                    <div class="d-flex flex-wrap">
+                                        @if (c.Url != null)
+                                        {
+                                            <div class="ms-1">
+                                                <p class="mx-3 my-2">@c.Url</p>
+                                            </div>
+                                        }
+
+                                    </div>
+                                </div>
+                            </li>
+
+                        }
+                    }
+                    else
+                    {
+                        <h3>Aucune Certificat!</h3>
+                    }
+                </ul>
+               
+            </div>
+        </div>
+    </div>
+</div>

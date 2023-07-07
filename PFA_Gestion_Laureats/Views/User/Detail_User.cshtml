@@ -29,9 +29,21 @@
                                     <li class="list-inline-item"></li>
                                 </ul>
                             </div>
-                            <a href="javascript:void(0)" class="btn btn-primary">
-                                <i class="ti ti-messages me-1"></i> Message
-                            </a>
+                            <div>
+                                @if (Convert.ToString(Context.Response.HttpContext.Session.GetString("Role")) == "AgentDirection")
+                                {
+                                     <a asp-action="Update" asp-route-id="@Model.Login" class="btn btn-primary">
+                                        <i class="ti ti-user-check me-1 ti-xs"></i>  Edit
+                                    </a>
+                                    <a href="javascript:void(0)" class="btn btn-primary">
+                                        <i class="ti ti-help me-1 ti-xs"></i> Infos
+                                    </a>
+                                }
+                               
+                                <a href="javascript:void(0)" class="btn btn-primary">
+                                    <i class="ti ti-messages me-1 ti-xs"></i> Message
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -168,8 +180,8 @@
                                 <div class="card-action-element">
                                     <div class="card-body pb-0">
                                         <ul class="timeline ms-1 mb-0">
-                                        @if(Model.stages != null){
-                                        @foreach (Stage s in Model.stages)
+                                        @if(Model.stages != null && Model.stages.Count>0){
+                                        @foreach (Stage s in Model.stages.Take(2))
                                         {
 
                                             <li class="timeline-item timeline-item-transparent">
@@ -197,15 +209,22 @@
                                                     </div>
                                                 </div>
                                             </li>
+                                            
 
                                         }
                                         }
                                         else
                                     {
-                                        <h3>Aucun Stage!</h3>
+                                        <h5>Aucun Stage!</h5>
                                     }
                                 </ul>
-                                    </div>
+                            @if(Model.stages.Count > 2)
+                            {
+                                <div class="d-flex justify-content-center">
+                                    <a asp-controller="Stage" asp-action="Index" asp-route-idEtudiant="@Model.Login">Afficher tous</a>
+                                </div>
+                            }
+                        </div>
                                 </div>
                             </div>
 
@@ -231,9 +250,6 @@
 
                                 <i class="ti ti-plus me-1"></i>
                               
-
-
-
                             </a>
                             
 
@@ -244,9 +260,9 @@
                          <div class="card-action-element">
                             <div class="card-body pb-0">
                                 <ul class="timeline ms-1 mb-0">
-                                    @if(Model.experiences != null)
+                                    @if(Model.experiences != null && Model.experiences.Count>0)
                                     {
-                                        @foreach (ExperiencePro e in Model.experiences)
+                                    @foreach (ExperiencePro e in Model.experiences.Take(2))
                                         {
 
                                             <li class="timeline-item timeline-item-transparent">
@@ -271,9 +287,15 @@
                                     }
                                     else
                                     {
-                                        <h3>Aucune Experience Professionelle</h3>
+                                        <h5>Aucune Experience Professionelle!</h5>
                                     }
                                 </ul>
+                                @if(Model.experiences.Count > 2)
+                            {
+                                <div class="d-flex justify-content-center">
+                                    <a asp-controller="Experience_professionnelle" asp-action="Index" asp-route-idEtudiant="@Model.Login">Afficher tous</a>
+                                </div>
+                            }
                             </div>
                          </div>
                      </div>
@@ -312,9 +334,9 @@
                                <div class="card-action-element">
                                     <div class="card-body pb-0">
                                         <ul class="timeline ms-1 mb-0">
-                                           @if(Model.projets != null)
+                                           @if(Model.projets != null && Model.projets.Count>0)
                                            {
-                                                @foreach (Projet p in Model.projets)
+                                                @foreach (Projet p in Model.projets.Take(2))
                                                 {
 
                                                     <li class="timeline-item timeline-item-transparent">
@@ -342,9 +364,15 @@
                                            }
                                             else
                                             {
-                                                <h3>Aucun Projet!</h3>
+                                                <h5>Aucun Projet!</h5>
                                             }
                                         </ul>
+                                        @if(Model.projets.Count > 2)
+                            {
+                                <div class="d-flex justify-content-center">
+                                    <a asp-controller="Projet" asp-action="Index" asp-route-idEtudiant="@Model.Login">Afficher tous</a>
+                                </div>
+                            }
                                      </div>
                               </div>
                         </div>
@@ -366,9 +394,6 @@
 
                                 <i class="ti ti-plus me-1"></i>
                                
-
-
-
                             </a>
 
                         }
@@ -379,8 +404,8 @@
                         <div class="card-action-element">
                             <div class="card-body pb-0">
                                 <ul class="timeline ms-1 mb-0">
-                                   @if(Model.formations != null){
-                                        @foreach (Formation f in Model.formations)
+                                   @if(Model.formations != null && Model.formations.Count>0){
+                                        @foreach (Formation f in Model.formations.Take(2) )
                                         {
 
                                             <li class="timeline-item timeline-item-transparent">
@@ -408,9 +433,15 @@
                                     }
                                     else
                                     {
-                                        <h3>Aucune Formation!</h3>
+                                        <h5>Aucune Formation!</h5>
                                     }
                                 </ul>
+                            @if (Model.formations.Count > 2)
+                            {
+                                <div class="d-flex justify-content-center">
+                                    <a asp-controller="Formation" asp-action="Index" asp-route-idEtudiant="@Model.Login">Afficher tous</a>
+                                </div>
+                            }
                             </div>
                         </div>
                     </div>
@@ -432,9 +463,6 @@
 
                                     <i class="ti ti-plus me-1"></i>
                                     
-
-
-
                                 </a>
 
                             }
@@ -445,9 +473,9 @@
                             <div class="card-action-element">
                                 <div class="card-body pb-0">
                                     <ul class="timeline ms-1 mb-0">
-                                        @if(Model.certificats != null)
+                                @if (Model.certificats != null && Model.certificats.Count>0)
                                         {
-                                        @foreach (Certificat c in Model.certificats)
+                                        @foreach (Certificat c in Model.certificats.Take(2))
                                         {
 
                                             <li class="timeline-item timeline-item-transparent">
@@ -486,9 +514,15 @@
                                         }
                                         else
                                     {
-                                        <h3>Aucune Certificat!</h3>
+                                        <h5>Aucune Certificat!</h5>
                                     }
                                 </ul>
+                                @if(Model.certificats.Count > 2)
+                            {
+                                <div class="d-flex justify-content-center">
+                                    <a asp-controller="Certificat" asp-action="Index" asp-route-idEtudiant="@Model.Login">Afficher tous</a>
+                                </div>
+                            }
                                 </div>
                             </div>
                         </div>

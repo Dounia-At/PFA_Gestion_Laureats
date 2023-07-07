@@ -82,19 +82,19 @@
                         </div>
                         <!-- /Logo -->
                        @* <h4 class="mb-1 pt-2 mx-5">BIENVENUE</h4>*@
-                        @if (@ViewBag.msgErreur != null)
+                        @if (TempData["msgErreur"] != null)
                         {
                             <div class="alert alert-danger alert-dismissible fade show">
 
-                                <strong>@ViewBag.msgErreur</strong>
+                                <strong>@TempData["msgErreur"]</strong>
                             </div>
                         }
                        
 
-                        <form class="mb-3" method="post" >
+                        <form id="loginForm" class="mb-3" method="post">
                             <div class="mb-3 mt-3">
                                 <label asp-for="Login" class="form-label"></label>
-                                <input asp-for="Login"
+                                <input asp-for="Login" value="@TempData["login"]"
                                        class="form-control"
                                       
                                        placeholder="Votre login"
@@ -110,7 +110,7 @@
                                 </div>
                                 <div class="input-group input-group-merge">
                                    
-                                    <input asp-for="Password"
+                                    <input asp-for="Password" value="@TempData["password"]"
                                            
                                            class="form-control"
                                           
@@ -127,20 +127,26 @@
                                 </div>
                             </div>*@
                             <div class="mb-3">
-                                <button class="btn btn-primary d-grid w-100" type="submit">Se connecter</button>
+                                <button id="submitBtn" class="btn btn-primary d-grid w-100" type="submit">Se connecter</button>
                             </div>
                         </form>
-                        @if (@ViewBag.msgValidation != null)
+
+                        <div id="spinner" class=" text-center  mt-4" style="display: none;">
+                            <i class="fas fa-spinner fa-spin"></i> <span> Veuillez Attendre... </span>
+                        </div>
+
+
+                        @if (TempData["msgValidation"] != null)
                         {
                             <div class="alert alert-info alert-dismissible fade show">
-                               
-                                <strong>Info!</strong> @ViewBag.msgValidation
+
+                                <strong>Info!</strong> @TempData["msgValidation"]
                             </div>
                         }
                        
                         
 
-                        <p class="text-center">
+                        <p class="text-center" id="lien">
                            
                             <a asp-action="Inscription_Etudiant">
                                 <span>Créer un compte</span>
@@ -182,5 +188,42 @@
 
     <!-- Page JS -->
     <script src="../../assets/js/pages-auth.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#loginForm').submit(function (event) {
+                event.preventDefault();
+                $('#lien').hide();
+                $('#spinner').show();
+                $('#submitBtn').prop('disabled', true);
+
+                var formData = $(this).serialize();
+
+
+                $.ajax({
+                    url: '/User/Login',
+                    type: 'POST',
+                    data: formData,
+                    success: function (response) {
+                        // Handle the success response
+                        // Remove the spinner and re-enable the submit button
+                        //$('#spinner').hide();
+
+                        window.location.href = response.redirectToUrl;
+                        
+
+                    },
+                    error: function (xhr, status, error) {
+                        $('#spinner').hide();
+                        $('#lien').show();
+                        $('#submitBtn').prop('disabled', false);
+                        alert('Login failed. Please try again.');
+                    }
+                });
+                return false;
+            });
+        });
+    </script>
 </body>
 </html>
