@@ -1,0 +1,57 @@
+﻿@model PFA_Gestion_Laureats.Models.Technologie
+
+@{
+    ViewData["Title"] = "Nouvelle Technologie";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <h3 class="fw-bold py-2 mb-2 card-header ">
+            <a class="text-muted fw-light" asp-controller="Annonce" asp-action="Annonces">Accueil /</a>
+            <a class="text-muted fw-light" asp-controller="Technologies" asp-action="Index">Technologies /</a>
+            Modifier @Model.Libelle
+        </h3>
+        <div class="card mb-4">
+            <h5 class="card-header">Modifier Technologie</h5>
+        <form asp-action="Edit" method="POST" enctype="multipart/form-data">
+                <div class="card-body">
+
+                    <div class="row">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="mb-3 col-md-12">
+                <div>
+                    <label asp-for="Libelle" class="form-label"></label> <strong style="color:red">*</strong>
+                </div>
+
+
+                <input required asp-for="Libelle" class="form-control" />
+                <span asp-validation-for="Libelle" style="color:red"></span>
+
+            </div>
+                        <input type="hidden"
+                               class="form-control"
+                               asp-for="Logo" />
+            <div class="mb-3 col-md-6">
+                <label>Image </label>
+                <input type="file"
+                       class="form-control"
+                       asp-for="Pic"  />
+                <span asp-validation-for="Pic" style="color:red"></span>
+            </div>
+                    </div>
+            <div class="mt-2">
+                        <button type="submit" class="btn btn-success me-2">Modifier</button>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+
+    </div>
+</div>
+
+
+@section js {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,128 @@
+﻿@using X.PagedList.Mvc.Core;
+@using X.PagedList.Web.Common;
+@using X.PagedList;
+@model IPagedList<PFA_Gestion_Laureats.Models.Technologie>
+
+@{
+    ViewData["Title"] = "Technologies";
+}
+@section js {
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css" />
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+
+    <!-- JavaScript -->
+    <script>
+
+        var deleteButtons = document.querySelectorAll(".deleteButton");
+        deleteButtons.forEach(function (button) {
+            button.addEventListener("click", function (event) {
+
+                event.preventDefault();
+
+
+                swal({
+                    title: "Êtes-vous sûr de vouloir supprimer cette Technologie ?!",
+                    text: "Cette action ne peut pas être annulée !",
+                    type: "warning",
+                    showCancelButton: true,
+                    confirmButtonColor: "#DD6B55",
+                    confirmButtonText: "Oui, supprimer !",
+                    cancelButtonText: "Annuler",
+                    closeOnConfirm: false,
+                    closeOnCancel: true
+                },
+                    function (isConfirmed) {
+                        if (isConfirmed) {
+
+                            var form = document.createElement("form");
+                            form.method = "post";
+                            form.action = "@Url.Action("Delete", "Technologies")/" + button.getAttribute("data-id");
+                            form.innerHTML = '@Html.AntiForgeryToken()';
+                            var submitButton = document.createElement("button");
+                            submitButton.type = "submit";
+                            submitButton.style.display = "none";
+                            form.appendChild(submitButton);
+                            document.body.appendChild(form);
+                            form.submit();
+                        }
+                    });
+            });
+        });
+    </script>
+}
+
+<div class="container-fluid my-4">
+    <h3 class="fw-bold py-2 mb-2 card-header mx-2">
+        <a class="text-muted fw-light" asp-controller="Annonce" asp-action="Annonces">Accueil /</a>
+        Technologies
+    </h3>
+@if (ViewBag.role == "AgentDirection")
+{
+    <div class="container mt-5 d-flex flex-row-reverse">
+        <a class="btn btn-primary" asp-action="Create">
+            <i class="ti ti-plus me-1"></i>
+            <span class="align-middle">Nouvelle Technologie</span>
+        </a>
+        <br />
+    </div>
+
+}
+    <div class="row g-4 mt-2">
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Libelle
+            </th>
+            <th>
+                Logo
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @item.Libelle
+            </td>
+            <td>
+                    <img src="../../assets/img/logo/@item.Logo"
+                         alt="Logo"
+                         class="rounded-circle" style="max-width:100px !important;max-height:100px;" />
+            </td>
+            <td>
+                   <div class="d-flex justify-content-around">
+                        <a class=" btn btn-success  waves-effect" asp-action="Edit" asp-route-id="@item.Id">Edit</a>
+                        <button class=" btn btn-danger  waves-effect   deleteButton" data-id="@item.Id">Supprimer</button>
+
+                   </div>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+
+<div class="row g-4 mt-2">
+    
+    <div class="pagination justify-content-center">
+        @Html.PagedListPager(Model, page => Url.Action("Index", new { page }), new PagedListRenderOptions {
+        Display = PagedListDisplayMode.IfNeeded,
+        ActiveLiElementClass = "active",
+        PageClasses = new[]{ "page-link"},
+        LiElementClasses=new[] { "page-item" },
+        UlElementClasses = new[] { "pagination","justify-content-center", "mt-3" },
+        LinkToNextPageFormat = "Next",
+        LinkToPreviousPageFormat = "Previous",
+        MaximumPageNumbersToDisplay = 5,
+        DisplayLinkToPreviousPage = PagedListDisplayMode.Always,
+        DisplayLinkToNextPage = PagedListDisplayMode.Always
+        })
+    </div>
+</div>
+</div>
+</div>

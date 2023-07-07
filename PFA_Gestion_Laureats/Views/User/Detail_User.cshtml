@@ -66,9 +66,13 @@
                         <li class="d-flex align-items-center mb-3">
                             <i class="ti ti-crown"></i><span class="fw-bold mx-2">Titre:</span> <span>@Model.Titre_Profil</span>
                         </li>
-                        <li class="d-flex align-items-center mb-3">
+                        @if (Model.specialite != null && Model.specialite != "")
+                        {
+                            <li class="d-flex align-items-center mb-3">
                             <i class="ti ti-map-pin"></i><span class="fw-bold mx-2">Address:</span> <span>@Model.Adresse</span>
                         </li>
+                        }
+                        
                         @if (Model.specialite != null)
                         {
                             <li class="d-flex align-items-center mb-3">
@@ -91,17 +95,25 @@
                             </li>
                         }
                     </ul>
-                    <small class="card-text text-uppercase">Contacts</small>
-                    <ul class="list-unstyled mb-4 mt-3">
-                        <li class="d-flex align-items-center mb-3">
-                            <i class="ti ti-phone-call"></i><span class="fw-bold mx-2">Contact:</span>
-                            <span>@Model.Tel</span>
-                        </li>
-                        <li class="d-flex align-items-center mb-3">
-                            <i class="ti ti-mail"></i><span class="fw-bold mx-2">Email:</span>
-                            <span>@Model.Email</span>
-                        </li>
-                    </ul>
+                    @if (!string.IsNullOrEmpty(Model.Tel) || Model.Email != null){
+                         <small class="card-text text-uppercase">Contacts</small>
+                        <ul class="list-unstyled mb-4 mt-3">
+                            @if (!string.IsNullOrEmpty(Model.Tel)){
+                            <li class="d-flex align-items-center mb-3">
+                                <i class="ti ti-phone-call"></i><span class="fw-bold mx-2">Contact:</span>
+                                <span>@Model.Tel</span>
+                            </li>
+                            }
+                            @if (Model.Email != null){
+                            <li class="d-flex align-items-center mb-3">
+                                <i class="ti ti-mail"></i><span class="fw-bold mx-2">Email:</span>
+                                <span>@Model.Email</span>
+                            </li>
+                            }
+                        
+                        </ul>
+                    }
+                   
 
                 </div>
             </div>
