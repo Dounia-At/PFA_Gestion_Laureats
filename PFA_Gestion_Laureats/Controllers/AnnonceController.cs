@@ -16,6 +16,8 @@ using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using PFA_Gestion_Laureats.ViewModels.Annonces;
 using System.Text.RegularExpressions;
 using X.PagedList;
+using System.Web.Helpers;
+using System.Web;
 
 namespace PFA_Gestion_Laureats.Controllers
 {
@@ -111,8 +113,12 @@ namespace PFA_Gestion_Laureats.Controllers
 
             return View(pagedAnnonces);
         }
-
-       
+        public IActionResult MesPostulation()
+        {
+            String login = HttpContext.Session.GetString("Login");
+            List<Postulation> mesPostulation = db.Postulations.Include(postulation => postulation.Etudiant).Include(postulation => postulation.Annonce).ThenInclude(postulation=> postulation.entreprise ).Include(postulation => postulation.Annonce).ThenInclude(postulation => postulation.utilisateur).Where(postulation=>postulation.Etudiant.Login==login && postulation.Date_Postulation != null).AsNoTracking().ToList();
+            return View(mesPostulation);
+        }
         public IActionResult Add()
         {
             
@@ -191,7 +197,7 @@ namespace PFA_Gestion_Laureats.Controllers
         [Authentification]
         public IActionResult Details(int id)
         { 
-            Annonce annonce=db.Annonces.Include(annonce => annonce.utilisateur).Where(an=>an.Id==id).FirstOrDefault();
+            Annonce annonce=db.Annonces.Include(annonce => annonce.utilisateur).Include(a=>a.AnnonceTechnologies).ThenInclude(a=>a.Technologie).Where(an=>an.Id==id).FirstOrDefault();
             if (annonce != null)
             {
                 string login = HttpContext.Session.GetString("Login");
@@ -337,7 +343,40 @@ namespace PFA_Gestion_Laureats.Controllers
             string login = HttpContext.Session.GetString("Login");
             Utilisateur utilisateur = db.Utilisateurs.Where(us => us.Login == login).FirstOrDefault();
             ViewBag.email = utilisateur.Email;
-            return View(); 
+            //string adresseGmail = "abdellaouihajar826@gmail.com";
+            //Adresse e-mail du destinataire
+            //string adresseDestinataire = "hajar99abde@gmail.com";
+            //Sujet de l'e-mail
+            //string sujet = "Sujet de l'e-mail";
+            //Corps de l'e-mail
+            //string corps = "Contenu de l'e-mail";
+
+            //Génération de l'URL de la page d'authentification de Gmail
+            //string urlAuthentification = "https://accounts.google.com/v3/signin/identifier?dsh=S83924030%3A1688428599426994&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ifkv=AeDOFXjUN4qt3tfxRSxc49ZnvBqh0OnMtqKqymynNfa9aeVdh-vGOmg5pKV0IJe0VBWMgmHnMQ9WEA&rip=1&sacu=1&service=mail&flowName=GlifWebSignIn&flowEntry=ServiceLogin";
+
+            //Redirection vers la page d'authentification de Gmail avec les paramètres
+            //string urlConversation = $"https://mail.google.com/mail/?view=cm&fs=1&to={adresseDestinataire}&su={HttpUtility.UrlEncode(sujet)}&body={HttpUtility.UrlEncode(corps)}";
+            //string urlRedirection = $"{urlAuthentification}&continue={HttpUtility.UrlEncode(urlConversation)}";
+            //return Redirect(urlRedirection);
+            string adresseGmail = utilisateur.Email;
+            string adresseDestinataire = an.Email_Reception;
+            string sujet = an.Titre;
+            string corps = " Bonjour,\r\n\r\n Je souhaite postuler pour Ce poste  au sein de votre entreprise. je possède les compétences nécessaires et je suis enthousiaste à l'idée de contribuer à vos objectifs.\r\n\r\n Mon CV est joint pour plus de détails.\r\n\r\n Cordialement,";
+
+            string encodedSubject = HttpUtility.UrlEncode(sujet);
+            string encodedBody = HttpUtility.UrlEncode(corps);
+
+            string urlGmail = $"https://mail.google.com/mail/?view=cm&fs=1&to={adresseDestinataire}&su={encodedSubject}&body={encodedBody}&from={adresseGmail}";
+            Postulation p = db.Postulations.Where(p => p.AnnonceId == an.Id && p.EtudiantId == utilisateur.Id).FirstOrDefault();
+
+            p.Date_Postulation = DateTime.Now;
+           
+            db.Postulations.Update(p);
+            db.SaveChanges();
+            ViewBag.VerifierPostuler = "Vrai";
+            return Redirect(urlGmail);
+
+            //return View(); 
         }
             [HttpPost]
         public ActionResult Postuler(AddPostulerViewModel pmv)
@@ -350,45 +389,69 @@ namespace PFA_Gestion_Laureats.Controllers
                 Postulation p = db.Postulations.Where(p => p.AnnonceId == an.Id && p.EtudiantId == utilisateur.Id).FirstOrDefault();
                 
                     p.Date_Postulation = DateTime.Now;
-                    db.Postulations.Add(p);
-                    db.SaveChanges();
-                
-                try
-                {
-                    using (MailMessage mail = new MailMessage(utilisateur.Email, an.Email_Reception))
-                    {
+                //string senderEmail = "hajar99abde@gmail.com"; // Adresse e-mail de l'expéditeur
+                //string senderPassword = "0671089531"; // Mot de passe de l'expéditeur
 
-                        mail.Subject = an.Titre;
-                        mail.Body = "";
+                //MailMessage mail = new MailMessage();
+                //System.Net.Mail.SmtpClient smtpClient = new System.Net.Mail.SmtpClient("smtp.gmail.com", 587); // Paramètres SMTP pour Gmail (vous pouvez utiliser un autre fournisseur de messagerie)
 
-                        string fileName = Path.GetFileName(pmv.CV.FileName);
-                        mail.Attachments.Add(new Attachment(pmv.CV.OpenReadStream(), fileName));
+                //// Remplir les détails de l'e-mail
+                //mail.From = new MailAddress(senderEmail);
+                //mail.To.Add("abdellaouihajar826@gmail.com");
+                //mail.Subject = an.Titre;
+                //mail.Body = "";
+               
+                //string fileName = Path.GetFileName(pmv.CV.FileName);
+                //mail.Attachments.Add(new Attachment(pmv.CV.OpenReadStream(), fileName));
+                //mail.IsBodyHtml = true;
 
-                        mail.IsBodyHtml = false;
-                        using (System.Net.Mail.SmtpClient smtp = new System.Net.Mail.SmtpClient())
-                        {
-                            smtp.Host = "smtp.gmail.com";
+                //// Configurer le client SMTP
+                //smtpClient.EnableSsl = true;
+                //smtpClient.UseDefaultCredentials = false;
+                //smtpClient.Credentials = new NetworkCredential(senderEmail, senderPassword);
 
-                            NetworkCredential NetworkCred = new NetworkCredential(utilisateur.Email, pmv.password);
-                            // smtp.Connect("smtp.ethereal.email", 587, SecureSocketOptions.StartTls);
-                            smtp.EnableSsl = true;
-                            smtp.UseDefaultCredentials = false;
-                            smtp.Credentials = NetworkCred;
+                //// Envoyer l'e-mail
+                //smtpClient.Send(mail);
+                string adresseGmail = utilisateur.Email;
+                string urlBoiteReception = $"https://mail.google.com/mail/u/0/#inbox?compose=new&to={adresseGmail}";
+                //db.Postulations.Add(p);
+                //db.SaveChanges();
 
-                            smtp.Port = 587;
-                            //smtp.Credentials = CredentialCache.DefaultNetworkCredentials;
-                            smtp.Send(mail);
 
-                        }
 
-                    }
-                }
-                catch (System.Net.Mail.SmtpException ex)
-                {
+                //using (MailMessage mail = new MailMessage(utilisateur.Email, an.Email_Reception))
+                //    {
 
-                    ViewBag.Alert = "Impossible d'envoyer l'e-mail. Vérifiez votre Mot de Passe";
-                    return View();                     
-                }              
+                //        mail.Subject = an.Titre;
+                //        mail.Body = "";
+
+                //        string fileName = Path.GetFileName(pmv.CV.FileName);
+                //        mail.Attachments.Add(new Attachment(pmv.CV.OpenReadStream(), fileName));
+
+                //        mail.IsBodyHtml = false;
+                //        using (System.Net.Mail.SmtpClient smtp = new System.Net.Mail.SmtpClient())
+                //        {
+                //            smtp.Host = "smtp.gmail.com";
+
+                //            NetworkCredential NetworkCred = new NetworkCredential(utilisateur.Email, pmv.password);
+
+
+                //            smtp.UseDefaultCredentials = true;
+                //           smtp.Credentials = NetworkCred;
+
+                //            smtp.Port = 587;
+
+                //            smtp.Credentials = CredentialCache.DefaultNetworkCredentials;
+                //        smtp.EnableSsl = true;
+                //        smtp.Send(mail);
+
+                //        }
+
+                //    }
+
+
+
+
             }
            
             return RedirectToAction("Annonces");

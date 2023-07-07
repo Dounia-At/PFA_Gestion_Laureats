@@ -23,16 +23,28 @@
             </div>
             <div>
             </div>
-            <h5 class="card-title mt-5">@Model.Titre</h5>
-            <h6 class="card-subtitle text-muted">@Model.Date_Creation.Date.ToString("MM/dd/yyyy")</h6>
+            <h4 class="card-title mt-5">@Model.Titre</h4>
+            <h6 class="card-subtitle text-muted mx-2">Publié le  : @Model.Date_Creation.Date.ToString("MM/dd/yyyy")</h6>
             @if (Model.Photo !=null)
             {
                 <img class="img-fluid d-flex mx-auto my-4 rounded"
                      src="~/assets/img/Annones/@Model.Photo"
                      alt="Card image cap" max-width="100%" />
             }
+            <h5 class="mt-4">À propos de l’offre d’emploi</h5>
            
-            <div class="container mt-5">@Html.Raw(Model.Description)</div>
+            <div class="container mt-4">@Html.Raw(Model.Description)</div>
+            
+                <h5>Technologies Demandés</h5>
+                <ul>
+                    @foreach (AnnonceTechnologie tec in Model.AnnonceTechnologies)
+                    {
+
+                        <li>@tec.Technologie.Libelle</li>
+
+                    }
+                </ul>
+            
 
             <p class="card-text"><span class="text-muted fw-light" >le Dernier Délai:  </span>@Model.Date_limite_Deposer.Date.ToString("MM/dd/yyyy")</p>
             @if (Model.utilisateur.Login == Convert.ToString(Context.Response.HttpContext.Session.GetString("Login")))
@@ -47,7 +59,19 @@
             }
             else
             {
-                <a asp-controller="Annonce" asp-action="Postuler" class="btn btn-primary waves-effect"> Postuler</a>
+                @if (ViewBag.VerifierPostuler == "Vrai")
+                {
+                    <button disabled class="btn btn-primary waves-effect"> Postuler</button>
+                    <div class="alert alert-danger alert-dismissible fade show">
+
+                        <strong>Vous êtes Déja Postuler</strong>
+                    </div>
+                }
+                else
+                {
+                    <a asp-controller="Annonce" asp-action="Postuler" class="btn btn-primary waves-effect"> Postuler</a>
+                }
+                
             }
            
            
