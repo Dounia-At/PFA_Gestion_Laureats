@@ -401,56 +401,10 @@
             <!-- endbuild -->
     <!-- Main JS -->
     <script src="../../assets/js/main.js"></script>
-            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-            <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"></script><link href="~/assets/vendor/libs/select2/select2.min.css" rel="stylesheet" />
-            <script src="~/assets/vendor/libs/select2/jquery-1.10.2.min.js"></script>
-            <script src="~/assets/vendor/libs/select2/select2.min.js"></script>
-            <script>
-                $(function () {
-                    
-                    $('#searchBar').select2({
-                        dropdownParent: $('#myModal'),
-                        placeholder: 'Search users',
-                        ajax: {
-                            url: '/User/GetSearchUsers',
-                            dataType: 'json',
-                            delay: 250,
-                            data: function (params) {
-                                return {
-                                    term: params.term
-                                };
-                            },
-                            processResults: function (data) {
-                                return {
-                                    results: data.map(function (item) {
-                                        return {
-                                            id: item.id,
-                                            text: item.name,
-                                            imageUrl: item.ProfilePictureUrl
-                                        };
-                                    })
-                                };
-                            },
-                            cache: true
-                        },
-                        templateResult: function (data) {
-                            if (!data.id) {
-                                return data.text;
-                            }
 
-                            var $result = $('<span><img src="~/assets/img/avatars/' + data.imageUrl + '" alt="Profile Picture" width="50" height="50" />' + data.text + '</span>');
-                            return $result;
-                        },
-                        minimumInputLength: 2
-                    });
-
-                    $('#searchBar').on('select2:select', function (e) {
-                        var data = e.params.data;
-                        window.location.href = '/User/Details/' + data.id;
-                    });
-                });
-
-            </script>
+            <script src="~/js/jquery-3.6.0.min.js"></script>
+            <link href="~/css/jquery-ui.css" rel="stylesheet" />
+            <script src="~/js/jquery-ui.min.js"></script>
     @RenderSection("js", false)
 
 
