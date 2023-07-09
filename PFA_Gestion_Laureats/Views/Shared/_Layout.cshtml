@@ -93,16 +93,15 @@
                                 <div data-i18n="Home">Accueil</div>
                             </a>
                         </li>
-                    }
-                    @if (Convert.ToString(Context.Response.HttpContext.Session.GetString("Role")) == "Etudiant" || (Convert.ToString(Context.Response.HttpContext.Session.GetString("Role")) == "Laureat"))
-                    {
-                        <li class="menu-item active open mt-3">
-                            <a asp-controller="Annonce" asp-action="Annonces" class="menu-link ">
-                                <i class="menu-icon tf-icons ti ti-smart-home"></i>
-                                <div data-i18n="Home">Accueil</div>
+                        <li class="menu-item mt-3">
+                            <a asp-controller="Annonce" asp-action="MesPostulation" class="menu-link ">
+                                <i class="menu-icon tf-icons ti ti-color-swatch"></i>
+                                <div data-i18n="Mes Certificats">Mes Postulations</div>
                             </a>
+
                         </li>
                     }
+                   
 
                    
                    
@@ -115,6 +114,13 @@
                                 <i class="menu-icon tf-icons ti ti-smart-home"></i>
                                 <div data-i18n="Home">Accueil</div>
                             </a>
+                        <li class="menu-item mt-3">
+                            <a asp-controller="Annonce" asp-action="Annonces" class="menu-link ">
+                                <i class="menu-icon tf-icons ti ti-color-swatch"></i>
+                                <div data-i18n="Mes Certificats">Annonces</div>
+                            </a>
+
+                        </li>
                         </li>
                     }
                     <li class="menu-item mt-3">
@@ -169,13 +175,13 @@
                             </a>
 
                         </li>
-                        <li class="menu-item mt-3">
+                       @* <li class="menu-item mt-3">
                             <a href="" class="menu-link ">
                                 <i class="menu-icon tf-icons ti ti-chart-pie"></i>
                                 <div data-i18n="Statistics">Statistics</div>
                             </a>
 
-                        </li>
+                        </li>*@
                         <li class="menu-item mt-3">
                             <a asp-controller="Test" asp-action="Index" class="menu-link ">
                                 <i class="menu-icon tf-icons ti-xs ti ti-file-description me-1"></i>
@@ -205,10 +211,11 @@
                         </li>
                         
                     }
+
                     <li class="menu-item mt-3">
                         <a asp-controller="User" asp-action="Update_Compte" class="menu-link ">
                             <i class="menu-icon tf-icons ti ti-settings"></i>
-                            <div data-i18n="Settings">Settings</div>
+                            <div data-i18n="Settings">Paramètres</div>
                         </a>
 
                     </li>
@@ -328,7 +335,7 @@
                                 </a>
                                 <ul class="dropdown-menu dropdown-menu-end">
                                     <li>
-                                        <a class="dropdown-item" href="pages-account-settings-account.html">
+                                        <a class="dropdown-item" asp-controller="User" asp-action="Update_Compte">
                                             <div class="d-flex">
                                                 <div class="flex-shrink-0 me-3">
                                                     <div class="avatar avatar-online">
@@ -348,13 +355,13 @@
                                     <li>
                                         <a class="dropdown-item" asp-controller="User" asp-action="Details" asp-route-id="@Context.Response.HttpContext.Session.GetString("Login")">
                                             <i class="ti ti-user-check me-2 ti-sm"></i>
-                                            <span class="align-middle">My Profile</span>
+                                            <span class="align-middle">Mon Profil</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="">
+                                        <a class="dropdown-item" asp-controller="User" asp-action="Update_Compte">
                                             <i class="ti ti-settings me-2 ti-sm"></i>
-                                            <span class="align-middle">Settings</span>
+                                            <span class="align-middle">Paramètres</span>
                                         </a>
                                     </li>
 

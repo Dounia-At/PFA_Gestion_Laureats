@@ -53,22 +53,11 @@
     <button class="btn-primary p-2" id="print"><i class="fa-solid fa-print fa-l"></i></button>
 </div>
 @section js{
+    <script src="~/html2pdf/cdnjs.cloudflare.com_ajax_libs_html2pdf.js_0.10.1_html2pdf.bundle.min.js"></script>
 
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+   @* <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>*@
     <script>
-        //document.getElementById('print').addEventListener('click', function () {
-        //    const printContents = document.getElementById('content').innerHTML;
-        //    const iframe = document.createElement('iframe');
-
-        //    //iframe.style.display = 'none';
-        //    document.body.appendChild(iframe);
-
-        //    const iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
-        //    iframeDocument.body.innerHTML = printContents;
-
-        //    iframe.contentWindow.print();
-        //});
+        
 
 
 
@@ -96,53 +85,7 @@
 
 
 
-        //document.getElementById('print').addEventListener('click', function () {
-        //    // Obtenir le contenu HTML et CSS à convertir en PDF
-        //    var htmlContent = document.getElementById('content').innerHTML;
-        //    //var cssContent = '<style>' + document.getElementById('css').innerHTML + '</style>';
-
-        //    // Combiner le contenu HTML et CSS
-        //    //var combinedContent = htmlContent;
-
-        //    //// Options de configuration pour html2pdf
-        //    //var options = {
-        //    //    filename: 'fichier.pdf',
-        //    //    image: { type: 'jpeg', quality: 0.98 },
-        //    //    html2canvas: { scale: 2 },
-        //    //    jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
-        //    //};
-        //    //window.print();
-        //    const printContents = document.getElementById('content').innerHTML;
-        //    const originalContents = document.body.innerHTML;
-        //    document.body.innerHTML = printContents;
-        //    window.print();
-        //    document.body.innerHTML = originalContents;
-           
-
-
-            // Convertir en PDF avec html2pdf
-           //html2pdf().set(options).from(combinedContent).outputPdf();
-            
-        //});
-        //document.getElementById('btnGeneratePDF').addEventListener('click', function () {
-        //    // Obtenir le contenu HTML et CSS à convertir en PDF
-        //    var htmlContent = document.getElementById('content').innerHTML;
-        //    //var cssContent = '<style>' + document.getElementById('css').innerHTML + '</style>';
-
-        //    // Combiner le contenu HTML et CSS
-        //    var combinedContent = htmlContent;
-
-        //    // Options de configuration pour html2pdf
-        //    var options = {
-        //        filename: 'fichier.pdf',
-        //        image: { type: 'jpeg', quality: 0.98 },
-        //        html2canvas: { scale: 2 },
-        //        jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
-        //    };
-            
-        //    html2pdf().set(options).from(combinedContent).save();
-
-        //});
+       
         document.getElementById('btnGeneratePDF').addEventListener('click', function () {
             var htmlContent = document.getElementById('content').innerHTML;
             var combinedContent = htmlContent;

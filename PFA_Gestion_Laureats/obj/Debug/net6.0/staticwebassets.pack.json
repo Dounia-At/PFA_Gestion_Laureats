@@ -2369,6 +2369,10 @@
       "PackagePath": "staticwebassets\\froala\\froala_editor.pkgd.min.js"
     },
     {
+      "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\html2pdf\\cdnjs.cloudflare.com_ajax_libs_html2pdf.js_0.10.1_html2pdf.bundle.min.js",
+      "PackagePath": "staticwebassets\\html2pdf\\cdnjs.cloudflare.com_ajax_libs_html2pdf.js_0.10.1_html2pdf.bundle.min.js"
+    },
+    {
       "Id": "C:\\Users\\Computer\\OneDrive\\Documents\\GitHub\\PFA_Gestion_Laureats\\PFA_Gestion_Laureats\\wwwroot\\js\\chat.js",
       "PackagePath": "staticwebassets\\js\\chat.js"
     },
