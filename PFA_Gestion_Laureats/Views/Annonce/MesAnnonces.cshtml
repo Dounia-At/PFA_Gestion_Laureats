@@ -52,10 +52,7 @@
             });
         });
     </script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0/themes/smoothness/jquery-ui.css" />
-    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"></script>
-
+   
     <script type="text/javascript">
         $(document).ready(function () {
             $("#Name").autocomplete({
@@ -159,7 +156,7 @@
                                                 <div class="ms-auto">
                                                     @if (annonce.postulations == null || annonce.postulations.Count(p => p.Date_Postulation != null) == 0)
                                                     {
-                                                        <a href="javascript:;"><span class="badge bg-label-secondary">0</span></a>
+                                                        <a href="javascript:;" class="me-2"><span class="badge bg-label-secondary">0</span></a>
                                                     }
                                                     else
                                                     {
