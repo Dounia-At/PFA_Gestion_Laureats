@@ -105,7 +105,7 @@ namespace PFA_Gestion_Laureats.Controllers
                 }
             }
 
-            int pageSize =   9  ; // Number of cities to display per page
+            int pageSize =   6  ; // Number of cities to display per page
             int pageNumber = page ?? 1; // Default page number
 
           

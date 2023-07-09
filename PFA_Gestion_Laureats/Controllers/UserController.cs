@@ -15,6 +15,13 @@ using System.Globalization;
 using CsvHelper.Configuration.Attributes;
 using CsvHelper.Configuration;
 using System.Web.Helpers;
+using Microsoft.AspNetCore.Mvc.ViewEngines;
+using Microsoft.AspNetCore.Mvc.ViewFeatures;
+using iTextSharp.text;
+using iTextSharp.text.pdf;
+using iTextSharp.tool.xml;
+using Microsoft.AspNetCore.Mvc.ModelBinding;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace PFA_Gestion_Laureats.Controllers
 {
@@ -1092,6 +1099,76 @@ namespace PFA_Gestion_Laureats.Controllers
         {
             var res = db.Utilisateurs.Where(u => u.Nom.ToUpper().Contains(term) || u.Prenom.ToUpper().Contains(term)).ToList();
             return View(res);
+        }
+        public async Task<IActionResult> GeneratePDF(int id)
+        {
+            Etudiant model = db.Etudiants.Where(v => v.Id == id).FirstOrDefault();
+            ViewBag.Password = model.Password;
+           ProfilViewModel etudiant = new ProfilViewModel(model);
+
+            //string viewContent = await ViewToString(ControllerContext, "GeneratePDF", model);
+
+            //byte[] pdfBytes;
+
+            //using (var output = new MemoryStream())
+            //{
+            //    using (var document = new Document())
+            //    {
+            //        iTextSharp.text.pdf.PdfWriter writer = PdfWriter.GetInstance(document, output);
+            //        document.Open();
+
+
+            //        using (var htmlStream = new MemoryStream(Encoding.UTF8.GetBytes(viewContent)))
+            //        {
+
+            //            XMLWorkerHelper.GetInstance().ParseXHtml(writer, document, htmlStream, null, Encoding.UTF8);
+            //        }
+
+            //        document.Close();
+            //    }
+
+            //    pdfBytes = output.ToArray();
+            //}
+            //string base64PDF = Convert.ToBase64String(pdfBytes);
+
+
+
+            //Response.Headers["Content-Disposition"] = "inline; filename="+model.Nom+" "+model.Prenom+".pdf";
+            //return File(pdfBytes, "application/pdf");
+            return View(etudiant);
+        }
+
+        private async Task<string> ViewToString(ControllerContext context, string viewName, object model)
+        {
+           
+            var viewData = new ViewDataDictionary(new EmptyModelMetadataProvider(), new ModelStateDictionary())
+            {
+                Model = model
+            };
+
+            using (var sw = new StringWriter())
+            {
+                var viewResult = new ViewResult
+                {
+                    ViewName = viewName,
+                    ViewData = viewData,
+                    TempData = context.HttpContext.RequestServices.GetService<ITempDataDictionary>(),
+                    ViewEngine = context.HttpContext.RequestServices.GetService<ICompositeViewEngine>()
+                };
+                var serviceProvider = context.HttpContext.RequestServices;
+                var controllerType = context.ActionDescriptor.ControllerTypeInfo.AsType();
+                var controller = ActivatorUtilities.CreateInstance(serviceProvider, controllerType) as Controller;
+
+                controller.ControllerContext = new ControllerContext(context);
+
+                var viewEngineResult = viewResult.ViewEngine.FindView(context, viewResult.ViewName, false);
+                var view = viewEngineResult.View;
+
+                var viewContext = new ViewContext(context, view, viewData, controller.TempData, sw, new HtmlHelperOptions());
+
+                await view.RenderAsync(viewContext);
+                return sw.ToString();
+            }
         }
 
 

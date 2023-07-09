@@ -85,12 +85,38 @@
                     <li class="menu-header small text-uppercase">
                         <span class="menu-header-text">Bienvenue</span>
                     </li>
-                    <li class="menu-item active open mt-3">
-                        <a href="" class="menu-link ">
-                            <i class="menu-icon tf-icons ti ti-smart-home"></i>
-                            <div data-i18n="Home">Accueil</div>
-                        </a>
-                    </li>
+                     @if (Convert.ToString(Context.Response.HttpContext.Session.GetString("Role")) == "Etudiant" || (Convert.ToString(Context.Response.HttpContext.Session.GetString("Role")) == "Laureat"))
+                    {
+                        <li class="menu-item active open mt-3">
+                            <a asp-controller="Annonce" asp-action="Annonces" class="menu-link ">
+                                <i class="menu-icon tf-icons ti ti-smart-home"></i>
+                                <div data-i18n="Home">Accueil</div>
+                            </a>
+                        </li>
+                    }
+                    @if (Convert.ToString(Context.Response.HttpContext.Session.GetString("Role")) == "Etudiant" || (Convert.ToString(Context.Response.HttpContext.Session.GetString("Role")) == "Laureat"))
+                    {
+                        <li class="menu-item active open mt-3">
+                            <a asp-controller="Annonce" asp-action="Annonces" class="menu-link ">
+                                <i class="menu-icon tf-icons ti ti-smart-home"></i>
+                                <div data-i18n="Home">Accueil</div>
+                            </a>
+                        </li>
+                    }
+
+                   
+                   
+                    @if (Convert.ToString(Context.Response.HttpContext.Session.GetString("Role")) == "AgentDirection")
+                    {
+
+
+                        <li class="menu-item active open mt-3">
+                            <a asp-controller="Dashboard" asp-action="Index" class="menu-link ">
+                                <i class="menu-icon tf-icons ti ti-smart-home"></i>
+                                <div data-i18n="Home">Accueil</div>
+                            </a>
+                        </li>
+                    }
                     <li class="menu-item mt-3">
                         <a href="" class="menu-link">
                             <i class="menu-icon tf-icons ti ti-messages"></i>
@@ -98,18 +124,6 @@
                             <div class="badge bg-label-primary rounded-pill ms-auto">3</div>
                         </a>
                     </li>
-                   @if (Convert.ToString(Context.Response.HttpContext.Session.GetString("Role")) == "Etudiant" || (Convert.ToString(Context.Response.HttpContext.Session.GetString("Role")) == "Laureat"))
-                    {
-                       
-
-                        <li class="menu-item mt-3">
-                            <a asp-controller="Annonce"  asp-action="MesPostulation" class="menu-link">
-                                <i class="menu-icon tf-icons ti ti-checkbox"></i>
-                                <div data-i18n="Form Validation">Mes Postulations</div>
-                            </a>
-                        </li>
-                    }
-                    
                    @* @if (Convert.ToString(Context.Response.HttpContext.Session.GetString("Role")) == "Etudiant" || (Convert.ToString(Context.Response.HttpContext.Session.GetString("Role")) == "Laureat"))
                     {
                        
