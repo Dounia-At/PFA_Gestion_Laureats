@@ -100,6 +100,21 @@
                             </a>
 
                         </li>
+                        <li class="menu-item mt-3">
+                            <a asp-controller="Test" asp-action="Index" class="menu-link ">
+                                <i class="menu-icon tf-icons ti-xs ti ti-file-description me-1"></i>
+                                <div data-i18n="Statistics">Tests</div>
+                            </a>
+
+                        </li>
+                        <li class="menu-item mt-3">
+                            <a asp-controller="Entreprise" asp-action="Index" class="menu-link ">
+                                <i class=" menu-icon tf-icons ti ti-layout-grid ti-xs me-1"></i>
+                                <div data-i18n="Mes Projets">Entreprises</div>
+                            </a>
+
+                        </li>
+                       
                     }
                    
 
@@ -114,6 +129,7 @@
                                 <i class="menu-icon tf-icons ti ti-smart-home"></i>
                                 <div data-i18n="Home">Accueil</div>
                             </a>
+                        </li>
                         <li class="menu-item mt-3">
                             <a asp-controller="Annonce" asp-action="Annonces" class="menu-link ">
                                 <i class="menu-icon tf-icons ti ti-color-swatch"></i>
@@ -121,7 +137,44 @@
                             </a>
 
                         </li>
+                        <li class="menu-item mt-3">
+                            <a asp-controller="Technologies" asp-action="Index" class="menu-link ">
+                                <i class=" menu-icon tf-icons ti ti-layout-grid ti-xs me-1"></i>
+                                <div data-i18n="Mes Projets">Technologies</div>
+                            </a>
+
                         </li>
+                        <li class="menu-item mt-3">
+                            <a asp-controller="User" asp-action="Validation" class="menu-link ">
+                                <i class="menu-icon tf-icons ti ti-users"></i>
+                                <div data-i18n="Users">Utilisateurs</div>
+                            </a>
+
+                        </li>
+                       
+                        <li class="menu-item mt-3">
+                            <a asp-controller="Test" asp-action="Index" class="menu-link ">
+                                <i class="menu-icon tf-icons ti-xs ti ti-file-description me-1"></i>
+                                <div data-i18n="Statistics">Tests</div>
+                            </a>
+
+                        </li>
+                        <li class="menu-item mt-3">
+                            <a asp-controller="Entreprise" asp-action="Index" class="menu-link ">
+                                <i class=" menu-icon tf-icons ti ti-layout-grid ti-xs me-1"></i>
+                                <div data-i18n="Mes Projets">Entreprises</div>
+                            </a>
+
+                        </li>
+                        <li class="menu-item mt-3">
+                            <a asp-controller="User" asp-action="Add_Agent" class="menu-link ">
+                                <i class=" menu-icon ti-xs me-1 ti ti-user-plus me-1"></i>
+                                <div data-i18n="Mes Projets">Comptes</div>
+                            </a>
+
+                        </li>
+
+
                     }
                     <li class="menu-item mt-3">
                         <a href="" class="menu-link">
@@ -166,40 +219,7 @@
                         
                         
                     }*@
-                    @if (Convert.ToString(Context.Response.HttpContext.Session.GetString("Role")) == "AgentDirection")
-                    {
-                        <li class="menu-item mt-3">
-                            <a asp-controller="User" asp-action="Validation" class="menu-link ">
-                                <i class="menu-icon tf-icons ti ti-users"></i>
-                                <div data-i18n="Users">Utilisateurs</div>
-                            </a>
-
-                        </li>
-                       @* <li class="menu-item mt-3">
-                            <a href="" class="menu-link ">
-                                <i class="menu-icon tf-icons ti ti-chart-pie"></i>
-                                <div data-i18n="Statistics">Statistics</div>
-                            </a>
-
-                        </li>*@
-                        <li class="menu-item mt-3">
-                            <a asp-controller="Test" asp-action="Index" class="menu-link ">
-                                <i class="menu-icon tf-icons ti-xs ti ti-file-description me-1"></i>
-                                <div data-i18n="Statistics">Tests</div>
-                            </a>
-
-                        </li>
-                        <li class="menu-item mt-3">
-                            <a asp-controller="Entreprise" asp-action="Index" class="menu-link ">
-                                <i class=" menu-icon tf-icons ti ti-layout-grid ti-xs me-1"></i>
-                                <div data-i18n="Mes Projets">Entreprises</div>
-                            </a>
-
-                        </li>
-                       
-                       
-
-                    }
+                  
                     @if (Convert.ToString(Context.Response.HttpContext.Session.GetString("Role")) == "AgentDirection" || (Convert.ToString(Context.Response.HttpContext.Session.GetString("Role")) == "Laureat"))
                     {
                         <li class="menu-item mt-3">
