@@ -1,0 +1,109 @@
+﻿@model PFA_Gestion_Laureats.ViewModels.Users.ProfilViewModel
+<div class="">
+    <div class="col-md-12">
+        <h3 class="fw-bold py-2 mb-4 mt-2 card-header ">
+            <a class="text-muted fw-light" asp-controller="Annonce" asp-action="Annonces">Accueil / </a>Fiche d'Etudiant
+           
+        </h3>
+        <div class="card mb-4">
+
+    <div id="content">
+      <div class="card-body" >
+                    <img class=" " src="~/assets/img/logo/eheio.png" width="80" height="80" />
+                    <div> <h1 class="p-10  mx-4 text-center col-md-12 col-xl-12 col-lg-12 text-danger" align="center" style="color:red">Fiche d'Etudiant</h1></div>
+                   
+                  @*  <div class="mb-4  d-flex justify-content-between d-flex align-items-center col-md-6 col-xl-3 col-lg-6">
+                        <div class=" d-flex align-items-center d-flex justify-content-between  d-flex flex-row-reverse mb-3 col-md-12 col-xl-3 col-lg-4 ">
+                            <h1 class="p-10   text-danger ">Fiche d'Etudiant</h1>
+                <img class=" mx-4 my-4 rounded col-3"src="~/assets/img/logo/eheio.png" width="150" height="150" />
+                  
+                <span class="app-brand-text fw-bold"> Vuexy </span>
+              </div>*@
+                        @*<img class=" col-md-12 col-xl-12 col-lg-12 d-flex align-items-center mx-4 my-4 rounded col-3" src="~/assets/img/logo/eheio.png" width="70" height="70" />
+                      
+         
+            </div>*@
+       
+      </div>
+
+      
+
+   @* <img class="img-fluid d-flex mx-auto my-4 rounded "src="~/assets/img/logo/eheio.png" />*@
+        <div class="container mt-4 mx-4" >
+                    <h4 class="mt-4  " ><b>Nom :</b> @Model.Nom</h4>
+                    <h4 class="mt-4 "  ><b>Filiére: </b>@Model.specialite</h4>
+                    <h4 class="mt-4 " ><b>Prénom :</b>@Model.Prenom</h4>
+
+                  
+                    <h4 class="mt-4 "><b>Login:  </b> @Model.Login</h4>
+                    <h4 class="mt-4 " ><b>Mot de passe :</b> @ViewBag.Password</h4>
+
+
+        </div>
+    </div>
+  
+
+   
+</div>
+</div>
+</div>
+
+<div class="container  d-flex flex-row-reverse  mx-3">
+    <button class="btn-primary p-2 mx-2" id="btnGeneratePDF"><i class="fa-sharp fa-solid fa-download fa-bounce fa"></i></button>
+    <button class="btn-primary p-2" id="print"><i class="fa-solid fa-print fa-l"></i></button>
+</div>
+@section js{
+    <script src="~/html2pdf/cdnjs.cloudflare.com_ajax_libs_html2pdf.js_0.10.1_html2pdf.bundle.min.js"></script>
+
+   @* <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>*@
+    <script>
+        
+
+
+
+        document.getElementById('print').addEventListener('click', function () {
+            const contentToPrint = document.getElementById('content').cloneNode(true);
+            const printContainer = document.createElement('div');
+
+            printContainer.appendChild(contentToPrint);
+
+            const temporaryContainer = document.createElement('div');
+            temporaryContainer.appendChild(printContainer);
+
+            const printWindow = window.open('', '_blank');
+            printWindow.document.open();
+            printWindow.document.write(temporaryContainer.innerHTML);
+            printWindow.document.close();
+
+            printWindow.onload = function () {
+                printWindow.print();
+                printWindow.close();
+            };
+        });
+
+
+
+
+
+       
+        document.getElementById('btnGeneratePDF').addEventListener('click', function () {
+            var htmlContent = document.getElementById('content').innerHTML;
+            var combinedContent = htmlContent;
+            var options = {
+                filename: 'fichier.pdf',
+                image: { type: 'jpeg', quality: 0.98 },
+                html2canvas: { scale: 2 },
+                jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+            };
+
+            var pdfInstance = html2pdf();
+            pdfInstance.set(options).from(combinedContent).save();
+        });
+
+               
+    </script>
+
+}
+
+
+

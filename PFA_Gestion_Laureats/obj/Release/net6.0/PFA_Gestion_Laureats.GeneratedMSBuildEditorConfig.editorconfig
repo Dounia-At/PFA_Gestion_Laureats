@@ -52,6 +52,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2VydGlmaWNhdFxBZGQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Computer/OneDrive/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/Certificat/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2VydGlmaWNhdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Computer/OneDrive/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/Certificat/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2VydGlmaWNhdFxVcGRhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -80,12 +84,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhwZXJpZW5jZV9wcm9mZXNzaW9ubmVsbGVcQWRkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Computer/OneDrive/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/Experience_professionnelle/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhwZXJpZW5jZV9wcm9mZXNzaW9ubmVsbGVcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Computer/OneDrive/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/Experience_professionnelle/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhwZXJpZW5jZV9wcm9mZXNzaW9ubmVsbGVcVXBkYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Computer/OneDrive/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/Formation/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybWF0aW9uXEFkZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Computer/OneDrive/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/Formation/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybWF0aW9uXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Computer/OneDrive/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/Formation/Update.cshtml]
@@ -112,6 +124,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamV0XEFkZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Computer/OneDrive/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/Projet/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamV0XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Computer/OneDrive/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/Projet/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamV0XFVwZGF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -128,8 +144,28 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZ2VcQ29udGVudVN1cHBsZW1lbnRhaXJlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Computer/OneDrive/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/Stage/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZ2VcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Computer/OneDrive/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/Stage/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZ2VcVXBkYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Computer/OneDrive/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/Technologies/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVjaG5vbG9naWVzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Computer/OneDrive/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/Technologies/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVjaG5vbG9naWVzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Computer/OneDrive/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/Technologies/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVjaG5vbG9naWVzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Computer/OneDrive/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/Technologies/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVjaG5vbG9naWVzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Computer/OneDrive/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/Test/Add.cshtml]
@@ -164,8 +200,12 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxEZXRhaWxfVXNlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Computer/OneDrive/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/User/ImportExcel.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxJbXBvcnRFeGNlbC5jc2h0bWw=
+[C:/Users/Computer/OneDrive/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/User/GeneratePDF.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxHZW5lcmF0ZVBERi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Computer/OneDrive/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/User/ImportUsers.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxJbXBvcnRVc2Vycy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Computer/OneDrive/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/User/Inscription_Etudiant.cshtml]
@@ -180,8 +220,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Computer/OneDrive/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/User/Parametres.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxQYXJhbWV0cmVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Computer/OneDrive/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/User/Profil.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxQcm9maWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Computer/OneDrive/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/User/SearchUsers.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxTZWFyY2hVc2Vycy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Computer/OneDrive/Documents/GitHub/PFA_Gestion_Laureats/PFA_Gestion_Laureats/Views/User/Update_Compte.cshtml]
