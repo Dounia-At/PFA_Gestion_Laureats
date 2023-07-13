@@ -17,6 +17,7 @@
         
         //var editor = new FroalaEditor('#example');
 
+        
 
         var editor = new FroalaEditor('#example', {
             imageUpload: false,
@@ -37,7 +38,9 @@
             document.getElementById(divId).style.display = element.value == "PFE" || element.value == "PFA" ? 'block' : 'none';
         }
     </script>
-   
+    <script src="~/js/jquery-3.6.0.min.js"></script>
+    <link href="~/css/jquery-ui.css" rel="stylesheet" />
+    <script src="~/js/jquery-ui.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
             $("#Name").autocomplete({
@@ -137,7 +140,7 @@
                     </div>
                     <div id="myModal" class="col-md-12">
                         <label class="form-label" >Technologies<strong style="color:red"></strong></label>
-                        <select id="techno" class="form-control" asp-items="ViewBag.technologies" name="technologies" multiple="multiple">
+                        <select id="techno" class="form-control" asp-items="@ViewBag.technologies" name="technologies" multiple="multiple">
                         </select>
                     </div>
                     
