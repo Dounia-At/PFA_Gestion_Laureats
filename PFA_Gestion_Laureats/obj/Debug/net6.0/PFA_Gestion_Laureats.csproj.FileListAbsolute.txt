@@ -642,3 +642,5 @@ C:\Users\Computer\OneDrive\Documents\GitHub\PFA_Gestion_Laureats\PFA_Gestion_Lau
 C:\Users\Computer\OneDrive\Documents\GitHub\PFA_Gestion_Laureats\PFA_Gestion_Laureats\obj\Debug\net6.0\PFA_Gestion_Laureats.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Computer\OneDrive\Documents\GitHub\PFA_Gestion_Laureats\PFA_Gestion_Laureats\bin\Debug\net6.0\itextsharp.dll
 C:\Users\Computer\OneDrive\Documents\GitHub\PFA_Gestion_Laureats\PFA_Gestion_Laureats\bin\Debug\net6.0\itextsharp.xmlworker.dll
+C:\Users\atoin\Documents\GitHub\PFA_Gestion_Laureats\PFA_Gestion_Laureats\bin\Debug\net6.0\itextsharp.dll
+C:\Users\atoin\Documents\GitHub\PFA_Gestion_Laureats\PFA_Gestion_Laureats\bin\Debug\net6.0\itextsharp.xmlworker.dll

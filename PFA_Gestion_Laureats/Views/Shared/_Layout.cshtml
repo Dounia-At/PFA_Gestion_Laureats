@@ -87,7 +87,7 @@
                     </li>
                      @if (Convert.ToString(Context.Response.HttpContext.Session.GetString("Role")) == "Etudiant" || (Convert.ToString(Context.Response.HttpContext.Session.GetString("Role")) == "Laureat"))
                     {
-                        <li class="menu-item active open mt-3">
+                        <li class="menu-item  open mt-3">
                             <a asp-controller="Annonce" asp-action="Annonces" class="menu-link ">
                                 <i class="menu-icon tf-icons ti ti-smart-home"></i>
                                 <div data-i18n="Home">Accueil</div>
@@ -124,7 +124,7 @@
                     {
 
 
-                        <li class="menu-item active open mt-3">
+                        <li class="menu-item  open mt-3">
                             <a asp-controller="Dashboard" asp-action="Index" class="menu-link ">
                                 <i class="menu-icon tf-icons ti ti-smart-home"></i>
                                 <div data-i18n="Home">Accueil</div>
