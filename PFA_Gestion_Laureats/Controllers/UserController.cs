@@ -25,6 +25,14 @@ namespace PFA_Gestion_Laureats.Controllers
         {
             this.db = db;
         }
+        public IActionResult GeneratePDF(int id)
+        {
+            Etudiant etudiant = db.Etudiants.Where(u => u.Id == id).FirstOrDefault();
+            ProfilViewModel model = new ProfilViewModel(etudiant);
+            ViewBag.Password = etudiant.Password;
+            return View(model);
+        }
+
         public IActionResult Confirm(int id)
         {
             Utilisateur utilisateur = db.Utilisateurs.Find(id);

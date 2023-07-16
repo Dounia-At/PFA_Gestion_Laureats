@@ -54,32 +54,43 @@
 </div>
 @section js{
     <script src="~/html2pdf/cdnjs.cloudflare.com_ajax_libs_html2pdf.js_0.10.1_html2pdf.bundle.min.js"></script>
-
+   
+   
+    <script src="~/lib/jquery/dist/jquery.js"></script>
    @* <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>*@
     <script>
-        
-
-
-
         document.getElementById('print').addEventListener('click', function () {
-            const contentToPrint = document.getElementById('content').cloneNode(true);
-            const printContainer = document.createElement('div');
+            const printContents = document.getElementById('content').innerHTML;
+            const iframe = document.createElement('iframe');
 
-            printContainer.appendChild(contentToPrint);
+            //iframe.style.display = 'none';
+            document.body.appendChild(iframe);
 
-            const temporaryContainer = document.createElement('div');
-            temporaryContainer.appendChild(printContainer);
+            const iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
+            iframeDocument.body.innerHTML = printContents;
 
-            const printWindow = window.open('', '_blank');
-            printWindow.document.open();
-            printWindow.document.write(temporaryContainer.innerHTML);
-            printWindow.document.close();
-
-            printWindow.onload = function () {
-                printWindow.print();
-                printWindow.close();
-            };
+            iframe.contentWindow.print();
         });
+        //document.getElementById('print').addEventListener('click', function () {
+        //    const contentToPrint = document.getElementById('content').cloneNode(true);
+        //    const printContainer = document.createElement('div');
+
+        //    printContainer.appendChild(contentToPrint);
+
+        //    const temporaryContainer = document.createElement('div');
+        //    temporaryContainer.appendChild(printContainer);
+
+        //    const printWindow = window.open('', '_blank');
+        //    printWindow.document.open();
+        //    printWindow.document.write(temporaryContainer.innerHTML);
+        //    printWindow.document.close();
+
+        //    printWindow.onload = function () {
+        //        printWindow.print();
+        //        printWindow.close();
+        //    };
+        //    printWindow.print();
+        //});
 
 
 
@@ -100,7 +111,7 @@
             pdfInstance.set(options).from(combinedContent).save();
         });
 
-               
+
     </script>
 
 }

@@ -40,8 +40,8 @@ namespace PFA_Gestion_Laureats.Controllers
             ViewBag.Technologie = Technologie;
             ViewBag.orderBy = orderBy;
 
-
-            List<Annonce> annonces = db.Annonces.Include(annonce => annonce.utilisateur).Include(annonce => annonce.entreprise).Include(annonce => annonce.AnnonceTechnologies).Include(annonce => annonce.postulations).OrderByDescending(an => an.Date_Creation).AsNoTracking().ToList();
+            List<Annonce> annonces = db.Annonces.Include(annonce => annonce.utilisateur).Include(annonce => annonce.entreprise).Include(annonce => annonce.AnnonceTechnologies).ThenInclude(a => a.Technologie).Include(annonce => annonce.postulations).OrderByDescending(an => an.Date_Creation).AsNoTracking().ToList();
+            //List<Annonce> annonces = db.Annonces.Include(annonce => annonce.utilisateur).Include(annonce => annonce.entreprise).Include(annonce => annonce.AnnonceTechnologies).Include(annonce => annonce.postulations).OrderByDescending(an => an.Date_Creation).AsNoTracking().ToList();
 
             if (!string.IsNullOrEmpty(SearchString))
             {
@@ -105,7 +105,7 @@ namespace PFA_Gestion_Laureats.Controllers
                 }
             }
 
-            int pageSize =   9  ; // Number of cities to display per page
+            int pageSize =   6  ; // Number of cities to display per page
             int pageNumber = page ?? 1; // Default page number
 
           
@@ -224,7 +224,7 @@ namespace PFA_Gestion_Laureats.Controllers
         {
             string login = HttpContext.Session.GetString("Login");
 
-            int pageSize = 9; // Number of cities to display per page
+            int pageSize = 6; // Number of cities to display per page
             int pageNumber = page ?? 1; // Default page number
 
             List<Annonce> annonces = db.Annonces.Include(annonce => annonce.utilisateur).Include(annonce => annonce.postulations).Include(annonce=>annonce.entreprise).Where(an => an.utilisateur.Login == login).OrderByDescending(an => an.Date_Creation).AsNoTracking().ToList();
@@ -355,7 +355,7 @@ namespace PFA_Gestion_Laureats.Controllers
             //string urlAuthentification = "https://accounts.google.com/v3/signin/identifier?dsh=S83924030%3A1688428599426994&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ifkv=AeDOFXjUN4qt3tfxRSxc49ZnvBqh0OnMtqKqymynNfa9aeVdh-vGOmg5pKV0IJe0VBWMgmHnMQ9WEA&rip=1&sacu=1&service=mail&flowName=GlifWebSignIn&flowEntry=ServiceLogin";
 
             //Redirection vers la page d'authentification de Gmail avec les paramètres
-            //string urlConversation = $"https://mail.google.com/mail/?view=cm&fs=1&to={adresseDestinataire}&su={HttpUtility.UrlEncode(sujet)}&body={HttpUtility.UrlEncode(corps)}";
+          
             //string urlRedirection = $"{urlAuthentification}&continue={HttpUtility.UrlEncode(urlConversation)}";
             //return Redirect(urlRedirection);
             string adresseGmail = utilisateur.Email;
@@ -365,8 +365,9 @@ namespace PFA_Gestion_Laureats.Controllers
 
             string encodedSubject = HttpUtility.UrlEncode(sujet);
             string encodedBody = HttpUtility.UrlEncode(corps);
+            string urlGmail = $"https://mail.google.com/mail/?view=cm&fs=1&to={adresseDestinataire}&su={HttpUtility.UrlEncode(sujet)}&body={HttpUtility.UrlEncode(corps)}";
 
-            string urlGmail = $"https://mail.google.com/mail/?view=cm&fs=1&to={adresseDestinataire}&su={encodedSubject}&body={encodedBody}&from={adresseGmail}";
+            //string urlGmail = $"https://mail.google.com/mail/?view=cm&fs=1&to={adresseDestinataire}&su={encodedSubject}&body={encodedBody}&from={adresseGmail}";
             Postulation p = db.Postulations.Where(p => p.AnnonceId == an.Id && p.EtudiantId == utilisateur.Id).FirstOrDefault();
 
             p.Date_Postulation = DateTime.Now;

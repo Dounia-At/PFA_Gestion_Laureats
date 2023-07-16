@@ -42,10 +42,12 @@ namespace PFA_Gestion_Laureats.Controllers
 
 
 
+            
             var workingCount = db.ExperiencePro.Where(s => s.Etat == true).GroupBy(p => p.EtudiantId).Count();//NbrEtudiantEmployé
+            var all= db.Etudiants.Count();
             var notWorkingCount = db.ExperiencePro.Where(s => s.Etat == false).GroupBy(p => p.EtudiantId).Count();
-            ViewBag.WorkingCount = workingCount;
-            ViewBag.NotWorkingCount = notWorkingCount;
+            ViewBag.WorkingCount = (workingCount*100)/all;
+            ViewBag.NotWorkingCount = (all- workingCount) *100/all;
 
 
 

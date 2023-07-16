@@ -86,8 +86,19 @@
 
  <div class="col-12">
     <h4 class="fw-bold py-3 mb-4 card-header"><a class="text-muted fw-light" asp-controller="Annonce" asp-action="Annonces">Accueil /</a>  Validation des Comptes</h4>
+  
+    
        
+    
         <div class="row g-4">
+        <div class="container mt-5 d-flex flex-row-reverse ">
+            <a class="btn btn-primary" asp-controller="User" asp-action="ImportUsers">
+                <i class="fa-sharp fa-solid fa-download  "></i>
+                <span class="align-middle mx-2">  Importer</span>
+            </a>
+        </div>
+
+      
             @foreach(Utilisateur utilisateur in Model)
             {
                 <div class="col-xl-3 col-lg-6 col-md-6">
@@ -123,7 +134,20 @@
 
                             <div class=" my-3 py-1">
                                     <p> <strong>Téléphone : </strong>@utilisateur.Tel</p>
-                                    <p><strong>Email : </strong>@utilisateur.Email</p>
+                            @if (utilisateur.Email.Length > 16)
+                            {
+                                <p><strong>Email : </strong>@utilisateur.Email.Substring(0,16)...</p>
+                                  
+                               
+
+                            }
+                            else
+                            {
+
+                                <p><strong>Email : </strong>@utilisateur.Email</p>
+
+                            }
+                                   
                                     <p><strong>Adresse : </strong>@utilisateur.Adresse</p>
                                 @*<div>
                                     <h6 class="mb-0">Téléphone</h6>

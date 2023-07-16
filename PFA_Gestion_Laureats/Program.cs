@@ -10,7 +10,7 @@ builder.Services.AddSignalR(o =>
 builder.Services.AddSession(
     opt =>
     {
-        opt.IdleTimeout = TimeSpan.FromMinutes(10);
+        opt.IdleTimeout = TimeSpan.FromMinutes(1200);
         //  opt.Cookie.HttpOnly = true;
     }
     );
